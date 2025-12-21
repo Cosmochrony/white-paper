@@ -688,7 +688,8 @@ where $c$ is identified with the invariant speed appearing in relativistic kinem
 This constraint replaces the role of an explicit cosmological constant or initial expansion impulse.
 It enforces causality and ensures compatibility with special relativity.
 
-\subsection{Effective Evolution Equation}\label{subsec:effective-evolution-equation}
+\subsection{Effective Evolution Equation}
+\label{subsec:effective-evolution-equation}
 
 At the phenomenological level, the dynamics of $\chi$
 may be described by a nonlinear wave--diffusion equation of the form
@@ -705,64 +706,48 @@ relaxation and may be approximated in the weak-field limit by
 \end{equation}
 with $\alpha$ a coupling constant.
 
-\subsection{Bootstrap Self-Consistency and Seed-Independence}
-\label{sec:bootstrap}
+\subsection{Relational Foundation and Emergent Geometry}
+\label{subsec:relational_foundation}
 
-To demonstrate that the effective metric $g_{\mu\nu}^{\text{phys}}$ genuinely emerges from $\chi$ dynamics rather than being a hidden input, we outline a bootstrap verification procedure.
+This section provides a formal justification for the discrete relational foundation of Cosmochrony, resolving the
+conceptual circularity of using a continuous metric to define the field's dynamics.
 
-\paragraph{Bootstrap algorithm.}
-  \begin{enumerate}
-    \item \textbf{Initialize:} Choose an arbitrary seed metric $g_{\mu\nu}^{(0)}$ (e.g., Minkowski $\eta_{\mu\nu}$) purely for calculational purposes.
-
-    \item \textbf{Solve for $\chi$:} Given $g^{(0)}$, solve the $\chi$-field dynamics:
-    \begin{equation}
-      \nabla^{(0)}_\mu \nabla^{(0)\mu}\chi - V'(\chi) = S[\chi,\rho]
-    \end{equation}
-
-    \item \textbf{Compute emergent metric:} From the solution $\chi^{(1)}$, compute:
-    \begin{equation}
-      g_{\mu\nu}^{(1)} = \frac{\delta^2 S[\chi^{(1)}]}{\delta(\nabla_\mu\chi)\delta(\nabla_\nu\chi)}
-    \end{equation}
-    or via phenomenological relations:
-    \begin{equation}
-      g_{00}^{(1)} = -\left(\frac{\partial_t\chi^{(1)}}{c}\right)^2, \quad
-      g_{ij}^{(1)} = \left(\frac{\chi^{(1)}}{\chi_0}\right)^2\delta_{ij}
-    \end{equation}
-
-    \item \textbf{Iterate:} Use $g^{(1)}$ as input to step 2, generating $\chi^{(2)} \to g^{(2)} \to \cdots$
-
-    \item \textbf{Convergence:} The sequence $\{g^{(n)}\}$ must converge: $g^{(n)} \to g^{(\infty)} = g^{\text{phys}}$ independent of $g^{(0)}$.
-  \end{enumerate}
-
-\paragraph{Seed-independence criterion.}
-  The theory is consistent only if:
+\subsubsection{The Cosmochrony Network}
+  The universe is modeled as a graph $G = (V, E)$, where nodes $i \in V$ represent local states of the Cosmochron
+  $\chi_i$, and edges $K_{ij} \in E$ represent their coupling strength.
+  The evolution is governed by a discrete relaxation flow:
   \begin{equation}
-    \forall \, g_{\mu\nu}^{(0)}, \, g'^{(0)}_{\mu\nu} \quad \text{(seeds)}: \quad
-    \lim_{n\to\infty} g^{(n)} = \lim_{n\to\infty} g'^{(n)} = g^{\text{phys}}
+    \frac{d\chi_i}{d\lambda} = c \sqrt{1 - \frac{1}{c^2} \sum_{j \sim i} K_{ij} (\chi_i - \chi_j)^2}
   \end{equation}
+  In this framework, no background metric is required. The term $\sum K_{ij} (\chi_i - \chi_j)^2$ acts as a discrete
+  Laplacian, representing geometric tension without pre-existing notions of distance.
+  This discrete form ensures that $\chi$ is the primary ontological entity from which all spatial relations derive.
 
-  If different seeds yield different limiting metrics, the emergence claim is falsified.
+\subsubsection{Statistical Emergence of the Metric}
+  The metric tensor $g_{\mu\nu}$ used in the continuum limit is not an ontological entity but a statistical summary of
+  the network's topology.
+  By defining the operational distance $d(i,j)$ through the path of maximum correlation:
+  \begin{equation}
+    d(i,j)^2 \propto \sum_{(uv) \in \text{path}} \frac{1}{K_{uv}}
+  \end{equation}
+  we recover the interval $ds^2$ in the limit of a dense graph ($|V| \to \infty$).
+  Gravity emerges as a local modulation of the connectivity $K_{ij}$: a massive soliton increases the coupling density,
+  which reduces the local relaxation rate $d\chi/d\lambda$, perceived macroscopically as gravitational time dilation and
+  curvature.
 
-\paragraph{Conformal freedom test.}
-  A minimal test is conformal invariance: starting from $g^{(0)} = \Omega^2 \eta$ for various conformal factors $\Omega$, the physical metric $g^{\text{phys}}$ must be identical, demonstrating that the seed's geometry is physically irrelevant.
+\subsubsection{Comparison with Loop Quantum Gravity and Relational Mechanics}
+  The Cosmochrony network shares profound conceptual roots with Loop Quantum Gravity (LQG) and Causal Set Theory.
+  In LQG, spacetime is not a smooth manifold but a spin network where geometric properties like area and volume are
+  quantized \cite{rovelli2004quantum}. Similarly, our graph $G(V,E)$ treats the field $\chi$ as a relational variable
+  whose differences $(\chi_i - \chi_j)$ define the "quanta" of separation.
 
-\paragraph{Current status.}
-  This bootstrap procedure has been verified analytically for homogeneous cosmological solutions
-  (Section~\ref{subsec:physical-interpretation}) and spherically symmetric configurations (Section~\ref{subsec:monotonicity-and-arrow-of-time}).
-  General inhomogeneous solutions require numerical implementation and remain a priority for future work.
-
-\subsection{Emergent Metric Structure}
-\label{subsec:emergent-metric-structure}
-
-The effective spacetime metric experienced by observers is assumed to depend on gradients of $\chi$.
-To leading order, the line element may be written as
-\begin{equation}
-  ds^2 = -\left(\frac{\partial_t \chi}{c}\right)^2 c^2 dt^2 + \left(\frac{\chi}{\chi_0}\right)^2 d\vec{x}^2 ,
-\end{equation}
-where $\chi_0$ is a normalization constant fixing present-day units.
-
-This metric reproduces standard relativistic effects such as time dilation and length scaling as consequences of
-$\chi$ dynamics.
+  However, a key distinction lies in the role of the scalar field.
+  While LQG often introduces matter as an excitation on a pre-existing spin network, Cosmochrony suggests that the
+  network itself is the $\chi$ field.
+  This aligns with the ``Problem of Time'' resolutions proposed by Smolin and Rovelli, where time is recovered via the
+  correlation between physical degrees of freedom~\cite{rovelli1991time}. By defining distances through the connectivity
+  $K_{ij}$, we follow the spirit of ``Relative Locality''~\cite{ameling2011principle}, where the metric is an
+  observer-dependent reconstruction of a more fundamental, non-local network of interactions.
 
 \subsection{Energy and Curvature}\label{subsec:energy-and-curvature}
 
