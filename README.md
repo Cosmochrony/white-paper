@@ -1,4 +1,4 @@
-This paper presents **Cosmochrony**, an exploratory theoretical framework proposing a minimalist and geometric
+This [paper](pdf/Cosmochrony.pdf) presents **Cosmochrony**, an exploratory theoretical framework proposing a minimalist and geometric
 origin for **time, spacetime, gravitation, quantum phenomena, and cosmological expansion**.
 
 The central idea is that these phenomena emerge from the **irreversible relaxation of a single
