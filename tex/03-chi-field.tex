@@ -70,15 +70,20 @@ underlying $\chi$ configurations admit a spacetime interpretation.
 \label{subsec:the-geometric-effective-action-and-lagrangians-of-cosmochrony-Lcc}
 
 \paragraph{Interpretational caution.}
-  The action principle presented below employs conventional field-theoretic notation, including a metric tensor $g_{\mu\nu}$ and a four-dimensional integration measure. \emph{This should not be interpreted as assuming pre-existing spacetime structure.}
+  The action principle presented below employs conventional field-theoretic notation, including a metric tensor
+  $g_{\mu\nu}$ and a four-dimensional integration measure.
+  \emph{This should not be interpreted as assuming pre-existing spacetime structure.}
 
   The formalism serves two purposes:
   \begin{enumerate}
     \item To provide a compact representation of $\chi$ dynamics in regimes where an effective spacetime description is valid.
-    \item To establish a bootstrap framework where the metric appearing in the action is determined self-consistently from $\chi$ configurations.
+    \item To establish the bridge between the fundamental relational network and the effective manifold description used in standard physics.
   \end{enumerate}
 
-  The fundamental content of the theory is the field $\chi$ and its relaxation dynamics. The metric $g_{\mu\nu}$ appearing in the action is an \emph{emergent effective structure}, not an input.
+  The fundamental content of the theory is the field $\chi$ and its relaxation dynamics on a discrete graph (see
+  Appendix~\ref{subsec:relational_foundation}).
+  The metric $g_{\mu\nu}$ appearing in the action is a \emph{statistical emergent structure} representing the
+  connectivity and correlation density of the $\chi$ field, not an independent ontological input.
 
 \paragraph{Effective action formulation.}
   In regimes where $\chi$ admits a quasi-stable geometric interpretation, the dynamics may be encoded in an effective action:
@@ -91,16 +96,18 @@ underlying $\chi$ configurations admit a spacetime interpretation.
   \end{equation}
 
   The symbol $\sqrt{-g}$ represents the invariant volume element.
-  In regimes where no spacetime interpretation yet exists, this should be understood as an abstract integration measure
-  $d\mu$ on the configuration space of $\chi$.\footnote{This is analogous to path integrals in quantum mechanics, where
-  $\int \mathcal{D}\phi$ defines a measure on field configurations before any notion of ``paths in time'' is introduced.}
+  In regimes where no spacetime interpretation yet exists (e.g., at the nodes of the fundamental graph), this should be
+  understood as an abstract integration measure $d\mu$ on the configuration space of $\chi$.
 
 \paragraph{Status of $g_{\mu\nu}$ in this formulation.}
-  The metric $g_{\mu\nu}$ appearing here is determined by the condition:
+  The metric $g_{\mu\nu}$ is an effective description of the coupling strengths $K_{ij}$ between $\chi$ nodes.
+  It is defined by the requirement that the distance $ds^2$ in the continuum matches the operational distance derived
+  from the network's connectivity:
   \begin{equation}
-    g_{\mu\nu}[\chi] = \text{arg min}_g \left\{ S_{\text{CC}}[g,\chi] \right\}
+    g_{\mu\nu} dx^\mu dx^\nu \approx \sum_{(uv) \in \text{path}} \frac{1}{K_{uv}}
   \end{equation}
-  subject to consistency with $\chi$-induced causal structure. This is a \emph{functional} of $\chi$, not an independent degree of freedom.
+  Consequently, $g_{\mu\nu}$ is a \emph{phenomenological summary} of the underlying relational dynamics, capturing the
+  local rate of $\chi$-relaxation and its spatial correlations.
 
 \subsection{Physical Interpretation}
 \label{subsec:physical-interpretation}
