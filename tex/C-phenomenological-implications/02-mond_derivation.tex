@@ -1,23 +1,79 @@
-\subsection{Derivation of the MOND Acceleration Floor}
+\subsection{Emergence and Evolution of an Effective MOND-like Acceleration Scale}
   \label{sec:mond_derivation}
 
-  In Cosmochrony, the ``arrow of time'' $\partial_t \chi \geq 0$ is coupled to the global expansion of the universe.
-  In an FLRW-like limit, the field $\chi$ must follow the cosmological clock, such that
-  $\partial_t \chi \approx H_0 \chi$.
+  In Cosmochrony, the intrinsic arrow of time is encoded in the monotonic evolution of the fundamental
+  field $\chi$, with $\partial_t \chi \geq 0$. At large scales and late cosmic times, when $\chi$ admits
+  a quasi-homogeneous and isotropic description, this monotonic relaxation can be coarse-grained
+  into an effective cosmological clock, analogous to the role played by cosmic time in standard
+  FLRW cosmology~\cite{Ellis1971,Weinberg2008}.
 
-  Substituting this into the constraint $(\partial_t \chi)^2 + |\nabla \chi|^2 = c^2$, we find that at any point in
-  space, there exists a minimal residual gradient $\nabla \chi_{\min}$ even in the absence of local matter:
+  In such regimes, and only as an effective description, the temporal evolution of $\chi$ may be
+  approximated by
   \begin{equation}
-    |\nabla \chi|_{\min} = \sqrt{c^2 - (H_0 \chi)^2}
+    \partial_t \chi \simeq H(t)\,\chi,
   \end{equation}
-  For a local observer, this residual gradient acts as a background acceleration $a_0 \approx c H_0$.
-  When calculating the gravitational force via the non-linear Poisson equation~\eqref{eq:nonlinear_poisson}, the total
-  gradient is the sum of the local Newtonian contribution and this cosmological floor.
+  where $H(t)$ denotes the emergent Hubble parameter associated with the global relaxation of the
+  field. This relation should not be interpreted as a fundamental equation of motion, but as a
+  phenomenological correspondence valid in the FLRW-like limit of the theory, in the same spirit as
+  coarse-grained descriptions commonly employed in emergent gravity and cosmological averaging
+  approaches~\cite{Buchert2000,Padmanabhan2010}.
 
-  At large radii $r$, where the Newtonian gradient $\nabla \chi_N \propto M/r^2$ would normally vanish, the field
-  ``saturates'' at the floor value. The effective gravitational acceleration then transitions from $1/r^2$ to a $1/r$
-  dependence, naturally recovering the Deep-MOND regime:
+  The local kinematic constraint governing the $\chi$ field,
   \begin{equation}
-    g_{eff} = \sqrt{g_N a_0}
+  (\partial_t \chi)^2 + |\nabla \chi|^2 = c^2,
   \end{equation}
-  This explains the flat rotation curves of galaxies as a kinematic projection of the global expansion onto local dynamics.
+  then implies that even in the absence of localized matter excitations, the cosmological evolution
+  of $\chi$ generically induces a non-vanishing residual spatial gradient. In the homogeneous limit,
+  this minimal gradient magnitude is given by
+  \begin{equation}
+    |\nabla \chi|_{\mathrm{\min}} = \sqrt{c^2 - (H(t)\chi)^2}.
+  \end{equation}
+
+  This residual gradient does not correspond to a directional force acting on test particles.
+  Rather, it defines a background kinematic scale that constrains how additional, locally induced
+  gradients can contribute to the effective dynamics. For a local observer, the associated scale may
+  be expressed as an effective acceleration floor,
+  \begin{equation}
+    a_0(t) \sim c\,H(t),
+  \end{equation}
+  a relation that has long been noted empirically in the context of galactic dynamics and MOND-like
+  phenomenology~\cite{Milgrom1983a,Milgrom2002,FamaeyMcGaugh2012}, but which here arises dynamically
+  from the global relaxation of the $\chi$ field. Unlike Milgromian dynamics, where $a_0$ is postulated
+  as a universal constant, Cosmochrony predicts that this scale evolves slowly with cosmic time,
+  tracking the evolution of $H(t)$.
+
+  When localized matter excitations are present, they induce additional spatial gradients
+  $\nabla \chi_N$ that, in the weak-field and short-distance limit, reproduce the Newtonian scaling
+  $|\nabla \chi_N| \propto M/r^2$.
+  ue to the non-linear nature of the kinematic constraint, the total
+  effective gradient is not a linear superposition of the cosmological and local contributions.
+  Instead, the field dynamics enforces a saturation behavior: at sufficiently large radii, where the
+  Newtonian contribution would otherwise vanish, the total gradient asymptotically approaches the
+  cosmological floor set by $|\nabla \chi|_{\mathrm{\min}}$.
+
+  In this regime, the resulting effective gravitational acceleration naturally approaches
+  \begin{equation}
+    g_{\mathrm{eff}} \simeq \sqrt{g_N\,a_0(t)},
+  \end{equation}
+  recovering the characteristic deep-MOND scaling originally identified by Milgrom~\cite{Milgrom1983a}
+  without introducing an ad hoc interpolation function or modifying the underlying gravitational law.
+
+  This interpretation offers two conceptual advantages over phenomenological MOND formulations:
+  \begin{enumerate}
+    \item \textbf{Cosmological scaling.} The acceleration scale $a_0$ is not fundamental but emerges
+    from the cosmological state of the $\chi$ field. As a result, $a_0(t)$ is expected to be larger at
+    earlier cosmic epochs, providing a potential observational handle through high-redshift galaxy
+    kinematics, now becoming accessible with modern surveys~\cite{McGaugh2015}.
+    \item \textbf{Environmental dependence.} Because the relaxation of $\chi$ is sensitive to the
+    global and local distribution of gradients, the effective acceleration scale can be weakly modulated
+    by environmental factors. This naturally incorporates effects analogous to the external field effect
+    (EFE) discussed in MOND literature~\cite{BekensteinMilgrom1984,FamaeyMcGaugh2012} and allows for
+    deviations from perfectly flat rotation curves in the far field or in strongly inhomogeneous
+    environments.
+  \end{enumerate}
+
+  In this framework, flat galactic rotation curves do not signal a breakdown of Newtonian gravity
+  nor the presence of unseen matter components. Instead, they arise as a kinematic projection of the
+  global cosmological relaxation of $\chi$ onto local gravitational dynamics, with MOND-like behavior
+  emerging as an effective, scale-dependent regime rather than as a fundamental modification of
+  gravity.
