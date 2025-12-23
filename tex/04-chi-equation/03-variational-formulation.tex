@@ -1,0 +1,24 @@
+\subsection{Variational Formulation and Born-Infeld Action}
+  \label{subsec:variational-formulation}
+
+  To extend this kinematic constraint to a full dynamical theory including matter, we propose an effective Lagrangian
+  density of the Born-Infeld type:
+  \begin{equation}
+    \mathcal{L} = -c^2 \sqrt{1 - \frac{|\nabla \chi|^2}{c^2}} + \partial_t \chi - \frac{4\pi G}{c^2} \rho \chi ,
+  \end{equation}
+  where $\rho$ represents the matter density. The presence of the term $\partial_t \chi$ linear in the first-order
+  temporal derivative is crucial: it ensures that the momentum conjugate to $\chi$, defined as
+  $\Pi_\chi = \frac{\partial \mathcal{L}}{\partial (\partial_t \chi)}$, is a non-vanishing constant ($\Pi_\chi = 1$).
+
+  In the Hamiltonian formalism, this constant momentum acts as a primary constraint that effectively enforces the
+  unit-velocity evolution of the field.
+  This structure ensures that the field dynamics remain locked onto the Hamiltonian
+  constraint~\eqref{eq:hamiltonian_constraint} while the square-root term acts as a non-linear regularizer for spatial
+  gradients.
+  The variation with respect to $\chi$ yields a non-linear Poisson equation:
+  \begin{equation}
+    \nabla \cdot \left( \frac{\nabla \chi}{\sqrt{1 - |\nabla \chi|^2/c^2}} \right) = \frac{4\pi G}{c^2} \rho .
+    \label{eq:nonlinear_poisson}
+  \end{equation}
+  This formulation naturally recovers the Newtonian limit for weak gradients ($|\nabla \chi| \ll c$) while preventing
+  gravitational singularities as the gradient magnitude is bounded by $c$.
