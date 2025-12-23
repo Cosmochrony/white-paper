@@ -9,13 +9,15 @@
       \frac{d \chi_i}{d \lambda} = c \sqrt{1 - \frac{1}{c^2} \sum_{j \sim i} K_{ij} (\chi_i - \chi_j)^2}
       \label{eq:discrete-dynamics}
     \]
-    Here, $K_{ij}$ is the connectivity strength between nodes $i$ and $j$ (introduced in Section~\ref{subsec:the-geometric-effective-action-and-lagrangians-of-cosmochrony-Lcc}),
-    and the sum runs over neighboring nodes $j$. This equation is \textbf{metric-independent} and defines the fundamental
-    dynamics of $\chi$ in terms of its local correlations.
+    Here, $K_{ij}$ is the connectivity strength between nodes $i$ and $j$ (introduced in
+    Section~\ref{subsec:the-geometric-effective-action-and-lagrangians-of-cosmochrony-Lcc}), and the sum runs over
+    neighboring nodes $j$.
+    This equation is \textbf{metric-independent} and defines the fundamental dynamics of $\chi$ in terms of its local
+    correlations.
 
   \subsubsection*{Continuum Limit}
-    In the limit where the network becomes dense (i.e., the distance between nodes approaches zero), the discrete sum can be
-    approximated by a continuous Laplacian:
+    In the limit where the network becomes dense (i.e., the distance between nodes approaches zero), the discrete sum
+    can be approximated by a continuous Laplacian:
     \[
       \sum_{j \sim i} K_{ij} (\chi_i - \chi_j)^2 \approx \int |\nabla \chi|^2 \, dV
     \]
@@ -33,11 +35,14 @@
     to the mass-shell condition for a massless relativistic particle:
     \[
       (\partial_t \chi)^2 + |\nabla \chi|^2 = c^2
+      \label{eq:hamiltonian_constraint}
     \]
-    where $c$ is the fundamental velocity scale. Combined with the arrow of time postulate ($\partial_t \chi \geq 0$), which
-    reflects the irreversible relaxation of the Cosmochron, this leads uniquely to the first-order evolution equation:
+    where $c$ is the fundamental velocity scale.
+    Combined with the arrow of time postulate ($\partial_t \chi \geq 0$), which reflects the irreversible relaxation of
+    the Cosmochron, this leads uniquely to the first-order evolution equation:
     \[
       \partial_t \chi = c \sqrt{1 - \frac{|\nabla \chi|^2}{c^2}}
+      \label{eq:chi_dynamics}
     \]
     This derivation grounds the ``minimal principle'' in the symplectic structure of the field's phase space, ensuring
     that $\chi$ acts as an intrinsic time coordinate.
