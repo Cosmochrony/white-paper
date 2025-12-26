@@ -1,9 +1,20 @@
 \subsection{Perspectives: Towards a Derivation of the Mass Spectrum}
 \label{subsec:perspectives_mass_spectrum}
+  While the identification of particles as topological solitons provides a qualitative
+  mechanism for inertial mass—understood as the resistance of localized $\chi$
+  configurations to field relaxation—the explicit derivation of the Standard Model
+  mass spectrum, in particular the hierarchy of lepton and quark flavors, remains an
+  open challenge.
 
-While the identification of particles as topological solitons (Skyrmions, vortices) provides a qualitative mechanism for mass generation via the configuration energy of the $\chi$ field, the explicit derivation of the Standard Model mass spectrum—specifically the hierarchy of lepton and quark flavors—remains an open challenge. In the Cosmochrony framework, this spectrum should not be tuned by arbitrary coupling constants but should emerge from the intrinsic geometry of the network $G(V,E)$.
+  In the Cosmochrony framework, this spectrum should not be fixed by arbitrary coupling
+  constants, but should emerge from the intrinsic geometry of the relaxation network
+  $G(V,E)$. The following sections outline a programmatic approach toward such a
+  derivation.
 
-\subsubsection{The Geometric Resonance Hypothesis}
+  The conceptual interpretation of inertial mass underlying this programmatic
+  approach is discussed in~\ref{subsec:spectral_mass}.
+
+  \subsubsection{The Geometric Resonance Hypothesis}
   We conjecture that observed masses correspond to the eigenvalues of a transfer operator on the discrete network, where the mass $m_n$ of a configuration $n$ follows a scaling law linked to the local curvature induced by the soliton:
   \begin{equation}
     m_n c^2 \approx E_{\text{fund}} \cdot \Lambda(Q_n, \mathcal{K})
@@ -24,7 +35,14 @@ While the identification of particles as topological solitons (Skyrmions, vortic
 \subsubsection{Spectral Relaxation Operators and Multi-Level Structure}
 \label{subsec:spectral-relaxation}
 
-    Following the conceptual separation introduced in Section~\ref{subsec:conceptual-implications-and-open-challenges},
+    This subsection introduces a spectral relaxation operator as a technical tool
+    for quantifying the stability properties of localized configurations within the
+    relaxation network.
+    It does not redefine the physical origin of inertial mass, which remains the
+    resistance of solitonic configurations to the relaxation of the $\chi$ field,
+    but provides a mathematical framework for analyzing its spectral manifestation.
+
+  Following the conceptual separation introduced in Section~\ref{subsec:conceptual-implications-and-open-challenges},
     this appendix outlines an explicit but exploratory specification of the discrete relaxation operator underlying the
     spectral interpretation of particle masses in Cosmochrony.
     Rather than proposing a finalized microscopic model, the constructions presented here are intended
@@ -32,7 +50,57 @@ While the identification of particles as topological solitons (Skyrmions, vortic
     while preserving the non-circular distinction between fundamental geometry, emergent spacetime, and
     dynamical interactions.
 
-\subsubsubsection{*Fundamental spectral operator}
+    \paragraph{Spectral origin of the mass scale.}
+      While the fundamental relaxation equation of Cosmochrony is first order in time,
+      it fixes the geometric structure of the underlying relaxation network through the
+      graph Laplacian $\Delta_G^{(0)}$.
+      The inertial mass of localized excitations instead emerges from the stability
+      properties of small fluctuations around a stationary solitonic configuration.
+
+      To make this explicit, we introduce an effective localization functional,
+      defined at the coarse-grained level,
+      \begin{equation}
+        E[\chi] \;=\; \frac{1}{2}\sum_{(i,j)\in E} w_{ij}^{(0)}(\chi_i-\chi_j)^2 \;+\; E_{\mathrm{loc}}[\chi],
+      \end{equation}
+      where $w_{ij}^{(0)}$ are fixed geometric weights encoding the relaxation network,
+      and $E_{\mathrm{loc}}$ denotes an effective stabilizing contribution ensuring the
+      existence of localized stationary configurations.
+      This functional is not assumed to be fundamental but serves to characterize
+      the stability of solitonic excitations.
+
+      Let $\chi_{\mathrm{sol}}$ be a stationary localized configuration, and consider
+      small fluctuations $\chi = \chi_{\mathrm{sol}} + \delta\chi$.
+      The second variation of $E[\chi]$ around $\chi_{\mathrm{sol}}$ defines a linear operator
+      \begin{equation}
+        \delta^2 E \;=\; \langle \delta\chi,\, \mathcal{L}_{\mathrm{sol}}\,\delta\chi \rangle,
+        \qquad
+        \mathcal{L}_{\mathrm{sol}} \equiv \Delta_G^{(0)} + U_{\mathrm{sol}},
+      \end{equation}
+      where $U_{\mathrm{sol}}$ is a local restoring operator determined by the background
+      configuration.
+
+      In the regime where an effective wave description applies, small fluctuations
+      are governed by a Klein--Gordon-type equation,
+      \begin{equation}
+        \left(\frac{1}{c^2}\partial_t^2 + \mathcal{L}_{\mathrm{sol}}\right)\delta\chi = 0.
+      \end{equation}
+      For normal modes $\delta\chi(t)=e^{-i\omega t}\psi_n$, one obtains the spectral problem
+      \begin{equation}
+        \mathcal{L}_{\mathrm{sol}}\psi_n = \lambda_n \psi_n,
+        \qquad
+        \omega_n^2 = c^2 \lambda_n .
+      \end{equation}
+      Identifying the rest frequency $\omega_0$ with the inertial mass via
+      $\omega_0 = m c^2/\hbar$ yields
+      \begin{equation}
+        m_n = \frac{\hbar}{c}\sqrt{\lambda_n}.
+      \end{equation}
+
+      Hence, particle masses in Cosmochrony arise as square roots of the eigenvalues
+      of the linearized relaxation operator governing the stability of localized
+      configurations.
+
+  \subsubsubsection{*Fundamental spectral operator}
 
   Let $G=(V,E)$ be a discrete network encoding the intrinsic connectivity of the pre-geometric substrate.
   The fundamental relaxation operator is defined as a weighted graph Laplacian
