@@ -1,0 +1,64 @@
+\section{Glossary of Core Quantities and Notation}
+  \label{appendix:glossary}
+
+  This appendix summarizes the meaning and status of the main quantities used
+  throughout the Cosmochrony framework. It is intended as a reference guide and
+  does not introduce new assumptions or definitions.
+
+  \subsection{Fundamental and Effective Quantities}
+
+    \paragraph{$\chi$ (Chi field).}
+      The fundamental scalar quantity of the Cosmochrony framework.
+      $\chi$ is not defined on a pre-existing spacetime manifold but constitutes a
+      pre-geometric substrate whose monotonic relaxation provides an intrinsic ordering
+      of physical processes.
+      Localized, topologically stable configurations of $\chi$ correspond to particle-like
+      excitations.
+
+    \paragraph{$V(\chi)$ (Effective potential).}
+      An effective, coarse-grained description used to model localization and stability
+      properties of $\chi$ configurations.
+      $V(\chi)$ is not assumed to be fundamental; its form may emerge from underlying
+      discrete relaxation dynamics and is secondary to the spectral description of mass.
+
+    \paragraph{$K_{ij}$ (Relaxation coupling).}
+      Edge-dependent coupling coefficients defined on the relaxation network $G(V,E)$.
+      $K_{ij}$ quantify the local resistance to relative variations of $\chi$ between
+      neighboring nodes and encode geometric and topological information of the network.
+      They may depend on the local configuration of $\chi$ in effective descriptions.
+      
+\subsection{Derived Operators and Dimensionless Parameters}
+
+  \paragraph{$G(V,E)$ (Relaxation network).}
+    A discrete graph representing the underlying relational structure on which the
+    $\chi$ field is defined at the fundamental level.
+    Vertices correspond to elementary degrees of freedom, and edges encode relaxation
+    couplings.
+
+  \paragraph{$\Delta_G$ (Graph Laplacian / relaxation operator).}
+    The discrete Laplace--Beltrami operator associated with the network $G(V,E)$ and
+    the couplings $K_{ij}$.
+    It governs the stability and mode structure of localized $\chi$ configurations.
+    Its spectral properties play a central role in the quantitative characterization
+    of inertial mass.
+
+  \paragraph{$S$ (Gradient saturation parameter).}
+    A dimensionless quantity defined as
+    \begin{equation}
+      S \equiv \frac{1}{c^2}\sum_{j\sim i} K_{ij}(\chi_i-\chi_j)^2,
+    \end{equation}
+    measuring the local density of $\chi$ gradients.
+    The condition $S \leq 1$ ensures causal consistency and bounds the local relaxation
+    rate of $\chi$.
+
+  \paragraph{$\lambda_n$ (Spectral eigenvalues).}
+    The eigenvalues of the linearized relaxation or stability operator acting on
+    small fluctuations around a localized configuration.
+    In effective wave descriptions, $\sqrt{\lambda_n}$ determines the inertial mass
+    scale of particle-like excitations.
+
+  \paragraph{$\Omega_\chi$ (Relaxation budget parameter).}
+    A dimensionless global quantity characterizing the fraction of the total $\chi$
+    relaxation budget stored in spatial gradients.
+    In cosmological regimes, $\Omega_\chi$ plays a role analogous to the matter
+    density parameter in standard cosmology.
