@@ -20,3 +20,67 @@ While the identification of particles as topological solitons (Skyrmions, vortic
 
   This approach aims to transform the ``magic numbers'' of the Standard Model into geometric properties derivable from
   the first principles of relaxation dynamics.
+
+\subsubsection{Spectral Relaxation Operators and Multi-Level Structure}
+\label{subsec:spectral-relaxation}
+
+    Following the conceptual separation introduced in Section~\ref{subsec:conceptual-implications-and-open-challenges},
+    this appendix outlines an explicit but exploratory specification of the discrete relaxation operator underlying the
+    spectral interpretation of particle masses in Cosmochrony.
+    Rather than proposing a finalized microscopic model, the constructions presented here are intended
+    to clarify how this separation may be implemented in a concrete and computationally tractable way,
+    while preserving the non-circular distinction between fundamental geometry, emergent spacetime, and
+    dynamical interactions.
+
+\subsubsubsection{*Fundamental spectral operator}
+
+  Let $G=(V,E)$ be a discrete network encoding the intrinsic connectivity of the pre-geometric substrate.
+  The fundamental relaxation operator is defined as a weighted graph Laplacian
+  \begin{equation}
+  (\Delta_G^{(0)} \psi)_i = \sum_{j\sim i} w_{ij}^{(0)} (\psi_i - \psi_j),
+  \end{equation}
+  where the weights $w_{ij}^{(0)} = 1/K_{ij}^{(0)}$ encode the intrinsic compliance of the relaxation network.
+  At this level, $K_{ij}^{(0)}$ are fixed coefficients determined by network topology and symmetry
+  constraints, and do not depend on the dynamical state of the $\chi$ field.
+
+  The eigenvalue problem
+  \begin{equation}
+    \Delta_G^{(0)} \psi_n = \lambda_n \psi_n
+  \end{equation}
+  defines a discrete spectrum.
+  Within the Cosmochrony framework, particle masses are conjectured to scale as
+  \begin{equation}
+    m_n c^2 \propto \sqrt{\lambda_n},
+  \end{equation}
+  so that mass hierarchies emerge as geometric properties of the relaxation network rather than as
+  parameters encoded in a fundamental potential.
+
+\subsubsubsection{*Emergent geometric level}
+
+  On larger scales, coarse-grained configurations of the $\chi$ field define an effective geometric
+  description.
+  This level governs gravitational phenomena, time dilation, and cosmological expansion through the
+  local and global rates of $\chi$ relaxation.
+  Importantly, while this emergent geometry influences the propagation of excitations, it does not
+  redefine the fundamental spectral operator $\Delta_G^{(0)}$.
+
+\subsubsubsection{*Dynamical and interaction level}
+
+  Fast processes such as radiation, scattering, and decoherence correspond to interaction-induced
+  redistributions of relaxation potential within the $\chi$ field.
+  At this effective level, it is natural to consider corrections to the relaxation dynamics encoded
+  by coefficients $K_{ij}(\chi)$ that depend smoothly on coarse-grained field variations.
+  Such dependencies modify local dynamics and observable interaction rates but do not enter the
+  definition of the fundamental spectral problem associated with mass generation.
+
+\subsubsubsection{*Boundary conditions and numerical implementation}
+
+  For numerical studies, the graph $G$ may be taken as large but finite, with periodic boundary
+  conditions to minimize edge effects, or with Dirichlet or Neumann conditions to model confined
+  regions.
+  Standard sparse eigensolvers may then be used to compute the low-lying spectrum of $\Delta_G^{(0)}$
+  and to test whether simple network connectivities can reproduce observed mass hierarchies.
+
+  These constructions illustrate how Cosmochrony may be developed into a calculable spectral program,
+  while preserving the non-circular separation between fundamental geometry, emergent spacetime, and
+  dynamical interactions.
