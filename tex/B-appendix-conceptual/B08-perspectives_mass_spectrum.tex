@@ -1,8 +1,8 @@
 \subsection{Perspectives: Towards a Derivation of the Proton-to-Electron Mass Ratio}
   \label{subsec:perspectives_mass_spectrum}
 
-  The proton-to-electron mass ratio ($m_p/m_e \simeq 1836$) is one of the most
-  precisely measured dimensionless constants in physics.
+  The proton-to-electron mass ratio is one of the most precisely measured
+  dimensionless constants in physics.
   Within the Cosmochrony framework, the aim of this section is not to derive this
   value from first principles, but to clarify how such a ratio could emerge from
   the spectral and topological structure of localized $\chi$-solitons.
@@ -59,6 +59,11 @@
         \;\;\propto\;\; \sqrt{\lambda_n}\,\chi_c,
       \end{equation}
       up to numerical factors absorbed in the effective normalization of the relaxation operator.
+      After canonical normalization of the localized mode,
+      the effective eigenvalue entering the rest energy scales as
+      $\tilde{\lambda}_n \sim \lambda_n \mathcal{N}_n / \chi_c^2$,
+      so that $m_n \propto \sqrt{\lambda_n}\,\chi_c$ remains the relevant
+      coarse-grained scaling.
 
       Thus, $\lambda_n$ encodes the energetic cost of deforming the soliton per unit length,
       while $\chi_c$ provides the geometric scale that converts this stiffness into a finite
@@ -79,13 +84,17 @@
       In this interpretation, $\lambda_n$ encodes a curvature or stiffness scale of the
       localized $\chi$ configuration, while $\chi_c$ sets the corresponding spatial
       extension over which this curvature is integrated.
-      Their combination determines a characteristic rest energy via $E \sim \lambda_n
-  \chi_c^2$, and hence an inertial mass through $E = mc^2$.
+      Their combination determines a characteristic rest energy via
+      $E \sim \lambda_n \chi_c^2$, and hence an inertial mass through $E = mc^2$.
 
       Throughout the remainder of this section, the relation
       $m_n=\sqrt{\lambda_n}\,\chi_c$ is used as a convenient coarse-grained description,
       without implying that $\chi_c$ is a universal fundamental constant or that any
       quantum scale is postulated at the microscopic level.
+
+      The identification $E = mc^2$ should be understood as an effective
+      relativistic matching valid in the regime where a spacetime-based
+      description applies, independently of the emergence of $\hbar_{\text{eff}}$.
 
   \subsubsection{Derivation of the Scaling Factor $(\chi_c / \ell_{\text{spacetime}})^2$}
     \label{sec:scaling_factor_derivation}
@@ -157,6 +166,10 @@
     \]
     up to an order-of-magnitude factor reflecting the internal normalization of
     composite solitonic configurations.
+
+    No numerical prediction of the proton-to-electron mass ratio is claimed in this
+    work; the observed value is used solely as an empirical benchmark constraining
+    the relative spectral organization of elementary and composite solitonic sectors.
 
   \subsubsection{Elementary versus Composite Spectral Structures}
 
@@ -236,7 +249,7 @@
     \begin{equation}
       \frac{m_p}{m_e} \;\approx\; \sqrt{\frac{\lambda_{\mathrm{bind}}}{\lambda_e}} .
     \end{equation}
-    Matching the observed value $m_p/m_e \simeq 1836$ therefore imposes the spectral
+    Matching the observed proton-to-electron mass ratio therefore imposes the spectral
     constraint
     \begin{equation}
       \frac{\lambda_{\mathrm{bind}}}{\lambda_e}
@@ -342,10 +355,10 @@
         \textbf{Status} \\
         \hline
         Proton-to-electron mass ratio
-        & $m_p/m_e \approx 1836$
+        & measured value
         & $\pm 0.1\%$ (model-dependent)
         & High-precision mass spectrometry
-        & Consistent with SM \\
+        & Consistency check \\
         \hline
         Binding-mode eigenvalue ratio
         & $\lambda_{\mathrm{bind}}/\lambda_e \approx 3.4 \times 10^{6}$
