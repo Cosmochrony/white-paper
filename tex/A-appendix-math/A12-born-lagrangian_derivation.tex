@@ -1,0 +1,113 @@
+\subsection{Relational Consistency of the Effective Lagrangian}
+  \label{sec:born-lagrangian_derivation}
+
+  The effective Lagrangian for the $\chi$ field is \textbf{not postulated as a fundamental principle}
+  but introduced as an \textbf{auxiliary variational representation} of the effective dynamics.
+  This appendix clarifies how its form is \emph{consistent} with the relational dynamics of $\chi$
+  introduced in Section~\ref{sec:dynamical-equation-for-the-chi-field}, without assuming any pre-existing spacetime
+  structure or differential operators at the fundamental level.
+
+  \subsubsection{Step 1: Relational Constraint and Bounded Variations}
+
+    At the fundamental level, the dynamics of $\chi$ are discrete and relational.
+    Admissible variations are constrained by the relational bound
+    introduced in Section~\ref{subsec:locality-causality-and-the-role-of-the-bound-c}:
+    \begin{equation}
+      \mathcal{C}_i[\chi] \equiv \sum_j K_{ij}(\chi_i-\chi_j)^2 \le \chi_c^2,
+      \label{eq:A12-relational-constraint}
+    \end{equation}
+    where $K_{ij}=K_{ji}$ encodes relational connectivity.
+    This constraint enforces bounded relative variations and plays the role of a structural
+    causality condition.
+
+    No spacetime derivatives or continuum notions are assumed at this stage.
+
+  \subsubsection{Step 2: Ordered Evolution and Variational Structure}
+
+    The discrete dynamics of $\chi$ admit a variational formulation with inequality constraints,
+    as detailed in Section~\ref{subsec:minimal-kinematic-constraint}.
+    Introducing an ordering parameter $\lambda$ and non-negative Lagrange multipliers
+    $\mu_i(\lambda)\ge0$, the action reads:
+    \begin{equation}
+      S[\{\chi_i\},\{\mu_i\}]
+      =
+      \int d\lambda
+      \left[
+        \sum_i \frac{m_i}{2}\left(\frac{d\chi_i}{d\lambda}\right)^2
+      -
+      U[\{\chi_i\}]
+      -
+        \sum_i \mu_i(\lambda)\big(\mathcal{C}_i[\chi]-\chi_c^2\big)
+      \right].
+    \end{equation}
+
+    Global monotonicity is fixed by the order functional
+    introduced in Section~\ref{subsec:parameter-independent-relaxation},
+    ensuring an oriented evolution without introducing a fundamental notion of time.
+
+  \subsubsection{Step 3: Projectable Regimes and Continuum Description}
+
+    In projectable regimes, the spectral properties of the connectivity matrix $K_{ij}$
+    allow a low-dimensional embedding, as discussed in Section~\ref{subsec:relational-foundation-pointer}.
+    Only in this regime can continuum descriptors be introduced \emph{a posteriori}.
+
+    Under this projection, the relational bound
+    Eq.~\eqref{eq:A12-relational-constraint} maps to a bounded-gradient condition
+    of the schematic form:
+    \begin{equation}
+      |\nabla \chi|^2 \le c^2,
+    \end{equation}
+    where $\nabla$ is an emergent operator and $c$ is an effective structural scale.
+    This inequality characterizes the effective regime but has no fundamental status.
+
+  \subsubsection{Step 4: Auxiliary Born--Infeld--like Representation}
+
+    The bounded-gradient condition admits a compact auxiliary variational representation.
+    A convenient choice is a Born--Infeld--like functional:
+    \begin{equation}
+      \mathcal{L}_{\mathrm{eff}}
+      \sim
+      - c^2 \sqrt{1-\frac{|\nabla \chi|^2}{c^2}}
+      + \partial_t \chi,
+      \label{eq:A12-effective-lagrangian}
+    \end{equation}
+    where $\partial_t$ and $\nabla$ are emergent operators defined only in the projectable
+    continuum description.
+
+    This functional is \textbf{not derived from microscopic $\chi$ dynamics} and is
+    \textbf{not unique}.
+    Its sole role is to reproduce the effective equations governing the bounded-gradient regime
+    in a variationally convenient form, consistent with Eq.~(13).
+
+  \subsubsection{Step 5: Connection to Emergent Geometry}
+
+    Once an effective Lagrangian representation is introduced, an effective metric can be defined
+    \emph{a posteriori} through the Hessian:
+    \begin{equation}
+      g_{\mu\nu}^{\mathrm{eff}}
+      \propto
+      \frac{\partial^2 \mathcal{L}_{\mathrm{eff}}}
+      {\partial(\partial_\mu\chi)\partial(\partial_\nu\chi)},
+    \end{equation}
+    up to conformal rescalings and field redefinitions.
+    This construction is consistent with the emergent geometric description discussed in
+    Section~\ref{subsec:collective-gravitational-coupling-and-operational-geometry}.
+    Geometry here is a derived descriptor of effective relational dynamics, not a primitive entity.
+
+\subsection{Summary of Key Points}
+
+  \begin{itemize}
+    \item The fundamental dynamics of $\chi$ are discrete and relational.
+    \item Bounded variations are enforced by inequality constraints on relational differences.
+    \item Continuum notions arise only in projectable regimes.
+    \item The Born--Infeld--like Lagrangian is an auxiliary effective representation.
+    \item No spacetime structure or fundamental action principle is assumed.
+  \end{itemize}
+
+\subsection{Scope and Limitations}
+
+  The construction presented here establishes consistency, not derivation.
+  Outside projectable regimes, no spacetime description or Lagrangian formulation is expected
+  to exist.
+  Different auxiliary functionals leading to the same effective equations would be equally
+  admissible within the Cosmochrony framework.
