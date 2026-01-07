@@ -111,3 +111,144 @@
       \item Alternative functionals may be required,
       \item The discrete dynamics (Eq.~\eqref{eq:A12-relational-constraint_v171}) remain fundamental.
     \end{itemize}
+
+  \subsubsection*{Continuum Limit and Emergence of the Laplace--Beltrami Operator}
+    \label{subsec:A12-continuum-limit}
+
+    The discrete relational constraint
+    \begin{equation}
+      \mathcal{C}_i[\chi] = \sum_j K_{ij}(\chi_i - \chi_j)^2
+    \end{equation}
+    defines a weighted graph Laplacian acting on the configuration space of $\chi$.
+    To establish its continuum limit, we introduce a local volume element $V_i$
+    associated with node $i$, and a spectral distance $d_{ij}$ between nodes.
+
+    We assume that the coupling coefficients admit the scaling
+    \begin{equation}
+      K_{ij} = \frac{1}{V_i}\, w\!\left(\frac{d_{ij}}{\varepsilon}\right),
+    \end{equation}
+    where $w$ is a symmetric, rapidly decaying kernel and $\varepsilon$ characterizes
+    the microscopic relational scale.
+
+    In the dense limit, where the number of nodes $N\to\infty$,
+    the typical separation $d_{ij}\to 0$, and the node distribution becomes asymptotically uniform
+    with respect to the emergent measure $\sqrt{|g|}\,d^n x$,
+    defined by the relational density of the $\chi$ substrate.
+    The discrete sum satisfies
+    \begin{equation}
+      \lim_{\varepsilon\to 0}
+      \frac{1}{V_i} \sum_j w\!\left(\frac{d_{ij}}{\varepsilon}\right)
+      (\chi_i - \chi_j)^2
+      =
+      \int_{\mathcal{M}} g^{ab}\,\partial_a \chi\,\partial_b \chi\,
+      \sqrt{|g|}\, d^n x .
+    \end{equation}
+
+    This convergence follows from standard results on graph Laplacians,
+    which guarantee that the weighted Laplacian of a dense graph converges
+    to the Laplace--Beltrami operator on an emergent Riemannian manifold
+    $\mathcal{M}$ defined by the relational density of nodes.
+
+    Crucially, no background geometry is assumed \emph{a priori}:
+    the metric $g_{ab}$ arises as the continuum encoding of the microscopic
+    connectivity structure of the $\chi$ substrate.
+    The Dirichlet energy functional is therefore not postulated,
+    but emerges uniquely as the thermodynamic limit of the discrete
+    relational constraint.
+
+  \subsubsection*{Necessity of the Born--Infeld Structure from Causal Saturation}
+    \label{subsec:A12-born-infeld-necessity}
+
+    The effective Lagrangian governing the projected dynamics of $\chi$
+    cannot be chosen arbitrarily.
+    In particular, a purely quadratic functional
+    \begin{equation}
+      \mathcal{L}_{\mathrm{quad}} = \frac{1}{2}\,\partial_\mu \chi\,\partial^\mu \chi
+    \end{equation}
+    is incompatible with the existence of a fundamental upper bound
+    on the relaxation speed of the $\chi$ substrate.
+
+    Quadratic actions permit unbounded gradients and therefore allow
+    arbitrarily large relaxation fluxes, corresponding to instantaneous
+    propagation of constraints.
+    Such behavior contradicts the existence of a maximal relaxation speed
+    $c_\chi$, required for the causal consistency of the projection
+    onto effective spacetime.
+
+    Imposing the condition that the relaxation flux saturates at $c_\chi$
+    uniquely constrains the functional form of the action.
+    The Lagrangian density must interpolate smoothly between
+    the quadratic regime at low gradients and a strictly bounded regime
+    at high gradients.
+
+    The minimal functional satisfying these requirements is of Born--Infeld type:
+    \begin{equation}
+      \mathcal{L}_{\mathrm{BI}}
+      =
+      b^2\!\left(
+             1 - \sqrt{1 - \frac{1}{b^2}\,\partial_\mu \chi\,\partial^\mu \chi}
+      \right),
+    \end{equation}
+    where the parameter $b$ is directly related to the maximal relaxation
+    speed $c_\chi$.
+
+    This structure ensures:
+    \begin{itemize}
+      \item recovery of the quadratic theory in the low-gradient limit,
+      \item a strict upper bound on $|\partial_\mu \chi|$,
+      \item causal saturation of relaxation fluxes at $c_\chi$.
+    \end{itemize}
+
+    Alternative polynomial expansions (e.g.\ $\chi^4$ or higher-order terms)
+    fail to enforce such a bound without introducing additional
+    ad hoc mass scales.
+    They therefore violate high-energy spectral invariance and permit
+    superluminal relaxation modes in the $\chi$ substrate.
+
+    Moreover, the Born--Infeld structure is intrinsically self-regularizing:
+    configurations that would produce divergent gradients in a quadratic
+    theory are smoothly regulated by the square-root saturation mechanism.
+    The energy density and relaxation flux remain finite for all admissible
+    field configurations, without the need for external cutoffs or
+    renormalization prescriptions.
+
+    This self-regularization property is absent from polynomial theories,
+    which generically develop gradient singularities and therefore require
+    additional ultraviolet completion.
+
+    The Born--Infeld structure is thus not a convenient representation,
+    but the \emph{unique} effective functional compatible with
+    bounded relaxation, causal projection, and parameter-free saturation
+    of the $\chi$ dynamics.
+
+    \paragraph{Relation Between Spectral Saturation ($b$) and the Speed of Light ($c$)}
+
+      It is essential to distinguish the saturation constant $b$ from the
+      phenomenological parameter $c$ (the speed of light).
+      Within the Cosmochrony framework, $b$ represents the upper bound on the
+      relaxation speed of the $\chi$ substrate itself—a pre-geometric causal
+      constraint governing the internal dynamics of the fundamental relational
+      structure.
+
+      The speed of light $c$, by contrast, emerges as an effective quantity:
+      it corresponds to the group velocity of projected perturbative modes
+      propagating on the emergent effective metric $g_{\mu\nu}^{\mathrm{eff}}$.
+      As such, $c$ is not a fundamental constant of the substrate, but a
+      derived parameter characterizing the kinematics of the projected
+      description.
+
+      Mathematically, $c$ depends on $b$ through a filtering determined by the
+      microscopic coupling density $K_0$, encoding how relaxation dynamics in
+      $\chi$ are transcribed into effective spacetime propagation.
+      This hierarchical structure ensures that physical information can never
+      propagate faster than the underlying relaxation processes of the
+      substrate, thereby enforcing the inequality
+    \begin{equation}
+      c \leq b .
+      \end{equation}
+
+      Any hypothetical regime in which $c$ would exceed $b$ would imply that
+      projected perturbations propagate faster than the substrate can
+      relax, leading to an immediate loss of coherence of solitonic
+      configurations and, consequently, to the destabilization of matter
+      itself.
