@@ -1,87 +1,103 @@
 \subsection{Spectral Stability and the Emergence of \(\hbar_{\mathrm{eff}}\)}
-\label{sec:hbar_eff_derivation}
+  \label{sec:hbar_eff_derivation}
 
-In Cosmochrony, the effective Planck constant \(\hbar_{\mathrm{eff}}\) is not
-introduced as a fundamental quantum postulate.
-Instead, it emerges as a scaling parameter linking spectral stability of
-\(\chi\)-field solitons to effective spacetime observables.
+  In Cosmochrony, the effective Planck constant \(\hbar_{\mathrm{eff}}\) is not
+  introduced as a fundamental quantum postulate.
+  Instead, it emerges as a scaling parameter linking spectral stability of
+  \(\chi\)-field solitons to effective spacetime observables.
 
-\subsubsection*{Fundamental scales of the \(\chi\) dynamics}
+  \subsubsection*{Fundamental scales of the \(\chi\) dynamics}
 
-  The \(\chi\) field is characterized by three independent dynamical scales:
-  \begin{itemize}
-    \item \(K_0\): maximal relaxation stiffness, with dimensions \([L^{-2}]\),
-    \item \(\chi_c\): correlation length at which solitonic configurations stabilize,
-    \item \(c\): maximal relaxation speed.
-  \end{itemize}
+    The \(\chi\) field is characterized by three independent dynamical scales:
+    \begin{itemize}
+      \item \(K_0\): maximal relaxation stiffness, with dimensions \([L^{-2}]\),
+      \item \(\chi_c\): correlation length at which solitonic configurations stabilize,
+      \item \(c\): maximal relaxation speed.
+    \end{itemize}
 
-  From these, one may define a natural unit of action associated with the relaxation
-  dynamics,
-  \begin{equation}
-    \hbar_{\chi}
-    \;\equiv\;
-    \frac{c^3}{K_0 \chi_c} ,
-  \end{equation}
-  which has the dimensions of action and is independent of the standard Planck
-  constant.
+    From these, one may define a natural unit of action associated with the relaxation
+    dynamics,
+    \begin{equation}
+      \hbar_{\chi}
+      \;\equiv\;
+      \frac{c^3}{K_0 \chi_c} ,
+    \end{equation}
+    which has the dimensions of action and is independent of the standard Planck
+    constant.
 
-\subsubsection*{Spectral origin of effective quantization}
+  \subsubsection*{Spectral origin of effective quantization}
 
-  Quantization in Cosmochrony follows from the discrete spectrum of the stability
-  operator \(\Delta_G^{(0)}\).
-  For a solitonic excitation with eigenvalue \(\lambda_n\), the characteristic
-  frequency of small oscillations scales as
-  \begin{equation}
-    \nu_n \;\sim\; \frac{c}{\chi_c}\,\sqrt{\lambda_n}\,\mathcal{N}_n^{1/2} .
-  \end{equation}
+    Quantization in Cosmochrony follows from the discrete spectrum of the stability
+    operator \(\Delta_G^{(0)}\).
+    For a solitonic excitation with eigenvalue \(\lambda_n\), the characteristic
+    frequency of small oscillations scales as
+    \begin{equation}
+      \nu_n \;\sim\; \frac{c}{\chi_c}\,\sqrt{\lambda_n}\,\mathcal{N}_n^{1/2} .
+    \end{equation}
 
-  Identifying the rest energy with the product of this frequency and an effective
-  action scale yields
-  \begin{equation}
-    E_n = \hbar_{\mathrm{eff}}\,\nu_n ,
-  \end{equation}
-  from which \(\hbar_{\mathrm{eff}}\) emerges as a geometric and spectral quantity,
-  not as an independent constant.
+    Identifying the rest energy with the product of this frequency and an effective
+    action scale yields
+    \begin{equation}
+      E_n = \hbar_{\mathrm{eff}}\,\nu_n ,
+    \end{equation}
+    from which \(\hbar_{\mathrm{eff}}\) emerges as a geometric and spectral quantity,
+    not as an independent constant.
 
-\subsubsection*{Regime-dependent scaling}
+  \subsubsection*{Regime-dependent scaling}
 
-  The effective value of \(\hbar_{\mathrm{eff}}\) depends on the scale at which the
-  system is probed.
-  In regimes where the characteristic spacetime scale
-  \(\ell_{\mathrm{spacetime}}\) is comparable to \(\chi_c\),
-  \begin{equation}
-    \hbar_{\mathrm{eff}} \approx \hbar_{\chi} ,
-  \end{equation}
-  recovering standard quantum behavior.
+    The effective value of \(\hbar_{\mathrm{eff}}\) depends on the scale at which the
+    system is probed.
+    In regimes where the characteristic spacetime scale
+    \(\ell_{\mathrm{spacetime}}\) is comparable to \(\chi_c\),
+    \begin{equation}
+      \hbar_{\mathrm{eff}} \approx \hbar_{\chi} ,
+    \end{equation}
+    recovering standard quantum behavior.
 
-  At macroscopic scales \(\ell_{\mathrm{spacetime}} \gg \chi_c\),
-  \begin{equation}
-    \hbar_{\mathrm{eff}}
-    \approx
-    \hbar_{\chi}
-    \left( \frac{\chi_c}{\ell_{\mathrm{spacetime}}} \right)^2 ,
-  \end{equation}
-  leading to a strong suppression of quantum effects and the emergence of classical
-  behavior.
+    At macroscopic scales \(\ell_{\mathrm{spacetime}} \gg \chi_c\),
+    \begin{equation}
+      \hbar_{\mathrm{eff}}
+      \approx
+      \hbar_{\chi}
+      \left( \frac{\chi_c}{\ell_{\mathrm{spacetime}}} \right)^2 ,
+    \end{equation}
+    leading to a strong suppression of quantum effects and the emergence of classical
+    behavior.
 
-\subsubsection*{Consistency with quantum phenomenology}
+  \subsubsection*{Consistency with quantum phenomenology}
 
-  In the microscopic regime, where \(\hbar_{\mathrm{eff}} \approx \hbar\), standard
-  quantization relations
-  \(E = \hbar \nu\) are recovered as effective descriptions.
-  This agreement is not postulated but follows from the scaling behavior of
-  \(\hbar_{\mathrm{eff}}\) once the projected regime matches laboratory scales.
+    In the microscopic regime, where \(\hbar_{\mathrm{eff}} \approx \hbar\), standard
+    quantization relations
+    \(E = \hbar \nu\) are recovered as effective descriptions.
+    This agreement is not postulated but follows from the scaling behavior of
+    \(\hbar_{\mathrm{eff}}\) once the projected regime matches laboratory scales.
 
-  \paragraph{Numerical constraints.}
+    \paragraph{Numerical constraints.}
 
-    Reproducing particle-scale quantum behavior requires
+      Reproducing particle-scale quantum behavior requires
     \begin{equation}
       K_0 \chi_c^2 \sim \hbar ,
-    \end{equation}
-    which constrains the admissible values of the relaxation stiffness and correlation
-    length.
-    These constraints are consistent with soliton stability and do not require fine
-    tuning.
+      \end{equation}
+      which constrains the admissible values of the relaxation stiffness and correlation
+      length.
+      These constraints are consistent with soliton stability and do not require fine tuning.
+
+\subsection{Renormalization of Substrate Parameters}
+  \label{subsec:renormalization}
+
+  To maintain consistency between the fundamental definition of $\hbar_\chi$
+      and the scale-dependent observations in Appendix D, we distinguish between:
+  \begin{itemize}
+    \item \textbf{Bare Parameters ($K_0, \chi_c$):} Universal invariants of the $\chi$
+    substrate that determine the fundamental quantum of action $\hbar_\chi$.
+    \item \textbf{Effective Parameters ($K_{\text{eff}}, \chi_{\text{eff}}$):}
+    Environment-dependent values emerging from the coarse-graining of relaxation constraints, as detailed in
+    Section~\ref{sec:appendix-technical}.
+  \end{itemize}
+
+  The universality of $\hbar$ and the spectral invariant $\alpha_{\text{spec}}$ (formerly $\alpha$
+      in Section B.9) stems from their dependence on the ratio of these bare quantities, which remains invariant under
+      projective scaling.
 
   \paragraph{Summary.}
 
