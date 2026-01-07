@@ -38,7 +38,7 @@ Cosmochrony is based on the following central statements:
 A key distinction is made between:
 
 - **$\chi$**, the fundamental relational substrate
-- **$\chi_{eff}**, an effective scalar descriptor used once a stable geometric regime exists
+- **$\chi_{eff}$**, an effective scalar descriptor used once a stable geometric regime exists
 
 The mapping $\chi → \chi_{eff}$ is generally **non-injective**, which constrains reconstruction and plays a central 
 role in the
@@ -108,13 +108,13 @@ It **does** provide:
 - avenues for falsifiable development
 
 ## Repository Contents
-
+```
 paper/
 ├── pdf/ # Compiled Cosmochrony PDF
 ├── tex/ # LaTeX sources
 ├── figures/ # Diagrams and illustrations
 └── README.md
-
+```
 ## Links
 
 - 📄 Paper PDF: https://github.com/Cosmochrony/paper
