@@ -20,8 +20,8 @@ Cosmochrony is based on the following central statements:
    through spectral methods in appropriate limits.
 
 3. **Observables are projected quantities**  
-   Physical observables belong to an effective spacetime-level descriptor $\chi_{eff}$, obtained through a generally *
-   *non-injective projection** from $\chi$. As a result, effective descriptions can underdetermine the underlying
+   Physical observables belong to an effective spacetime-level descriptor $\chi_{eff}$, obtained through a generally
+   **non-injective projection** from $\chi$. As a result, effective descriptions can underdetermine the underlying
    configuration.
 
 4. **Dynamics are derived, not postulated**  
