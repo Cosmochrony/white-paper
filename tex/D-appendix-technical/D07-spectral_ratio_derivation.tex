@@ -218,8 +218,8 @@
     \label{subsec:computational_protocol}
 
     The numerical values presented in Table~\ref{tab:D7_convergence}
-        were obtained using a high-precision Monte Carlo integration scheme implemented in Python.
-        The protocol follows these steps:
+    were obtained using a high-precision Monte Carlo integration scheme implemented in Python.
+    The protocol follows these steps:
     \begin{enumerate}
       \item \textbf{Substrate Sampling:} For a given resolution $N$, we generate $N$ 4-vectors
       $\mathbf{v} \in \mathbb{R}^4$ sampled from a standard normal distribution $\mathcal{N}(0,1)$.
@@ -238,17 +238,35 @@
       to monitor the reduction of the statistical variance $\sigma \propto 1/\sqrt{N}$.
     \end{enumerate}
     The code for this derivation is designed to be independent of the grid topology, confirming that the $8/3$
-        ratio is an intrinsic property of the $S^3$ volume measure under the $\Pi$ projection constraints.
+    ratio is an intrinsic property of the $S^3$ volume measure under the $\Pi$ projection constraints.
+
+  \subsubsection*{Equivalence between Discrete Grids and Statistical Integration}
+    \label{subsec:equivalence_grid_mc}
+
+    It is crucial to note that the convergence toward $8/3$
+    is not restricted to spherical sampling.
+    In our tests on periodic $L \times W$ relational grids, the ratio of the first two distinct energy levels
+    $\Lambda_2/\Lambda_1$ consistently approximates this value.
+    This equivalence stems from the fact that a large, connected relational graph effectively samples the underlying
+    manifold's volume measure.
+
+    The discrete Laplacian eigenvalues $\lambda_n$ act as a proxy for the continuous spectral density.
+    In the limit of large $N$, the graph's spectral response to the projection $\Pi$ becomes identical to the
+    Monte Carlo integration of the geometric moments:
+    \begin{equation}
+      \lim_{N \to \infty} \frac{\lambda_{\text{shear}}(G_N)}{\lambda_{\text{transverse}}(G_N)} =
+      \frac{\int_{S^3} 8 \cos^2 \theta \, d\Omega}{\int_{S^3} \sin^2 \theta \, d\Omega} = \frac{8}{3}.
+    \end{equation}
+    This bridge justifies using computationally efficient Monte Carlo methods to derive fundamental mass ratios that are
+    physically realized through the discrete connectivity of the $\chi$ substrate.
 
   \subsubsection*{Interpretation}
     \label{subsec:spectral_interpretation}
 
     These results demonstrate that the ratio $\lambda_2/\lambda_1 = 8/3$
-    is not imposed but
-    \emph{emerges dynamically} as a spectral invariant of the discrete Laplacian
+    is not imposed but \emph{emerges dynamically} as a spectral invariant of the discrete Laplacian
     under biased relaxation.
-    The near-invariance of the base energy confirms that the second mode
-    corresponds primarily to fiber excitations,
+    The near-invariance of the base energy confirms that the second mode corresponds primarily to fiber excitations,
     providing a concrete geometric interpretation of the spectral hierarchy.
 
     This numerical evidence supports the central claim of Cosmochrony:
@@ -257,9 +275,8 @@
 
     Taken together, these two independent procedures—the Monte-Carlo evaluation of
     kernel-weighted relational energies and the spectral response of a discrete
-    Laplacian constructed on the same relational graph—demonstrate that the ratio
-    $\lambda_2 / \lambda_1 = 8/3$ is not an artifact of any specific operator
-    diagonalization.
+    Laplacian constructed on the same relational graph—demonstrate that the ratio $\lambda_2 / \lambda_1 = 8/3$ is not
+    an artifact of any specific operator diagonalization.
     Rather, it emerges as an intrinsic invariant of the relational structure itself,
     reflecting a geometric rigidity of the underlying $\chi$-substrate.
     In this sense, the spectral interpretation does not define the invariant but
