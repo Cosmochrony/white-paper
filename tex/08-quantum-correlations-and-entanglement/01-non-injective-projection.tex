@@ -50,6 +50,62 @@
     degrees of freedom are global properties of the shared configuration, not attributes of the two
     effective particles taken separately.
 
+    \begin{figure}[t]
+      \centering
+      \begin{tikzpicture}[
+        font=\small,
+        node distance=10mm,
+        box/.style={draw, rounded corners, align=center, inner sep=6pt},
+        arrow/.style={-Latex, thick},
+        note/.style={align=left, font=\footnotesize},
+        micro/.style={draw, circle, inner sep=1.5pt},
+        brace/.style={decorate, decoration={brace, amplitude=5pt}}
+      ]
+
+        % Micro configurations (representing multiple chi states in a fiber)
+        \node[micro] (c1) at (-2.4, 1.5) {};
+        \node[micro] (c2) at (-1.2, 1.7) {};
+        \node[micro] (c3) at ( 0.0, 1.55) {};
+        \node[micro] (c4) at ( 1.2, 1.75) {};
+        \node[micro] (c5) at ( 2.4, 1.6) {};
+
+        \node[note, above=3mm of c3, align=center] (fiberlabel)
+        {\footnotesize Multiple admissible $\chi$ configurations\\\footnotesize (same fiber under $\pi$)};
+
+        % Single effective reality (entangled, non-factorisable)
+        \node[box, below=16mm of c3, minimum width=6.8cm] (chieff)
+        {$\chi_{\mathrm{eff}}$\\\footnotesize single effective reality\\\footnotesize non-factorisable (entangled regime)};
+
+        % Two incompatible operational projections (different measurement contexts / bases)
+        \node[box, below left=12mm and 14mm of chieff] (obsA)
+        {Outcomes in context $A$\\\footnotesize (correlated results)};
+        \node[box, below right=12mm and 14mm of chieff] (obsB)
+        {Outcomes in context $B$\\\footnotesize (correlated results)};
+
+        % Arrows from chi microstates to chi_eff
+        \draw[arrow] (c1) -- (chieff.north west);
+        \draw[arrow] (c2) -- (chieff.north);
+        \draw[arrow] (c3) -- (chieff.north);
+        \draw[arrow] (c4) -- (chieff.north);
+        \draw[arrow] (c5) -- (chieff.north east);
+
+        \node[note, left=2mm of chieff, anchor=east] (pi)
+        {\footnotesize infra-physical\\\footnotesize projection $\pi$\\\footnotesize (non-injective)};
+
+        % Operational projections
+        \draw[arrow] (chieff) -- node[left=2mm, note] {operational\\projection $\mathcal{O}_A$} (obsA);
+        \draw[arrow] (chieff) -- node[right=2mm, note] {operational\\projection $\mathcal{O}_B$} (obsB);
+
+        \node[note, below=6mm of chieff, align=center] (incompat)
+        {\footnotesize Different contexts define incompatible operational readings,\\
+        \footnotesize without multiplying $\chi_{\mathrm{eff}}$.};
+
+      \end{tikzpicture}
+      \caption{Entangled (non-factorisable) regime. Multiple underlying $\chi$ configurations may correspond to the same effective configuration $\chi_{\mathrm{eff}}$ (non-injective infra-physical projection). Entanglement is represented by a single $\chi_{\mathrm{eff}}$ that cannot be decomposed into independent subsystems. Different measurement contexts (e.g., different bases) define distinct operational projections $\mathcal{O}_A$ and $\mathcal{O}_B$, producing correlated outcomes without introducing multiple effective realities.}
+      \label{fig:entanglement-two-projections}
+      \end{figure}
+
+
   \paragraph{Consequence for nonlocal correlations.}
     Correlations between measurements performed at spacelike separated locations do not require any
     superluminal influence.

@@ -41,7 +41,7 @@
       descriptions, it should not be interpreted as a fundamental field propagating in
       spacetime.
 
-      Operational time intervals are defined from the accumulated ordering of projected
+  Operational time intervals are defined from the accumulated ordering of projected
       $\chi$ configurations along paths in configuration space.
       This ordering is quantified using the effective descriptor $\chi_{\mathrm{eff}}$,
       not the fundamental $\chi$ substrate:
@@ -83,6 +83,30 @@
       Throughout this section, all indexed, correlated, or integrated quantities refer
       exclusively to the effective descriptor $\chi_{\mathrm{eff}}$, not to the
       fundamental $\chi$ substrate.
+
+    \begin{figure}[t]
+      \centering
+      \begin{tikzpicture}[
+        font=\small,
+        node distance=14mm,
+        box/.style={draw, rounded corners, align=center, inner sep=6pt},
+        arrow/.style={-Latex, thick},
+        note/.style={align=left, font=\footnotesize}
+      ]
+
+    \node[box] (chi) {$\chi$\\\footnotesize infra-physical\\\footnotesize relational substrate};
+
+    \node[box, below=of chi] (chieff) {$\chi_{\mathrm{eff}}$\\\footnotesize physical effective reality\\\footnotesize (projectable regime)};
+
+    \node[box, below=of chieff] (obs) {Observables\\\footnotesize context-dependent\\\footnotesize operational quantities};
+
+    \draw[arrow] (chi) -- node[right=2mm, note] {infra-physical\\projection $\pi$\\\footnotesize (generally non-injective)} (chieff);
+    \draw[arrow] (chieff) -- node[right=2mm, note] {operational\\projection $\mathcal{O}$\\\footnotesize (contextual access)} (obs);
+
+      \end{tikzpicture}
+      \caption{Ontological pipeline in Cosmochrony. The infra-physical projection $\pi$ maps the fundamental substrate $\chi$ to an effective physical reality $\chi_{\mathrm{eff}}$ in projectable regimes (generally non-injective). Physical observables arise from a second, operational projection $\mathcal{O}$ that specifies how $\chi_{\mathrm{eff}}$ is accessed under measurement contexts, without introducing additional ontological structure.}
+      \label{fig:two-stage-projection}
+      \end{figure}
 
   \subsubsection*{Effective Metric as a Descriptive Tool}
 

@@ -36,21 +36,21 @@
       \item the phase \(\theta\) parametrizes the internal cyclic structure of the
       effective solitonic configuration.
     \end{itemize}
+    Equivalently, this is an embedding of a cyclic internal label into a complex notation;
+    no $U(1)$ symmetry or conserved phase current is assumed.
 
     This representation should be understood purely as a convenient encoding of the
     internal organization of the excitation in effective space.
 
-    Choosing
+    Choosing the effective rotation parameter $\alpha$ and defining
     \begin{equation}
-      \theta(x) = \frac{x}{2}
+      \theta(\alpha)=\frac{\alpha}{2},
     \end{equation}
-    implies that the configuration returns to an equivalent internal state only after
-    a \(4\pi\) variation of the effective rotation parameter,
+    implies the $4\pi$ periodicity
     \begin{equation}
-      \theta(x + 4\pi) = \theta(x) + 2\pi ,
+      \theta(\alpha+4\pi)=\theta(\alpha)+2\pi,
     \end{equation}
-    whereas a \(2\pi\) variation produces a configuration that is locally identical in
-    effective space but globally inequivalent in internal structure.
+    whereas a $2\pi$ cycle yields a globally inequivalent internal organization.
 
   \subsubsection*{Topological Interpretation}
 
@@ -79,7 +79,9 @@
     identity without crossing a topologically nontrivial sector.
 
     This provides a geometric basis for fermion-like transformation behavior and
-    antisymmetric exchange properties.
+    fermion-like exchange phase (a sign change in the simplest sector).
+    In full generality this requires the multi-excitation configuration space and its braid structure,
+    which is beyond the scope of this illustrative example.
     The construction does not constitute a proof of the spin--statistics theorem;
     rather, it demonstrates that fermionic characteristics can emerge consistently
     from topologically constrained scalar-field excitations.
@@ -108,13 +110,12 @@
       \end{equation}
 
     \begin{equation}
-      \begin{array}{c}
-        \text{effective rotations } \alpha: 0 \to 2\pi \quad\Rightarrow\quad
-        \text{nontrivial loop in } \mathcal{C}_{\mathrm{eff}} \ (\mathbb{Z}_2) \quad\Rightarrow\quad \psi \mapsto -\psi,
-        \\[4pt]
-        \text{effective rotations } \alpha: 0 \to 4\pi \quad\Rightarrow\quad
-        \text{trivial loop (homotopic to identity)} \quad\Rightarrow\quad \psi \mapsto \psi.
-      \end{array}
+      \begin{aligned}
+        \alpha: 0 \to 2\pi &\Rightarrow \text{nontrivial loop in } \mathcal{C}_{\mathrm{eff}} \ (\mathbb{Z}_2)
+        \Rightarrow \psi \mapsto -\psi,\\
+        \alpha: 0 \to 4\pi &\Rightarrow \text{trivial loop (homotopic to identity)}
+        \Rightarrow \psi \mapsto \psi.
+      \end{aligned}
       \label{eq:B4-schematic-doublecover}
       \end{equation}
 
