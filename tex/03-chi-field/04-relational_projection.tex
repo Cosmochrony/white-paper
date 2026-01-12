@@ -1,0 +1,42 @@
+\subsection{Relational Projection and Spectral Admissibility}
+  \label{sec:relational_projection}
+
+  At the fundamental level, Cosmochrony does not postulate a pre-existing spacetime,
+  nor local fields evolving on a geometric background.
+  Instead, all admissible physical descriptions emerge from the
+  \emph{spectral structure} of the relational substrate $\chi$.
+
+  \paragraph{Relational operator.}
+    Let $\mathcal{H}_\chi$ denote the configuration space of admissible $\chi$-field states.
+    We introduce a relational operator
+    \begin{equation}
+      L_\chi : \mathcal{H}_\chi \rightarrow \mathcal{H}_\chi,
+    \end{equation}
+    defined purely in terms of $\chi$-correlations.
+    In discrete implementations (Appendix~D), $L_\chi$ reduces to a graph Laplacian
+    associated with relational adjacency; in the continuum limit, it defines an effective
+    self-adjoint operator encoding relational connectivity.
+
+  \paragraph{Spectral decomposition.}
+    The operator $L_\chi$ admits a spectral decomposition
+    \begin{equation}
+      L_\chi \psi_n = \lambda_n \psi_n,
+    \end{equation}
+    where $\{\lambda_n\}$ are non-negative eigenvalues and $\{\psi_n\}$ the associated
+    eigenmodes.
+    No geometric interpretation is assumed at this stage.
+
+  \paragraph{Admissibility as spectral filtering.}
+    Physical (projectable) configurations are selected by a spectral filter acting on $L_\chi$.
+    We define the admissibility operator as
+    \begin{equation}
+      \Pi_{\lambda_*} \;\equiv\; f\!\left(\frac{L_\chi}{\lambda_*}\right),
+    \end{equation}
+    where $f(x)$ is a fixed, smooth cutoff function satisfying
+    $f(x)\to 0$ for $x\ll 1$ and $f(x)\to 1$ for $x\gg 1$.
+    The scale $\lambda_*$ characterizes the maximal relational wavelength
+    that can be consistently projected at the freeze-out stage.
+
+    This construction defines admissibility without reference to spacetime,
+    coordinates, or integration measures, relying solely on spectral properties
+    of the relational operator.
