@@ -4,20 +4,15 @@
   \begin{figure}[h]
     \centering
     \begin{tikzpicture}[scale=1.1]
-
 % S3
       \node[draw, circle, minimum size=2.5cm] (S3) at (0,0) {$S^3$};
-
 % S2
       \node[draw, circle, minimum size=2cm] (S2) at (5,0) {$S^2$};
-
 % S1
       \node[draw, circle, minimum size=1.2cm] (S1) at (0,2.2) {$S^1$};
-
 % Arrows
       \draw[->, thick] (S3) -- node[above] {Hopf projection} (S2);
       \draw[->, thick] (S1) -- node[right] {fiber} (S3);
-
     \end{tikzpicture}
     \caption{
       Schematic representation of the Hopf fibration $S^1 \hookrightarrow S^3 \to S^2$,
