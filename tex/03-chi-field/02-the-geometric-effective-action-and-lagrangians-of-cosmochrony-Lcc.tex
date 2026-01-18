@@ -103,6 +103,16 @@
     \draw[arrow] (chi) -- node[right=2mm, note] {infra-physical\\projection $\pi$\\\footnotesize (generally non-injective)} (chieff);
     \draw[arrow] (chieff) -- node[right=2mm, note] {operational\\projection $\mathcal{O}$\\\footnotesize (contextual access)} (obs);
 
+    % Dashed box: factorizable regime
+    \node[
+      draw,
+      dashed,
+      rounded corners,
+      fit=(chieff) (obs),
+      inner sep=10pt,
+      label={[font=\footnotesize]right:Factorizable regime}
+    ] {};
+
       \end{tikzpicture}
       \caption{
         Ontological pipeline in Cosmochrony.
