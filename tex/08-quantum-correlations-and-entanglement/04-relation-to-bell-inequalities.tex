@@ -22,17 +22,87 @@
     admissible projected descriptions are subject to global consistency constraints imposed by the projection
     $\Pi$ (Section~\ref{sec:relational_projection}).
 
-    Distinct admissible realizations may correspond to the same effective projected
-    description, while remaining globally constrained.
-    As a consequence, entangled systems correspond to equivalence classes of
-    non-separable configurations that do not admit independent ontic pre-images for their subsystems.
-    There exists no hidden variable $\lambda$ with respect to which conditional
-    factorization could be restored, even in principle.
+    More precisely, the projection $\Pi$ is generically non-injective: multiple distinct configurations of the
+    relational substrate $\chi$ may correspond to the same effective description.
+    As a result, admissible projected states are not associated with independent ontic pre-images for their subsystems.
+    Entangled systems therefore correspond to equivalence classes of non-separable configurations in $\chi$,
+    for which no decomposition into independently specifiable local states exists.
+    In this sense, the factorization hypothesis required by Bell-type inequalities is not merely violated,
+    but is \emph{ill-defined} within the space of admissible projected descriptions.
+
+  \paragraph{Projection-induced correlations and informational compression.}
+    The failure of factorization can be understood as a structural consequence of the
+    compressive character of the projection $\Pi$.
+    The projection maps a high-dimensional relational configuration space onto a reduced
+    effective description by discarding unresolved internal degrees of freedom.
+    The corresponding projection fiber $\Pi^{-1}(\chi_{\mathrm{eff}})$ may therefore
+    contain a large equivalence class of underlying configurations.
+
+    When this compression is neither negligible nor overwhelming, residual global
+    constraints persist across projected subsystems, giving rise to non-factorizable correlations.
+    Bell-type violations thus arise naturally in an intermediate regime where the
+    effective description is sufficiently coarse-grained to permit subsystem
+    separation, yet not so coarse as to erase all global relational structure.
+    In contrast, in the limit of extreme coarse-graining, projected descriptions become
+    effectively factorized, recovering classical statistical behavior.
+
+    In this view, quantum entanglement corresponds to a critical regime of projection:
+    neither a direct reflection of the underlying relational configuration, nor a fully
+    classical description obtained by over-compression.
+
+    \begin{figure}[t]
+      \centering
+      \begin{tikzpicture}[
+        scale=1.05,
+        axis/.style={->, thick},
+        curve/.style={thick, smooth, blue},
+        dashedline/.style={dashed, gray},
+        label/.style={font=\small}
+      ]
+
+% Axes
+        \draw[axis] (0,0) -- (10,0) node[right,label] {Degree of projection compression};
+        \draw[axis] (0,0) -- (0,5) node[above,label] {Non-factorizable correlations};
+
+% Bell bounds
+        \draw[dashedline] (0,1.2) -- (10,1.2)
+        node[right,label] {$S=2$ (classical bound)};
+        \draw[dashedline] (0,4) -- (10,4)
+        node[right,label] {$S=2\sqrt{2}$ (Tsirelson bound)};
+
+% Bell-violation curve
+        \draw[curve]
+        plot[domain=0.5:9.5,samples=200]
+        (\x,{4*exp(-0.18*(\x-5)^2)});
+
+% Regime labels
+        \node[label, align=center] at (2.2,4.4)
+          {Under-compression\\(no stable separation)};
+        \node[label, align=center] at (5,4.7)
+          {Critical projection\\(quantum regime)};
+        \node[label, align=center] at (8,4.4)
+          {Over-compression\\(effective factorization)};
+
+% Vertical guides
+        \draw[dashedline] (2.2,0) -- (2.2,4.2);
+        \draw[dashedline] (5,0) -- (5,4.6);
+        \draw[dashedline] (8,0) -- (8,4.2);
+
+      \end{tikzpicture}
+      \caption{Schematic representation of Bell inequality violations as a function of the
+      compression induced by the projection $\Pi$.
+      Non-factorizable correlations emerge only in an intermediate regime, where the effective
+      description is sufficiently coarse-grained to permit subsystem separation, yet retains
+      enough global relational structure to prevent factorization.
+      In the limit of over-compression, projected descriptions become effectively classical and
+      Bell violations disappear.}
+      \label{fig:bell-compression-regime}
+    \end{figure}
 
   \paragraph{No hidden variables and no superluminal influence.}
     The absence of ontologically independent subsystems does not introduce hidden variables, local or nonlocal.
-    The underlying degrees of freedom are neither accessible nor conditionable,
-    and they cannot be used to screen correlations or define outcome-determining parameters.
+    The underlying degrees of freedom are neither accessible nor conditionable, and cannot
+    be used to screen correlations or define outcome-determining parameters.
     Accordingly, the violation of Bell inequalities in Cosmochrony does not rely on
     superluminal signalling, retrocausality, or a breakdown of relativistic causal structure.
 
@@ -41,12 +111,13 @@
     from the holistic structure of the underlying configuration space.
 
   \paragraph{Ontological rather than dynamical nonlocality.}
-    In this sense, quantum nonlocality in Cosmochrony is ontological rather than dynamical.
-    The failure of factorization arises from the structure of admissible projected
-    descriptions themselves, not from any nonlocal interaction or exchange of information.
-    Bell-type violations are therefore understood as a manifestation of the
-    non-separable nature of admissible descriptions, rather than as evidence for superluminal influences.
+    Quantum nonlocality in Cosmochrony is therefore ontological rather than dynamical.
+    The failure of Bell-type factorizability arises from the structure of admissible
+    projected descriptions themselves, not from any nonlocal interaction or exchange of information.
+    Bell inequality violations are understood as a manifestation of non-separability
+    under projection, rather than as evidence for superluminal causal influences.
 
     This interpretation preserves the full empirical content of quantum mechanics,
     respects relativistic causality at the operational level, and provides a structural
-    explanation for the inevitability of entanglement correlations within a non-injective relational framework.
+    explanation for the ubiquity and robustness of entanglement correlations within a
+    non-injective relational framework.
