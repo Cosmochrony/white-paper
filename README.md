@@ -135,7 +135,7 @@ paper/
 
 ## Links
 
-- 📄 Paper PDF: https://github.com/Cosmochrony/paper
+- 📄 Paper PDF: https://github.com/Cosmochrony/white-paper
 - 🌐 Website: https://cosmochrony.org
 - 💻 GitHub organization: https://github.com/Cosmochrony
 
