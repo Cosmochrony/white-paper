@@ -1,4 +1,4 @@
-This repository contains the source of the [Cosmochrony paper](pdf/Cosmochrony.pdf).
+This repository contains the source of the [Cosmochrony whitepaper](pdf/Cosmochrony.pdf).
 
 Cosmochrony is a **pre-geometric theoretical framework** in which time ordering,
 spacetime geometry, dynamics, and matter emerge from the irreversible relaxation
