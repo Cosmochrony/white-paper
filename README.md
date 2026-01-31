@@ -5,76 +5,99 @@ spacetime geometry, dynamics, and matter emerge from the irreversible relaxation
 of a single **relational substrate**, denoted $\chi$.
 
 The framework does not assume a pre-existing spacetime manifold, metric,
-or fundamental quantization.
+fundamental fields, or quantization postulates.
 Instead, familiar physical structures arise as **regime-dependent effective
-descriptions**, valid only in *projectable regimes*, obtained through projection
-and coarse-graining of the underlying $\chi$ dynamics.
+descriptions**, valid only in *projectable regimes*, obtained through a generally
+non-injective projection of the underlying $\chi$ dynamics.
 
 ## Core Thesis
 
-Cosmochrony is based on the following central statements:
+Cosmochrony is built around the following central statements:
 
 1. **Time is not fundamental**  
-   Time corresponds to the intrinsically directed (irreversible) relaxation or
-   ordering of $\chi$, rather than to an external parameter or coordinate.
+   Physical time corresponds to the intrinsically directed (irreversible)
+   ordering of $\chi$ relaxation, rather than to an external parameter
+   or coordinate.
+
 1. **Spacetime is emergent**  
-   Spacetime geometry arises as an effective, continuum encoding of microscopic
-   relational connectivity.
-   In projectable regimes, it can be reconstructed from the spectral properties
-   of the underlying relational structure.
+   Spacetime geometry arises as an effective, continuum encoding of
+   relational connectivity within $\chi$.
+   In projectable regimes, it can be reconstructed from spectral
+   and correlation properties of the underlying relational structure.
+
 1. **Observables are projected quantities**  
-   Physical observables belong to an effective spacetime-level descriptor
-   $\chi_{\mathrm{eff}}$, obtained through a generally non-injective projection
-   from $\chi$.
-   As a result, effective descriptions generically underdetermine the underlying
-   configuration, limiting reconstruction beyond operational observables.
+   Physical observables belong to an effective descriptor
+   $\chi_{\mathrm{eff}}$, obtained through a generally **non-injective**
+   projection from $\chi$.
+   As a result, effective descriptions underdetermine the underlying
+   configuration, imposing intrinsic limits on reconstruction and
+   factorization.
+
 1. **Dynamics are derived, not postulated**  
-   The effective dynamical law governing $\chi$ is obtained ab initio from
-   structural constraints on relaxation and causal saturation of fluxes.
-   The resulting Born–Infeld–like action is not a fundamental postulate but the
-   unique effective encoding compatible with these constraints within
-   projectable spacetime regimes.
+   The effective dynamical law governing admissible regimes is obtained
+   *ab initio* from structural constraints on relaxation and causal
+   saturation of fluxes.
+   The resulting Born–Infeld–like action is not a fundamental postulate,
+   but the unique effective encoding compatible with bounded relaxation
+   and projectability.
 
 ## The $\chi$ Substrate
 
-- $\chi$ is **not a field defined on spacetime**
-- it is a **pre-geometric, relational substrate**
-- it does not carry values in space or time
-- spacetime notions arise only after projection
+The substrate $\chi$ is:
 
-A key distinction is made between:
+- **not a field defined on spacetime**
+- **pre-geometric and relational**
+- devoid of intrinsic spatial or temporal localization
+- defined prior to any metric, coordinate, or causal structure
 
-- **$\chi$**, the fundamental relational substrate
-- **$\chi_{eff}$**, an effective scalar descriptor used once a stable geometric regime exists
+Spacetime notions arise only after projection.
 
-The mapping $\chi \rightarrow \chi_{eff}$ is mediated by a **projection fiber $\Pi$**, and is generally 
-**non-injective**. This non-injectivity constrains reconstruction, underlies effective indeterminacy,
-and plays a central role in the emergence of quantum-like behavior.
+A fundamental distinction is made between:
 
-## Causality and Bounds
+- **$\chi$**, the infra-physical relational substrate
+- **$\chi_{\mathrm{eff}}$**, an effective scalar descriptor used only
+  once a stable geometric regime exists
+
+The mapping $\chi \rightarrow \chi_{\mathrm{eff}}$ is mediated by a
+**projection fiber $\Pi$** and is generically **non-injective**.
+This non-injectivity is structural, not epistemic: it constrains
+reconstruction, underlies effective indeterminacy, and plays a central
+role in the emergence of quantum-like behavior.
+
+## Causality, Saturation, and Bounds
 
 Cosmochrony distinguishes between:
 
-- **$c_{\chi}$**: a structural bound governing pre-temporal relaxation fluxes
-- **$c$**: the emergent causal constraint within effective spacetime descriptions
+- **$c_{\chi}$**: an invariant structural bound governing pre-temporal
+  relaxation fluxes in the $\chi$ substrate
+- **$c$**: the emergent causal constraint appearing within effective
+  spacetime descriptions
 
-Relativistic causality is recovered as an effective limit of more primitive
-pre-geometric saturation constraints, avoiding circularity between geometry
-and dynamics.
+Relativistic causality is recovered as a projective limit of more
+primitive saturation constraints, avoiding circular dependence between
+geometry and dynamics.
 
-## Matter, Charge, Gravitation, and Spectra
+Planck’s constant $\hbar$ arises analogously as a bound on the minimal
+resolvable granularity of reprojection, placing relativistic and quantum
+limits on a common structural footing.
+
+## Matter, Charge, Gravitation, and Spectral Structure
 
 Within Cosmochrony:
 
-- **Localized, stable configurations** of $\chi$ correspond to matter-like excitations
-- Stability is characterized by **spectral and topological invariants**, not by
-  fundamental couplings
-- Mass arises from resistance to relaxation
-- Electric charge is interpreted as a **chiral–torsional invariant** of bounded relaxation fluxes
-- Gravitation emerges from sustained constraints on $\chi$ relaxation, recovered as an effective geometric description
+- **Localized, stable configurations** of $\chi$ correspond to
+  matter-like excitations
+- Stability is characterized by **spectral and topological invariants**
+  rather than fundamental couplings
+- Mass emerges as resistance to relaxation ordering
+- Electric charge is interpreted as a **chiral–torsional invariant**
+  of bounded relaxation fluxes
+- Gravitation arises from sustained inhibition of relaxation and is
+  recovered as an effective geometric description
 
-Spacetime curvature, time dilation, and gravitational dynamics arise as
-thermodynamic or continuum limits of relational structure.
+Spacetime curvature, time dilation, and gravitational dynamics emerge as
+continuum and thermodynamic limits of relational structure, rather than
+as fundamental interactions.
 
 ## Quantum-like Phenomena
 
@@ -83,46 +106,54 @@ Quantum behavior is not postulated as fundamental.
 Instead:
 
 - quantization arises only at the effective level
-- quantum correlations emerge from shared $\chi$ configurations and projection
-  structure
-- nonlocal correlations do not require superluminal influence
+- quantum correlations emerge from shared underlying $\chi$
+  configurations and non-factorizable projection
+- violations of Bell inequalities follow from non-injective projection,
+  without invoking superluminal influence or dynamical nonlocality
 - the wavefunction is an effective descriptor, not an ontological object
+
+Classical behavior is recovered when the effective projection becomes
+approximately injective.
 
 ## Cosmology and Strong-Gravity Regimes
 
-CCosmological and strong-gravity phenomena follow from the same underlying
+Cosmological and strong-gravity phenomena follow from the same bounded
 relaxation dynamics:
 
-- large-scale expansion reflects global relaxation structure
-- apparent acceleration arises cumulatively and is regime-dependent
-- horizon-like thresholds correspond to **deprojection regimes** where effective
-  spacetime descriptions become fragile
-- black-hole-like behavior is reinterpreted in terms of relaxation saturation and
-  reprojection dynamics
+- large-scale expansion reflects global relaxation ordering
+- apparent acceleration is cumulative and regime-dependent
+- the Hubble tension arises from projective and relaxation effects,
+  without dark energy
+- flat galactic rotation curves follow from saturation of relaxation
+  dynamics, without dark matter particles
+- horizon-like thresholds correspond to **deprojection regimes** where
+  effective spacetime descriptions lose validity
+- black-hole-like behavior is reinterpreted in terms of relaxation
+  saturation and reprojection dynamics
 
-These regimes provide concrete avenues for phenomenological exploration and
-potential empirical constraints.
+These regimes provide concrete avenues for phenomenological tests and
+falsifiable predictions.
 
 ## Status of the Framework
 
 Cosmochrony is:
 
 - **foundational and pre-geometric**
-- **conceptually closed at the dynamical level**
-- **incomplete at the phenomenological and experimental level**
+- **dynamically closed at the structural level**
+- **phenomenologically incomplete**
 
 It does **not** claim:
 
 - experimental validation
-- full derivation of all Standard Model phenomenology
+- full derivation of the Standard Model
 - final unification
 
 It **does** provide:
 
 - a uniquely derived dynamical core
-- a coherent ontological structure
-- explicit effective limits
-- well-defined directions for falsifiable development
+- a coherent and explicit ontology
+- well-defined effective limits
+- quantitative and falsifiable directions for further development
 
 ## Repository Contents
 ```
@@ -132,6 +163,7 @@ paper/
 ├── figures/ # Diagrams and illustrations
 └── README.md
 ```
+
 
 ## Links
 
@@ -144,18 +176,20 @@ paper/
 If you reference this work, please cite:
 
 > J. Beau, *Cosmochrony: A Pre-geometric Framework for Emergent Spacetime,  
-> Dynamics, and Matter*, Zenodo, 2025.
+> Dynamics, and Matter*, Zenodo, 2026.
 
 ## Acknowledgements
 
-Portions of the conceptual development, formal clarification, and editorial refinement of Cosmochrony benefited from
-iterative interactions with large language models. These tools were used as analytical assistants for exploring
-alternative formulations, testing internal consistency, and improving clarity of presentation. All theoretical claims,
-structural choices, and final formulations remain the sole responsibility of the author.
+Portions of the conceptual development, formal clarification, and
+editorial refinement of Cosmochrony benefited from iterative interactions
+with large language models used as analytical assistants.
+All theoretical claims, structural choices, and final formulations remain
+the sole responsibility of the author.
 
 ## Contributions
 
 This repository is intended as a research reference.
 
-Critical feedback, independent analyses, and theoretical scrutiny are welcome. Please open an issue to discuss
-conceptual points or potential extensions.
+Critical feedback, independent analyses, and theoretical scrutiny are
+welcome. Please open an issue to discuss conceptual points, technical
+details, or potential extensions.
