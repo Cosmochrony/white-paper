@@ -1,0 +1,86 @@
+% ----------------------------------------------------------------------------
+% B.8 --- Perspectives: Towards a Derivation of mp/me
+% From former B08, condensed
+% ----------------------------------------------------------------------------
+\subsection{Perspectives: Towards a Derivation of the
+Proton-to-Electron Mass Ratio}
+\label{subsec:perspectives_mass_spectrum}
+
+Normal modes of the stability operator
+$\mathcal{L}_{\mathrm{sol}}\psi_n = \lambda_n\psi_n$ encode
+intrinsic stiffness scales.
+The effective mass scaling is
+$m_n \propto \sqrt{\lambda_n}\,\chi_c$, and energy levels satisfy
+$E_n \sim \lambda_n\chi_c^2$.
+
+The proton is modeled as a composite three-soliton bound state
+($Q = 3$, motivated by topological phase
+locking~\cite{BattyeSutcliffe2022, MantonSutcliffe2004}), with
+\[
+  \frac{m_p}{m_e}
+  \approx
+  \sqrt{\frac{\lambda_{\mathrm{bind}}}{
+    \lambda_e}},
+  \quad
+  \frac{\lambda_{\mathrm{bind}}}{\lambda_e}
+  \sim 3.4 \times 10^6.
+\]
+The spectral packing fraction
+$\alpha \equiv \lambda_e/\lambda_{\mathrm{bind}}
+  \sim 3 \times 10^{-7}$
+measures spectral compression from topological binding.
+Heuristically,
+$\lambda_{\mathrm{bind}}/\lambda_e
+  \sim \chi_c^2$ gives $\chi_c \approx 8.3$.
+
+\subsubsection*{Working Ansatz for $V(\chi)$}
+\label{subsec:explicit_Vchi_ansatz}
+
+A minimal two-scale effective potential:
+\begin{equation}
+  V(\chi)
+  = \frac{\lambda}{4}
+      (\chi^2 - \eta^2)^2
+    + \varepsilon\,\eta^4
+      \left[
+        1 - \cos\!\left(
+          \frac{\chi}{\eta}
+        \right)
+      \right],
+  \label{eq:Vchi_multiwell_periodic}
+\end{equation}
+with $\varepsilon \ll 1$.
+
+\subsubsection*{Linking $(\lambda,\eta)$ to Observables}
+\label{subsec:lambda_eta_to_observables}
+
+Dimensionless control combinations:
+\begin{equation}
+  g \equiv \lambda\,\chi_c^2\,\eta^2,
+  \quad
+  u \equiv \varepsilon.
+  \label{eq:dimensionless_controls}
+\end{equation}
+
+\paragraph{Matching strategy.}
+\label{matching-strategy-using-the-proton-to-electron-ratio}
+The feasibility condition:
+\begin{equation}
+  \exists\,(g,u)
+  \text{ s.t.}\quad
+  \frac{\lambda_{\mathrm{bind}}(Q{=}3;\,g,u)}
+       {\lambda_e(g,u)}
+  \approx 3.4 \times 10^6,
+  \label{eq:feasibility_condition_lambda_eta}
+\end{equation}
+while remaining stable under small $(g,u)$ variations.
+
+\subsubsection*{Numerical Program}
+\label{subsec:numerical_program_mass_ratio}
+
+The pipeline tests whether bounded relaxation plus
+$V(\chi)$ admits stable sectors with
+$\lambda_{\mathrm{bind}}/\lambda_e \sim 10^6$ without fine-tuning:
+dynamics and formation, soliton harvesting by topological
+classification, stability operator extraction, spectral ratio test,
+and fine-structure diagnostics.

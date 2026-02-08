@@ -1,0 +1,61 @@
+% ----------------------------------------------------------------------------
+% B.16 --- Structural Interpretation of CPT Symmetry
+% From former B16, condensed
+% ----------------------------------------------------------------------------
+\subsection{Structural Interpretation of CPT Symmetry}
+\label{subsec:structural-interpretation-of-cpt-symmetry}
+
+The combined transformation
+$(Q,\tau,\mathbf{x}) \to (-Q,-\tau,-\mathbf{x})$
+leaves admissibility conditions invariant.
+Under factorization, conservation of signed invariants enforces
+particle--antiparticle pairs.
+CPT symmetry emerges as an invariance of the admissible projection
+structure.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    box/.style={draw, rounded corners,
+      align=center, inner sep=6pt},
+    arr/.style={->, thick},
+    lab/.style={font=\small, align=center}]
+    \node[box] (chi)
+      {$\chi$\\[-2pt]
+       \footnotesize relational config.};
+    \node[box, below=1.6cm of chi] (proj)
+      {$\Pi(\chi)$\\[-2pt]
+       \footnotesize non-injective};
+    \node[box, below left=2.2cm and 2.4cm of proj]
+      (ent) {Entanglement\\[-2pt]
+        \footnotesize non-factorizable};
+    \node[box, below=2.2cm of proj]
+      (meas) {Measurement\\[-2pt]
+        \footnotesize selection};
+    \node[box, below right=2.2cm and 2.4cm of proj]
+      (dec) {Decay\\[-2pt]
+        \footnotesize factorization};
+    \node[box, below=1.8cm of dec, xshift=-2cm]
+      (p) {Particle\\[-2pt]
+        \footnotesize $+Q$};
+    \node[box, below=1.8cm of dec, xshift=0cm]
+      (ap) {Antiparticle\\[-2pt]
+        \footnotesize $-Q$};
+    \node[box, below=1.8cm of dec, xshift=2cm]
+      (rad) {Light modes};
+    \draw[arr] (chi)
+      -- node[lab, right] {projection} (proj);
+    \draw[arr] (proj) -- (ent);
+    \draw[arr] (proj) -- (meas);
+    \draw[arr] (proj) -- (dec);
+    \draw[arr] (dec) -- (p);
+    \draw[arr] (dec) -- (ap);
+    \draw[arr] (dec) -- (rad);
+  \end{tikzpicture}
+  \caption{Unified structural interpretation:
+    entanglement, measurement, and decay all originate
+    from $\Pi$.
+    Antiparticles emerge when signed invariants are
+    redistributed.}
+  \label{fig:projection-entanglement-decay}
+\end{figure}

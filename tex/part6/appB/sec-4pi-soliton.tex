@@ -1,0 +1,56 @@
+% ----------------------------------------------------------------------------
+% B.4 --- 4pi-Periodic Soliton and Spinorial Behavior
+% From former B04, condensed
+% ----------------------------------------------------------------------------
+\subsection{Example:
+\texorpdfstring{$4\pi$}{4π}-Periodic Soliton and Spinorial
+Behavior}
+\label{subsec:4pi_soliton}
+
+An illustrative construction supporting the topological interpretation
+of spin
+(Section~\ref{subsec:spin-statistics}).
+
+In the projectable regime, certain localized excitations admit an
+effective internal phase $\theta$.
+A complex-valued proxy (the underlying field remains real):
+$\chi_{\mathrm{eff}}(x)
+  = \eta\tanh(\kappa x)\,e^{i\theta(x)}$.
+Choosing $\theta(\alpha) = \alpha/2$:
+\begin{equation}
+  \psi(\alpha)
+  \equiv \psi_0\,e^{i\alpha/2}.
+  \label{eq:B4-half-angle-map}
+\end{equation}
+A $2\pi$ cycle inverts the sign:
+\begin{equation}
+  \psi(\alpha + 2\pi) = -\psi(\alpha).
+  \label{eq:B4-2pi-sign}
+\end{equation}
+A $4\pi$ cycle restores identity:
+\begin{equation}
+  \psi(\alpha + 4\pi) = \psi(\alpha).
+  \label{eq:B4-4pi-identity}
+\end{equation}
+Schematically:
+\begin{equation}
+  \begin{aligned}
+    \alpha: 0 \to 2\pi
+    &\Rightarrow \text{nontrivial loop }
+      (\mathbb{Z}_2)
+    \Rightarrow \psi \mapsto -\psi, \\
+    \alpha: 0 \to 4\pi
+    &\Rightarrow \text{trivial loop}
+    \Rightarrow \psi \mapsto \psi.
+  \end{aligned}
+  \label{eq:B4-schematic-doublecover}
+\end{equation}
+
+This $4\pi$-periodicity mirrors the double-cover
+$\mathrm{SU}(2) \to \mathrm{SO}(3)$ and provides a geometric basis
+for fermion-like transformation behavior without fundamental spinor
+fields.
+The sign change is an effective encoding of the $\mathbb{Z}_2$
+obstruction
+(Section~\ref{subsec:status-formulation}:
+$\pi_1(\mathcal{C}_{\mathrm{eff}}) = \mathbb{Z}_2$).
