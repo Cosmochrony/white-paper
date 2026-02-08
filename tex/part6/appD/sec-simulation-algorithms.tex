@@ -1,0 +1,104 @@
+% ----------------------------------------------------------------------------
+% D.4 --- Simulation Algorithms for chi-Field Dynamics
+% From former D04, condensed
+% ----------------------------------------------------------------------------
+\subsection{Simulation Algorithms for
+\texorpdfstring{$\chi$}{χ}-Field Dynamics}
+\label{subsec:simulation-algorithms}
+
+Numerical simulations implement finite-dimensional approximations of
+the continuous relaxation dynamics.
+Any apparent graph-like structure reflects the choice of numerical
+basis, not a physical discretization.
+
+\paragraph{Relaxation update rule.}
+\begin{equation}
+  \frac{d\chi_i}{d\lambda}
+  = c \sqrt{
+      1 - \frac{1}{c^2}
+        \sum_j K_{ij}(\chi_i - \chi_j)^2
+    }.
+  \label{eq:discrete-dynamics}
+\end{equation}
+This enforces strict monotonicity, a universal upper bound on local
+relaxation rate, and suppression of gradient-driven instabilities.
+
+\paragraph{Reference pseudocode.}
+\begin{algorithm}[t]
+\caption{Bounded $\chi$-relaxation with diagnostics}
+\label{alg:bounded-chi-relaxation}
+\begin{algorithmic}[1]
+  \Require $\chi^{(0)}_i$, $K_{ij}$, bound $c$,
+    tolerances $\varepsilon_\chi,\varepsilon_S$
+  \Ensure Relaxed $\chi^\star$ and diagnostics
+  \State $n \gets 0$, $\chi \gets \chi^{(0)}$
+  \While{$n < N_{\max}$}
+    \For{each $i$}
+      \State $S_i \gets
+        \frac{1}{c^2}\sum_j K_{ij}(\chi_i-\chi_j)^2$
+      \State $S_i \gets \min(S_i,1)$
+      \State $v_i \gets c\sqrt{1 - S_i}$
+    \EndFor
+    \State Choose $\Delta\lambda$ adaptively
+    \State $\chi_i \gets \chi_i + \Delta\lambda\,v_i$
+    \If{$\max_i |\Delta\chi_i| < \varepsilon_\chi$}
+      \textbf{break}
+    \EndIf
+    \State $n \gets n+1$
+  \EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{Chiral--torsional charge invariant.}
+For closed loops $\gamma$ in the numerical representation:
+\begin{equation}
+  Q_\gamma
+  \equiv
+  \frac{1}{2\pi}
+    \sum_{(i,j)\in\gamma} \Delta\theta_{ij}.
+  \label{eq:charge_winding_pseudocode}
+\end{equation}
+
+\paragraph{Localized configurations.}
+Simulations robustly exhibit spontaneous emergence of stable localized
+configurations that resist global relaxation, interpreted as numerical
+counterparts of solitonic excitations
+(Section~\ref{sec:particles-as-localized-excitations-of-the-chi-field}).
+
+\paragraph{Effective entanglement observable.}
+\begin{equation}
+  E_{\mathrm{eff}}(\mathcal{C})
+  \equiv
+  \Delta_{\Pi}(\mathcal{C})\,
+  \bigl(1 - \mathcal{C}^{\nu}\bigr),
+  \quad \nu > 0,
+  \label{eq:effective-entanglement}
+\end{equation}
+where $\Delta_{\Pi}$ quantifies spectral non-injectivity and
+$(1 - \mathcal{C}^\nu)$ encodes the loss of projective mobility near
+Born--Infeld saturation.
+Entanglement emerges only during discrete spectral reorganization
+events---a structural prediction of Cosmochrony.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.95\linewidth]
+    {part6/appD/D04_entanglement_intermittence_b}
+  \caption{Effective entanglement and chiral bias vs.\
+    compression $\mathcal{C}$.
+    Top: spectral non-injectivity $\Delta_\Pi$.
+    Middle: $E_{\mathrm{eff}}$ showing intermittent activation.
+    Bottom: chiral (CP) bias, monotonic and robust.}
+  \label{fig:D4-entanglement-intermittence}
+\end{figure}
+
+\paragraph{Projectability threshold $\Theta_p$.}
+Monitored through spectral gap stability
+($(\lambda_2 - \lambda_1)/\mathrm{Tr}(L) > \epsilon_p$) and
+topological coherence
+($\mathcal{E}_{\mathrm{proj}} < \mathcal{E}_{\max}$).
+Crossing $\Theta_p$ marks the transition from ontological poverty to
+complex solitonic structures.
+The natural order of magnitude of $\epsilon_p$ is set by the emergence
+scale of $\hbar$; in continuum terms the Planck length is understood as
+the effective manifestation of a nonzero projection threshold.

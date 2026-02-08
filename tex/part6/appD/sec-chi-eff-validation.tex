@@ -1,0 +1,124 @@
+% ----------------------------------------------------------------------------
+% D.5 --- Numerical Validation of chi -> chi_eff
+% From former D05, condensed
+% ----------------------------------------------------------------------------
+\subsection{Numerical Validation of the
+\texorpdfstring{$\chi \to \chi_{\mathrm{eff}}$}%
+{χ→χeff} Transition}
+\label{subsec:numerical-validation-of-the-chi-rightarrow-chi_eff-transition}
+
+\paragraph{Discrete model.}
+On a cubic lattice with periodic boundaries, the local slope and
+bounded relaxation rate are
+\begin{equation}
+  S_i(\chi)
+  \equiv
+  \frac{1}{c^2}
+    \sum_{j\in\mathcal{N}(i)}
+      K_{ij}(\chi_i - \chi_j)^2,
+  \quad
+  K_{ij}
+  = \frac{K_0}
+         {1 + (\chi_i - \chi_j)^2/\chi_c^2},
+  \label{eq:D4_Si_Kij}
+\end{equation}
+\begin{equation}
+  R_i \equiv c\,\sqrt{\max(0,\,1-S_i)}.
+  \label{eq:D4_Ri_def}
+\end{equation}
+The explicit update is
+\begin{equation}
+  \chi_i(t+\Delta t)
+  = \chi_i(t)
+    + \Delta t\bigl(
+        R_i(t) + \kappa\,(\Delta_G\chi)_i(t)
+      \bigr).
+  \label{eq:D4_update}
+\end{equation}
+
+\paragraph{Coarse-graining.}
+\begin{equation}
+  \chi_{\mathrm{eff}}(t)
+  \equiv \mathrm{CG}\bigl(\chi(t)\bigr).
+  \label{eq:D4_chi_eff_def}
+\end{equation}
+
+\paragraph{Validation target.}
+Because coarse-graining does not commute with the nonlinear dynamics,
+the target is the coarse-grained micro-dynamics:
+\begin{equation}
+  \partial_t \chi_{\mathrm{eff}}
+  \approx
+  \mathrm{CG}\!\Big(
+    c\sqrt{\max(0,1-S(\chi))}
+    + \kappa\,\Delta_G\chi
+  \Big).
+  \label{eq:D4_target_cg_dynamics}
+\end{equation}
+
+\paragraph{Residual metric.}
+\begin{equation}
+  \varepsilon(t)
+  \equiv
+  \frac{\bigl\|
+    \partial_t\chi_{\mathrm{eff}}
+    - \mathcal{R}_{\mathrm{eff}}
+  \bigr\|}
+  {\bigl\|\partial_t\chi_{\mathrm{eff}}\bigr\|}.
+  \label{eq:D4_epsilon_def}
+\end{equation}
+
+\paragraph{Results.}
+For $N=32$, $\ell_0=4$, $\Delta t = 0.03$: smooth run
+$\varepsilon_{L^2} \approx 9.3 \times 10^{-3}$; rough run
+$\varepsilon_{L^2} \approx 1.45 \times 10^{-2}$.
+The same order of magnitude persists at $N=48$, confirming the
+small-residual regime is not a resolution artifact.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\linewidth]
+    {part6/appD/D04_epsilon_vs_time_compare}
+  \caption{Residual $\varepsilon(t)$ for smooth and rough runs,
+    converging to $\sim 10^{-2}$.}
+  \label{fig:D4-epsilon-time}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\linewidth]
+    {part6/appD/%
+D04_saturation_fraction_compare}
+  \caption{Saturation fraction vs.\ time.
+    The nonprojectable run rapidly reaches
+    $f_{\mathrm{sat}} \simeq 1$.}
+  \label{fig:D4-satfrac-compare}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.72\linewidth]
+    {part6/appD/D04_residual_hist_smooth}
+  \caption{Pointwise residual distribution (smooth run),
+    centered around zero.}
+  \label{fig:D4-residual-hist}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.47\linewidth]
+    {part6/appD/D04_chi_eff_slice_smooth}
+  \hfill
+  \includegraphics[width=0.47\linewidth]
+    {part6/appD/D04_residual_slice_smooth}
+  \caption{Spatial slices: $\chi_{\mathrm{eff}}$ (left,
+    smooth) and residual (right, no coherent
+    long-wavelength structure).}
+  \label{fig:D4-spatial-slices}
+\end{figure}
+
+\paragraph{Limitations.}
+Numerical stability ($\varepsilon \ll 1$) does not imply
+projectability.
+Fully saturated configurations ($S_i > 1$ everywhere) yield trivially
+small residuals without faithful geometric interpretation.

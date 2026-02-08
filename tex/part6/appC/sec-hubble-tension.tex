@@ -1,0 +1,105 @@
+% ----------------------------------------------------------------------------
+% C.3 --- Evolution of the Hubble Parameter and the Hubble Tension
+% From former C03, condensed
+% ----------------------------------------------------------------------------
+\subsection{Evolution of the Hubble Parameter and the Hubble Tension}
+\label{app:hubble_tension}
+
+At the homogeneous background level, $a(t) \propto \chi(t)$ and
+$H(t) = \dot{\chi}/\chi$.
+In the idealized limit $\dot{\chi} = c$, one obtains
+$H(t) = c/\chi(t)$.
+
+\paragraph{Illustrative $H(z)$ profile.}
+Using $1+z = \chi(t_0)/\chi(t)$, the simplest background closure gives
+\begin{equation}
+  H_{\chi}(z)
+  = H_0\,(1+z)\,\sqrt{1-\Omega_{\chi}}
+  \quad(\text{illustrative}),
+  \label{eq:Hz_cosmochrony_illustrative}
+\end{equation}
+to be compared with
+\begin{equation}
+  H_{\Lambda\mathrm{CDM}}(z)
+  = H_0
+    \sqrt{\Omega_m(1+z)^3
+      + \Omega_r(1+z)^4
+      + \Omega_\Lambda}.
+  \label{eq:Hz_LCDM}
+\end{equation}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.92\linewidth,
+      height=0.48\linewidth,
+      xlabel={$z$},
+      ylabel={$H(z)$
+        [km\,s$^{-1}$\,Mpc$^{-1}$]},
+      xmin=0, xmax=3.0,
+      ymin=60, ymax=260,
+      legend pos=north west,
+      grid=both, samples=200, domain=0:3]
+      \addplot+[thick]
+        {70*sqrt(0.3*(1+x)^3 + 0.7)};
+      \addlegendentry{$\Lambda$CDM}
+      \addplot[name path=chiLow, draw=none]
+        {67*(1+x)*sqrt(1-0.35)};
+      \addplot[name path=chiHigh, draw=none]
+        {73*(1+x)*sqrt(1-0.25)};
+      \addplot[fill opacity=0.25]
+        fill between[of=chiLow and chiHigh];
+      \addlegendentry{Cosmochrony band}
+      \addplot+[thick, dashed]
+        {70*(1+x)*sqrt(1-0.30)};
+      \addlegendentry{Cosmochrony central}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Illustrative comparison of $H(z)$.
+    The Cosmochrony band uses
+    $H_\chi = H_0(1+z)\sqrt{1-\Omega_\chi}$ with
+    $(H_0,\Omega_\chi)$ variations.}
+  \label{fig:Hz_comparison}
+\end{figure}
+
+\paragraph{Relaxation budget.}
+The dimensionless parameter
+\begin{equation}
+  \Omega_\chi \equiv \langle \beta^2 \rangle,
+  \quad
+  \beta \equiv \frac{|\nabla \chi|}{c},
+  \label{eq:chi-relaxation}
+\end{equation}
+measures the fraction of relaxation capacity stored in spatial gradients.
+The effective global expansion rate is then
+$\bar{H} = (c/\chi)\sqrt{1 - \Omega_\chi}$.
+
+\paragraph{Local expansion and the Hubble tension.}
+For a region with density contrast~$\delta$, a minimal mean-field
+closure gives
+\begin{equation}
+  H_{\mathrm{loc}}
+  = \bar{H}
+    \sqrt{
+      \frac{1 - \Omega_\chi(1+\delta)}
+           {1 - \Omega_\chi}
+    }.
+  \label{eq:hubble_local}
+\end{equation}
+For $\Omega_\chi \approx 0.3$ and a KBC-void underdensity
+$\delta \approx -0.4$, one finds
+$H_{\mathrm{loc}}/\bar{H} \approx 1.08$, comparable to the observed
+tension.
+Structural consistency imposes
+$\Delta H / H \in [3.5\%,\,9.5\%]$ at $z \sim 1$.
+
+\paragraph{Parameter degeneracies.}
+The effective gravitational coupling constrains
+\begin{equation}
+  K_0\,\chi_c^2
+  \sim \frac{c^4}{16\pi G},
+  \label{eq:K0_chic_deg}
+\end{equation}
+so that $K_0$ and $\chi_c$ cannot be fixed independently without
+additional input.

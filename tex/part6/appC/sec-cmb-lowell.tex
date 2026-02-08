@@ -1,0 +1,53 @@
+% ----------------------------------------------------------------------------
+% C.1 --- Low-ell CMB Power Suppression
+% From former C01, condensed
+% ----------------------------------------------------------------------------
+\subsection{Low-\texorpdfstring{$\ell$}{ℓ} CMB Power Suppression
+from Global \texorpdfstring{$\chi$}{χ} Relaxation}
+\label{app:lowell_attenuation}
+
+The lowest CMB multipoles probe global properties of
+$\chi_{\mathrm{eff}}$ rather than independent local perturbations
+(Sections~\ref{subsec:cmb},~\ref{subsec:large-angle-anomalies}).
+Because the finite relaxation capacity of~$\chi$ limits how globally
+coherent configurations can deviate from the relaxed background, the
+lowest $\ell$-modes are systematically attenuated.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]
+    {C-appendix-cosmo/cmb_lowell_unsmoothed}
+  \caption{Observed CMB temperature power spectrum at low multipoles.
+    The shaded region illustrates a qualitative attenuation envelope
+    from global relaxation constraints.}
+  \label{fig:cmb_lowell_unsmoothed}
+\end{figure}
+
+\paragraph{Phenomenological parametrization.}
+\begin{equation}
+  C_\ell^{\mathrm{CC}}
+  = C_\ell^{\Lambda\mathrm{CDM}}
+    \left[
+      1 - \alpha
+        \exp\!\left(-\frac{\ell}{\ell_0}\right)
+    \right],
+  \quad
+  \alpha \in [0,1],\;\ell_0 > 0.
+  \label{eq:cc_lowell_envelope}
+\end{equation}
+
+\paragraph{Graph-theoretic admissibility filter.}
+The weighted Laplacian $L_G(t)$ of the relational connectivity graph
+sets a minimal nonzero eigenvalue $\lambda_2(t)$ characterizing global
+connectivity.
+The primordial power spectrum is modulated by
+\[
+  \mathcal{A}(k,t)
+  = \exp\!\left[
+      -\left(
+        \frac{\lambda_2(t)}{k^2}
+      \right)^{\!p/2}
+    \right],
+\]
+reflecting the inability of an insufficiently connected relational graph
+to support large-scale coherent modes.
