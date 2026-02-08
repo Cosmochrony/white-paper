@@ -13,6 +13,19 @@
 \usepackage{algpseudocode}
 % Boxes
 \usepackage[most]{tcolorbox}
+% Convention box
+\newtcolorbox{conventionbox}[1]{%
+  enhanced,
+  breakable,
+  sharp corners,
+  boxrule=0.6pt,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  title={#1},
+  fonttitle=\bfseries
+}
 % Plots (pgfplots provides axis/addplot)
 \usepackage{pgfplots}
 \usetikzlibrary{intersections}
