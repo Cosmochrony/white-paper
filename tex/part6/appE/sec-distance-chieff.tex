@@ -1,0 +1,81 @@
+% ----------------------------------------------------------------------------
+% E.4 --- Relational Distance and chi_eff Derivation
+% Merges former E.4, E.5, and E.6, condensed
+% ----------------------------------------------------------------------------
+\subsection{Relational Distance as a Minimal Path Functional}
+\label{app:relational-distance-minimal-path}
+
+Two distances operate at different descriptive levels:
+\begin{enumerate}
+  \item \textbf{Combinatorial distance} $d_{ij}^{C}$ (pre-geometric):
+    $d_{ij}^{C} = \min_{\gamma_{ij}} \sum_{(u,v)\in\gamma_{ij}} 1$,
+    counting graph steps only, independent of field values.
+  \item \textbf{Weighted distance} $d_{ij}^{W}$ (emergent):
+    $d_{ij}^{W} = \min_{\gamma_{ij}}
+      \sum_{(u,v)\in\gamma_{ij}} w_{uv}$,
+    encoding effective relational stiffness.
+\end{enumerate}
+Weights are parametrized by
+\begin{equation}
+  w_{uv}(\bar{\chi})
+  = \frac{1}{K_0}
+    \left[
+      1 + \left(
+        \frac{\bar{\chi}_u - \bar{\chi}_v}{\chi_c}
+      \right)^{\!2}
+    \right],
+  \quad
+  K_{uv}(\bar{\chi}) = \frac{1}{w_{uv}(\bar{\chi})}.
+  \label{eq:weight_function_background}
+\end{equation}
+
+\subsection{Derivation of
+\texorpdfstring{$\chi_{\mathrm{eff}}$}{χeff}
+from Relational Observables}
+\label{app:chi-eff-derivation}
+
+A two-level construction avoids circularity.
+First, define $\bar{\chi}$ using only the combinatorial distance:
+\begin{equation}
+  N_i = \left\{ j \,\middle|\,
+    d_{ij}^{C} \le \ell_0 \right\},
+  \label{eq:combinatorial_neighborhood}
+\end{equation}
+\begin{equation}
+  \bar{\chi}_i
+  = \frac{1}{|N_i|}
+    \sum_{j\in N_i} \chi_j.
+  \label{eq:relational_average_bar_chi}
+\end{equation}
+Then define the weighted distance from $\bar{\chi}$:
+\begin{equation}
+  d_{ij}^{W}
+  = \min_{\gamma_{ij}}
+    \sum_{(u,v)\in\gamma_{ij}} w_{uv}(\bar{\chi}).
+  \label{eq:weighted_distance}
+\end{equation}
+Finally, $\chi_{\mathrm{eff}}$ is obtained by coarse-graining over
+weighted neighborhoods:
+\begin{equation}
+  V_{\ell_0}(i)
+  = \left\{ j \,\middle|\,
+    d_{ij}^{W} \le \ell_0 \right\},
+  \label{eq:weighted_neighborhood}
+\end{equation}
+\begin{equation}
+  \chi_{\mathrm{eff}}(i)
+  = \frac{1}{|V_{\ell_0}(i)|}
+    \sum_{j\in V_{\ell_0}(i)} \chi_j.
+  \label{eq:chi_eff_definition}
+\end{equation}
+The dependency chain is explicitly non-circular:
+$d^{C} \Rightarrow \bar{\chi} \Rightarrow w(\bar{\chi}),K(\bar{\chi})
+  \Rightarrow d^{W} \Rightarrow \chi_{\mathrm{eff}}$.
+
+\subsection{Relation to the Effective Geometric Description}
+\label{subsec:relation-to-the-effective-geometric-description}
+
+Effective geometric structures (metric fields, spatial gradients,
+Poisson-type equations) arise as coarse-grained summaries of relational
+configurations once a projectable regime applies.
+They carry no independent ontological status.
