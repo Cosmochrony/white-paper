@@ -1,0 +1,84 @@
+% ----------------------------------------------------------------------------
+% Section 8.1 --- Non-Factorizable Projected Descriptions and Quantum
+%                 Correlations
+% From former §8.1, condensed
+% ----------------------------------------------------------------------------
+\subsection{Non-Factorizable Projected Descriptions and Quantum
+Correlations}
+\label{subsec:non-injective-projection}
+
+A single admissible configuration of~$\chi$ may correspond to multiple
+distinct effective degrees of freedom.
+What appear as separate particles or subsystems are multiple projective
+manifestations of a single underlying ontological configuration.
+Effective degrees of freedom cannot be assigned independent states; any
+admissible description must be globally consistent with the
+underlying~$\chi$ configuration, leading to persistent correlations that
+do not rely on signal exchange or spacetime proximity.
+
+\subsubsection*{Ontological Monism and the Shared Projection Hypothesis}
+\label{subsec:ontological-monism-shared-projection}
+
+A single connected excitation in~$\chi$ can be represented as several
+spatially separated effective excitations.
+The observed separation is a property of the projected metric
+representation, not a fundamental separation of the underlying entity.
+
+\paragraph{Shared Fiber Phase and Spin Correlations.}
+\label{subsec:shared-fiber-phase-spin}
+Spin correlations can be read as correlations of a \emph{shared}
+internal degree of freedom of the projection fiber.
+A measurement at one location selects a locally stable reprojection of
+that shared fiber degree of freedom; the correlated statistics at the
+distant location reflect the restricted set of reprojections still
+compatible with the same underlying configuration.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    font=\small,
+    node distance=10mm,
+    box/.style={draw, rounded corners, align=center,
+      inner sep=6pt},
+    arrow/.style={-Latex, thick},
+    note/.style={align=left, font=\footnotesize},
+    micro/.style={draw, circle, inner sep=1.5pt}
+  ]
+    \node[micro] (c1) at (-2.4, 1.5) {};
+    \node[micro] (c2) at (-1.2, 1.7) {};
+    \node[micro] (c3) at ( 0.0, 1.55) {};
+    \node[micro] (c4) at ( 1.2, 1.75) {};
+    \node[micro] (c5) at ( 2.4, 1.6) {};
+    \node[note, above=3mm of c3, align=center]
+      {Multiple admissible $\chi$ configurations\\
+       (same fiber under $\pi$)};
+    \node[box, below=16mm of c3,
+      minimum width=6.8cm] (chieff)
+      {$\chi_{\mathrm{eff}}$\\
+       \footnotesize single effective reality\\
+       \footnotesize non-factorisable (entangled)};
+    \node[box, below left=12mm and 14mm of chieff] (obsA)
+      {Outcomes in context $A$};
+    \node[box, below right=12mm and 14mm of chieff] (obsB)
+      {Outcomes in context $B$};
+    \draw[arrow] (c1) -- (chieff.north west);
+    \draw[arrow] (c2) -- (chieff.north);
+    \draw[arrow] (c3) -- (chieff.north);
+    \draw[arrow] (c4) -- (chieff.north);
+    \draw[arrow] (c5) -- (chieff.north east);
+    \node[note, left=2mm of chieff, anchor=east]
+      {\footnotesize non-injective\\
+       \footnotesize projection $\pi$};
+    \draw[arrow] (chieff)
+      -- node[left=2mm, note] {$\mathcal{O}_A$} (obsA);
+    \draw[arrow] (chieff)
+      -- node[right=2mm, note] {$\mathcal{O}_B$} (obsB);
+  \end{tikzpicture}
+  \caption{Entangled (non-factorisable) regime.
+    Multiple underlying $\chi$ configurations map to the same
+    $\chi_{\mathrm{eff}}$.
+    Different measurement contexts define distinct operational
+    projections producing correlated outcomes without introducing
+    multiple effective realities.}
+  \label{fig:entanglement-two-projections}
+\end{figure}

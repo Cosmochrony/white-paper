@@ -1,0 +1,41 @@
+% ----------------------------------------------------------------------------
+% A.2 --- Stability Analysis
+% From former A02, condensed
+% ----------------------------------------------------------------------------
+\subsection{Stability Analysis of the
+\texorpdfstring{$\chi$}{χ}-Field Dynamics}
+\label{subsec:stability-analysis}
+
+The effective relaxation dynamics may be written as
+\begin{equation}
+  \partial_t \chi
+  = c \sqrt{1 - \frac{|\nabla \chi|^2}{c^2}}.
+\end{equation}
+
+\paragraph{Marginal linear stability.}
+Around the homogeneous background
+$\chi_0(t) = c\,t + \chi_{0,0}$, a perturbation
+$\delta\chi(x,t)$ satisfies
+\begin{equation}
+  \partial_t \delta \chi
+  = -\frac{1}{2c}\,|\nabla \delta \chi|^2
+    + \mathcal{O}(|\nabla \delta \chi|^4).
+\end{equation}
+No linear term appears: the homogeneous solution is marginally stable
+at linear order.
+
+\paragraph{Nonlinear stability.}
+The leading nonlinear correction is strictly negative, so spatial
+inhomogeneities reduce the local relaxation rate and are dynamically
+suppressed.
+The functional
+\begin{equation}
+  E[\delta \chi]
+  = \frac{1}{2}
+    \int |\nabla \delta \chi|^2 \, d^3x
+\end{equation}
+is non-increasing.
+The effective dynamics is dissipative, contractive, and nonlinearly
+stable.
+This stability is inseparable from the monotonic character of the
+relaxation process.

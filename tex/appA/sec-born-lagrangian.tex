@@ -1,0 +1,105 @@
+% ----------------------------------------------------------------------------
+% A.12 --- Relational Consistency of the Effective Lagrangian
+% From former A12, condensed
+% ----------------------------------------------------------------------------
+\subsection{Relational Consistency of the Effective Lagrangian}
+\label{sec:born-lagrangian_derivation}
+
+The Born--Infeld-like form emerges from fundamental principles, not
+arbitrary postulation.
+
+\subsubsection*{Step 1: Relational Constraint}
+\label{subsec:A12-relational-constraint_v171}
+
+The discrete relational constraint:
+\begin{equation}
+  \mathcal{C}_i[\chi]
+  \equiv \sum_j K_{ij} (\chi_i - \chi_j)^2
+  \le \chi_c^2,
+  \label{eq:A12-relational-constraint_v171}
+\end{equation}
+enforces bounded relative variations without assuming pre-existing
+spacetime.
+
+\subsubsection*{Step 2: Variational Formulation}
+\label{subsec:A12-variational-structure_v171}
+
+Constrained action with KKT conditions:
+\begin{equation}
+  S[\{\chi_i\}, \{\mu_i\}]
+  = \int d\lambda \left[
+      \sum_i \frac{1}{2}
+        \left(\frac{d\chi_i}{d\lambda}\right)^2
+      - U[\{\chi_i\}]
+      - \sum_i \mu_i(\lambda)
+        \left(\mathcal{C}_i[\chi]
+          - \chi_c^2\right)
+    \right].
+  \label{eq:A12-action_v171}
+\end{equation}
+
+\subsubsection*{Step 3: Continuum Limit}
+\label{subsec:A12-continuum-limit_v171}
+
+In projectable regimes:
+$|\nabla \chi|^2 \le c^2$.
+\label{eq:A12-continuum-bound_v171}
+The canonical selection criteria (free theory normalization, saturation,
+monotonicity, regularity) yield:
+\begin{equation}
+  f(x) = -c^2 \sqrt{1 - x},
+  \label{eq:A12-born-infeld-derivation_v171}
+\end{equation}
+giving the Born--Infeld-like Lagrangian:
+\begin{equation}
+  \mathcal{L}_{\text{eff}}
+  = -c^2 \sqrt{1 - \frac{|\nabla \chi|^2}{c^2}}
+    + \partial_t \chi.
+  \label{eq:A12-effective-lagrangian_v171}
+\end{equation}
+
+\subsubsection*{Step 4: Role of the Potential}
+\label{subsec:A12-potential-role_v171}
+
+In the continuum limit,
+$U[\{\chi_i\}] \to \int d^3x \, V(\chi)$.
+
+\subsubsection*{Step 5: Emergent Geometry}
+\label{subsec:A12-emergent-geometry_v171}
+
+The effective metric is defined via the Hessian:
+\begin{equation}
+  g_{\mu\nu}^{\text{eff}} \propto
+  \frac{\partial^2 \mathcal{L}_{\text{eff}}}
+    {\partial (\partial_\mu \chi)
+     \partial (\partial_\nu \chi)}.
+  \label{eq:A12-emergent-metric_v171}
+\end{equation}
+
+\subsubsection*{Continuum Limit and Laplace--Beltrami Operator}
+\label{subsec:A12-continuum-limit}
+
+With $K_{ij} = V_i^{-1}\,w(d_{ij}/\varepsilon)$, the dense limit
+gives convergence to the Laplace--Beltrami operator on an emergent
+Riemannian manifold defined by the relational density.
+
+\subsubsection*{Necessity of the Born--Infeld Structure}
+\label{subsec:A12-born-infeld-necessity}
+
+A quadratic Lagrangian permits unbounded gradients, contradicting the
+maximal relaxation speed~$c_\chi$.
+The minimal functional satisfying boundedness, smooth saturation, and
+finite characteristic speeds is:
+\begin{equation}
+  \mathcal{L}_{\mathrm{BI}}
+  = b^2\!\left(
+      1 - \sqrt{1 - \frac{1}{b^2}\,
+        \partial_\mu \chi\,\partial^\mu \chi}
+    \right).
+\end{equation}
+The saturation constant~$b$ represents the upper bound on the
+relaxation speed of the~$\chi$ substrate itself, while the speed of
+light~$c$ emerges as the group velocity of projected perturbative modes:
+\begin{equation}
+  c \leq b.
+\end{equation}

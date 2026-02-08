@@ -1,0 +1,72 @@
+% ----------------------------------------------------------------------------
+% Section 3.4 --- Variational Formulation and Born--Infeld Action
+% From former §5.4, heavily trimmed (scalar-tensor clarification condensed)
+% ----------------------------------------------------------------------------
+\subsection{Variational Formulation and Born--Infeld Action}
+\label{subsec:variational-formulation}
+
+In regimes admitting a stable geometric interpretation, the effective
+relaxation constraints may be summarized in a compact variational form.
+Motivated by Born--Infeld-type non-linear
+actions~\cite{BornInfeld1934,DeserGibbons1998}, we consider the effective
+Lagrangian density
+\begin{equation}
+  \mathcal{L}_{\mathrm{eff}}
+  = -c^2 \sqrt{1
+      - \frac{|\nabla \chi_{\mathrm{eff}}|^2}{c^2}}
+  + \mathcal{D}_{\mathrm{loc}}\chi_{\mathrm{eff}}
+  - \frac{4\pi G_{\mathrm{eff}}}{c^2}\,\rho\,\chi_{\mathrm{eff}} ,
+  \label{eq:leff_equation}
+\end{equation}
+where $\mathcal{D}_{\mathrm{loc}}\chi_{\mathrm{eff}}$ is the effective
+local relaxation ordering (Section~\ref{subsec:parameter-independent-relaxation})
+and $\rho$ the effective density of localized relaxation-resistant
+configurations.
+
+The linear dependence on
+$\mathcal{D}_{\mathrm{loc}}\chi_{\mathrm{eff}}$ enforces monotonicity
+without additional propagating degrees of freedom.
+The square-root structure acts as a non-linear regulator ensuring that
+effective spatial variations remain bounded by~$c$.
+The Euler--Lagrange equation reproduces the non-linear elliptic relation
+\begin{equation}
+  \nabla \cdot
+  \left(
+    \frac{\nabla \chi_{\mathrm{eff}}}
+    {\sqrt{1 - |\nabla \chi_{\mathrm{eff}}|^2 / c^2}}
+  \right)
+  = \frac{4\pi G_{\mathrm{eff}}}{c^2}\,\rho ,
+  \label{eq:nonlinear_poisson}
+\end{equation}
+coinciding with the effective relation obtained in
+Section~\ref{subsec:microscopic-origin-of-the-coupling-tensor-and-the-poisson-equation}.
+
+This Born--Infeld-like action is an \emph{auxiliary variational
+representation}.
+It does not define a fundamental action principle, nor equations of motion
+for the $\chi$ substrate.
+Its purpose is to regularize the effective description, enforce universal
+structural bounds, and facilitate comparison with standard gravitational
+phenomenology.
+
+The physical interpretation is discussed in
+Appendix~\ref{subsec:hydrodynamic-limit}, and the mathematical consistency
+with the relational dynamics is established in
+Appendix~\ref{sec:born-lagrangian_derivation}.
+
+\paragraph{Connection to Emergent Geometry.}
+In regimes where a geometric description is applicable, the Hessian of
+$\mathcal{L}_{\text{eff}}$ defines an emergent metric tensor~$g_{\mu\nu}$,
+summarizing the effective geometric regularities of projected
+configurations.
+
+\paragraph{Why This Is Not a Scalar--Tensor Theory.}
+\label{subsec:not-scalar-tensor}
+The effective scalar descriptor~$\chi_{\mathrm{eff}}$ is not a fundamental
+dynamical field: it does not possess intrinsic values or conjugate momenta,
+and does not propagate independently.
+No modification of the gravitational sector is postulated, no
+scalar--tensor coupling of the form $f(\chi_{\mathrm{eff}}) R$ is
+introduced, and no additional propagating modes arise.
+Gravitation emerges from the local inhibition of relaxation ordering, not
+from the exchange of a scalar mediator.

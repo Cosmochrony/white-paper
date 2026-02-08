@@ -1,0 +1,63 @@
+% ----------------------------------------------------------------------------
+% Section 8.5 --- Structural Stability of Projected Descriptions
+% From former §8.9, condensed
+% ----------------------------------------------------------------------------
+\subsection{Structural Stability of Projected Descriptions}
+\label{subsec:noninjective-projection-entanglement}
+
+Entanglement, measurement, and decay correspond to distinct stability
+regimes of projected descriptions.
+Entanglement corresponds to the regime in which a non-factorizable
+projected description remains structurally stable.
+Measurement and decoherence correspond to selective stabilization:
+interaction with an environment amplifies certain relational features
+while rendering alternative descriptions inadmissible.
+Particle decay represents the regime in which the non-factorizable
+description becomes unstable, and stability is recovered through
+factorization into several localized configurations.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    node distance=10mm and 18mm,
+    box/.style={draw, rounded corners, align=center,
+      inner sep=6pt},
+    arr/.style={->, thick},
+    lab/.style={font=\small, align=center}
+  ]
+    \node[box] (chi)
+      {$\chi$\\[-2pt]\footnotesize unique relational config.};
+    \node[box, below=of chi] (proj)
+      {non-injective\\[-2pt]\footnotesize projection $\Pi$};
+    \node[box, below=of proj] (chieff)
+      {$\chi_{\mathrm{eff}}$\\[-2pt]\footnotesize global
+       projected description};
+    \node[box, below left=16mm and 24mm of chieff] (stable)
+      {stable\\[-2pt]\footnotesize (non-factorizable)};
+    \node[box, below right=16mm and 24mm of chieff] (unstable)
+      {unstable\\[-2pt]\footnotesize (non-factorizable)};
+    \node[box, below=of stable] (ent)
+      {entanglement\\[-2pt]\footnotesize unity preserved};
+    \node[box, below=of unstable] (frag)
+      {fragmentation\\[-2pt]\footnotesize (decay)};
+    \node[box, below=of frag] (sum)
+      {$\chi_{\mathrm{eff},1}\oplus
+        \chi_{\mathrm{eff},2}\oplus\cdots$\\
+       [-2pt]\footnotesize factorizable descriptions};
+    \draw[arr] (chi) -- (proj);
+    \draw[arr] (proj) -- (chieff);
+    \draw[arr] (chieff) -- (stable);
+    \draw[arr] (chieff) -- (unstable);
+    \draw[arr] (stable) -- (ent);
+    \draw[arr] (unstable) -- (frag);
+    \draw[arr] (frag) -- (sum);
+  \end{tikzpicture}
+  \caption{Conceptual branching induced by non-injective projection.
+    Stable non-factorizable descriptions manifest as entanglement;
+    unstable ones fragment into localized factorizable descriptions
+    (particle decay).}
+  \label{fig:noninjective-branching-entanglement-decay}
+\end{figure}
+
+A technical analysis is provided in
+Appendix~\ref{subsec:non-injective-projection-and-structural-factorization}.

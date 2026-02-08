@@ -1,0 +1,76 @@
+% ----------------------------------------------------------------------------
+% Section 10.2 --- Non-Commutativity as a Source of Mass
+% From former §11.2, condensed while preserving all equations
+% ----------------------------------------------------------------------------
+\subsection{Non-Commutativity as a Source of Mass}
+\label{sec:noncommutativity-mass}
+
+Torsion acts as a dynamical constraint that competes with relaxation
+transport through the projection fiber.
+
+\subsubsection*{Inhibition of Relaxation}
+\label{sec:inhibition-relaxation}
+
+Let $\Omega_w$ be the effective torsion operator associated with winding
+number~$w$.
+For the fundamental lepton configuration ($w=1$), relaxation and torsion
+are spectrally compatible:
+\begin{equation}
+  [\Delta^{(0)}_G,\Omega_{1}] = 0 .
+\end{equation}
+For higher-winding configurations ($w\ge 2$), torsional constraints
+become spectrally frustrated:
+\begin{equation}
+  [\Delta^{(0)}_G,\Omega_{w}] \neq 0
+    \qquad (w\ge 2).
+\end{equation}
+This non-commutativity inhibits uniform relaxation across the fiber and
+induces irreducible spectral compression, manifesting as amplified
+inertial mass.
+The torsional action is a purely spectral invariant:
+\begin{equation}
+  \mathcal{A}(w) \;\equiv\;
+  \frac12 \ln\!\left(
+    \frac{\det(\Delta^{(0)}_G+\Omega_{w})}
+         {\det(\Delta^{(0)}_G)}
+  \right),
+  \label{eq:Aw-fredholm}
+\end{equation}
+where the determinant is understood in the zeta-regularized sense.
+
+\subsubsection*{The Pisano Ratio as a Stability Fixed Point}
+\label{sec:pisano-ratio}
+
+For $w=2$, the projection fiber ceases to be spectrally isotropic and
+splits into competing sectors
+$\Pi = \Pi_{\parallel} \oplus \Pi_{\perp}$.
+Dynamical stability selects the most irrational admissible ratio between
+their spectral frequencies, in analogy with KAM-type criteria:
+\begin{equation}
+  \frac{\lambda_{\parallel}}{\lambda_{\perp}}
+    \;=\; \varphi
+  \qquad\Longrightarrow\qquad
+  \beta \;\equiv\; \frac{1}{\varphi},
+  \label{eq:beta-golden}
+\end{equation}
+where $\varphi=(1+\sqrt5)/2$ is the golden ratio.
+
+\subsubsection*{Leptonic Spectrum Synthesis}
+\label{sec:leptonic-synthesis}
+
+For the muon, non-commutative torsion yields the parameter-free
+prediction
+\begin{equation}
+  \boxed{
+    \frac{m_\mu}{m_e}
+    = \sqrt{\frac{\lambda_{2}}{\lambda_{1}}}
+    \cdot \frac{3}{2\alpha}
+    \cdot \frac{1}{\varphi}
+  }
+  \qquad\text{with}\qquad
+  \frac{\lambda_2}{\lambda_1} = \frac{8}{3}.
+  \label{eq:muon-ratio-final}
+\end{equation}
+The robustness of the ratio $\lambda_2/\lambda_1 = 8/3$ is demonstrated
+independently in
+Appendix~\ref{sec:spectral_ratio_derivation}.

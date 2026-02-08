@@ -1,0 +1,121 @@
+% ----------------------------------------------------------------------------
+% Section 7.11 --- Effective Potential for Galactic Dynamics from
+%                  chi-Relaxation Saturation
+% From former §12.12, condensed while preserving all equations
+% ----------------------------------------------------------------------------
+\subsection{Effective Potential for Galactic Dynamics from
+$\chi$-Relaxation Saturation}
+\label{subsec:phi-eff-galaxies}
+
+\paragraph{Operational status.}
+The effective potential is defined only through observable kinematics:
+\begin{equation}
+  g_{\mathrm{eff}}(r) \equiv -\frac{d\Phi_{\mathrm{eff}}}{dr},
+  \qquad
+  v^2(r) = r\,\frac{d\Phi_{\mathrm{eff}}}{dr}.
+\end{equation}
+
+\paragraph{Emergent acceleration scale.}
+The nonlinear $\chi$-relaxation constraint induces an effective
+background kinematic scale
+\begin{equation}
+  a_0(t) \sim c\,H(t),
+\end{equation}
+weakly time-dependent, with a projection efficiency factor
+$\eta = O(0.1)$ for galactic dynamics.
+
+\paragraph{Asymptotic regimes and flat rotation curves.}
+Let $g_N(r) = GM_b(r)/r^2$.
+In the high-acceleration regime ($g_N \gg a_0$),
+$g_{\mathrm{eff}} \simeq g_N$.
+In the low-acceleration regime ($g_N \ll a_0$), saturation yields
+\begin{equation}
+  g_{\mathrm{eff}}(r)
+    \simeq \sqrt{g_N(r)\,a_0(t)},
+\end{equation}
+implying
+\begin{equation}
+  \Phi_{\mathrm{eff}}(r)
+  \simeq \sqrt{G M_b\,a_0(t)}\,
+    \ln\!\left(\frac{r}{r_s}\right) + \mathrm{const.},
+  \label{eq:phi-log}
+\end{equation}
+a logarithmic potential producing asymptotically flat rotation curves.
+The transition radius is
+$r_s(t) = \sqrt{G M_b / a_0(t)}$.
+
+\paragraph{Minimal smooth interpolation.}
+A parsimonious operational fit function is
+\begin{equation}
+  g_{\mathrm{eff}}(r)
+  = \sqrt{g_N(r)^2 + a_0(t)\,g_N(r)}.
+  \label{eq:geff-interp}
+\end{equation}
+
+\paragraph{Baryonic Tully--Fisher scaling.}
+In the deep-saturation regime:
+\begin{equation}
+  v_\infty^4 \simeq G\,M_b\,a_0(t),
+\end{equation}
+with a mild redshift dependence through $a_0(t) \sim cH(t)$.
+
+\begin{table}[t]
+  \centering\small
+  \begin{tabular}{p{2.8cm} p{3.8cm} p{3.8cm} p{3.8cm}}
+    \hline
+    \textbf{Aspect}
+      & \textbf{$\Lambda$CDM}
+      & \textbf{MOND}
+      & \textbf{Cosmochrony} \\
+    \hline
+    Ontology
+      & Non-baryonic halo
+      & Modified dynamics
+      & Relaxation properties of~$\chi$ \\
+    \hline
+    Flat rotation curves
+      & Invisible mass
+      & $g \simeq \sqrt{g_N a_0}$
+      & Saturation:
+        $g \simeq \sqrt{g_N a_0(t)}$ \\
+    \hline
+    Key scale
+      & Halo profile parameters
+      & Universal $a_0$
+      & Emergent $a_0(t) \sim cH(t)$ \\
+    \hline
+    Tully--Fisher
+      & Formation models
+      & $v^4 \propto G M_b a_0$
+      & $v^4 \propto G M_b a_0(t)$ \\
+    \hline
+    Discriminating signature
+      & Cusps vs.\ cores
+      & Strict universality
+      & Slow evolution of $a_0(t)$ \\
+    \hline
+  \end{tabular}
+  \caption{Conceptual comparison of flat-rotation-curve
+    explanations.}
+  \label{tab:dm-mond-cosmochrony}
+\end{table}
+
+\subsubsection*{Observed rotation curves: multi-galaxy test}
+
+The Cosmochrony prediction is confronted with observed rotation curves
+of NGC~3198 (flat), NGC~2403 (rising), and NGC~5055 (mildly declining).
+No dark matter halo is introduced.
+Baryonic contributions are taken from the literature; the only fitted
+parameter is the stellar mass-to-light ratio~$\Upsilon_\star$.
+The acceleration scale is fixed by $a_0(t_0) \sim cH(t_0)$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]
+    {12-cosmology/galaxy_rotcurves_3panel}
+  \caption{Observed rotation curves compared with the Cosmochrony
+    saturation prediction.
+    Left: NGC~3198. Center: NGC~2403. Right: NGC~5055.
+    See Appendix~\ref{subsec:rotation-curve-fits} for data sources.}
+  \label{fig:rotation-curves-comparison}
+\end{figure}

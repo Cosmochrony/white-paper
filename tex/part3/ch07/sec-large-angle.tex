@@ -1,0 +1,61 @@
+% ----------------------------------------------------------------------------
+% Section 7.10 --- Large-Angle Temperature Anomalies
+% From former §12.11, condensed
+% ----------------------------------------------------------------------------
+\subsection{Large-Angle Temperature Anomalies}
+\label{subsec:large-angle-anomalies}
+
+Large-angle CMB anomalies---low-multipole power suppression and
+unexpected large-scale alignments---remain only partially explained within
+$\Lambda$CDM~\cite{Planck2018}.
+In Cosmochrony, these features are residual relational correlations
+inherited from the pre-geometric regime of~$\chi$.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]
+    {12-cosmology/cmb_lowell_lcdm_cosmo}
+  \caption{Low-$\ell$ CMB TT power spectrum comparison.
+    The Cosmochrony ansatz (green) shows natural suppression of power
+    at large angular scales ($\ell < 10$) compared to $\Lambda$CDM
+    (dashed orange).}
+  \label{fig:cmb-low-l-anomalies}
+\end{figure}
+
+\subsubsection*{Structural Admissibility and Low-$\ell$ Suppression}
+\label{subsec:low-l-admissibility}
+
+The primordial spectrum is modulated by an admissibility filter:
+\begin{equation}
+  P_{\mathrm{obs}}(k,t)
+    = \mathcal{A}^2(k,t)\, P_0(k),
+\end{equation}
+with a natural phenomenological form
+\begin{equation}
+  \mathcal{A}(k,t)
+  = \exp\!\left[-\left(\frac{k_c(t)}{k}\right)^p\right],
+\end{equation}
+where $k_c(t)$ is the coherence scale associated with the maximal size
+of projectively admissible configurations.
+For $k \ll k_c(t)$, power suppression arises from the structural
+impossibility of supporting such global modes within the available
+relational complexity.
+The scale~$k_c(t)$ admits a graph-theoretic interpretation through the
+spectral gap~$\lambda_2(t)$ of the effective connectivity graph.
+
+\subsubsection*{Testable Predictions}
+
+\paragraph{A. Correlated Suppression Across TT, TE, and EE Spectra.}
+The coherence scale~$k_c$ should be consistent across temperature and
+polarization spectra.
+Future high-precision measurements (e.g.\ \textit{LiteBIRD}) provide a
+decisive test.
+
+\paragraph{B. Absence of Primordial Non-Gaussianities.}
+The framework predicts an exceptionally small $f_{\mathrm{NL}}$.
+A significant detection would falsify this scenario.
+
+\paragraph{C. Scale-Dependent Spectral Tilt Near the Cutoff.}
+A mild running of $n_s$ localized near~$k_c$ is expected.
+A detailed treatment is provided in
+Appendix~\ref{app:lowell_attenuation}.

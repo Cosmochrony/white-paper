@@ -1,0 +1,34 @@
+% ----------------------------------------------------------------------------
+% A.10 --- Level Sets, Projections, and Apparent Orbital Geometry
+% From former A10, condensed
+% ----------------------------------------------------------------------------
+\subsection{Level Sets, Projections, and Apparent Orbital Geometry}
+\label{app:level_sets_orbitals}
+
+For a continuous scalar field
+$\phi : \mathbb{R}^3 \rightarrow \mathbb{R}$, the level set at
+constant~$c$ is
+\begin{equation}
+  \mathcal{L}_c
+  = \{ \mathbf{x} \in \mathbb{R}^3
+       \mid \phi(\mathbf{x}) = c \}.
+\end{equation}
+Even when~$\phi$ is continuous everywhere, the projected set
+\begin{equation}
+  P_c
+  = \{ z \in \mathbb{R} \mid \exists (x,y)
+       \text{ s.t.\ } \phi(x,y,z) \ge c \}
+\end{equation}
+typically consists of disjoint intervals---a purely geometric
+consequence of thresholding.
+Using the envelope function
+$f(z) = \max_{x,y} \phi(x,y,z)$, one writes
+$P_c = \{z \mid f(z) \ge c\}$.
+
+Threshold-based visualizations of continuous scalar fields generically
+produce apparently disjoint structures that do not correspond to
+independent physical entities.
+This provides a natural framework for understanding orbital-like
+patterns as emergent manifestations of an underlying continuous field:
+apparent discreteness reflects projection and detection criteria rather
+than fundamental discontinuity.

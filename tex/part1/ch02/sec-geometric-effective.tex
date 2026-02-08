@@ -1,0 +1,128 @@
+% ----------------------------------------------------------------------------
+% Section 2.2 --- The Geometric Effective Description of chi Dynamics
+% From former §3.2, trimmed of redundant caveats
+% ----------------------------------------------------------------------------
+\subsection{The Geometric Effective Description of
+\texorpdfstring{$\chi$}{χ} Dynamics}
+\label{subsec:geometric-action}
+
+\subsubsection*{Effective Observables from
+\texorpdfstring{$\chi$}{χ} Correlations}
+
+Quantities conventionally described in geometric terms---such as time
+intervals, spatial separation, and causal ordering---arise as effective
+summaries of relational patterns within the $\chi$ substrate, accessed only
+through projected, coarse-grained representations.
+The configurations~$\sigma$ represent internal relational states of~$\chi$
+and are defined without reference to external spacetime coordinates.
+The measure~$d\mu(\sigma)$ denotes an invariant integration over
+configuration space, defined intrinsically from the correlation structure
+associated with~$\chi$.
+
+\paragraph{Effective scalar descriptor.}
+In regimes where projected $\chi$ configurations admit a stable geometric
+interpretation, we introduce an \emph{effective scalar descriptor}
+$\chi_{\mathrm{eff}}$.
+This quantity is a coarse-grained, projected representation of relational
+and spectral features of~$\chi$, defined only within the emergent spacetime
+description.
+It does not correspond to the fundamental substrate itself.
+
+Operational time intervals are defined from the accumulated ordering of
+projected configurations along paths in configuration space:
+\begin{equation}
+  \tau_{AB} \;\propto\;
+  \int_{\gamma_{AB}}
+    \mathcal{D}_{\lambda} \chi_{\mathrm{eff}} \, d\lambda ,
+\end{equation}
+where $\mathcal{D}_{\lambda} \chi_{\mathrm{eff}}$ is an effective
+relaxation functional and $\lambda$ an ordering parameter.
+
+Operational spatial separation is quantified by the decay of correlations
+between effective descriptors:
+\begin{equation}
+  d(x,y) \;\propto\;
+  - \log\!\left(
+    \frac{\langle \chi_{\mathrm{eff}}(x)\,
+      \chi_{\mathrm{eff}}(y)\rangle}
+    {\langle \chi_{\mathrm{eff}}^{\,2}\rangle}
+  \right),
+\end{equation}
+where $\langle\chi_{\text{eff}}(x)\,\chi_{\text{eff}}(y)\rangle$ denotes
+an effective correlation functional encoding relational proximity between
+projected configurations~$x$ and~$y$.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    font=\small,
+    node distance=14mm,
+    box/.style={draw, rounded corners, align=center, inner sep=6pt},
+    arrow/.style={-Latex, thick},
+    note/.style={align=left, font=\footnotesize}
+  ]
+    \node[box] (chi)
+      {$\chi$\\\footnotesize infra-physical\\
+       \footnotesize relational substrate};
+    \node[box, below=of chi] (chieff)
+      {$\chi_{\mathrm{eff}}$\\\footnotesize physical effective
+       reality\\\footnotesize (projectable regime)};
+    \node[box, below=of chieff] (obs)
+      {Observables\\\footnotesize context-dependent\\
+       \footnotesize operational quantities};
+    \draw[arrow] (chi) -- node[right=2mm, note]
+      {infra-physical\\projection $\pi$\\
+       \footnotesize (generally non-injective)} (chieff);
+    \draw[arrow] (chieff) -- node[right=2mm, note]
+      {operational\\projection $\mathcal{O}$\\
+       \footnotesize (contextual access)} (obs);
+    \node[
+      draw, dashed, rounded corners,
+      fit=(chieff) (obs),
+      inner sep=10pt,
+      label={[font=\footnotesize]right:Factorizable regime}
+    ] {};
+  \end{tikzpicture}
+  \caption{%
+    Ontological pipeline in Cosmochrony.
+    The infra-physical projection~$\pi$ maps the fundamental $\chi$
+    substrate to an effective physical reality~$\chi_{\mathrm{eff}}$ in
+    projectable regimes, generally in a non-injective manner.
+    Physical observables arise from an operational
+    projection~$\mathcal{O}$ that specifies how
+    $\chi_{\mathrm{eff}}$ is accessed under measurement contexts.}
+  \label{fig:two-stage-projection}
+\end{figure}
+
+\subsubsection*{Effective Metric as a Descriptive Tool}
+
+In regimes where projected configurations exhibit smooth and stable
+correlation patterns, the relational observables may be summarized by an
+operational tensor $g_{\mu\nu}[\chi_{\mathrm{eff}}]$.
+This effective metric is a derived descriptor summarizing relational
+correlations, not a fundamental geometric structure.
+No background $\eta_{\mu\nu}$ is assumed; Minkowski space appears only as an
+effective approximation in weak-gradient regimes.
+
+In projectable regimes admitting a low-dimensional embedding, one may write
+locally
+\[
+  d(i,j)^2 \;\approx\;
+    g_{\mu\nu}(x)\,\Delta x^\mu \Delta x^\nu .
+\]
+The continuum line element~$ds^2$ is therefore a derived descriptive
+construct.
+
+\subsubsection*{Consistency with General Relativity}
+
+The effective metric reproduces the phenomenology of general relativity in
+appropriate regimes: the weak-field limit yields Einstein-like dynamics; near
+localized $\chi$ excitations, the metric encodes time dilation and spatial
+curvature as emergent consequences of inhibited relaxation; homogeneous
+relaxation yields an effective Hubble-like expansion law.
+All predictive content resides in the underlying $\chi$ dynamics.
+
+\paragraph{Operational origin of the effective metric.}
+The explicit construction of $g_{\mu\nu}$ from operational distances is
+given in Appendix~E, where geometric quantities are shown to arise only in
+projectable regimes admitting a smooth continuum approximation.

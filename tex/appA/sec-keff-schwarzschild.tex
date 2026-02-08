@@ -1,0 +1,63 @@
+% ----------------------------------------------------------------------------
+% A.5 --- Strong-Field Constitutive Coupling Near Schwarzschild BH
+% From former A05, condensed
+% ----------------------------------------------------------------------------
+\subsection{Strong-Field Constitutive Coupling Near a Schwarzschild
+Black Hole}
+\label{app:keff_schwarzschild}
+
+The effective constitutive relation:
+\begin{equation}
+  K_{\mathrm{eff}}
+  = K_0 \exp\!\left(
+      -\frac{(\Delta\chi)^2}{\chi_c^2}\right).
+  \label{eq:keff_constitutive}
+\end{equation}
+
+The dimensionless lapse-like factor:
+\begin{equation}
+  N(r)
+  \;\equiv\;
+  \frac{\mathcal{D}_{\mathrm{loc}}\chi(r)}
+       {\mathcal{D}_0\chi},
+  \qquad 0 < N(r) \le 1.
+  \label{eq:lapse_def}
+\end{equation}
+
+Matching to Schwarzschild phenomenology
+($ds^2 = -f(r)c^2 dt^2 + f(r)^{-1} dr^2 + r^2 d\Omega^2$,
+$f(r) = 1 - r_s/r$):
+\begin{equation}
+  N(r)^2 = f(r) = 1 - \frac{r_s}{r}.
+  \label{eq:lapse_schwarzschild}
+\end{equation}
+\label{eq:schwarzschild_standard}
+
+Identifying $K_{\mathrm{eff}}/K_0 \equiv N(r)^2$ yields:
+\begin{equation}
+  K_{\mathrm{eff}}(r)
+  = K_0\!\left(1 - \frac{r_s}{r}\right),
+  \qquad r > r_s.
+  \label{eq:keff_schwarzschild_profile}
+\end{equation}
+\label{eq:keff_lapse_ansatz}
+
+Inverting gives:
+\begin{equation}
+  \frac{(\Delta\chi(r))^2}{\chi_c^2}
+  = -\ln\!\left(1 - \frac{r_s}{r}\right).
+  \label{eq:deltachi_schwarzschild}
+\end{equation}
+Near the horizon:
+\begin{equation}
+  \Delta\chi(r)
+  \sim \chi_c
+  \sqrt{-\ln\!\left(1 - \frac{r_s}{r}\right)}.
+  \label{eq:deltachi_horizon_asymptotic}
+\end{equation}
+This divergence signals breakdown of the hydrodynamic parametrization,
+not a physical singularity.
+A Schwarzschild horizon corresponds to vanishing relaxation
+conductivity ($K_{\mathrm{eff}} \to 0$), reinterpreting black holes as
+regions where collective structural constraints asymptotically inhibit
+relaxation.

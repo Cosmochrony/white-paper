@@ -1,0 +1,63 @@
+% ----------------------------------------------------------------------------
+% Section 3.2 --- Hamiltonian Derivation of the Evolution Equation
+% From former §5.2
+% ----------------------------------------------------------------------------
+\subsection{Hamiltonian Derivation of the Evolution Equation}
+\label{subsec:hamiltonian-derivation}
+
+Once projected $\chi$ configurations admit a smooth, stable coarse-grained
+description, admissible local relaxation patterns may be summarized by a
+constraint formally analogous to a Hamiltonian condition.
+The effective local relaxation ordering is bounded by the invariant causal
+constant~$c$:
+\begin{equation}
+  \left(\mathcal{D}_{\mathrm{loc}} \chi_{\mathrm{eff}}\right)^2
+  + \mathcal{V}_{\chi_{\mathrm{eff}}}^2
+  = c^2 ,
+  \label{eq:effective_hamiltonian_constraint}
+\end{equation}
+where $\mathcal{V}_{\chi_{\mathrm{eff}}}$ denotes an effective internal
+variation functional encoding the resistance of projected configurations to
+further relaxation (e.g., solitonic or bound configurations).
+
+Restricting to the monotonic ordering branch yields
+\begin{equation}
+  \mathcal{D}_{\mathrm{loc}} \chi_{\mathrm{eff}}
+  = c \sqrt{1
+      - \frac{\mathcal{V}_{\chi_{\mathrm{eff}}}^2}{c^2}} ,
+  \label{eq:chi_dynamics}
+\end{equation}
+expressing the universal slowdown of effective relaxation induced by
+localized structural constraints.
+
+\subsubsection*{Emergent Gravitational Description}
+
+Projected configurations exhibiting strong resistance to relaxation locally
+reduce the admissible effective relaxation rate.
+In a spacetime interpretation, this reduction is conventionally described as
+gravitational time dilation.
+No independent gravitational field is postulated.
+
+In weak-structure regimes, the spatial distribution of relaxation slowdown
+admits the simplified relation
+\begin{equation}
+  \nabla \cdot \left(
+    \frac{\nabla \chi_{\mathrm{eff}}}
+    {\sqrt{1 - |\nabla \chi_{\mathrm{eff}}|^2 / c^2}}
+  \right)
+  \simeq \frac{4 \pi G_{\mathrm{eff}}}{c^2} \rho ,
+  \label{eq:effective_poisson_relation}
+\end{equation}
+where $\rho$ denotes the effective density of localized
+relaxation-resistant configurations and $G_{\mathrm{eff}}$ is an emergent
+coupling parameter.
+In the Newtonian limit, this yields an effective Poisson equation for a
+potential defined operationally by
+\begin{equation}
+  \Phi \equiv c^2 \ln \!\left(
+    \frac{\mathcal{D}_{\mathrm{loc}} \chi_{\mathrm{eff}}}{c}
+  \right) .
+  \label{eq:effective_gravitational_potential}
+\end{equation}
+This potential is a compact summary of how localized variations in
+effective relaxation modulate physical clocks and rulers.

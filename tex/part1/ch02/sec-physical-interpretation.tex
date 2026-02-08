@@ -1,0 +1,69 @@
+% ----------------------------------------------------------------------------
+% Section 2.3 --- Physical Interpretation
+% From former §3.3, condensed
+% ----------------------------------------------------------------------------
+\subsection{Physical Interpretation}
+\label{subsec:physical-interpretation}
+
+In regimes where the infra-physical projection from $\chi$ to an effective
+description~$\chi_{\mathrm{eff}}$ yields a factorisable structure, an
+approximate decomposition into subsystems and the definition of operational
+observables become possible.
+This factorisation underlies the emergence of classical locality,
+compatibility of measurements, and standard relativistic descriptions, as
+illustrated in Fig.~\ref{fig:classical-factorisable}.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    font=\small,
+    node distance=10mm,
+    box/.style={draw, rounded corners, align=center, inner sep=6pt},
+    arrow/.style={-Latex, thick},
+    note/.style={align=left, font=\footnotesize},
+    dashedbox/.style={draw, dashed, rounded corners, inner sep=6pt}
+  ]
+    \node[box] (chi)
+      {$\chi$\\\footnotesize infra-physical substrate};
+    \node[box, below=of chi] (chieff)
+      {$\chi_{\mathrm{eff}}$\\\footnotesize factorisable regime};
+    \node[dashedbox, below=of chieff, minimum width=6.6cm] (decomp) {
+      \begin{tabular}{c}
+        \footnotesize
+        $\chi_{\mathrm{eff}} \simeq
+          \chi_{\mathrm{eff}}^{(A)}
+          \otimes \chi_{\mathrm{eff}}^{(B)}$\\
+        \footnotesize (independent subsystems)
+      \end{tabular}
+    };
+    \node[box, below left=10mm and 12mm of decomp] (obsA)
+      {Local observables\\in subsystem $A$};
+    \node[box, below right=10mm and 12mm of decomp] (obsB)
+      {Local observables\\in subsystem $B$};
+    \draw[arrow] (chi) -- node[right=2mm, note]
+      {infra-physical\\projection $\pi$} (chieff);
+    \draw[arrow] (chieff) -- (decomp);
+    \draw[arrow] (decomp) -- node[left=2mm, note]
+      {operational\\projection $\mathcal{O}_A$} (obsA);
+    \draw[arrow] (decomp) -- node[right=2mm, note]
+      {operational\\projection $\mathcal{O}_B$} (obsB);
+  \end{tikzpicture}
+  \caption{Classical (factorisable) regime.
+    After the infra-physical projection~$\pi$, the effective description
+    admits an approximate decomposition into independent subsystems.
+    Operational projections then yield compatible local observables,
+    recovering standard classical descriptions.
+    This contrasts with the non-factorisable regimes discussed in
+    Section~\ref{sec:quantum-phenomena-and-entanglement}.}
+  \label{fig:classical-factorisable}
+\end{figure}
+
+Because the projection from $\chi$ to $\chi_{\mathrm{eff}}$ is generically
+non-injective, distinct $\chi$ configurations may correspond to identical
+effective descriptions, while a single underlying configuration may admit
+multiple correlated operational realizations.
+This structural asymmetry is central to the emergence of both classical and
+quantum phenomenology.
+The physical content of the theory resides entirely in the dynamics of the
+fundamental substrate, while spacetime notions function as emergent,
+context-dependent descriptive tools.

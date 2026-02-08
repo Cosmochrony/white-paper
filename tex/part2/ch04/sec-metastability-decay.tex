@@ -1,0 +1,73 @@
+% ----------------------------------------------------------------------------
+% Section 4.4 --- Metastability, Projection, and Particle Decay
+% From former §6.4, condensed
+% ----------------------------------------------------------------------------
+\subsection{Metastability, Projection, and Particle Decay}
+\label{subsec:metastability-and-decay}
+
+A stable particle corresponds to a deep basin of admissible projected
+configurations; an unstable particle occupies a shallow or fragile basin.
+Particle decay is interpreted as the structural reorganization of a
+metastable configuration: when the concentration of constraints exceeds
+what can be sustained by a single projected entity, admissibility is
+recovered through factorization into less constrained localized
+configurations, possibly accompanied by weakly structured excitations.
+
+Entanglement and decay represent two regimes of the same projection
+structure.
+Entanglement corresponds to non-factorizability without fragmentation,
+while decay corresponds to non-factorizability that forces fragmentation.
+The distinction lies in the stability properties of the projected
+description under admissible fluctuations.
+
+The finite lifetime of unstable particles reflects the probability of
+crossing a structural reorganization threshold under admissible
+variations, yielding the observed exponential decay law as a statistical
+signature of metastability.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    box/.style={draw, rounded corners, align=center, inner sep=6pt},
+    arr/.style={->, thick},
+    lab/.style={font=\small, align=center}
+  ]
+    \node[box] (A)
+      {$\chi_{\mathrm{eff},A}$\\[-2pt]\footnotesize metastable\\
+       [-2pt]\footnotesize (single knot)};
+    \node[box, right=2.7cm of A] (T)
+      {Admissible\\[-2pt]\footnotesize factorization\\
+       [-2pt]\footnotesize threshold};
+    \node[box, right=2.9cm of T, yshift=1.1cm] (B1)
+      {$\chi_{\mathrm{eff},1}$\\[-2pt]\footnotesize stable knot};
+    \node[box, right=2.9cm of T] (B2)
+      {$\chi_{\mathrm{eff},2}$\\[-2pt]\footnotesize stable knot};
+    \node[box, right=2.9cm of T, yshift=-1.1cm] (B3)
+      {$\chi_{\mathrm{eff},3}$\\[-2pt]\footnotesize stable /\\
+       [-2pt]\footnotesize sub-threshold};
+    \node[box, below=1.6cm of B2] (R)
+      {$\chi_{\mathrm{eff,rad}}$\\[-2pt]\footnotesize light
+       excitations\\[-2pt]\footnotesize (photon/$\nu$/...)};
+    \draw[arr] (A) -- node[lab, above]
+      {projective variability\\
+       \footnotesize (threshold crossing)} (T);
+    \draw[arr] (T) -- (B1);
+    \draw[arr] (T) -- (B2);
+    \draw[arr] (T) -- (B3);
+    \draw[arr] (T) -- node[lab, right]
+      {\footnotesize mismatch evacuation} (R);
+    \node[lab, above=0.35cm of B2] (Q)
+      {$Q(\chi_A)=\sum_i Q(\chi_i)$\\[-2pt]
+       \footnotesize structural invariants redistributed};
+  \end{tikzpicture}
+  \caption{Structural interpretation of particle decay.
+    A metastable localized projected configuration transitions, via an
+    admissible factorization threshold, into several more stable
+    configurations plus weak excitations that evacuate the residual
+    structural mismatch.}
+  \label{fig:decay-fragmentation}
+\end{figure}
+
+A more technical characterization of metastability, admissible
+factorization channels, and decay widths is provided in
+Appendix~\ref{subsec:metastability-decay-channels-and-exponential-lifetimes}.

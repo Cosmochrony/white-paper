@@ -1,0 +1,61 @@
+% A11 --- Emergent Electrodynamics from χ Dynamics
+\subsection{Emergent Electrodynamics from
+\texorpdfstring{$\chi$}{χ} Dynamics}
+\label{app:emergent-electrodynamics}
+
+In the weak-field limit, the variational formulation yields a
+linearized wave equation admitting propagating collective modes.
+The spatial gradient of~$\chi$ decomposes as
+$\nabla\chi = -\nabla\phi + \mathbf{A}_{\mathrm{T}}$
+with $\nabla\cdot\mathbf{A}_{\mathrm{T}} = 0$
+(Helmholtz projection induced by solitonic topology).
+
+\subsubsection*{Charge as Transverse Torsion}
+\label{subsec:charge-as-torsion}
+
+The bounded canonical current
+\[
+  \mathbf{J}_\chi
+  \;\propto\;
+  \frac{\nabla\chi}
+       {\sqrt{1 - |\nabla\chi|^2/c^2}}
+\]
+saturates as $|\nabla\chi| \to c$.
+A localized excitation carries effective charge if
+\begin{equation}
+  q \;\equiv\;
+    \kappa \oint_{\gamma}
+      \mathbf{A}_T \cdot d\boldsymbol{\ell}
+  \;=\;
+    \kappa \int_{S}
+      (\nabla\times\mathbf{A}_T)
+      \cdot d\mathbf{S}.
+\end{equation}
+Sign reflects chirality of the transverse torsion; stability
+follows from topological character.
+
+\subsubsection*{Emergent Electromagnetic Fields}
+
+Defining
+$\mathbf{E} = -\nabla\phi
+  - \frac{1}{c}\partial_t\mathbf{A}_{\mathrm{T}}$
+and
+$\mathbf{B} = \nabla\times\mathbf{A}_{\mathrm{T}}$,
+these satisfy Maxwell-like relations:
+\begin{align}
+  \nabla\cdot\mathbf{E}
+    &= 4\pi G_{\mathrm{eff}}\rho_{\mathrm{em}}, \\
+  \nabla\times\mathbf{E}
+    + \tfrac{1}{c}\partial_t\mathbf{B} &= 0, \\
+  \nabla\cdot\mathbf{B} &= 0, \\
+  \nabla\times\mathbf{B}
+    - \tfrac{1}{c}\partial_t\mathbf{E}
+    &= \tfrac{4\pi G_{\mathrm{eff}}}{c}
+       \mathbf{J}_{\mathrm{em}}.
+\end{align}
+Gauge transformations
+$\phi \to \phi - \frac{1}{c}\partial_t\Lambda$,
+$\mathbf{A}_{\mathrm{T}} \to
+  \mathbf{A}_{\mathrm{T}} + \nabla\Lambda$
+leave $\mathbf{E}$, $\mathbf{B}$ invariant.
+This emergent $U(1)$ symmetry reflects the relational nature of~$\chi$.
