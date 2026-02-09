@@ -1,7 +1,3 @@
-% ----------------------------------------------------------------------------
-% C.1 --- Low-ell CMB Power Suppression
-% From former C01, condensed
-% ----------------------------------------------------------------------------
 \subsection{Low-\texorpdfstring{$\ell$}{ℓ} CMB Power Suppression
 from Global \texorpdfstring{$\chi$}{χ} Relaxation}
 \label{app:lowell_attenuation}
@@ -16,14 +12,29 @@ lowest $\ell$-modes are systematically attenuated.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.85\textwidth]
-    {6-appendices/appC/C01-cmb_lowell_unsmoothed}
+  {6-appendices/appC/001-cmb_lowell_unsmoothed}
   \caption{Observed CMB temperature power spectrum at low multipoles.
     The shaded region illustrates a qualitative attenuation envelope
     from global relaxation constraints.}
   \label{fig:cmb_lowell_unsmoothed}
 \end{figure}
 
-\paragraph{Phenomenological parametrization.}
+  \paragraph{Significance of the unsmoothed comparison.}
+    Figure~\ref{fig:cmb_lowell_unsmoothed} is not intended as a precision fit,
+    but as a structural diagnostic.
+    Unlike a sharp infrared cutoff or a purely statistical suppression,
+    the attenuation mechanism preserves the relative multipole-to-multipole
+    variations observed in the Planck data.
+    As $\ell \rightarrow 0$, the same increasing and decreasing trends are
+    reproduced, albeit with a progressively reduced amplitude.
+
+    This behavior is non-trivial.
+    In $\Lambda$CDM, the lowest multipoles are treated as cosmic-variance–dominated
+    outliers, with no underlying mechanism constraining their relative structure.
+    Here, the correlated attenuation emerges from a single global constraint:
+    the finite relational coherence capacity of $\chi_{\mathrm{eff}}$.
+
+  \paragraph{Phenomenological parametrization.}
 \begin{equation}
   C_\ell^{\mathrm{CC}}
   = C_\ell^{\Lambda\mathrm{CDM}}
