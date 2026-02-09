@@ -1,4 +1,5 @@
-This repository contains the source of the [Cosmochrony whitepaper](pdf/Cosmochrony.pdf).
+This repository contains the source of the [Cosmochrony whitepaper](pdf/Cosmochrony.pdf)
+(current consolidated release).
 
 Cosmochrony is a **pre-geometric theoretical framework** in which time ordering,
 spacetime geometry, dynamics, and matter emerge from the irreversible relaxation
@@ -132,7 +133,8 @@ relaxation dynamics:
   saturation and reprojection dynamics
 
 These regimes provide concrete avenues for phenomenological tests and
-falsifiable predictions.
+falsifiable predictions with current and forthcoming observational
+programs.
 
 ## Status of the Framework
 
@@ -151,7 +153,7 @@ It does **not** claim:
 It **does** provide:
 
 - a uniquely derived dynamical core
-- a coherent and explicit ontology
+- a coherent and explicitly stated minimal ontology
 - well-defined effective limits
 - quantitative and falsifiable directions for further development
 
