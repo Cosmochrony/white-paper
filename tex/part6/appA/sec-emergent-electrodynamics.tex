@@ -6,76 +6,45 @@
 \texorpdfstring{$\chi$}{χ} Dynamics}
 \label{app:emergent-electrodynamics}
 
-In the weak-field limit, the nonlinear field equation linearizes to
-\begin{equation}
-  \nabla^2 \chi
-  - \frac{1}{c^2}
-    \frac{\partial^2 \chi}{\partial t^2}
-  = 4 \pi G_{\mathrm{eff}} \rho_\chi,
-\end{equation}
-admitting propagating collective modes of the projected description.
-
-The spatial gradient decomposes as
-\begin{equation}
-  \nabla \chi = - \nabla \phi
-    + \mathbf{A}_{\mathrm{T}},
-  \qquad
-  \nabla \cdot \mathbf{A}_{\mathrm{T}} = 0,
-\end{equation}
-an effective Helmholtz projection induced by the topology of
-localized~$\chi$ excitations.
+In the weak-gradient regime, $\nabla\chi$ decomposes as
+$\nabla\chi = -\nabla\phi + \mathbf{A}_\mathrm{T}$ with
+$\nabla \cdot \mathbf{A}_\mathrm{T} = 0$, induced by the topology of
+localized excitations.
 
 \subsubsection*{Charge as Transverse Torsion}
 \label{subsec:charge-as-torsion}
 
 The bounded canonical current
-\begin{equation}
-  \mathbf{J}_\chi
-  \;\propto\;
-  \frac{\nabla \chi}
-    {\sqrt{1 - |\nabla \chi|^2 / c^2}}
-\end{equation}
+$\mathbf{J}_\chi
+  \propto \nabla\chi/\sqrt{1 - |\nabla\chi|^2/c^2}$
 saturates as $|\nabla\chi| \to c$.
-An effective charge invariant is defined as
-\begin{equation}
-  q \;\equiv\;
-  \kappa \oint_{\gamma}
-    \mathbf{A}_T \cdot d\boldsymbol{\ell}
-  \;=\;
-  \kappa \int_{S}
-    (\nabla \times \mathbf{A}_T)
-    \cdot d\mathbf{S}.
-\end{equation}
+An effective charge invariant is
+$q = \kappa \oint_\gamma
+    \mathbf{A}_\mathrm{T} \cdot d\boldsymbol{\ell}$,
+whose sign reflects the chirality of the transverse torsion.
+The magnetic field is
+$\mathbf{B} = \nabla \times \mathbf{A}_\mathrm{T}$.
 
 \subsubsection*{Emergent Electromagnetic Fields}
 
-\begin{equation}
+Electric and magnetic fields:
+\[
   \mathbf{E}
-  = -\nabla \phi
-    - \frac{1}{c}
-      \frac{\partial \mathbf{A}_{\mathrm{T}}}
-           {\partial t},
-  \qquad
+  = -\nabla\phi
+    - \frac{1}{c}\frac{\partial\mathbf{A}_\mathrm{T}}
+                      {\partial t},
+  \quad
   \mathbf{B}
-  = \nabla \times \mathbf{A}_{\mathrm{T}}.
-\end{equation}
-These satisfy Maxwell-like relations:
-\begin{align}
-  \nabla \cdot \mathbf{E}
-    &= 4\pi G_{\mathrm{eff}}
-       \rho_{\mathrm{em}}, \\
-  \nabla \times \mathbf{E}
-    + \frac{1}{c}
-      \frac{\partial \mathbf{B}}{\partial t}
-    &= 0, \\
-  \nabla \cdot \mathbf{B} &= 0, \\
-  \nabla \times \mathbf{B}
-    - \frac{1}{c}
-      \frac{\partial \mathbf{E}}{\partial t}
-    &= \frac{4\pi G_{\mathrm{eff}}}{c}
-       \mathbf{J}_{\mathrm{em}}.
-\end{align}
-These are compatibility conditions of the projected description, not
-fundamental field equations.
-Emergent $U(1)$ gauge invariance reflects the relational nature
-of~$\chi$: only gradient differences have operational meaning.
+  = \nabla \times \mathbf{A}_\mathrm{T}.
+\]
+These satisfy a closed system of Maxwell-like relations.
+Gauge invariance under
+$\phi \to \phi - c^{-1}\partial_t\Lambda$,
+$\mathbf{A}_\mathrm{T}
+  \to \mathbf{A}_\mathrm{T} + \nabla\Lambda$
+reflects the relational nature of $\chi$
+(Section~\ref{subsec:relational-foundation-pointer}).
+
+Electromagnetism appears as a geometric and topological manifestation
+of the $\chi$ substrate, not an independent interaction mediated by
+elementary gauge fields.

@@ -1,36 +1,37 @@
 % ----------------------------------------------------------------------------
-% A.3 --- Analytical Solutions
+% A.3 --- Analytical Solutions of the chi-Field Dynamics
 % From former A03, condensed
 % ----------------------------------------------------------------------------
 \subsection{Analytical Solutions of the
 \texorpdfstring{$\chi$}{χ}-Field Dynamics}
 \label{subsec:analytical-solutions}
 
-Explicit solutions of
+Explicit solutions of the effective relaxation equation:
 \begin{equation}
-  \partial_t \chi
-  = c \sqrt{1 - \frac{|\nabla \chi|^2}{c^2}}
+  \partial_t\chi
+  = c\sqrt{1 - \frac{|\nabla\chi|^2}{c^2}}.
   \label{eq:chi_effective_evolution}
 \end{equation}
-illustrate the causal structure and relaxational character.
 
 \paragraph{Homogeneous relaxation.}
-For $\nabla\chi = 0$: $\chi(t) = \chi_0 + c\,t$, representing
-uniform global relaxation.
+$\nabla\chi = 0$ gives $\chi(t) = \chi_0 + ct$, underlying emergent
+cosmological expansion
+(Section~\ref{subsec:homogeneous-cosmological-limit}).
 
 \paragraph{Gradient-saturated profiles.}
-Configurations with $|\partial_r\chi| = c$ satisfy
-$\partial_t\chi = 0$ (local freezing), taking the form
-$\chi(r) = \chi_0 \pm c\,r$.
-These idealize horizons and maximally constrained regions.
+$|\partial_r\chi| = c$ yields $\partial_t\chi = 0$: local freezing
+of the ordering parameter.
+The profiles $\chi(r) = \chi_0 \pm cr$ model horizons and maximally
+constrained regions.
 
 \paragraph{Linear relaxation fronts.}
-$\chi(x,t) = \chi_0 + c\,t \pm v\,x$ with $|v| < c$ satisfies
-\eqref{eq:chi_effective_evolution} identically, describing
-kinematic boundaries of the relaxation.
+$\chi(x,t) = \chi_0 + ct \pm vx$ with $|v| < c$ satisfies
+Eq.~\eqref{eq:chi_effective_evolution} identically.
+These are kinematic boundaries, not propagating waves.
 
 \paragraph{Absence of linear wave solutions.}
-Small perturbations do not propagate as oscillatory modes---the dynamics
-is purely relaxational.
+Small perturbations around homogeneous configurations do not propagate
+as oscillatory modes
+(Section~\ref{subsec:stability-analysis}).
 Apparent wave-like phenomena arise only at the effective level through
 collective excitations.
