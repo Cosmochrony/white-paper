@@ -1,35 +1,42 @@
-% ----------------------------------------------------------------------------
-% Section 5.1 --- The Geometry of the Pi Subspace
-% From former §10.1
-% ----------------------------------------------------------------------------
 \subsection{The Geometry of the
 \texorpdfstring{$\Pi$}{Π} Subspace}
-\label{sec:geometry-pi}
+  \label{sec:geometry-pi}
 
-The relational substrate~$\chi$ is not accessed in its full structural
-complexity but through admissible local projections onto a reduced
-projection fiber $\Pi \cong S^3$.
-Here $\Pi$ denotes the projection \emph{fiber}, i.e.\ the space of
-admissible internal representatives associated with a projected
-configuration, not the projection map itself.
+  The relational substrate~$\chi$ is not accessed in its full structural
+  complexity but through admissible local projections onto a reduced
+  projection fiber $\Pi \cong S^3$.
+  Here $\Pi$ denotes the projection \emph{fiber}, i.e.\ the space of
+  admissible internal representatives associated with a projected
+  configuration, not the projection map itself.
 
-The identification $\Pi \cong S^3$ is not imposed \emph{a priori} but
-follows from the minimal compact geometry (in dimension and connectivity)
-required to support non-injective yet stable projections.
-Its associated Hopf fibration naturally induces an effective
-$SU(2)\times U(1)$ symmetry structure, which emerges as an invariance of
-the projection process.
+  The identification $\Pi \cong S^3$ is not imposed \emph{a priori} but
+  follows from the minimal compact geometry (in dimension and connectivity)
+  required to support non-injective yet stable projections.
+  Its associated Hopf fibration naturally induces an effective
+  $SU(2)\times U(1)$ symmetry structure, which emerges as an invariance of
+  the projection process.
 
-The metric on~$\Pi$ is dynamically induced by the local density of
-relational connections encoded in the underlying relational graph~$G$,
-used as a numerical and representational support, not as a physical
-discretization.
-The mapping from the global graph Laplacian~$\Delta_G$ to the effective
-projected Laplacian~$\Delta_\Pi$ is
-\begin{equation}
-  \Delta_\Pi = P^\dagger \Delta_G P ,
-\end{equation}
-where $P$ denotes the projection operator onto the admissible spectral
-subspace.
-The smooth three-sphere geometry corresponds to a large-$N$ spectral
-coarse-graining limit of the discrete relational structure.
+  The metric on~$\Pi$ is dynamically induced by the local density of
+  relational connections encoded in the underlying relational graph~$G$,
+  used as a numerical and representational support, not as a physical
+  discretization.
+  The mapping from the global graph Laplacian~$\Delta_G$ to the effective
+  projected Laplacian~$\Delta_\Pi$ is
+  \begin{equation}
+    \Delta_\Pi = P^\dagger \Delta_G P ,
+  \end{equation}
+  where $P$ denotes the projection operator onto the admissible spectral
+  subspace.
+  The smooth three-sphere geometry corresponds to a large-$N$ spectral
+  coarse-graining limit of the discrete relational structure.
+
+  \paragraph{Throughput constraints and channel counting.}
+    The projection $\Pi$ does not merely discard information.
+    It enforces an admissibility constraint: local updates must remain operationally compatible with the surrounding
+    global projected state~$U$.
+    This constrains the total admissible throughput by the number of independent relational channels (fibers) that can
+    be synchronized across the update interface within one refresh step.
+    Accordingly, capacity scalings commonly expressed as ``area-law'' behavior should be understood as consequences of
+    projective throughput constraints rather than geometric postulates.
+    This point becomes central when discussing resolvability bounds across scales in
+    Section~\ref{subsec:projective-resolvability-bound}.

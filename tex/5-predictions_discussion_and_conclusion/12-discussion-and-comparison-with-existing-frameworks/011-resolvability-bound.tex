@@ -1,47 +1,61 @@
-% ----------------------------------------------------------------------------
-% Section 12.11 --- Bounds on Projective Resolvability Across Scales
-% From former §15.11, heavily condensed
-% ----------------------------------------------------------------------------
 \subsection{Bounds on Projective Resolvability Across Scales}
-\label{subsec:projective-resolvability-bound}
+  \label{subsec:projective-resolvability-bound}
 
-Saturation phenomena across scales---gravitational response in
-low-density environments, accessibility of quantum correlations---reflect
-a common limitation on the projective resolvability of relational
-structure: the rate at which global relational structure encoded in
-$\chi$ can be rendered operationally accessible within emergent spacetime
-descriptions.
-Attosecond chronoscopy experiments illustrate this notion: measured
-delays reflect the minimal temporal resolution required for a
-non-factorizable projected description to become resolvable, not a
-dynamical buildup of
-correlations~\cite{PhysRevLett.133.163201}.
+  Saturation phenomena across scales---bounded gravitational response in low-density environments and the operational
+  accessibility of quantum correlations---reflect a common limitation on projective resolvability.
+  In Cosmochrony, the projected description $U$ does not expose the full relational content of the substrate~$\chi$.
+  It exposes only what can be rendered operationally accessible through the non-injective mapping~$\Pi$ under admissible
+  update transport.
+  The relevant limitation is therefore not a postulated geometric cutoff, but a throughput bound on the rate at which
+  relational structure can be updated while maintaining operational closure of the projected state.
 
-The bound manifests as an effective inequality:
-\[
-  \left| \frac{\partial \mathcal{O}_{\mathrm{eff}}}
-    {\partial \tau} \right|
-  \;\leq\;
-  b \, \mathcal{S}_{\Pi},
-\]
-where $b$ is the fundamental resolvability bound and
-$\mathcal{S}_{\Pi}$ characterizes the structural complexity of the
-non-injective projection.
+  Attosecond chronoscopy experiments illustrate this principle.
+  Measured delays can be interpreted as the minimal temporal resolution required for a non-factorizable projected
+  description to become operationally resolvable, rather than as a dynamical buildup of correlations~\cite{PhysRevLett.133.163201}.
 
-Its phenomenological manifestations are:
-\begin{equation}
-  a_{\star} \approx \eta_{G} \, b \, c,
-  \label{eq:a_star_b_relation}
-\end{equation}
-for gravitational saturation, and
-\begin{equation}
-  B_{\Pi}(\mathcal{M})
-  = \eta_{\mathcal{M}} \, b \, \mathcal{S}_{\Pi},
-  \label{eq:bandwidth_b_relation}
-\end{equation}
-for the operational projective bandwidth associated with a measurement
-protocol~$\mathcal{M}$.
-These are distinct dimensional expressions of the same underlying bound.
-A modification of the fundamental resolvability of the
-$\chi \rightarrow \Pi$ mapping would induce correlated shifts in both
-galactic saturation scales and quantum chronoscopy timescales.
+  We summarize this limitation by an effective inequality on projected update rates,
+  \begin{equation}
+    \left| \frac{\partial \mathcal{O}_{\mathrm{eff}}}{\partial \tau} \right|
+    \;\leq\;
+    b_{\chi}\,\mathcal{S}_{\Pi},
+    \label{eq:resolvability_bound}
+  \end{equation}
+  where $b_{\chi}$ is the invariant bound on admissible relaxation transport in the substrate and $\mathcal{S}_{\Pi}$
+  parametrizes the effective structural complexity of the projection for the class of observables under consideration.
+  The factor $\mathcal{S}_{\Pi}$ is not a new dynamical field.
+  It encodes how many independent relational channels can be synchronized within one operational update step.
+
+  Distinct phenomenological manifestations correspond to distinct choices of $\mathcal{O}_{\mathrm{eff}}$ and the associated
+  resolution scale.
+  In macroscopic weak-field regimes, the same bound induces an operational saturation threshold that can be expressed as an
+  effective acceleration proxy,
+  \begin{equation}
+    a_{\star} \sim \kappa \frac{b_{\chi}}{\ell},
+    \label{eq:a_star_b_relation}
+  \end{equation}
+  where $\ell$ is the local descriptive resolution of the projected state and $\kappa=\mathcal{O}(1)$ encodes the
+  normalization convention of~$\Pi$.
+  In measurement-limited quantum protocols, the bound similarly appears as a bandwidth constraint,
+  \begin{equation}
+    B_{\Pi}(\mathcal{M})
+    = \eta_{\mathcal{M}}\,b_{\chi}\,\mathcal{S}_{\Pi},
+    \label{eq:bandwidth_b_relation}
+  \end{equation}
+  for a measurement procedure~$\mathcal{M}$, with $\eta_{\mathcal{M}}$ absorbing protocol-dependent conventions.
+  These expressions represent different dimensional projections of the same underlying transport bound.
+  A modification of the effective resolvability of the $\chi \rightarrow \Pi$ mapping would therefore induce correlated
+  shifts in both galactic saturation scales and quantum chronoscopy thresholds.
+
+  A further generic consequence is the divergence of projective stress under sufficiently deep refinement.
+  Let $D$ denote an operational update demand, defined as a characteristic rate at which projected relations must be
+  recomputed to preserve admissibility.
+  Let $C$ denote the admissible projective throughput under the bound~$b_{\chi}$ for the same class of updates.
+  The dimensionless stress ratio
+  \begin{equation}
+    \Xi \equiv \frac{D}{C}
+  \end{equation}
+  provides a regime indicator.
+  Whenever a process increases $D$ faster than $C$ can be redistributed by the available synchronized channels, $\Xi$ grows
+  and a saturated reconfiguration becomes unavoidable.
+  This statement is independent of any particular emergent geometry and follows solely from bounded transport and finite
+  projective resolvability.
