@@ -1,0 +1,201 @@
+\subsection{Infrared expansion of the coherence functional}
+  \label{subsec:stepB-IR}
+
+  To extract the dominant infrared behavior of $S_{\mathrm{coh}}$, we expand
+  $\mathcal{L}_{\mathrm{defect}}$ in powers of the curvature scale $\ell_c^{-2}$,
+  where $\ell_c$ is the characteristic scale of curvature variations.
+  In the infrared regime $\ell_c \gg \ell_\chi$ (with $\ell_\chi = \hbar_\chi / c_\chi$
+  the microscopic capacity length), curvature is slowly varying and the expansion is
+  controlled.
+
+  \paragraph{Step 1: metric from the operator symbol.}
+    Following the derivation in~\cite{Beau2026b} and Appendix~A.12, the effective metric
+    $g_{\mu\nu}$ is identified with the principal symbol of the effective continuum
+    operator $\mathcal{L}_\Pi = \nabla^\mu(A^{\mu\nu}(x) \nabla_\nu)$:
+    \begin{equation}
+      g^{\mu\nu}(x) \propto A^{\mu\nu}(x),
+      \label{eq:metric-symbol}
+    \end{equation}
+    where $A^{\mu\nu}$ encodes the local connectivity and stiffness of the relational
+    substrate~\cite{Beau2026b}.
+    This is an emergent metric: it is not introduced as an independent variable but arises
+    from the spectral structure of $\Pi$.
+
+  \paragraph{Step 2: from fiber curvature to effective Laplacian to Riemann tensor.}
+    The curvature 2-form $\Omega_{\mu\nu}$ of the fiber connection acts on sections of the
+    adjoint bundle $\mathrm{ad}\,P$ over $\mathcal{M}$.
+    Its square $\|\Omega_{\mu\nu}\|^2_{\mathfrak{g}_\Pi}$, integrated over $\mathcal{M}$,
+    defines a Yang--Mills-type functional on $\mathcal{M}$.
+    In the Kaluza--Klein reduction from $\mathcal{C}_\chi$ to $\mathcal{M}$, the fiber
+    curvature contributes to the effective operator $\mathcal{L}_\Pi$ through its symbol.
+    Following~\cite{Beau2026b}, the principal symbol of $\mathcal{L}_\Pi$ is
+    $\sigma_2(\mathcal{L}_\Pi)(x,k)=A^{\mu\nu}(x)k_\mu k_\nu$, which identifies
+    $g^{\mu\nu}\propto A^{\mu\nu}$.
+    The fiber curvature $\Omega$ modifies the sub-principal symbol of $\mathcal{L}_\Pi$ at
+    order $\ell_c^{-2}$, contributing a term proportional to $R_{\mu\nu}k^\mu k^\nu$ through
+    the standard formula for the sub-principal symbol of a connection Laplacian
+    $\nabla^\mu\nabla_\mu$ acting on sections of a bundle with curvature $\Omega$:
+    \[
+      \sigma_1(\nabla^\mu \nabla_\mu) \supset \frac{1}{6} R \cdot \mathrm{id}
+      + \mathcal{F}(\Omega),
+    \]
+    where the first term is the Lichnerowicz correction and $\mathcal{F}(\Omega)$ encodes
+    the fiber curvature contribution.
+    It is this sub-principal symbol, not the Yang--Mills square $\|\Omega\|^2$ directly,
+    that generates $R$ at two-derivative order.
+    The Yang--Mills square $\|\Omega\|^2\sim R_{\mu\nu\rho\sigma}^2$ appears only at
+    four-derivative order and is subdominant under (D3).
+    The two-derivative IR term $R$ arises from the sub-principal symbol of the connection
+    Laplacian on the fiber bundle, via the Lichnerowicz--Weitzenb\"ock identity.
+    We summarize the infrared content of this statement as:
+    \begin{equation}
+      \sigma_1(\mathcal{L}_\Pi)\big|_{\mathrm{fiber}}
+      \supset \frac{1}{6} R + \mathcal{O}(\ell_c^{-4}),
+      \label{eq:subprincipal-symbol}
+    \end{equation}
+    yielding $\mathcal{L}_{\mathrm{defect}}^{\mathrm{geom}} \propto R$ at two-derivative
+    order, with the four-derivative Yang--Mills term $\|\Omega\|^2$ entering only as a
+    subleading correction.
+
+    However, conditions (D1)--(D4) impose additional constraints.
+    In particular, (D3) (infrared dominance of a low-derivative action) requires that
+    the action be organized by the number of derivatives, with the lowest-derivative
+    terms dominating in the infrared.
+
+  \paragraph{Step 3: integration by parts and the Gauss--Bonnet identity.}
+    In four dimensions, the Gauss--Bonnet combination
+    $\mathcal{G} = R_{\mu\nu\rho\sigma} R^{\mu\nu\rho\sigma} - 4 R_{\mu\nu} R^{\mu\nu}
+    + R^2$ is a total derivative and does not contribute to the equations of motion.
+    Therefore, among all quadratic curvature invariants, only $R^2$ and
+    $R_{\mu\nu} R^{\mu\nu}$ are independent at the level of the action, modulo
+    boundary terms.
+    But both are of order $\ell_c^{-4}$, subdominant under (D3).
+
+    The leading IR contribution to the defect density from the geometric sector is
+    therefore:
+    \begin{equation}
+      \mathcal{L}_{\mathrm{defect}}^{\mathrm{geom}}
+      = \frac{c_\chi^3}{\hbar_\chi} \cdot \frac{1}{16\pi} \cdot R
+      + \mathcal{O}(\ell_c^{-4}),
+      \label{eq:defect-IR-expansion}
+    \end{equation}
+    where the prefactor $c_\chi^3 / \hbar_\chi$ matches the dimensions of the
+    Einstein--Hilbert density up to the normalization fixed by the precise operator
+    mapping.
+    The normalization is tracked explicitly in Section~\ref{subsec:stepB-G}.
+
+\subsection{Saturation selects the Born--Infeld completion}
+\label{subsec:stepB-BI}
+
+The IR expansion~\eqref{eq:EH-result} is valid only for $\ell_c \gg \ell_\chi$.
+In the ultraviolet regime $\ell_c \sim \ell_\chi$, higher-derivative corrections become
+comparable to the Einstein--Hilbert term, and the expansion breaks down.
+The saturation bound $|\partial_t \chi| \leq c_\chi$ provides the principle that
+selects among the possible UV completions.
+
+As established in~\cite{Beau2026b}, the minimal conditions for a UV completion
+compatible with bounded flux propagation are:
+\begin{enumerate}[label=(\roman*)]
+    \item it reduces to a quadratic (Einstein--Hilbert-like) form in the IR
+    ($\ell_c \gg \ell_\chi$),
+    \item it enforces a strict upper bound on admissible field invariants at
+    $\ell_c \sim \ell_\chi$,
+    \item it introduces no additional microscopic scales beyond $c_\chi$ and
+    $\hbar_\chi$.
+\end{enumerate}
+
+Applied to the gravitational sector, a natural Born--Infeld-like completion takes the form:
+\begin{equation}
+  S_{\mathrm{coh}}^{\mathrm{full}}[g, \psi]
+  = \frac{c_\chi^4}{\hbar_\chi^2}
+  \int_{\mathcal{M}} \left(
+                       \sqrt{-\det\!\left( g_{\mu\nu}
+                                      + \frac{\hbar_\chi}{c_\chi^2} \mathcal{R}_{\mu\nu} \right)}
+                       - \sqrt{-g}
+  \right) d^4x
+  + S_{\mathrm{matter}}[g, \psi],
+  \label{eq:BI-gravity}
+\end{equation}
+where $\mathcal{R}_{\mu\nu}$ is a symmetric curvature tensor.
+The precise identification of $\mathcal{R}_{\mu\nu}$ requires the tensorial extension
+of the operator-theoretic analysis of~\cite{Beau2026b}.
+
+In the IR expansion $\hbar_\chi / c_\chi^2 \ll \ell_c^2$:
+\begin{align}
+  \sqrt{-\det\!\left( g_{\mu\nu}
+                 + \frac{\hbar_\chi}{c_\chi^2} \mathcal{R}_{\mu\nu} \right)}
+  &\approx \sqrt{-g}
+  \left(
+    1
+    + \frac{\hbar_\chi}{2c_\chi^2} \mathcal{R}
+    + \mathcal{O}\!\left(\frac{\hbar_\chi^2}{c_\chi^4}
+                     \mathcal{R}_{\mu\nu} \mathcal{R}^{\mu\nu}\right)
+  \right),
+  \label{eq:BI-expand}
+\end{align}
+so that:
+\begin{equation}
+  S_{\mathrm{coh}}^{\mathrm{full}}
+  \;\xrightarrow{\;\ell_c \gg \ell_\chi\;}\;
+  \frac{c_\chi^2}{2\hbar_\chi}
+  \int_{\mathcal{M}} \mathcal{R} \sqrt{-g}\, d^4x
+  + S_{\mathrm{matter}}
+  + \mathcal{O}(\ell_c^{-4}),
+  \label{eq:BI-IR}
+\end{equation}
+where $\mathcal{R} \equiv g^{\mu\nu}\mathcal{R}_{\mu\nu}$.
+If $\mathcal{R}_{\mu\nu}=R_{\mu\nu}$, then $\mathcal{R}=R$ and the leading term
+reproduces~\eqref{eq:EH-result}.
+
+\begin{proposition}[Born--Infeld structure as gravitational UV completion]
+  \label{prop:BI-unique}
+  Under conditions (i)--(iii) and ontological uniqueness, the UV completion of the
+  Einstein--Hilbert term in $S_{\mathrm{coh}}$ belongs to the class of Eddington-inspired
+  Born--Infeld actions of the form~\eqref{eq:BI-gravity}.
+  This structure is the unique diffeomorphism-invariant extension of the scalar
+  Born--Infeld form satisfying (i)--(iii) under the ansatz that the completion depends
+  on the metric and its curvature only through a single symmetric rank-2 tensor.
+  The tensorial extension of the uniqueness argument from the scalar case to the
+  gravitational case remains an open step requiring the full operator analysis.
+\end{proposition}
+
+\begin{proof}
+  The scalar and vector cases are established in~\cite{Beau2026b}.
+  The extension to the gravitational sector follows by the same argument under the ansatz
+  that the completion depends on $g_{\mu\nu}$ and $\mathcal{R}_{\mu\nu}$ only through their
+  determinant combination, which is the minimal diffeomorphism-invariant structure
+  satisfying (i)--(iii).
+  The identification $\mathcal{R}_{\mu\nu}=R_{\mu\nu}$ is natural but not uniquely forced
+  at this level.
+  Alternatives such as $\mathcal{R}_{\mu\nu}=R_{\mu\nu}-\frac{1}{4}g_{\mu\nu}R$ are also
+  compatible with (i)--(iii) and would modify the IR expansion only at subleading order.
+  This residual ambiguity is the primary open point of the gravitational Born--Infeld
+  completion within the present framework.
+\end{proof}
+
+\subsection{Prediction: $G_{\mathrm{eff}}$ in terms of $c_\chi$ and $\hbar_\chi$}
+\label{subsec:stepB-G}
+
+Comparing~\eqref{eq:BI-IR} with the standard Einstein--Hilbert normalization
+$\frac{c^4}{16\pi G} \int R \sqrt{-g}\, d^4x$ and using $c=c_\chi$, the identification
+requires:
+\[
+  \frac{c_\chi^4}{16\pi G_{\mathrm{eff}}} = \frac{c_\chi^2}{2\hbar_\chi}.
+\]
+Formally, this gives:
+\begin{equation}
+  G_{\mathrm{eff}} = \frac{c_\chi^2 \hbar_\chi}{8\pi}.
+  \label{eq:G-prediction}
+\end{equation}
+
+A dimensional check in SI units yields
+$[c_\chi^2 \hbar_\chi] = \mathrm{kg}\,\mathrm{m}^4\,\mathrm{s}^{-3}$, while
+$[G]=\mathrm{m}^3\,\mathrm{kg}^{-1}\,\mathrm{s}^{-2}$.
+These do not match, which signals that the prefactor $c_\chi^4/\hbar_\chi^2$ in
+Eq.~\eqref{eq:BI-gravity} must carry the residual dimensions.
+The dimensional consistency of Eq.~\eqref{eq:G-prediction} depends on the precise
+normalization of the Born--Infeld gravitational action, which requires the full
+tensorial derivation noted in Section~\ref{subsec:stepB-BI} as an open step.
+The structural prediction $G_{\mathrm{eff}} = G(c_\chi, \hbar_\chi)$ is robust.
+The precise numerical prefactor and dimensional matching are left as a quantitative
+step contingent on the tensorial completion.
