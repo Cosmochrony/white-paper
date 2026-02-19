@@ -1,0 +1,273 @@
+\section{Necessity of Non-Injective Projection for Emergent Gravity and Mass}
+  \label{sec:necessity-noninjective}
+
+  This section addresses a structural necessity question distinct from sufficiency.
+  We do not show that the $\chi$-substrate implies gravity.
+  That derivation is developed in Sections~6 and~A.8.
+  We show here that, under minimal operational assumptions matching what is empirically observed,
+  a non-injective projection $\Pi$ is required.
+  A bounded relaxation flux is additionally required to select a unique infrared gravitational dynamics.
+
+  \subsection{Operational definitions and standing assumptions}
+    \label{subsec:necessity-defs}
+
+    We work with a microscopic configuration space $\mathcal{C}_\chi$ endowed with an autonomous
+    relaxation rule $F$ (the $\chi$-dynamics of Section~2).
+    The space of effective observables is $\mathcal{M}$.
+    A projection (coarse-graining) map $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ defines the
+    effective state $y = \Pi(x)$ for each substrate configuration $x \in \mathcal{C}_\chi$.
+
+    \paragraph{Emergence.}
+      An effective quantity $Q_{\mathrm{eff}}$ is called \emph{emergent} if and only if
+    \begin{equation}
+      Q_{\mathrm{eff}} = Q(\Pi, F, x),
+      \end{equation}
+      determined solely by the relaxation rule $F$ and the projection $\Pi$.
+      No independent free parameter carrying $Q$ is introduced at the effective level.
+
+    \paragraph{Ontological uniqueness.}
+      The complete substrate is $(\mathcal{C}_\chi, F)$.
+      All effective structures, metric, connection, mass, and charge, are derived from the pair $(F, \Pi)$ only.
+      No fundamental geometric field is postulated independently of this pair.
+
+    \paragraph{Observed gravity.}
+      We assume the effective description admits a Lorentzian geometric formulation satisfying:
+    \begin{enumerate}[label=(D\arabic*)]
+  \item \label{D1}
+  Effective locality.
+  Field equations are local on $\mathcal{M}$.
+  \item \label{D2}
+  Covariance.
+  Diffeomorphism invariance as an invariance of description, not of the substrate.
+  \item \label{D3}
+  Infrared dominance of a low-derivative action.
+  \item \label{D4}
+  Universal coupling to energy-momentum.
+      \end{enumerate}
+
+    \paragraph{Hypothesis H (descriptive redundancy).}
+      The effective geometry is a structure on $\mathcal{M}$, not on $\mathcal{C}_\chi$.
+      Formally,
+    \begin{equation}
+      g_{\mathrm{eff}} = g(y),
+      \quad
+      y = \Pi(x),
+      \quad
+      \text{not } g(x).
+      \label{eq:hypothesis-H}
+      \end{equation}
+      This expresses that gravity is attributed to the stability of the projection,
+      not to an intrinsic geometry defined on the substrate itself.
+
+    \begin{remark}
+      Hypothesis~H is not an additional postulate of Cosmochrony.
+      It is the formal translation of the claim that the effective geometric description belongs to
+      the level of observables $\mathcal{M}$.
+      This is operationally required by the definition of emergent gravity.
+      A geometry that depends on $x$ rather than on $y = \Pi(x)$ would be a substrate-level geometric structure.
+      Any attempt to define $g(x)$ therefore violates Hypothesis~H by construction.
+      \end{remark}
+
+\subsection{Lemma 1: Injectivity is incompatible with emergent gravity under H}
+  \label{subsec:lemma1}
+
+  \begin{lemma}[Injectivity forbids universal geometric emergence under H]
+    \label{lem:injectivity-no-gravity}
+    Assume ontological uniqueness and Hypothesis~H, Eq.~\ref{eq:hypothesis-H}.
+    If $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ is injective,
+    then there is no intrinsic mechanism producing simultaneously
+    \begin{enumerate}[label=(\roman*)]
+  \item a spatially variable inertial rigidity, and
+  \item a non-trivial effective curvature,
+    \end{enumerate}
+    without adding an independent geometric postulate at the effective level.
+  \end{lemma}
+
+  \begin{proof}
+    Suppose $\Pi$ is injective.
+    Then $\mathcal{M}$ is isomorphic to $\mathcal{C}_\chi$ via $\Pi$,
+    and any geometric structure $g(y)$ on $\mathcal{M}$ is equivalent to a structure on $\mathcal{C}_\chi$.
+    Under ontological uniqueness, such a structure must be derived from $(F, \Pi)$ alone.
+
+    However, an injective $\Pi$ generates no descriptive redundancy.
+    There is no quotient, no non-trivial fiber $\Pi^{-1}(y)$, and no re-identification symmetry between
+    distinct substrate configurations.
+    Without descriptive redundancy, no gauge-like or diffeomorphism-like invariance can arise as an invariance of
+    description.
+    Such an invariance can only be postulated independently.
+    Without an invariance of description, universal geometric emergence cannot arise as a constraint shared by all effective
+    couplings.
+    In particular, this is incompatible with the operational meaning of universal coupling in condition~\ref{D4}.
+
+    Therefore, either $g_{\mathrm{eff}}$ and/or inertial parameters are introduced as independent postulates
+    (violating ontological uniqueness and emergence),
+    or no emergent gravity in the sense of Hypothesis~H is obtained.
+
+    The core of the argument is not the arithmetic identity $|\Pi^{-1}(y)| = 1$.
+    It is the structural implication:
+    \[
+      \text{injective}
+      \Rightarrow
+      \text{no redundancy}
+      \Rightarrow
+      \text{no re-identification symmetry}
+      \Rightarrow
+      \text{no universal geometric emergence by constraint.}
+    \]
+    The vanishing of the multiplicative gradient $\partial \log |\Pi^{-1}(y)|$ is a corollary of this chain,
+    not its premise.
+  \end{proof}
+
+\subsection{Lemma 2: Non-injectivity is the general form of descriptive redundancy}
+  \label{subsec:lemma2}
+
+  \begin{lemma}[Descriptive invariance implies an effective quotient]
+    \label{lem:redundancy-quotient}
+    In any framework where gravity is an invariance of description,
+    there exists an effectively non-injective morphism.
+    Equivalently, there exists an equivalence relation $x \sim x'$ on $\mathcal{C}_\chi$
+    such that observables and geometry coincide for distinct micro-configurations.
+  \end{lemma}
+
+  \begin{proof}[Structural exhaustion]
+    We consider representative classes of frameworks realizing gravitational invariance of description.
+
+    \textit{General relativity.}
+    Physical configurations are defined modulo $\mathrm{Diff}(\mathcal{M})$.
+    The physical state space is a quotient by a continuous group action.
+    A quotient is a non-injective projection, since multiple representatives correspond to one physical state.
+
+    \textit{Discretized approaches (spin networks, causal sets, CDT).}
+    Macroscopic geometry is an invariant of sets of micro-configurations and is therefore many-to-one by construction.
+    The non-injectivity is present even when it is not explicitly labeled as a projection.
+
+    \textit{Stochastic approaches (stochastic mechanics, GRW-type).}
+    The measure or filtration identifies micro-histories that are indistinguishable at the level of observables.
+    This defines an effective quotient structure, hence a non-injectivity.
+
+    In each case, non-injectivity is not imported from Cosmochrony.
+    It is the generic mathematical form of descriptive redundancy compatible with universal coupling.
+    Cosmochrony renders this structure explicit by identifying it with $\Pi$,
+    rather than concealing it in a gauge orbit, a sum over histories, or a stochastic measure.
+  \end{proof}
+
+\subsection{Lemma 3: Saturation selects a unique infrared dynamics}
+  \label{subsec:lemma3}
+
+  \begin{lemma}[Non-injectivity alone does not select a unique IR completion]
+    \label{lem:saturation-selects}
+    Non-injectivity of $\Pi$ is sufficient for geometrization and descriptive invariance,
+    but insufficient to select a unique infrared gravitational dynamics.
+    A finite-capacity constraint, the saturation bound $|\partial_t \chi| \leq c_\chi$ on the relaxation flux,
+    acts as a selection principle.
+    It picks a class of bounded effective actions whose infrared expansion reproduces the
+    Einstein\textendash Hilbert term and whose nonlinear regime is Born\textendash Infeld-like.
+    More precisely, the selection yields a unique dominant IR term plus a controlled expansion in powers of $c_\chi^{-2}$,
+    organized by a single capacity parameter.
+  \end{lemma}
+
+  \begin{proof}[Selection argument]
+    Conditions \ref{D1}--\ref{D4} constrain the effective gravitational sector but do not uniquely determine it.
+    They allow the Einstein\textendash Hilbert action plus an unbounded set of higher-derivative corrections
+    not fixed by symmetry and covariance alone.
+
+    The saturation bound $|\partial_t \chi| \leq c_\chi$ plays three distinct roles.
+    \begin{enumerate}
+      \item \textit{Nonlinear completion.}
+      The bound enforces bounded response, yielding a Born\textendash Infeld-like structure for the full effective action
+      (Section~3, Appendix~A.12).
+      This eliminates the freedom in ultraviolet completions that conditions \ref{D1}--\ref{D4} alone leave open.
+      \item \textit{Exclusion of projective pathologies.}
+      Unbounded relaxation gradients correspond to configurations where the fiber $\Pi^{-1}(y)$ collapses,
+      meaning the projection becomes locally injective and the geometric description breaks down.
+      The bound excludes these configurations, ensuring the projective description remains globally admissible.
+      \item \textit{Quantitative prediction.}
+      The bound relates the effective gravitational coupling $G$ to microscopic capacity parameters:
+      \begin{equation}
+        G = G(c_\chi, \hbar_\chi, \ldots),
+        \label{eq:G-prediction}
+      \end{equation}
+      turning the underdetermined effective family into an organized expansion with a single capacity scale.
+      This yields a falsifiable prediction independent of the geometric effective description.
+    \end{enumerate}
+
+    Without the saturation bound, no intrinsic principle selects among the family of actions compatible with
+    \ref{D1}--\ref{D4}.
+    In particular, no principle fixes the coefficient of the Einstein\textendash Hilbert term or the structure of
+    higher-derivative corrections.
+  \end{proof}
+
+\subsection{Theorem: Necessity of non-injective projection and bounded relaxation flux}
+  \label{subsec:necessity-theorem}
+
+  \begin{theorem}[Necessity of non-injective projection and bounded relaxation]
+    \label{thm:necessity}
+    Assume:
+    \begin{enumerate}[label=(\roman*)]
+  \item mass and gravity are emergent in the operational sense of Section~\ref{subsec:necessity-defs},
+  \item ontological uniqueness, with no independent fundamental geometric fields,
+  \item observed gravity satisfying \ref{D1}--\ref{D4},
+  \item Hypothesis~H, Eq.~\ref{eq:hypothesis-H}.
+    \end{enumerate}
+    Then:
+    \begin{enumerate}[label=(\alph*)]
+  \item \label{thm:a}
+  $\Pi$ must be non-injective.
+  Equivalently, there must exist an effective equivalence relation on $\mathcal{C}_\chi$
+  compatible with universal coupling.
+  \item \label{thm:b}
+  The substrate relaxation flux must be bounded, providing the selection principle required for a unique infrared dynamics
+  with controlled higher-order corrections.
+    \end{enumerate}
+  \end{theorem}
+
+  \begin{proof}
+    \textit{Part~\ref{thm:a}.}
+    By Lemma~\ref{lem:injectivity-no-gravity}, if $\Pi$ were injective under Hypothesis~H and ontological uniqueness,
+    universal geometric emergence would require an independent geometric postulate at the effective level.
+    This violates the operational notion of emergence.
+    Lemma~\ref{lem:redundancy-quotient} further shows that any alternative framework implementing descriptive invariance
+    introduces an effective quotient, hence a non-injectivity in disguise, regardless of terminology.
+
+    \textit{Part~\ref{thm:b}.}
+    By Lemma~\ref{lem:saturation-selects}, non-injectivity alone does not select a unique infrared dynamics compatible with
+    \ref{D1}--\ref{D4}.
+    The bounded relaxation flux $|\partial_t \chi| \leq c_\chi$ supplies the selection mechanism by fixing the nonlinear
+    completion and organizing higher-order corrections by a single capacity scale.
+  \end{proof}
+
+\subsection{Remaining technical steps toward a quantitative derivation}
+  \label{subsec:necessity-open}
+
+  Two technical steps remain to convert Theorem~\ref{thm:necessity} from a structural necessity result into a fully
+  quantitative derivation.
+
+  \paragraph{Step~A: Classification of admissible injective projections.}
+    One must formalize the class of admissible injective maps $\Pi : \mathcal{C}_\chi \to \mathcal{M}$.
+    One must then show that within this class, no re-identification symmetry can arise without adding extra structure.
+    This is not a claim that curvature cannot be defined mathematically on $\mathcal{M}$.
+    It is the claim that emergent gravity as descriptive invariance cannot arise from $(F, \Pi)$ under injectivity and
+    Hypothesis~H.
+    A suitable formal route is to classify maps $\Pi$ by their fiber topology,
+    and to show that trivial fibers (injective case) cannot support a non-trivial holonomy structure.
+
+  \paragraph{Step~B: Derivation of Einstein\textendash Hilbert from the coherence functional.}
+    One must construct the coherence functional
+    \begin{equation}
+      S_{\mathrm{coh}}[g, \psi]
+      =
+      \int_{\mathcal{M}} \mathcal{L}_{\mathrm{defect}}(\Pi, F, y)\, \mathrm{d}^4 y,
+    \end{equation}
+    defined as the integrated cost of projective defect,
+    the mismatch between successive projected descriptions under the relaxation rule $F$.
+    One must then show that:
+    \begin{enumerate}
+      \item the infrared expansion of $S_{\mathrm{coh}}$ yields $\int \sqrt{-g}\, R$ as the dominant term compatible with
+      \ref{D1}--\ref{D4},
+      \item the saturation bound enforces a Born\textendash Infeld-like completion whose expansion begins with $R$,
+      \item the coefficient of $R$ in the expansion determines $G$ via Eq.~\ref{eq:G-prediction},
+      yielding a falsifiable quantitative prediction relating the effective coupling to $c_\chi$ and $\hbar_\chi$.
+    \end{enumerate}
+    This would establish the Einstein\textendash Hilbert term not as a postulate,
+    but as the unique dominant term permitted by projective coherence, with Cosmochrony fixing the nonlinear completion and
+    the coupling constant.
