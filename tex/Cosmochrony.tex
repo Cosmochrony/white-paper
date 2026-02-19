@@ -12,6 +12,7 @@
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
 \usepackage{amsthm}
+\usepackage{enumitem}
 % Boxes
 \usepackage[most]{tcolorbox}
 % Convention box
@@ -40,6 +41,15 @@
   decorations.markings, patterns}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+% Theorem-like environments (amsthm is already loaded by the class in your log).
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
 
 \title[Cosmochrony]
 {Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics}
