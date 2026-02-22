@@ -1,0 +1,118 @@
+\subsection{Superconducting Gap Symmetry from Fiber Geometry}
+  \label{subsec:sc-gap-symmetry}
+
+  The collective coherent regime of the $U(1)$ fiber discussed in
+  Section~\ref{subsec:collective-U1-coherence} leads to concrete and
+  falsifiable predictions for the symmetry of the superconducting gap.
+  In the present framework, gap symmetry is not determined by a specific
+  momentum-space interaction kernel, but by a real-space minimization
+  problem in the fiber raccordement cost under lattice constraints.
+
+  \subsubsection*{Geometric Selection Principle}
+
+    Let $\mathcal{C}_{\text{tot}}[\theta]$ denote the effective cost functional
+    associated with fiber phase mismatch in the presence of lattice
+    symmetry group $\mathcal{G}$ and dominant frustration wavevector $\mathbf{Q}$.
+    Admissible composite configurations must satisfy simultaneously:
+
+    \begin{enumerate}
+      \item minimization of overlap with the dominant frustrated sector,
+      \item global continuity of the fiber phase without introducing additional defects.
+    \end{enumerate}
+
+    Among the irreducible representations of $\mathcal{G}$ available to a
+    $w=2$ composite class, the physically realized superconducting gap
+    corresponds to the representation that minimizes $\mathcal{C}_{\text{tot}}$.
+
+    This selection principle is independent of microscopic pairing details.
+    It depends only on lattice symmetry and the dominant frustration structure.
+
+  \subsubsection*{Prediction for Cuprate Superconductors}
+
+    In cuprate materials, the relevant lattice symmetry is $D_{4h}$ and
+    the dominant frustration vector is approximately $(\pi,\pi)$,
+    as measured through the magnetic structure factor $S(\pi,\pi)$.
+
+    Under these constraints, the minimization of the fiber raccordement
+    cost selects the $B_{1g}$ irreducible representation.
+    The resulting gap symmetry is therefore
+    \begin{equation}
+      \Delta(\mathbf{k}) \propto \cos k_x - \cos k_y,
+    \end{equation}
+    corresponding to $d_{x^2-y^2}$ symmetry.
+
+    This prediction does not rely on a specific spin-fluctuation mechanism.
+    It follows from geometric frustration in the projected fiber sector.
+    The nodal lines arise from the required sign alternation that reduces
+    overlap with the $(\pi,\pi)$ frustration sector while preserving
+    global fiber continuity.
+
+  \subsubsection*{Prediction for Nickelate Superconductors}
+
+    In infinite-layer nickelates, the antiferromagnetic frustration sector
+    is reduced and partially isotropized relative to cuprates.
+    Let $r_F$ denote a dimensionless proxy for the relative frustration
+    amplitude, operationally linked to the normalized structure factor.
+
+    For sufficiently reduced staggered frustration ($r_F < r_F^{\text{crit}}$),
+    the minimization of $\mathcal{C}_{\text{tot}}$ favors an extended
+    $A_{1g}$ representation with sign-changing structure across Fermi
+    surface sheets,
+    \begin{equation}
+      \Delta(\mathbf{k}) \sim s^{\pm}.
+    \end{equation}
+
+    The framework therefore predicts a symmetry transition between
+    $d_{x^2-y^2}$ and extended $s^{\pm}$ depending on the frustration ratio $r_F$.
+    This constitutes a direct and falsifiable structural prediction.
+
+  \subsubsection*{Disorder Sensitivity}
+
+    Because sign-changing order parameters are sensitive to non-magnetic
+    disorder, the predicted $s^{\pm}$ regime in nickelates should display
+    intermediate sensitivity to impurity scattering, weaker than pure
+    $d$-wave cuprates but stronger than conventional isotropic $s$-wave
+    superconductors.
+
+    Systematic impurity studies therefore provide a discriminating test
+    of the fiber-geometry selection mechanism.
+
+  \subsubsection*{Scaling of the Critical Temperature}
+
+    To leading order, the phase stiffness scales as
+    \begin{equation}
+      \rho_s(0) \propto \delta J f(r_F),
+    \end{equation}
+    where $\delta$ is the carrier concentration, $J$ the dominant
+    frustration scale, and $f(r_F)$ a dimensionless function encoding
+    the geometric reduction of frustration.
+
+    In quasi-two-dimensional systems,
+    \begin{equation}
+      k_B T_c \simeq \frac{\pi}{2} \rho_s(T_c^-),
+    \end{equation}
+    yielding
+    \begin{equation}
+      T_c \sim \frac{\pi}{2k_B} \delta J f(r_F).
+    \end{equation}
+
+    All quantities entering this relation are independently measurable
+    through spectroscopy, transport, and neutron scattering.
+    No free fitting parameter specific to superconductivity is introduced.
+
+  \subsubsection*{Falsifiability}
+
+    The present mechanism would be falsified if:
+
+    \begin{itemize}
+      \item cuprates exhibited a robust fully isotropic $s$-wave gap
+      at optimal doping despite strong $(\pi,\pi)$ frustration,
+      \item nickelates with reduced staggered frustration showed
+      stable $d_{x^2-y^2}$ symmetry across all doping levels,
+      \item the critical temperature displayed no correlation with
+      independently measured exchange or frustration scales.
+    \end{itemize}
+
+    The symmetry channel is therefore not an adjustable ingredient.
+    It is fixed by lattice group and frustration geometry,
+    providing a sharp structural test of the framework.
