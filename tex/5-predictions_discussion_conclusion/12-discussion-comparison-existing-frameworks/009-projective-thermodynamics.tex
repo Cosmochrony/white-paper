@@ -1,29 +1,107 @@
-\subsection{Structural Interpretation: Projective Thermodynamics}
+\subsection{Structural Responses to Bounded Relaxation}
   \label{subsec:structural-interpretation-projective-thermodynamics}
 
   Physical observables arise through a generically non-injective projection
-  $\Pi : \Omega \rightarrow O$.
-  In saturation regimes, the resulting loss of distinguishability induces a
-  structural entropy:
+  $\Pi : \Omega \rightarrow O$ from the relational substrate $\Omega$.
+  The $\chi$ substrate evolves under a bounded relaxation flux,
+  characterized by a Born--Infeld-type constraint $b_{\mathrm{BI}}$.
+  This bound limits the admissible transfer of relational relaxation
+  and prevents divergence of effective observables.
+
+  When the relaxation flux approaches its admissible bound,
+  the projection enters a saturation regime.
+  In such regimes, distinct underlying configurations
+  become structurally indistinguishable at the level of $O$.
+  This loss of distinguishability induces an objective structural entropy
+  associated with the projection:
   \begin{equation}
     S_{\Pi} = -\sum_{o \in O}
     \mu(\Pi^{-1}(o)) \log \mu(\Pi^{-1}(o)),
   \end{equation}
-  which is an objective property of the projection.
+  which reflects non-injectivity rather than epistemic uncertainty.
 
-  \begin{figure}[t]
-    \centering
-    \begin{tikzpicture}[
-      node distance=1.4cm,
-      every node/.style={align=center},
-      box/.style={draw, rounded corners, thick,
-      minimum width=5cm, minimum height=1cm},
-      narrow/.style={draw, thick,
-      minimum width=1.8cm, minimum height=0.8cm}
-    ]
+  \paragraph{Dual structural responses to bounded relaxation.}
+
+    When the relaxation flux approaches its admissible bound,
+    the projection $\Pi$ enters a saturation regime.
+    Distinct underlying configurations become structurally identified,
+    and the effective description must compensate.
+
+    Two structurally distinct responses may occur,
+    depending on whether collective reorganization of the projected fiber
+    is dynamically accessible.
+
+    \medskip
+    \textbf{(A) Thermodynamic compensation: projection-limited heating.}
+
+    In incoherent or weakly correlated systems,
+    collective stabilization of the fiber is not available.
+    The unresolved relational flux is therefore absorbed into
+    effective thermodynamic descriptors.
+    Temperature acts as a Lagrange multiplier compressing
+    unresolved relational structure into the observable sector.
+
+    Magnetically guided dilute plasmas,
+    such as the solar corona,
+    illustrate this regime.
+    Reduced projectability under strong magnetic structuring
+    leads to an elevated effective temperature,
+    interpretable as a compensatory response to bounded relaxation
+    rather than as excess local energy density.
+
+    \medskip
+    \textbf{(B) Coherent reorganization: projective expulsion.}
+
+    In strongly coherent collective phases,
+    the system may instead reorganize its internal fiber structure
+    so as to preserve maximal projective stability.
+    Rather than inflating thermodynamic variables,
+    the projected description modifies its admissible connection structure.
+
+    Superconductivity provides a paradigmatic example.
+    Collective phase locking of the $U(1)$ fiber
+    suppresses internal fluctuations and enforces
+    near-vanishing covariant phase gradients in the bulk.
+    The Meissner effect may therefore be interpreted
+    as the expulsion of incompatible connection curvature,
+    maintaining projective stability within the coherent phase.
+
+    \medskip
+    These two regimes represent alternative structural resolutions
+    of the same constraint:
+    bounded relational relaxation under non-injective projection.
+
+  \paragraph{Unified interpretation.}
+
+    These two responses do not represent distinct physical mechanisms,
+    but alternative structural resolutions of the same constraint:
+    bounded relational relaxation under non-injective projection.
+
+    Thermodynamic variables, geometric curvature,
+    horizon formation, and collective coherence
+    all act as compensatory descriptors of unresolved relational structure.
+    Which response occurs depends on whether
+    collective reorganization of the projected fiber
+    is dynamically accessible.
+
+    The bounded character of substratic relaxation ensures that
+    projection-induced thermodynamic and geometric quantities remain finite.
+    This renders the framework predictive despite
+    the intrinsic non-injectivity of $\Pi$.
+
+    \begin{figure}[t]
+      \centering
+      \begin{tikzpicture}[
+        node distance=1.4cm,
+        every node/.style={align=center},
+        box/.style={draw, rounded corners, thick,
+        minimum width=5cm, minimum height=1cm},
+        narrow/.style={draw, thick,
+        minimum width=1.8cm, minimum height=0.8cm}
+      ]
     \node[box] (omega)
     {$\Omega$\\Relational substrate $\chi$\\
-    {\footnotesize non-geometric, bounded}};
+    {\footnotesize bounded relaxation}};
     \node[narrow, below of=omega] (bi)
     {$b_{\mathrm{BI}}$\\
     {\footnotesize flux bound}};
@@ -32,23 +110,14 @@
     {\footnotesize non-injective projection}};
     \node[box, below of=pi] (obs)
     {$O$\\Effective observables\\
-    {\footnotesize spacetime, fields, metric}};
+    {\footnotesize thermodynamic or coherent regimes}};
     \draw[thick] (omega) -- (bi);
     \draw[thick] (bi) -- (pi);
     \draw[thick] (pi) -- (obs);
-    \end{tikzpicture}
-    \caption{Projective regimes in Cosmochrony.
-    The substrate~$\Omega$ undergoes bounded relaxation
-      ($b_{\mathrm{BI}}$).
-      Observables arise through non-injective projection~$\Pi$.}
-    \label{fig:projective-hourglass}
-  \end{figure}
-
-  Effective parameters such as temperature or metric curvature emerge as
-  Lagrange multipliers absorbing unresolved relational complexity.
-  High effective temperatures or anomalous geometric features reflect the
-  compression of a bounded relational flux into a reduced observable
-  description, not excess local energy density.
-  The bounded character of substratic relaxation ensures that
-  projection-induced quantities remain finite, rendering the framework
-  predictive despite the non-injective nature of the projection.
+      \end{tikzpicture}
+      \caption{Structural responses to bounded relaxation.
+      Approach to the flux bound may induce either compensatory
+      thermodynamic descriptors or coherent projective reorganization,
+        depending on collective accessibility of the fiber structure.}
+      \label{fig:projective-hourglass}
+    \end{figure}
