@@ -1,10 +1,16 @@
-\subsection{Step A: Admissible Injective Projections Have Trivial Holonomy}
-  \label{sec:stepA-injective-holonomy}
+\subsection{Admissible Injective Projections Have Trivial Holonomy}
+  \label{subsec:injective-holonomy}
 
-  This appendix formalizes Step~A announced in Section~\ref{subsec:necessity-open}.
+  This appendix formalizes Step~A announced in Section~\ref{subsec:necessity-open}, the first part of the necessity
+  argument formulated in Section~\ref{sec:necessity-noninjective}.
+  We show that admissible injective projections necessarily have trivial holonomy.
+  Since non-trivial holonomy is the minimal structural condition for re-identification
+  symmetry, injective admissible projections cannot support emergent gravitational dynamics.
+
   We classify admissible projection maps $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ by their fiber topology.
   We show that injective maps in this class have trivial holonomy.
-  Since non-trivial holonomy is the minimal condition for a re-identification symmetry to arise as a descriptive invariance,
+  Since non-trivial holonomy is the minimal condition for a re-identification symmetry to arise as a descriptive
+  invariance,
   injectivity structurally precludes emergent gravity under Hypothesis~H and ontological uniqueness.
 
   \subsubsection*{Setup: admissible projections as fibered structures}
@@ -175,10 +181,12 @@
     \end{corollary}
 
     \begin{proof}
-      Diffeomorphism invariance as a descriptive invariance (D2) requires multiple representatives of the same effective state.
+      Diffeomorphism invariance as a descriptive invariance (D2) requires multiple representatives of the same effective
+      state.
       That is, it requires $|\Pi^{-1}(y)|>1$ on some region of $\mathcal{M}$.
       Under injectivity, $|\Pi^{-1}(y)| = 1$ everywhere.
-      Therefore, the diffeomorphism group of $\mathcal{M}$ cannot arise as a re-identification symmetry induced by $\Pi$.
+      Therefore, the diffeomorphism group of $\mathcal{M}$ cannot arise as a re-identification symmetry induced by $\Pi$
+      .
       Any such invariance would have to be postulated directly at the level of $\mathcal{M}$,
       contradicting emergence and ontological uniqueness.
     \end{proof}
@@ -186,11 +194,13 @@
   \subsubsection*{Closing the gap: from holonomy to gravitational curvature}
     \label{subsec:stepA-curvature}
 
-    The preceding results establish that injective projections cannot produce the structural prerequisites of emergent gravity,
+    The preceding results establish that injective projections cannot produce the structural prerequisites of emergent
+    gravity,
     namely re-identification symmetry and descriptive invariance as consequences of the projection.
     We now connect fiber curvature to effective base curvature in the standard bundle-induced manner.
 
-    In the Cosmochrony framework, the effective metric on $\mathcal{M}$ is induced by the Hessian of the effective Lagrangian
+    In the Cosmochrony framework, the effective metric on $\mathcal{M}$
+    is induced by the Hessian of the effective Lagrangian
     (Section~A.12, Eq.~(117)):
     \begin{equation}
       g^\mathrm{eff}_{\mu\nu}
@@ -213,7 +223,8 @@
         \mathrm{tr}_{\mathfrak{g}_\Pi}\!\bigl(\Omega_{\mu\alpha}\,\Omega_\nu{}^\alpha\bigr) + \ldots,
         \label{eq:fiber-to-base-curvature}
       \end{equation}
-      where the trace runs over $\mathfrak{g}_\Pi$ and the ellipsis denotes additional terms fixed by the same induction scheme.
+      where the trace runs over $\mathfrak{g}_\Pi$
+      and the ellipsis denotes additional terms fixed by the same induction scheme.
 
       Flat connection ($\Omega = 0$, hence $G_\Pi = \{e\}$ under injectivity).
       The fiber-induced contribution to effective base curvature vanishes.
@@ -250,7 +261,8 @@
       \end{equation}
       Equation~\eqref{eq:injective-chain} shows that effective gravitational curvature on $\mathcal{M}$
       receives no sourcing from the fiber geometry when $\Pi$ is injective.
-      Any non-zero curvature of $g^\mathrm{eff}$ would then require an independent postulate at the level of $\mathcal{M}$,
+      Any non-zero curvature of $g^\mathrm{eff}$ would then require an independent postulate at the level of
+      $\mathcal{M}$,
       violating ontological uniqueness.
       The chain is topological, not dynamical, and holds for any admissible projection in the sense of
       Definition~\ref{def:admissible-projection}.
@@ -259,14 +271,16 @@
   \subsubsection*{The minimal non-injective case: $G_\Pi = \mathrm{U}(1)$}
     \label{subsec:stepA-minimal}
 
-    As a consistency check and to connect to Section~5.1, we consider the minimal non-trivial case $G_\Pi = \mathrm{U}(1)$.
+    As a consistency check and to connect to Section~5.1, we consider the minimal non-trivial case
+    $G_\Pi = \mathrm{U}(1)$.
     A principal $\mathrm{U}(1)$-bundle over $\mathcal{M}$ with connection $\omega$ has:
     \begin{align}
       \mathrm{Hol}(\omega, x_0) &\subseteq \mathrm{U}(1), \\
       \Omega &= d\omega \in \Omega^2(\mathcal{M}, i\mathbb{R}),
     \end{align}
     where $\Omega$ is interpreted as the electromagnetic field strength in the Cosmochrony setting (Section~A.11).
-    The first Chern class $c_1(\Pi) = [\Omega / 2\pi i] \in H^2(\mathcal{M}, \mathbb{Z})$ is non-trivial if and only if the
+    The first Chern class $c_1(\Pi) = [\Omega / 2\pi i] \in H^2(\mathcal{M}, \mathbb{Z})$
+    is non-trivial if and only if the
     bundle is topologically non-trivial.
 
     This matches the structure of Section~5.2.
@@ -300,7 +314,12 @@
       \end{tabular}
     \end{center}
 
-    The injective case is the unique case in which no re-identification symmetry and no projection-induced curvature can arise
-    without an independent postulate.
-    Non-injectivity is therefore not merely sufficient but necessary for emergent gauge and gravitational structure under
-    Hypothesis~H and ontological uniqueness.
+    The injective case is the unique case in which no re-identification symmetry and no projection-induced curvature can
+    arise without an independent postulate.
+    Non-injectivity is therefore not merely sufficient but necessary for emergent gauge and gravitational structure
+    under Hypothesis~H and ontological uniqueness.
+
+    This excludes injective admissible projections as candidates for emergent gravitational dynamics.
+    The complementary constructive part of the necessity proof is developed in
+    Section~\ref{subsec:IR}, where we show that under non-injective admissible projections satisfying the saturation
+    bound, the infrared dynamics is uniquely selected.
