@@ -1,0 +1,40 @@
+\subsection{Derivation of \texorpdfstring{$\chi_{\mathrm{eff}}$}{χeff} from Relational Observables}
+\label{app:chi-eff-derivation}
+
+A two-level construction avoids circularity.
+First, define $\bar{\chi}$ using only the combinatorial distance:
+\begin{equation}
+  N_i = \left\{ j \,\middle|\,
+    d_{ij}^{C} \le \ell_0 \right\},
+  \label{eq:combinatorial_neighborhood}
+\end{equation}
+\begin{equation}
+  \bar{\chi}_i
+  = \frac{1}{|N_i|}
+    \sum_{j\in N_i} \chi_j.
+  \label{eq:relational_average_bar_chi}
+\end{equation}
+Then define the weighted distance from $\bar{\chi}$:
+\begin{equation}
+  d_{ij}^{W}
+  = \min_{\gamma_{ij}}
+    \sum_{(u,v)\in\gamma_{ij}} w_{uv}(\bar{\chi}).
+  \label{eq:weighted_distance}
+\end{equation}
+Finally, $\chi_{\mathrm{eff}}$ is obtained by coarse-graining over
+weighted neighborhoods:
+\begin{equation}
+  V_{\ell_0}(i)
+  = \left\{ j \,\middle|\,
+    d_{ij}^{W} \le \ell_0 \right\},
+  \label{eq:weighted_neighborhood}
+\end{equation}
+\begin{equation}
+  \chi_{\mathrm{eff}}(i)
+  = \frac{1}{|V_{\ell_0}(i)|}
+    \sum_{j\in V_{\ell_0}(i)} \chi_j.
+  \label{eq:chi_eff_definition}
+\end{equation}
+The dependency chain is explicitly non-circular:
+$d^{C} \Rightarrow \bar{\chi} \Rightarrow w(\bar{\chi}),K(\bar{\chi})
+  \Rightarrow d^{W} \Rightarrow \chi_{\mathrm{eff}}$.
