@@ -57,16 +57,21 @@
         arrow/.style={-Latex, thick},
         note/.style={align=left, font=\footnotesize}
       ]
-    \node[box] (chi)
-    {$\chi$\\\footnotesize infra-physical\\
+    \node[box] (chi1)
+    {$\chi_1$\\\footnotesize infra-physical\\
     \footnotesize relational substrate};
-    \node[box, below=of chi] (chieff)
-    {$\chi_{\mathrm{eff}}$\\\footnotesize effective physical
-    regime\\\footnotesize (projectable regime)};
+    \node[box, right=20mm of chi1] (chi2)
+    {$\chi_2$\\\footnotesize infra-physical\\
+    \footnotesize relational substrate};
+    \node[box, below=of $(chi1)!0.5!(chi2)$] (chieff)
+    {$\chi_{\mathrm{eff}}$\\\footnotesize effective physical\\
+    \footnotesize regime\\\footnotesize (projectable regime)};
     \node[box, below=of chieff] (obs)
     {Observables\\\footnotesize context-dependent\\
     \footnotesize operational quantities};
-    \draw[arrow] (chi) -- node[right=2mm, note]
+    \draw[arrow] (chi1) -- node[left=2mm, note]
+      {infra-physical\\projection $\pi$} (chieff);
+    \draw[arrow] (chi2) -- node[right=2mm, note]
       {infra-physical\\projection $\pi$\\
     \footnotesize (generally non-injective)} (chieff);
     \draw[arrow] (chieff) -- node[right=2mm, note]
@@ -82,11 +87,13 @@
       \caption{%
         Ontological pipeline in Cosmochrony.
         The infra-physical projection~$\pi$ maps the fundamental $\chi$
-        substrate to an effective physical reality~$\chi_{\mathrm{eff}}$ in
-        projectable regimes, generally in a non-injective manner.
-        Physical observables arise from an operational
-        projection~$\mathcal{O}$ that specifies how
-        $\chi_{\mathrm{eff}}$ is accessed under measurement contexts.}
+        substrate to an effective physical regime~$\chi_{\mathrm{eff}}$ in
+        projectable regimes, generally in a non-injective manner (multiple
+        infra-physical configurations can correspond to the same projected
+        description).
+        Physical observables arise from an operational projection~$\mathcal{O}$
+        that specifies how $\chi_{\mathrm{eff}}$ is accessed under measurement
+        contexts.}
       \label{fig:two-stage-projection}
       \end{figure}
 
