@@ -3,27 +3,62 @@
 
   \paragraph{\texorpdfstring{$\chi$}{χ} (Chi substrate).}
     The unique fundamental entity of the Cosmochrony framework.
-    $\chi$ is a pre-geometric, relational substrate not defined on a pre-existing
-    spacetime manifold.
-    Its irreversible relaxation supplies a continuous flux of relational
-    configurations.
+    $\chi$ is a pre-geometric, relational substrate not defined on a pre-existing spacetime manifold.
+    Its irreversible relaxation supplies a continuous flux of relational configurations.
     $\chi$ does not encode a prescriptive set of admissible physical states;
-    admissibility arises only through projection under finite resolution and
-    compatibility constraints.
-    Localized, topologically stable configurations of $\chi$ correspond to
-    particle-like excitations upon projection.
+    admissibility arises only through projection under finite resolution and compatibility constraints.
+    Localized, topologically stable configurations of $\chi$ correspond to particle-like excitations upon projection.
 
   \paragraph{\texorpdfstring{$\chi_i$}{χᵢ} (Local configuration).}
     Discrete local degrees of freedom of the $\chi$ substrate, associated with
     vertices of the relaxation network.
     They encode the microscopic relational state prior to any geometric projection.
 
-  \paragraph{\texorpdfstring{$\chi_c$}{χc} (Critical relaxation threshold).}
+  \paragraph*{$\chi_c$ (Critical relaxation threshold).}
     A fundamental structural bound limiting local variations of $\chi$.
-    It constrains the projection and update process by enforcing causal
-    consistency, and underlies all effective speed and action bounds.
-    This threshold does not prescribe physical laws, but limits the capacity
-    of admissible projected updates.
+    It constrains the projection and update process by enforcing causal consistency,
+    and underlies all effective speed and action bounds.
+    This threshold does not prescribe physical laws, but limits the capacity of
+    admissible projected updates.
+
+    \medskip
+    \noindent\textit{Physical dimension and operational identification.}
+    The local bound $|D_{\mathrm{loc}}\chi_{\mathrm{eff}}| \leq c$ (Eq.~(7)) implies that
+    $\chi_{\mathrm{eff}}$ carries dimension of length.
+    Accordingly, $\chi_c$ carries dimension of length.
+    The effective action unit is defined by Eq.~(8),
+    \begin{equation}
+      \hbar_\chi \;\equiv\; \frac{c^3}{K_0\,\chi_c},
+      \label{eq:hbar_chi_def}
+    \end{equation}
+    which fixes the physical dimension of $K_0$ once $\chi_c$ is specified.
+
+    \medskip
+    \noindent\textit{A dimensionless threshold parameter.}
+    A unit-independent characterization of the threshold is provided by the ratio
+    \begin{equation}
+      \tilde{\chi}_c \;\equiv\; \frac{\hbar}{\hbar_\chi}
+      \;=\; \frac{K_0\,\chi_c}{c^3/\hbar},
+      \label{eq:chitilde}
+    \end{equation}
+    which is dimensionless by construction.
+    When a numerical value is quoted for $\chi_c$ in heuristic estimates
+    (e.g.\ Appendix~E.9), it refers to $\tilde{\chi}_c$ unless the dimensional quantity
+    $\chi_c$ is explicitly accompanied by $K_0$.
+
+    \medskip
+    \noindent\textit{Connection to gravitational normalization.}
+    Independently of Eq.~\eqref{eq:hbar_chi_def}, matching the infrared expansion of the
+    coherence functional to the Einstein--Hilbert normalization (Appendix~A.11--A.12)
+    yields a constraint of the form
+    \begin{equation}
+      K_0\,\chi_c^2 \;\sim\; \frac{c^4}{16\pi G},
+      \label{eq:K0chic_gravity}
+    \end{equation}
+    up to scheme-dependent numerical factors of order unity fixed by the tensorial
+    Born--Infeld completion (Appendix~A.12).
+    Together with Eq.~\eqref{eq:hbar_chi_def}, this sets the natural scale at which
+    $\hbar_\chi$ and $\hbar$ can be consistently identified.
 
   \paragraph{\texorpdfstring{$\tau$}{τ} (Operational time).}
     An effective ordering parameter defined from the monotonic succession of
