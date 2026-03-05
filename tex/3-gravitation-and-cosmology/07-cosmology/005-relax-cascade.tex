@@ -3,11 +3,11 @@
   \label{sec:relax-cascade}
 
   The preceding sections establish $\chi(t)$ as the global relaxation field
-  and $H(t) = \dot{\chi}/\chi$ as the emergent Hubble rate (Section~7.4,
-  Eq.~(67)).
+  and $H(t) = \dot{\chi}/\chi$ as the emergent Hubble rate (Section~\ref{subsec:emergent-hubble-law},
+  Eq.~\eqref{eq:hubble-like}).
   This section develops four structural consequences that follow directly
   from these definitions together with the constitutive relations
-  Eqs.~(202) and~(204):
+  Eqs.~\eqref{eq:hbar_chi_def} and~\eqref{eq:K0chic_gravity}:
   \begin{enumerate}
     \item the effective cosmological constant $\Lambda_{\mathrm{eff}}$ is
     not a fundamental constant but a dynamical residual of ongoing
@@ -18,7 +18,7 @@
     observed particle energies;
     \item Planck's constant $\hbar$ is an epoch-dependent invariant of
     the current relaxation regime, fixed by $K_0$ and $\chi_c$ through
-    Eq.~(202);
+    Eq.~\eqref{eq:hbar_chi_def};
     \item the Big Bang corresponds precisely to the first globally
     projectable configuration of $\chi$, whose existence is
     characterised by a finite saturation condition derived from the
@@ -33,13 +33,12 @@
 
     \paragraph{Definition of residual relaxation energy.}
       Energy is defined in this framework as the operational cost of modifying
-      a projected configuration while preserving admissibility
-      (Appendix~F.7).
+      a projected configuration while preserving admissibility (\ref{subsec:key-conceptual-terms}).
       At the global cosmological level, the outstanding relaxation capacity
       of $\chi$ at cosmic time $t$ is the quantity that remains to be
       released before $\chi$ reaches an asymptotically equilibrated state.
       We define it as a dimensionless fractional quantity $\Omega_\chi(t)$
-      already introduced in Eq.~(168):
+      already introduced in Eq.~\eqref{eq:chi-relaxation}:
     \begin{equation}
       \label{eq:rc-omega}
       \Omega_\chi(t) \;\equiv\; \langle \beta^2 \rangle,
@@ -158,46 +157,39 @@
     \label{sec:relax-cascade-hier}
 
     \paragraph{Discreteness of projection.}
-      The projectability threshold $\Theta_p$ (Appendix~D.5) defines the
-      minimal spectral gap above which a configuration of $\chi$ admits a
-      stable geometric description.
+      The projectability threshold $\Theta_p$ (Appendix~\ref{subsec:chi_eff-validation}) defines the
+      minimal spectral gap above which a configuration of $\chi$ admits a stable geometric description.
       Each time the relaxation network crosses $\Theta_p$ from above, a new
-      projectable regime opens: this is what we call a \emph{relaxation step}
-      $n \to n+1$.
-      The minimum action exchanged per step is bounded below by the
-      projection granularity
+      projectable regime opens: this is what we call a \emph{relaxation step} $n \to n+1$.
+      The minimum action exchanged per step is bounded below by the projection granularity
     \begin{equation}
       \label{eq:rc-delta-S}
       \Delta S_n \;\geq\; \hbar_\chi
       \;\equiv\;
       \frac{c^3}{K_0\,\chi_c},
       \end{equation}
-      which is Eq.~(202).
+      which is Eq.~\eqref{eq:hbar_chi_def}.
       Relaxation is therefore intrinsically discrete: the continuum effective
       description is an approximation valid between successive steps.
 
     \paragraph{Cascade law.}
-      Let $E_n$ denote the effective energy available to the projected
-      description at step $n$.
+      Let $E_n$ denote the effective energy available to the projected description at step $n$.
       Since each step irreversibly increases the number of distinguishable
-      projected configurations $\Omega_n$, the energy per configuration
-      decreases.
+      projected configurations $\Omega_n$, the energy per configuration decreases.
       Under the assumption that each step redistributes the remaining energy
       uniformly over the newly accessible configurations, and using the
-      self-similar spectral structure established in Appendix~D.2
-      (the ratio $G_\mathrm{eff} \propto K_0/\chi_c^2$ is preserved under
-      renormalisation), one obtains
+      self-similar spectral structure established in Appendix~\ref{subsec:chi-parameters}
+      (the ratio $G_\mathrm{eff} \propto K_0/\chi_c^2$ is preserved under renormalisation), one obtains
     \begin{equation}
       \label{eq:rc-cascade}
       E_n \;\sim\; \frac{E_P}{n},
       \end{equation}
       where $E_P = \sqrt{\hbar c^5/G} \approx 2 \times 10^9~\mathrm{J}$
       is the Planck energy, corresponding to the saturated initial state
-      (Section~7.1).
+      (Section~\ref{subsec:big-bang-maximal-constraint}).
 
     \paragraph{Total number of steps and the hierarchy.}
-      The total number of Planck-time steps elapsed since the initial
-      projection is
+      The total number of Planck-time steps elapsed since the initial projection is
     \begin{equation}
       \label{eq:rc-N}
       N \;\equiv\; \frac{t_U}{t_P}
@@ -214,8 +206,7 @@
       \;\sim\; 10^{-33}~\mathrm{eV},
       \end{equation}
       which corresponds to the energy scale associated with the cosmological
-      constant (the dark energy quantum $\hbar H_0$), consistently with
-      Eq.~\eqref{eq:rc-rho-num}.
+      constant (the dark energy quantum $\hbar H_0$), consistently with Eq.~\eqref{eq:rc-rho-num}.
       For intermediate particle species stabilised at earlier steps
       $n \ll N$, Eq.~\eqref{eq:rc-cascade} yields
     \begin{equation}
@@ -228,26 +219,22 @@
       $n_e \sim 10^{22}$, far earlier than the present epoch.
       This provides a structural interpretation of the hierarchy problem:
       particle masses reflect the depth of their stabilisation step in the
-      relaxation cascade, not an unexplained fine-tuning of a Higgs
-      potential.
+      relaxation cascade, not an unexplained fine-tuning of a Higgs potential.
 
     \paragraph{Primordial energy and cascade consistency.}
       Inverting Eq.~\eqref{eq:rc-cascade} at step $n = 1$, the energy
       available at the first projectable configuration is $E_0 \sim E_P$,
       in agreement with the maximal-constraint interpretation of the Big Bang
-      (Section~7.1).
+      (Section~\ref{subsec:big-bang-maximal-constraint}).
       A crude upper bound on the total observable energy today follows from
       counting all Planck-volume cells in the observable Universe,
       $N_\mathrm{vol} \sim (R_U/\ell_P)^3 \sim 10^{183}$, and assigning
-      each cell the energy $E_P/N \sim 10^{-52}~\mathrm{J}$ of the current
-      cascade step.
+      each cell the energy $E_P/N \sim 10^{-52}~\mathrm{J}$ of the current cascade step.
       This bound far exceeds the observed $E_\mathrm{today} \sim 10^{69}~\mathrm{J}$
       because it ignores the spectral distribution of stabilisation depths:
-      most cells have relaxed to states with $n \gg N$ and contribute
-      negligibly.
+      most cells have relaxed to states with $n \gg N$ and contribute negligibly.
       A quantitative account requires the full spectral distribution of
-      stabilisation depths across the relaxation network, which is left for
-      future work.
+      stabilisation depths across the relaxation network, which is left for future work.
       The cascade law \eqref{eq:rc-cascade} is therefore presented as a
       structural framework for the hierarchy, not as a closed energy budget.
 
@@ -263,23 +250,22 @@
       \frac{c^3}{K_0\,\chi_c},
       \end{equation}
       where $K_0$ is the maximal relaxation conductivity and $\chi_c$ is the
-      critical relaxation threshold (Appendix~F.1).
+      critical relaxation threshold (Appendix~\ref{subsec:fundamental-quantities}).
       The identification $\hbar_\chi \simeq \hbar$ is operationally enforced
-      in projectable regimes (Appendix~D.6, Eq.~(185)).
+      in projectable regimes (Appendix~\ref{subsec:renormalization-hbar}, Eq.~\eqref{eq:hbar-chi}).
 
     \paragraph{Cosmological normalisation.}
-      Appendix~D.2 establishes that the dynamics are spectrally self-similar:
-      $G$ remains constant under renormalisation provided the ratio
-      $K_0/\chi_c^2$ is preserved.
+      Appendix~\ref{subsec:chi-parameters} establishes that the dynamics are spectrally self-similar:
+      $G$ remains constant under renormalisation provided the ratio $K_0/\chi_c^2$ is preserved.
       The cosmological-scale identification $\chi_c \sim c/H_0 = \chi(t_0)$
-      (Appendix~C.4) then gives, using Eq.~(204),
+      (Appendix~\ref{subsec:observational-estimates}) then gives, using Eq.~\eqref{eq:K0chic_gravity},
     \begin{equation}
       \label{eq:rc-K0-cosmo}
       K_0 \;\sim\; \frac{c^4}{16\pi G\,\chi_c^2}
       \;\sim\; \frac{H_0^2}{16\pi G}
       \;\sim\; 10^{-52}~\mathrm{m}^{-2},
       \end{equation}
-      which is the cosmological-scale entry of Table~4.
+      which is the cosmological-scale entry of Table~\ref{tab:chi-parameters}.
       Substituting into Eq.~\eqref{eq:rc-hbar-def}:
     \begin{equation}
       \label{eq:rc-hbar-cosmo}
@@ -293,7 +279,7 @@
       The microscopic Planck-scale identification $\chi_c \sim \ell_P$
       instead yields $K_0 \sim 10^{93}~\mathrm{m}^{-2}$ and recovers
       $\hbar_\chi \simeq \hbar = 1.05 \times 10^{-34}~\mathrm{J\,s}$.
-      Both branches are internally consistent, as stated in Appendix~D.2.
+      Both branches are internally consistent, as stated in Appendix~\ref{subsec:chi-parameters}.
 
     \paragraph{Interpretation.}
       The two branches reflect the spectral self-similarity of the cascade:
@@ -313,16 +299,15 @@
       high-constraint regimes approaching the initial projection
       (Section~7.1), $\chi_c$ may differ from its present-epoch value,
       causing both $\hbar$ and the fine-structure constant $\alpha$ to scale
-      accordingly (Eq.~(9)), while leaving the product
-      $K_0\,\chi_c^2 \propto G^{-1}$ invariant.
+      accordingly (Eq.~(9)), while leaving the product $K_0\,\chi_c^2 \propto G^{-1}$ invariant.
 
-  \subsubsection*{The Big Bang as the First Globally Projectable
-  Configuration}
+  \subsubsection*{The Big Bang as the First Globally Projectable Configuration}
     \label{sec:relax-cascade-bigbang}
 
     \paragraph{Projectability condition.}
-      A configuration of $\chi$ is projectable if and only if its local
-      Born--Infeld saturation parameter (Appendix~D.5, Eq.~(179)) satisfies
+      A configuration of $\chi$ is projectable if and only if its local Born--Infeld saturation parameter
+      (Appendix~\ref{subsec:chi_eff-validation}, Eq.~\eqref{eq:D4_Si_Kij})
+      satisfies
     \begin{equation}
       \label{eq:rc-proj-cond}
       S_i(\chi) \;\equiv\;
@@ -332,7 +317,7 @@
       \end{equation}
       When $S_i \to 1$ for all $i$ simultaneously, the relaxation rate
       $R_i = c\sqrt{1-S_i} \to 0$: no ordered projected update is possible.
-      The network is in the maximally constrained regime of Section~7.1.
+      The network is in the maximally constrained regime of Section~\ref{subsec:big-bang-maximal-constraint}.
 
     \paragraph{First projectable state.}
       The Big Bang is defined in this framework as the first global
@@ -343,8 +328,8 @@
       \lambda_2\!\left(L_G(t_{\mathrm proj})\right) \;>\; 0,
       \end{equation}
       where $\lambda_2$ is the second eigenvalue of the weighted Laplacian
-      $L_G$ of the relaxation network (Appendix~C.1).
-      The projectability threshold $\Theta_p$ defined in Appendix~D.5 is
+      $L_G$ of the relaxation network (Appendix~\ref{app:lowell_attenuation}).
+      The projectability threshold $\Theta_p$ defined in Appendix~\ref{subsec:chi_eff-validation} is
       precisely the condition $\lambda_2 > \varepsilon_p$, so
       $t_{\mathrm proj}$ is the first instant at which $\Theta_p$ is crossed.
       Before $t_{\mathrm proj}$, spacetime, distance, and causal ordering are
@@ -355,8 +340,7 @@
     \paragraph{Energy at first projection.}
       At $t_{\mathrm proj}$, the minimal action available per projectable
       configuration is $\hbar_\chi$, and the total number of simultaneously
-      projectable modes is of order unity (by definition of the first
-      crossing of $\Theta_p$).
+      projectable modes is of order unity (by definition of the first crossing of $\Theta_p$).
       The effective energy density associated with the first projection is
       therefore set by the Planck energy per Planck volume,
     \begin{equation}
@@ -368,20 +352,17 @@
       \end{equation}
       consistently with the standard Planck density.
       The subsequent cascade described in Section~\ref{sec:relax-cascade-hier}
-      then accounts for the reduction from $\rho_{\mathrm proj}$ to the
-      present-day densities.
+      then accounts for the reduction from $\rho_{\mathrm proj}$ to the present-day densities.
 
     \paragraph{Homogeneity as a structural consequence.}
       Prior to $t_{\mathrm proj}$, all configurations of $\chi$ belong to the
-      same fibre of the (not yet defined) projection: they are
-      operationally indistinguishable.
+      same fibre of the (not yet defined) projection: they are operationally indistinguishable.
       Homogeneity and isotropy of the early Universe are not initial
       conditions to be explained; they are structural consequences of the
       indistinguishability of pre-projection configurations.
       In the language of Appendix~C.2, the horizon problem does not arise
       because causal disconnection is a notion defined only after
-      $t_{\mathrm proj}$; the pre-projection substrate is globally connected
-      by construction.
+      $t_{\mathrm proj}$; the pre-projection substrate is globally connected by construction.
 
     \paragraph{Summary: four linked results.}
       Table~\ref{tab:rc-summary} collects the four results of this section
@@ -389,9 +370,8 @@
 
     \begin{table}[h]
       \centering
-      \caption{Summary of the four structural results derived in
-      Section~\ref{sec:relax-cascade}. Each result is a consequence of
-      existing Cosmochrony equations; no new free parameter is introduced.}
+      \caption{Summary of the four structural results derived in Section~\ref{sec:relax-cascade}.
+      Each result is a consequence of existing Cosmochrony equations; no new free parameter is introduced.}
       \label{tab:rc-summary}
       \begin{tabular}{lll}
         \hline
@@ -399,13 +379,13 @@
         \hline
         $\Lambda_{\mathrm{eff}}$ dynamical, $w \neq -1$
         & $\rho_\Lambda \propto H^2$
-        & Eqs.~(67), (168), \eqref{eq:rc-rho-lambda} \\
+        & Eqs.~(67), \eqref{eq:chi-relaxation}, \eqref{eq:rc-rho-lambda} \\
         Energy hierarchy $E_P/E_n \sim n$
         & $E_n \sim E_P/n$
-        & Eqs.~(202), \eqref{eq:rc-cascade} \\
+        & Eqs.~\eqref{eq:hbar_chi_def}, \eqref{eq:rc-cascade} \\
         $\hbar$ as epoch-dependent invariant
         & $\hbar_\chi = c^3/(K_0\chi_c)$
-        & Eqs.~(202), (204), \eqref{eq:rc-hbar-cosmo} \\
+        & Eqs.~\eqref{eq:hbar_chi_def}, \eqref{eq:K0chic_gravity}, \eqref{eq:rc-hbar-cosmo} \\
         Big Bang $=$ first projectable state
         & $\lambda_2(L_G(t_{\mathrm proj})) > 0$
         & Eqs.~(179), \eqref{eq:rc-firstproj} \\
