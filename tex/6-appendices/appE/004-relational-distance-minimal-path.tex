@@ -1,0 +1,26 @@
+\subsection{Relational Distance as a Minimal Path Functional}
+\label{app:relational-distance-minimal-path}
+
+Two distances operate at different descriptive levels:
+\begin{enumerate}
+  \item \textbf{Combinatorial distance} $d_{ij}^{C}$ (pre-geometric):
+    $d_{ij}^{C} = \min_{\gamma_{ij}} \sum_{(u,v)\in\gamma_{ij}} 1$,
+    counting graph steps only, independent of field values.
+  \item \textbf{Weighted distance} $d_{ij}^{W}$ (emergent):
+    $d_{ij}^{W} = \min_{\gamma_{ij}}
+      \sum_{(u,v)\in\gamma_{ij}} w_{uv}$,
+    encoding effective relational stiffness.
+\end{enumerate}
+Weights are parametrized by
+\begin{equation}
+  w_{uv}(\bar{\chi})
+  = \frac{1}{K_0}
+    \left[
+      1 + \left(
+        \frac{\bar{\chi}_u - \bar{\chi}_v}{\chi_c}
+      \right)^{\!2}
+    \right],
+  \quad
+  K_{uv}(\bar{\chi}) = \frac{1}{w_{uv}(\bar{\chi})}.
+  \label{eq:weight_function_background}
+\end{equation}
