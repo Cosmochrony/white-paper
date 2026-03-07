@@ -1,41 +1,41 @@
 \subsection{Relation to Bell Inequalities}
-\label{subsec:relation-to-bell-inequalities}
+  \label{subsec:relation-to-bell-inequalities}
 
-Bell's theorem~\cite{Bell1964} rules out any ontological completion of
-quantum mechanics based on factorizable hidden-variable models.
-Cosmochrony fully accepts Bell's theorem and identifies the ontological
-assumption that fails: the factorization hypothesis $P(a,b|x,y,\lambda) = P(a|x,\lambda)\,P(b|y,\lambda)$.
+  Bell's theorem~\cite{Bell1964} rules out any ontological completion of
+  quantum mechanics based on factorizable hidden-variable models.
+  Cosmochrony fully accepts Bell's theorem and identifies the ontological
+  assumption that fails: the factorization hypothesis $P(a,b|x,y,\lambda) = P(a|x,\lambda)\,P(b|y,\lambda)$.
 
-Because the projection~$\Pi$ is generically non-injective, admissible
-projected states are not associated with independent ontic pre-images for their subsystems.
-The factorization hypothesis is not merely violated but \emph{ill-defined}
-within the space of admissible projected descriptions.
+  Because the projection~$\Pi$ is generically non-injective, admissible
+  projected states are not associated with independent ontic pre-images for their subsystems.
+  The factorization hypothesis is not merely violated but \emph{ill-defined}
+  within the space of admissible projected descriptions.
 
-Bell-type violations arise in an intermediate regime of projective
-compression: the effective description is sufficiently coarse-grained to
-permit subsystem separation, yet retains enough global relational structure to prevent factorization.
-In the limit of extreme coarse-graining, projected descriptions become effectively classical.
+  Bell-type violations arise in an intermediate regime of projective
+  compression: the effective description is sufficiently coarse-grained to
+  permit subsystem separation, yet retains enough global relational structure to prevent factorization.
+  In the limit of extreme coarse-graining, projected descriptions become effectively classical.
 
-\begin{figure}[t]
-  \centering
-  \begin{tikzpicture}[
-    scale=1.05,
-    axis/.style={->, thick},
-    curve/.style={thick, smooth, blue},
-    dashedline/.style={dashed, gray},
-    label/.style={font=\small}
-  ]
+  \begin{figure}[t]
+    \centering
+    \begin{tikzpicture}[
+      scale=1.05,
+      axis/.style={->, thick},
+      curve/.style={thick, smooth, blue},
+      dashedline/.style={dashed, gray},
+      label/.style={font=\small}
+    ]
     \draw[axis] (0,0) -- (10,0)
-      node[right,label] {Projection compression};
+    node[right,label] {Projection compression};
     \draw[axis] (0,0) -- (0,5)
-      node[above,label] {Non-factorizable corr.};
+    node[above,label] {Non-factorizable corr.};
     \draw[dashedline] (0,1.2) -- (10,1.2)
-      node[right,label] {$S=2$};
+    node[right,label] {$S=2$};
     \draw[dashedline] (0,4) -- (10,4)
-      node[right,label] {$S=2\sqrt{2}$};
+    node[right,label] {$S=2\sqrt{2}$};
     \draw[curve]
-      plot[domain=0.5:9.5,samples=200]
-      (\x,{4*exp(-0.18*(\x-5)^2)});
+    plot[domain=0.5:9.5,samples=200]
+    (\x,{4*exp(-0.18*(\x-5)^2)});
     \node[label, align=center] at (2.2,4.4)
       {Under-\\compression};
     \node[label, align=center] at (5,4.7)
@@ -45,13 +45,68 @@ In the limit of extreme coarse-graining, projected descriptions become effective
     \draw[dashedline] (2.2,0) -- (2.2,4.2);
     \draw[dashedline] (5,0) -- (5,4.6);
     \draw[dashedline] (8,0) -- (8,4.2);
-  \end{tikzpicture}
-  \caption{Bell inequality violations as a function of the
+    \end{tikzpicture}
+    \caption{Bell inequality violations as a function of the
     compression induced by~$\Pi$.
     Non-factorizable correlations emerge in an intermediate regime.}
-  \label{fig:bell-compression-regime}
-\end{figure}
+    \label{fig:bell-compression-regime}
+  \end{figure}
 
-No hidden variables and no superluminal influence are introduced.
-Quantum nonlocality is ontological rather than dynamical: the failure of
-Bell-type factorizability arises from the structure of admissible projected descriptions, not from nonlocal interaction.
+  The dependence of entanglement correlations on measurement orientation acquires a
+  natural reading within this framework.
+  Each measurement apparatus defines a local relational frame, corresponding to a
+  directional projection operator $\Pi_{\mathbf{a}}$ or $\Pi_{\mathbf{b}}$ parametrized
+  by the orientation vectors $\mathbf{a}$ and $\mathbf{b}$.
+  The local outcomes $o_A = \Pi_{\mathbf{a}}(\omega)$ and $o_B = \Pi_{\mathbf{b}}(\omega)$
+  are therefore two readings of the same infra-projectable invariant $I(\omega)$ from
+  two distinct relational frames.
+  For a spin-singlet configuration ($S_\mathrm{tot} = 0$), the infra-projectable invariant
+  is represented by a unit element of $S^3$, reflecting the $\mathrm{SU}(2)$ structure of
+  spin degrees of freedom in the projection fiber (Section~5.2).
+  Directional measurements correspond to projections of this $S^3$ invariant onto axes
+  in the effective space $S^2$; the spin observables satisfy $(\boldsymbol{\sigma}\cdot\mathbf{a})^2 = 1$
+  and the mean correlation between two measurement directions is
+  \begin{equation}
+    E(\mathbf{a}, \mathbf{b})
+    = \langle (\boldsymbol{\sigma}\cdot\mathbf{a}) \otimes (\boldsymbol{\sigma}\cdot\mathbf{b}) \rangle
+    = -\mathbf{a} \cdot \mathbf{b} = -\cos\theta,
+    \label{eq:Bell-cosine}
+  \end{equation}
+  where $\theta = \angle(\mathbf{a},\mathbf{b})$.
+  This result follows from the $\mathrm{SU}(2)$ geometry of the projection space: the
+  $\cos\theta$ law is not derived from a classical sign model---which would yield
+  $1 - 2\theta/\pi$ and not saturate the Tsirelson bound---but reflects the
+  non-commutative structure of directional projections of an $S^3$ invariant.
+  No dynamical influence between $A$ and $B$ is required; the $\cos\theta$ law
+  is a structural consequence of the $\mathrm{SU}(2)$ geometry of $\Pi$.
+
+  The maximal violation of the CHSH inequality follows from the same geometric
+  structure.
+  The CHSH combination
+  $S = E(\mathbf{a},\mathbf{b}) + E(\mathbf{a},\mathbf{b}') +
+  E(\mathbf{a}',\mathbf{b}) - E(\mathbf{a}',\mathbf{b}')$
+  is a linear combination of scalar products of unit vectors in $\mathbb{R}^2$.
+  The identity
+  \begin{equation}
+    \bigl|\mathbf{a}\cdot\mathbf{b} + \mathbf{a}\cdot\mathbf{b}'
+    + \mathbf{a}'\cdot\mathbf{b} - \mathbf{a}'\cdot\mathbf{b}'\bigr|
+    \;\leq\; 2\sqrt{2}
+    \label{eq:Tsirelson-geom}
+  \end{equation}
+  holds for all unit vectors and is saturated by the optimal configuration
+  $\mathbf{a} = (1,0)$, $\mathbf{a}' = (0,1)$,
+  $\mathbf{b} = \tfrac{1}{\sqrt{2}}(1,1)$, $\mathbf{b}' = \tfrac{1}{\sqrt{2}}(1,-1)$,
+  which yields $|S| = 2\sqrt{2}$.
+  The Tsirelson bound is therefore not a postulate of quantum theory imported into
+  the framework: it is a geometric constraint on the space of directional projections
+  of a single substrate invariant.
+  Its value $2\sqrt{2}$ reflects the Hilbert-space geometry associated with the
+  $\mathrm{SU}(2)$ structure of the projection fiber (Section~5.2).
+  The classical bound $|S| \leq 2$ corresponds to the regime in which the
+  projection becomes effectively injective and the invariant can be assigned
+  independent local pre-images, restoring factorizability.
+
+  No hidden variables and no superluminal influence are introduced.
+  Quantum nonlocality is ontological rather than dynamical: the failure of
+  Bell-type factorizability arises from the structure of admissible projected descriptions, not from nonlocal
+  interaction.
