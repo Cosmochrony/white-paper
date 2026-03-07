@@ -1,84 +1,112 @@
-% ----------------------------------------------------------------------------
-% Section 8.1 --- Non-Factorizable Projected Descriptions and Quantum
-%                 Correlations
-% From former §8.1, condensed
-% ----------------------------------------------------------------------------
-\subsection{Non-Factorizable Projected Descriptions and Quantum
-Correlations}
-\label{subsec:non-injective-projection}
+\subsection{Non-Factorizable Projected Descriptions and Quantum Correlations}
+  \label{subsec:non-injective-projection}
 
-A single admissible configuration of~$\chi$ may correspond to multiple
-distinct effective degrees of freedom.
-What appear as separate particles or subsystems are multiple projective
-manifestations of a single underlying ontological configuration.
-Effective degrees of freedom cannot be assigned independent states; any
-admissible description must be globally consistent with the
-underlying~$\chi$ configuration, leading to persistent correlations that
-do not rely on signal exchange or spacetime proximity.
+  A single admissible configuration of~$\chi$ may correspond to multiple
+  distinct effective degrees of freedom.
+  What appear as separate particles or subsystems are multiple projective
+  manifestations of a single underlying ontological configuration.
+  Effective degrees of freedom cannot be assigned independent states; any
+  admissible description must be globally consistent with the
+  underlying~$\chi$ configuration, leading to persistent correlations that
+  do not rely on signal exchange or spacetime proximity.
 
-\subsubsection*{Ontological Monism and the Shared Projection Hypothesis}
-\label{subsec:ontological-monism-shared-projection}
+  The deeper reason for this non-factorizability can be identified at the level of the
+  spectral structure of the projection.
+  A configuration $\omega \in \Omega_\chi$ may carry a global invariant $I(\omega)$---total
+  charge, total angular momentum, winding number, or more generally any topological
+  raccordement constraint---that belongs to a sector of the substrate which is not
+  individually projectable within the effective description.
+  Such invariants belong to spectral sectors of $L_\chi$ below the projection threshold
+  $\lambda^*$ (Section~2.4) and therefore cannot appear as independent local observables
+  in the effective description: they are not representable as a separable pair
+  $I_A(\omega_A) \oplus I_B(\omega_B)$ projectable independently into $O_A \times O_B$,
+  but exist once, at the level of $\chi$, and can only appear in the effective description
+  as a property of the joint fiber $\Pi^{-1}(o_{AB})$.
+  The relevant pre-image is therefore not $\Pi^{-1}(o_A) \times \Pi^{-1}(o_B)$ but the
+  non-factorisable global class $\Pi^{-1}(o_{AB})$, whose elements are configurations
+  constrained jointly by $I(\omega)$.
+  This is the structural origin of entanglement: not a causal memory of past interaction,
+  but the irreducible representation constraint imposed by a globally unique infra-projectable
+  invariant.
 
-A single connected excitation in~$\chi$ can be represented as several
-spatially separated effective excitations.
-The observed separation is a property of the projected metric
-representation, not a fundamental separation of the underlying entity.
+  Spatial separation does not duplicate the invariant; it only changes the relational frame
+  through which it is read.
+  The two effective observables $o_A$ and $o_B$ are not two independent properties: they
+  are two projections of the same substrate invariant, evaluated from distinct local relational
+  contexts $\Pi_A$ and $\Pi_B$.
+  Entanglement arises precisely in the regime where the effective description separates
+  two subsystems that remain jointly constrained by an invariant which is not separately
+  projectable in either subsystem alone.
+  Measurement at $A$ selects a locally stable reprojection $\Pi_A(\omega) = o_A^*$; because
+  the fiber $\Pi^{-1}(o_{AB})$ is non-factorizable, this selection simultaneously restricts the
+  class of configurations admissible for $B$ to those compatible with $I(\omega)$ and $o_A^*$,
+  without any signal propagating from $A$ to $B$.
+  The apparent ``collapse'' at $B$ is a restriction of admissible projected descriptions
+  imposed by the global uniqueness of the invariant, not a dynamical influence.
 
-\paragraph{Shared Fiber Phase and Spin Correlations.}
-\label{subsec:shared-fiber-phase-spin}
-Spin correlations can be read as correlations of a \emph{shared}
-internal degree of freedom of the projection fiber.
-A measurement at one location selects a locally stable reprojection of
-that shared fiber degree of freedom; the correlated statistics at the
-distant location reflect the restricted set of reprojections still
-compatible with the same underlying configuration.
+  \subsubsection*{Ontological Monism and the Shared Projection Hypothesis}
+    \label{subsec:ontological-monism-shared-projection}
 
-\begin{figure}[t]
-  \centering
-  \begin{tikzpicture}[
-    font=\small,
-    node distance=10mm,
-    box/.style={draw, rounded corners, align=center,
-      inner sep=6pt},
-    arrow/.style={-Latex, thick},
-    note/.style={align=left, font=\footnotesize},
-    micro/.style={draw, circle, inner sep=1.5pt}
-  ]
+    A single connected excitation in~$\chi$ can be represented as several
+    spatially separated effective excitations.
+    The observed separation is a property of the projected metric
+    representation, not a fundamental separation of the underlying entity.
+
+    \paragraph{Shared Fiber Phase and Spin Correlations.}
+      \label{subsec:shared-fiber-phase-spin}
+      Spin correlations can be read as correlations of a \emph{shared}
+      internal degree of freedom of the projection fiber.
+      A measurement at one location selects a locally stable reprojection of
+      that shared fiber degree of freedom; the correlated statistics at the
+      distant location reflect the restricted set of reprojections still
+      compatible with the same underlying configuration.
+
+    \begin{figure}[t]
+      \centering
+      \begin{tikzpicture}[
+        font=\small,
+        node distance=10mm,
+        box/.style={draw, rounded corners, align=center,
+        inner sep=6pt},
+        arrow/.style={-Latex, thick},
+        note/.style={align=left, font=\footnotesize},
+        micro/.style={draw, circle, inner sep=1.5pt}
+      ]
     \node[micro] (c1) at (-2.4, 1.5) {};
     \node[micro] (c2) at (-1.2, 1.7) {};
     \node[micro] (c3) at ( 0.0, 1.55) {};
     \node[micro] (c4) at ( 1.2, 1.75) {};
     \node[micro] (c5) at ( 2.4, 1.6) {};
     \node[note, above=3mm of c3, align=center]
-      {Multiple admissible $\chi$ configurations\\
-       (same fiber under $\pi$)};
+    {Multiple admissible $\chi$ configurations\\
+    (same fiber under $\pi$)};
     \node[box, below=16mm of c3,
       minimum width=6.8cm] (chieff)
-      {$\chi_{\mathrm{eff}}$\\
-       \footnotesize single effective reality\\
-       \footnotesize non-factorisable (entangled)};
+    {$\chi_{\mathrm{eff}}$\\
+    \footnotesize single effective reality\\
+    \footnotesize non-factorisable (entangled)};
     \node[box, below left=12mm and 14mm of chieff] (obsA)
-      {Outcomes in context $A$};
+    {Outcomes in context $A$};
     \node[box, below right=12mm and 14mm of chieff] (obsB)
-      {Outcomes in context $B$};
+    {Outcomes in context $B$};
     \draw[arrow] (c1) -- (chieff.north west);
     \draw[arrow] (c2) -- (chieff.north);
     \draw[arrow] (c3) -- (chieff.north);
     \draw[arrow] (c4) -- (chieff.north);
     \draw[arrow] (c5) -- (chieff.north east);
     \node[note, left=2mm of chieff, anchor=east]
-      {\footnotesize non-injective\\
-       \footnotesize projection $\pi$};
+    {\footnotesize non-injective\\
+    \footnotesize projection $\pi$};
     \draw[arrow] (chieff)
-      -- node[left=2mm, note] {$\mathcal{O}_A$} (obsA);
+    -- node[left=2mm, note] {$\mathcal{O}_A$} (obsA);
     \draw[arrow] (chieff)
-      -- node[right=2mm, note] {$\mathcal{O}_B$} (obsB);
-  \end{tikzpicture}
-  \caption{Entangled (non-factorisable) regime.
-    Multiple underlying $\chi$ configurations map to the same
-    $\chi_{\mathrm{eff}}$.
-    Different measurement contexts define distinct operational
-    projections producing correlated outcomes without introducing
-    multiple effective realities.}
-  \label{fig:entanglement-two-projections}
-\end{figure}
+    -- node[right=2mm, note] {$\mathcal{O}_B$} (obsB);
+      \end{tikzpicture}
+      \caption{Entangled (non-factorisable) regime.
+      Multiple underlying $\chi$ configurations map to the same
+        $\chi_{\mathrm{eff}}$.
+        Different measurement contexts define distinct operational
+        projections producing correlated outcomes without introducing
+        multiple effective realities.}
+      \label{fig:entanglement-two-projections}
+      \end{figure}
