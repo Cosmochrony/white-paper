@@ -1,57 +1,61 @@
-\subsection{Relational Projection and Spectral Admissibility}
+\subsection{Relational Projection and Admissibility Principles}
   \label{subsec:relational-projection}
 
-  Admissible physical descriptions are defined by the spectral structure
-  of the relational substrate~$\chi$, together with compatibility
-  constraints imposed by the current effective state~$U$.
+  Admissible physical descriptions arise through a projection from the
+  relational substrate~$\chi$ onto effective observable configurations.
+  This projection does not operate directly on individual configurations
+  but on their relational structure.
 
   \paragraph{Relational operator.}
     Let $\mathcal{H}_\chi$ denote the configuration space of admissible
     $\chi$ states.
     We introduce a relational operator
     \begin{equation}
-      L_\chi : \mathcal{H}_\chi \rightarrow \mathcal{H}_\chi,
+      L_\chi : \mathcal{H}_\chi \rightarrow \mathcal{H}_\chi ,
     \end{equation}
-    defined purely in terms of $\chi$ correlations.
-    In discrete implementations (Appendix~D), $L_\chi$ reduces to a graph
-    Laplacian; in the continuum limit, it defines an effective self-adjoint
-    operator encoding relational connectivity.
+    defined purely in terms of correlations within the $\chi$ substrate.
+    In discrete realizations (Appendix~D) $L_\chi$ reduces to a graph
+    Laplacian.
+    In the continuum limit it defines an effective self-adjoint operator
+    encoding relational connectivity.
 
-  \paragraph{Spectral decomposition.}
+  \paragraph{Spectral structure.}
     The operator $L_\chi$ admits a spectral decomposition
     \begin{equation}
-      L_\chi \psi_n = \lambda_n \psi_n,
+      L_\chi \psi_n = \lambda_n \psi_n ,
     \end{equation}
     where $\{\lambda_n\}$ are non-negative eigenvalues and $\{\psi_n\}$ the
     associated eigenmodes.
+    These modes provide a natural basis for describing relational
+    configurations of the substrate.
 
-  \paragraph{Admissibility as constrained spectral filtering.}
-    Projectable configurations are selected by a spectral filter acting
-    on~$L_\chi$, subject to a compatibility condition with the effective
-    state~$U$.
-    The infra-physical admissibility operator is defined as a selective
-    projection
+  \paragraph{Admissibility principle.}
+    Only a restricted subset of relational configurations can give rise
+    to stable effective descriptions.
+    This restriction can be expressed as a spectral filtering acting on
+    the relational operator $L_\chi$.
+    Formally one may represent this selection through an admissibility
+    operator
     \begin{equation}
       \Pi_{\lambda_*}:\mathcal{H}_\chi \rightrightarrows \mathcal{H}_{\mathrm{eff}},
-      \qquad
-      \Pi_{\lambda_*} \;\equiv\;
-      f\!\left(\frac{L_\chi}{\lambda_*}\right),
     \end{equation}
-    where $f(x)$ is a fixed, smooth cutoff function satisfying
-    $f(x)\to 0$ for $x\ll 1$ and $f(x)\to 1$ for $x\gg 1$.
-    The scale~$\lambda_*$ sets the spectral threshold separating
+    which associates relational configurations with admissible effective
+    descriptions.
+    The scale $\lambda_*$ represents a spectral threshold separating
     projectively admissible from non-admissible relational modes.
-    The correspondence symbol emphasizes that $\Pi_{\lambda_*}$ does not
-    define a single-valued map, but selects admissible equivalence classes
-    of effective descriptions.
 
   \paragraph{Non-injectivity and equivalence classes.}
-    The projection~$\Pi_{\lambda_*}$ is intrinsically non-injective.
-    Distinct relational configurations sharing identical spectral content
-    below the cutoff~$\lambda_*$ are identified into the same projected
-    equivalence class, provided they remain compatible with the current
-    effective state~$U$.
-    This structural non-injectivity—formalized here at the spectral
-    level—constrains the class of admissible projected regimes and underpins
-    the emergence of quantum correlations, internal degrees of freedom, and
-    measurement processes developed in subsequent sections.
+    The projection $\Pi_{\lambda_*}$ is generally non-injective.
+    Distinct relational configurations may share identical spectral
+    content below the admissibility threshold and therefore correspond
+    to the same effective observable state.
+    Effective descriptions thus arise as equivalence classes of relational
+    configurations compatible with the current effective state~$U$.
+
+  \paragraph{Programme of spectral admissibility.}
+    The structural consequences of this admissibility principle are
+    developed in detail in Chapter~\ref{sec:spectral-admissibility}.
+    In particular, the bounded-relaxation dynamics of the $\chi$ substrate
+    imposes quantitative constraints on admissible spectral modes and
+    selects specific relational structures capable of supporting
+    stable projected descriptions.
