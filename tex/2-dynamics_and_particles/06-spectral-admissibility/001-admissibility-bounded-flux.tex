@@ -1,0 +1,51 @@
+\subsection{Admissibility from Bounded Flux}
+  \label{subsec:admissibility-bounded-flux}
+
+  The dynamics of the $\chi$ substrate is constrained by a fundamental bound on
+  the local rate of relaxation.
+  This bound expresses the finite transmissibility of the relational substrate
+  and limits the rate at which local configurations may evolve.
+
+  Operationally, this constraint can be expressed as
+  \begin{equation}
+    |\partial_t \chi_v| \le c_\chi ,
+  \end{equation}
+  where $c_\chi$ denotes the maximal relaxation speed associated with the
+  substrate.
+
+  This condition plays a role analogous to a causal bound, but it operates at the
+  level of relational relaxation rather than geometric propagation.
+  Configurations whose local relaxation flux exceeds this bound cannot be
+  sustained dynamically.
+
+  When the dynamics is expressed in a spectral basis of the relational Laplacian
+  $L$, each mode evolves independently at leading order.
+  Let $\lambda_\rho$ denote the Laplacian eigenvalue associated with a spectral
+  sector labelled by $\rho$.
+
+  The bounded-flux condition then restricts the maximal amplitude that a spectral
+  mode can reach without violating the local relaxation constraint.
+  A detailed analysis shows that the maximal admissible amplitude of a mode
+  associated with eigenvalue $\lambda_\rho$ obeys
+  \begin{equation}
+    A_\rho^{\max} = \frac{c_\chi}{\sqrt{\lambda_\rho}} .
+  \end{equation}
+
+  This relation defines a universal admissibility envelope for spectral modes.
+  Modes associated with smaller eigenvalues can sustain larger amplitudes,
+  whereas high-frequency modes are strongly suppressed by the bounded-flux
+  constraint.
+
+  In this sense, the Laplacian spectrum acts as a structural filter on the space
+  of dynamically admissible configurations.
+  Only modes compatible with the admissibility envelope remain dynamically
+  sustainable.
+
+  The existence of this envelope introduces a hierarchy among spectral sectors.
+  Even when several sectors are kinematically available, the bounded-flux
+  constraint favours those associated with lower Laplacian eigenvalues.
+
+  The consequences of this spectral filtering become particularly transparent
+  when explicit relational graphs are considered.
+  The simplest analytically tractable example is provided by the Cayley graph of
+  the quaternion group $Q_8$, which we analyse in the following section.
