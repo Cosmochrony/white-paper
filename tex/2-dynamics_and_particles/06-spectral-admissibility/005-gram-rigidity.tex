@@ -1,0 +1,60 @@
+\subsection{Pairwise Character Geometry and Gram Rigidity}
+  \label{subsec:gram-rigidity}
+
+  The character-vanishing condition introduced in the previous section
+  imposes strong constraints on the mutual relations between generators.
+  These constraints can be expressed in a compact geometric form.
+
+  Let $S=\{s_1,\ldots,s_k\}$ be a generating set of $G$ and let $\rho$
+  be an irreducible representation in which each generator of $S$
+  satisfies the neutrality condition
+  \[
+    \chi_\rho(s_i)=0 .
+  \]
+
+  The relations between generators can then be encoded in a Gram matrix
+  whose entries are determined by representation characters.
+  For a pair of generators $s_i,s_j\in S$, we define
+  \begin{equation}
+    G_{ij}=-\frac{1}{2}\chi_\rho(s_i s_j).
+  \end{equation}
+
+  This matrix captures the pairwise geometry of the generating set as
+  seen through the representation $\rho$.
+  Indeed, when the representation is realised in $SU(2)$,
+  each neutral generator corresponds to a traceless element that can be
+  written in the form
+  \[
+    \rho(s_i)=\pm i\,\vec{u}_i\cdot\vec{\sigma},
+  \]
+  where $\vec{\sigma}$ denotes the vector of Pauli matrices and
+  $\vec{u}_i\in S^2$ is a unit vector.
+
+  In this representation one finds
+  \[
+    \chi_\rho(s_i s_j)=-2\,\vec{u}_i\cdot\vec{u}_j,
+  \]
+  so that the Gram matrix becomes
+  \[
+    G_{ij}=\vec{u}_i\cdot\vec{u}_j .
+  \]
+
+  The character relations therefore determine the inner products between
+  the vectors $\vec{u}_i$ associated with the generators.
+  In this sense the geometry of the generating set is fixed by purely
+  representation-theoretic data.
+
+  This rigidity has important consequences.
+  Once the characters of pairwise products are specified, the relative
+  angles between generators cannot be continuously deformed without
+  violating the neutrality conditions.
+  The admissible configurations of generators therefore form discrete
+  families rather than continuous manifolds.
+
+  The Gram formulation provides a convenient bridge between spectral
+  admissibility and geometric constraints on generating sets.
+  In the next section we exploit this structure by introducing the
+  second-moment tensor associated with the vectors $\vec{u}_i$.
+  This tensor will allow us to distinguish isotropic configurations
+  from anisotropic ones and will lead to a structural exclusion of
+  certain candidate groups.
