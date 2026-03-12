@@ -1,99 +1,77 @@
+\subsection{Projective Holonomy and Fiber Constraints}
+  \label{subsec:projective-holonomy}
 
-\subsection{Admissibility-Induced Topological Rigidity: A Minimal Model}
-  \label{subsec:admissibility_rigidity_minimal_model}
+  The projection from relational configurations of the $\chi$ substrate
+  to effective observable descriptions is generally non-injective.
+  As a consequence, admissible effective states correspond not to single
+  relational configurations but to equivalence classes under the
+  projection operator.
 
-  We present a minimal proof of principle.
-  We show that a purely spectral admissibility constraint on pairs of projectors can induce a non-trivial fundamental
-  group for the relative admissible space.
-  This supports the claim that topological rigidity may originate from projective admissibility, not from a postulated
-  ambient geometry.
+  This structure naturally endows the projection fiber with non-trivial
+  topological constraints.
 
-  \paragraph{Spectral invariant for a pair of projectors.}
-    Let $\Pi_a$ and $\Pi_b$ be rank-one projectors on $\mathbb{C}^2$.
-    Consider the positive operator
+  \paragraph{Relative configurations of projectors.}
+    To illustrate this mechanism we consider a minimal model involving
+    rank-one projectors acting on $\mathbb{C}^2$.
+    Let $\Pi_a$ and $\Pi_b$ denote two such projectors.
+    Their relative overlap can be characterized by the positive operator
     \begin{equation}
-      M_{ab} = \Pi_a \Pi_b \Pi_a.
+      M_{ab} = \Pi_a \Pi_b \Pi_a .
     \end{equation}
-    For rank-one projectors, $M_{ab}$ has a single non-zero eigenvalue
+
+    For rank-one projectors this operator has a single non-zero eigenvalue
     \begin{equation}
-      \lambda_{ab} = \mathrm{Tr}(\Pi_a \Pi_b) = |\langle a|b\rangle|^2,
+      \lambda_{ab} = \mathrm{Tr}(\Pi_a \Pi_b) = |\langle a|b\rangle|^2 ,
       \qquad
-      0 \le \lambda_{ab} \le 1.
+      0 \le \lambda_{ab} \le 1 .
     \end{equation}
-    Geometrically, writing $\Pi(\mathbf{n}) = \tfrac12(I+\mathbf{n}\cdot\boldsymbol{\sigma})$ with $\mathbf{n}\in S^2$,
-    one has $\lambda_{ab}=\cos^2(\alpha/2)$, where $\alpha$ is the angle between $\mathbf{n}_a$ and $\mathbf{n}_b$.
 
-  \paragraph{Commutativity locus and its two physical meanings.}
-    The commutator norm is controlled by the same angle.
-    Up to a fixed constant depending on the chosen operator norm,
-    \begin{equation}
-      \|[\Pi_a,\Pi_b]\| \propto \sin\alpha
-      = 2\sqrt{\lambda_{ab}(1-\lambda_{ab})}.
-    \end{equation}
-    The commutativity locus corresponds to $\sin\alpha=0$, i.e. $\lambda_{ab}\to 1$ or $\lambda_{ab}\to 0$.
-    These two limits have distinct interpretations in the cosmochrony framework.
-    The limit $\lambda_{ab}\to 1$ expresses projective indistinguishability, where two descriptions collapse to the same
-    effective class.
-    The limit $\lambda_{ab}\to 0$ expresses complete orthogonality, corresponding to disjoint sectors with vanishing
-    overlap.
-    Both limits extinguish non-commutativity, but their admissibility justifications differ.
+    Writing $\Pi(\mathbf{n})=\tfrac12(I+\mathbf{n}\cdot\boldsymbol{\sigma})$
+    with $\mathbf{n}\in S^2$, one obtains
+    \[
+      \lambda_{ab} = \cos^2(\alpha/2),
+    \]
+    where $\alpha$ denotes the angle between the Bloch vectors
+    $\mathbf{n}_a$ and $\mathbf{n}_b$.
 
-  \paragraph{Admissibility as a spectral gap on the overlap.}
-    Introduce a minimal spectral separation condition on the pair,
+  \paragraph{Admissibility and excluded regions.}
+    Effective descriptions are restricted to configurations compatible
+    with the projection constraints.
+    In the present toy model this corresponds to excluding configurations
+    in which projectors become either indistinguishable or orthogonal.
+    Formally this can be expressed through a minimal spectral separation
+    condition
     \begin{equation}
-      \min(\lambda_{ab},1-\lambda_{ab}) \ge \delta,
+      \min(\lambda_{ab},1-\lambda_{ab}) \ge \delta ,
       \qquad
-      0 < \delta < \tfrac12.
+      0 < \delta < \tfrac12 .
     \end{equation}
-    This excludes both near-indistinguishability and near-orthogonality,
-    while enforcing a uniform lower bound on non-commutativity within the admissible region.
-    Equivalently,
-    \begin{equation}
-      \sin\alpha \ge \varepsilon(\delta),
-      \qquad
-      \varepsilon(\delta)=2\sqrt{\delta(1-\delta)}.
-    \end{equation}
-    Here $\delta$ plays the role of a proxy for a projective gap constraint,
-    and $\varepsilon$ is not ad hoc but the geometric translation of a bound on the spectral invariant $\lambda_{ab}$.
 
-  \paragraph{Emergent non-trivial $\pi_1$ from admissibility.}
-    Fix $\Pi_a$.
-    The admissible set of $\Pi_b$ is then $S^2$ minus two excluded caps around $\mathbf{n}_a$ and $-\mathbf{n}_a$.
+    Geometrically this removes two caps around $\mathbf{n}_a$ and
+    $-\mathbf{n}_a$ on the sphere of possible orientations of
+    $\mathbf{n}_b$.
+
+  \paragraph{Emergent holonomy.}
+    The admissible region is therefore the sphere with two excluded caps.
     Topologically,
     \begin{equation}
       S^2 \setminus (2\ \text{caps}) \simeq S^1 \times (0,1),
       \qquad
       \pi_1 \cong \mathbb{Z}.
     \end{equation}
-    Therefore, the spectral admissibility constraint alone produces a non-trivial fundamental group for the relative
-    admissible space.
-    The excluded caps coincide with the locus where commutativity turns on,
-    so the inhomogeneous distribution of non-commutativity is automatically realized.
-    A loop that winds around the cylinder cannot be contracted without entering the spectrally inadmissible region.
-    This realizes the inadmissible-border mechanism for topological rigidity.
 
-  \paragraph{Limitations and scope.}
-    This result concerns a relative configuration space (with $\Pi_a$ fixed) rather than the configuration space of two
-    indiscernible excitations.
-    For anyonic statistics, the relevant object is the unordered configuration space
-    $\mathrm{Conf}_2(\mathcal{A})/S_2$,
-    and the quotient may modify $\pi_1$.
-    Moreover, the present construction is restricted to $n=2$ and does not establish Artin braid relations,
-    which require a non-trivial coupling structure in the admissible space of triplets and higher $n$.
-    Accordingly, this construction should be read as a proof of principle that projective admissibility can generate
-    homotopic rigidity, not as a derivation of anyonic braiding.
+    A loop winding around this cylinder cannot be continuously contracted
+    without crossing an inadmissible region.
+    In this sense the projection constraint induces a non-trivial
+    holonomy in the space of admissible configurations.
 
-  \paragraph{Towards $n\ge 3$ and planar versus spherical braids.}
-    For $n\ge 3$, configuration spaces of projectors naturally lead to spherical braid groups when working globally on
-    $\mathbb{CP}^1\simeq S^2$.
-    The fundamental group of $\mathrm{Conf}_n(S^2)$ is the spherical braid group,
-    which differs from the planar braid group by an additional global relation.
-    This is not an obstacle for effective anyonic physics, which is planar.
-    A clean route is to restrict to an admissible open set contained in a single contractible chart of $S^2$,
-    away from the excluded caps.
-    This requires $\delta$ sufficiently small so that the excluded caps leave a contractible region large enough to
-    accommodate $n$ well-separated excitations.
-    Such a condition defines an explicit regime of admissibility.
-    Establishing how this regime emerges from intrinsic spectral parameters
-    and how the associated configuration space supports planar braid relations
-    is the next step of the program.
+  \paragraph{Conceptual implication.}
+    This simple construction illustrates a general principle:
+    topological rigidity can emerge from admissibility constraints
+    imposed by projection, rather than from a pre-existing ambient
+    geometry.
+    The role of geometry is therefore secondary, arising from the
+    structure of admissible relational configurations.
+
+    The spectral and classificatory consequences of these admissibility
+    constraints are developed in Chapter~6.
