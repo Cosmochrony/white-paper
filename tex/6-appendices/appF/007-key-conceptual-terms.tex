@@ -1,6 +1,40 @@
 \subsection{Key Conceptual Terms}
   \label{subsec:key-conceptual-terms}
 
+  \paragraph{Admissibility envelope.}
+    Under the bounded-flux constraint $|\partial_t \chi| \le c_\chi$, a Laplacian eigenmode
+    with eigenvalue $\lambda_n$ admits a maximal effective amplitude
+    \[
+      A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}.
+    \]
+    This relation defines the \emph{admissibility envelope} governing the maximal
+    projectable amplitude of each spectral sector.
+
+  \paragraph{Admissibility ratio.}
+    The \emph{admissibility ratio} compares the maximal admissible amplitudes of two
+    spectral sectors,
+    \[
+      R_{p/q} = \frac{A_p^{\max}}{A_q^{\max}}
+      = \sqrt{\frac{\lambda_q}{\lambda_p}} .
+    \]
+    This ratio quantifies the relative dynamical preference between spectral sectors
+    under the bounded-flux constraint.
+    In quaternionic Cayley graphs such as that of $Q_8$, the ratio
+    $\sqrt{4/3}$ between the non-abelian and abelian sectors provides the minimal
+    instance of this hierarchy.
+
+  \paragraph{Character-vanishing condition.}
+    The condition
+    \[
+      \chi_\rho(s) = 0 \quad \forall s \in S
+    \]
+    is referred to as the \emph{character-vanishing condition}.
+    It identifies generator sets whose associated $SU(2)$ representation consists entirely
+    of traceless elements.
+    This condition plays a central role in the classification of admissible spectral sectors,
+    since it ensures that the adjacency contribution $\mu_\rho$ vanishes and the Laplacian
+    eigenvalue satisfies $\lambda_\rho = |S|$.
+
   \paragraph{Energy.}
     Energy is an effective quantity measuring the operational cost associated
     with modifying a projected configuration while preserving coherence under
@@ -14,6 +48,21 @@
     Local stochastic modulations of $\chi$ configurations that affect event timing
     and localization without altering underlying topological constraints.
 
+  \paragraph{Gram rigidity.}
+    Let $\{\vec u_s\}_{s \in S}$ denote the unit axes associated with neutral generators.
+    The pairwise geometry of these axes is encoded by the Gram matrix
+    \[
+      G_{st} = \vec u_s \cdot \vec u_t .
+    \]
+    Through the character identity
+    \[
+      G_{st} = -\frac{1}{2}\chi_\rho(st),
+    \]
+    the entire geometric configuration is determined by representation-theoretic data.
+    \emph{Gram rigidity} refers to the fact that admissible neutral configurations are
+    severely constrained by this identity, leading to a discrete classification of
+    compatible finite subgroups of $SU(2)$.
+
   \paragraph{Matter.}
     Stable topological configurations of $\chi$ whose persistence gives rise to
     particle-like behavior and inertial properties.
@@ -24,6 +73,33 @@
     Measurement does not induce a fundamental collapse, but resolves an
     equivalence class of projected configurations into a stable operational
     outcome.
+
+  \paragraph{Neutral generator.}
+    A generator $s \in S$ of a finite group representation $\rho : G \to SU(2)$ is said to be
+    \emph{neutral} if its character vanishes,
+    \[
+      \chi_\rho(s) = 0.
+    \]
+    Neutral generators correspond to traceless elements of $SU(2)$ and therefore to
+    half-turn rotations in the associated $SO(3)$ representation.
+    Within the spectral admissibility programme, neutrality ensures that the corresponding
+    sector does not receive constructive alignment from the generating set and therefore
+    admits the maximal admissibility window compatible with bounded relational flux.
+
+  \paragraph{Spectral capacity.}
+    For a finite group $G$ with symmetric generating set $S$, the
+    \emph{spectral capacity} functional is defined as
+    \[
+      C(G,S) =
+      \sum_{\rho \in \widehat G,\; \lambda_\rho > 0}
+      \frac{(\dim \rho)^2}{\sqrt{\lambda_\rho}},
+    \]
+    where $\lambda_\rho$ are the Laplacian eigenvalues associated with the irreducible
+    representation sectors.
+    The functional aggregates the admissible amplitude windows of all spectral sectors
+    weighted by their Peter--Weyl multiplicities.
+    Spectral capacity provides a global measure of how efficiently a relational structure
+    supports dynamically admissible modes under bounded relaxation flux.
 
   \paragraph{Probability.}
     An emergent descriptor reflecting the multiplicity of projected realizations
