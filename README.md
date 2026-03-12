@@ -1,4 +1,4 @@
-This repository contains the source of the [Cosmochrony whitepaper](pdf/Cosmochrony.pdf)
+This repository contains the source of the [Cosmochrony whitepaper](out/Cosmochrony.pdf)
 (current consolidated release).
 
 Cosmochrony is a **pre-geometric theoretical framework** in which time ordering,
