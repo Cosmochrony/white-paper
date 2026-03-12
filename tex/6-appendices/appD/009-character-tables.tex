@@ -1,0 +1,57 @@
+\subsection{Character Tables for Admissible Binary Groups}
+  \label{subsec:character-tables}
+
+  We collect the character tables of the four finite group families identified in
+  Theorem~6.1.
+  These data underlie the numerical calculations of
+  Sections~\ref{subsec:admissibility-envelope-by-sector}--\ref{subsec:2T-exclusion-verification}.
+
+  \paragraph{Quaternion group $Q_8$.}
+    $Q_8 = \{\pm 1,\pm i,\pm j,\pm k\}$ has five conjugacy classes:
+    $\{1\}$, $\{-1\}$, $\{\pm i\}$, $\{\pm j\}$, $\{\pm k\}$,
+    and five irreducible representations: four one-dimensional ($\rho_1,\rho_2,\rho_3,\rho_4$,
+    the trivial and three sign representations) and one two-dimensional spinorial
+    representation $\rho_s$.
+
+    \begin{center}
+      \begin{tabular}{lccccc}
+        \hline
+        Irrep    & $\{1\}$ & $\{-1\}$ & $\{\pm i\}$ & $\{\pm j\}$ & $\{\pm k\}$ \\
+        \hline
+        $\rho_1$ & 1       & 1        & 1           & 1           & 1           \\
+        $\rho_2$ & 1       & 1        & 1           & $-1$        & $-1$        \\
+        $\rho_3$ & 1       & 1        & $-1$        & 1           & $-1$        \\
+        $\rho_4$ & 1       & 1        & $-1$        & $-1$        & 1           \\
+        $\rho_s$ & 2       & $-2$     & 0           & 0           & 0           \\
+        \hline
+      \end{tabular}
+    \end{center}
+
+    The generators $\{\pm i,\pm j,\pm k\}$ satisfy $\chi_{\rho_s}(s)=0$ and
+    $\chi_{\rho_k}(s)\in\{0,\pm 1\}$ for $k=2,3,4$: the neutrality condition holds in
+    the spinorial sector.
+    In the abelian sectors $\rho_2,\rho_3,\rho_4$, the generators satisfy
+    $\chi_{\rho_k}(\pm s)\in\{0,\pm 1\}$; the Laplacian eigenvalues in those sectors
+    are $\lambda_{\rho_k}=|S|\cdot(1-0)=6\cdot 1=8$ (averaging over generators
+    with $\chi=\pm 1$ gives net zero, so $\lambda_{\rho_k}=8$).
+
+  \paragraph{Binary icosahedral group $2I$.}
+    $|2I|=120$; it has nine conjugacy classes and nine irreducible representations of
+    dimensions $1,2,2,3,3,4,4,5,6$.
+    The spinorial sector $\rho_s$ (dimension 2) has character zero on all generators of
+    any symmetric Cayley generating set $S$.
+    The ratio $A_{\rho_s}^{\max}/A_{\rho_1}^{\max}=\sqrt{14/9}\approx 1.247$ (see D.11).
+
+  \paragraph{Binary dihedral groups $\mathrm{Dic}_n$.}
+    $|\mathrm{Dic}_n|=4n$; these groups have $n+3$ irreducible representations:
+    four one-dimensional (for even $n$) or two one-dimensional (for odd $n$), and
+    $(n-1)$ two-dimensional.
+    The spinorial representation exists for all $n\geq 2$ and has character zero on
+    the standard symmetric generators.
+
+  \paragraph{Binary octahedral group $2O$.}
+    $|2O|=48$; it has eight irreducible representations of dimensions
+    $1,1,2,2,3,3,4,4$ (in the binary cover decomposition).
+    The two-dimensional spinorial sector has eigenvalue $\lambda_{\rho_s}$ strictly
+    below that of the one-dimensional sectors for the Cayley graph associated with
+    the standard generating set.

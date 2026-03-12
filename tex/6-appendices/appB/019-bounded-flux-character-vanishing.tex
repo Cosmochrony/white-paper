@@ -1,0 +1,46 @@
+\subsection{Bounded Flux as the Origin of Character Vanishing}
+  \label{subsec:bounded-flux-character-vanishing}
+
+  The bounded-flux condition introduced in Chapter~\ref{sec:spectral-admissibility}
+  imposes a constraint on the maximal amplitude that a spectral mode of the relational
+  Laplacian can sustain.
+  This section clarifies why this constraint selects, at the level of representation
+  theory, generators whose character vanishes in a common irreducible sector.
+
+  Consider the relational Laplacian $\mathcal{L}_\chi$ acting on the configuration space
+  of the $\chi$ substrate, and let $\rho$ denote an irreducible representation sector
+  with associated Laplacian eigenvalue $\lambda_\rho$.
+  The bounded-flux condition requires
+  \begin{equation}
+    A_\rho^{\max} \;=\; \frac{c_\chi}{\sqrt{\lambda_\rho}},
+    \label{eq:admissibility-envelope-B}
+  \end{equation}
+  where $c_\chi$ is the maximal relaxation speed.
+  Sectors with smaller eigenvalues admit larger amplitudes and are therefore
+  dynamically preferred.
+
+  Now consider a generating set $S$ of a finite group $G$ acting on a spectral sector
+  $\rho$.
+  Each generator $s\in S$ acts on the eigenspace $V_\rho$ via the matrix $\rho(s)$.
+  The local relaxation cost associated with $s$ is proportional to the real part of
+  $1 - \chi_\rho(s)/\dim\rho$, where $\chi_\rho(s) = \mathrm{Tr}(\rho(s))$ is the
+  character.
+
+  The admissibility condition~\eqref{eq:admissibility-envelope-B} is saturated by the
+  lowest available eigenvalue.
+  For a Cayley graph with generating set $S$, the Laplacian eigenvalue in sector $\rho$
+  takes the form
+  \begin{equation}
+    \lambda_\rho \;=\; |S| - \frac{1}{\dim\rho}\sum_{s\in S} \chi_\rho(s).
+  \end{equation}
+  Minimizing $\lambda_\rho$ subject to the constraint that $S$ generates $G$ is
+  equivalent to maximizing $\sum_{s\in S}\chi_\rho(s)$.
+  The global minimum is achieved when $\chi_\rho(s) = 0$ for all $s\in S$,
+  in which case $\lambda_\rho = |S|$, and the admissibility envelope is at its most
+  permissive.
+
+  The character-vanishing condition $\chi_\rho(s)=0$ is therefore not an independently
+  imposed algebraic requirement.
+  It emerges as the necessary condition for generators to saturate the bounded-flux
+  filter at the lowest possible spectral cost, and hence to belong to the admissible
+  sector as defined by the dynamics of the $\chi$ substrate.
