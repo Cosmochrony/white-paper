@@ -1,0 +1,283 @@
+% ============================================================
+% Changes from v2:
+%   (f) Co-emergence paragraph split into two:
+%       (f1) signature selection (SR level) -- unchanged from v2
+%       (f2) NEW: metric rigidity and the GR space/time budget
+%            compensation, traced to the Einstein equations
+%            emerging from delta S_Pi / delta g_mu_nu = 0.
+%            Forward ref to Gravity companion paper.
+%       This addresses the question: why does dilating time
+%       exactly compensate spatial contraction (ds^2 invariant)?
+%       Answer: the signature guarantees existence of a pseudo-
+%       Riemannian metric, but it is the spectral entropy
+%       functional S_Pi[g] that dynamically locks the metric
+%       coefficients through the Einstein field equations,
+%       making the compensation exact and position-dependent.
+%
+% LABELS ASSUMED (align with existing document):
+%   \label{sec:minkowski-emergence}     -- Minkowski section
+%   \label{sec:spectral-entropy}        -- S_Pi[g] definition
+%   \label{eq:relational-energy}        -- E_chi = ||L phi||^2
+%
+% CROSS-REFERENCE UPDATES IN REST OF DOCUMENT:
+%   - Section 2 (static chi): forward ref to this section.
+%   - Section 7.5 closing sentence: point to Sec. 7.6.
+%   - Minkowski/signature section: back-ref to Sec. 7.6.
+%   - Gravity companion paper section: note that the dynamical
+%     locking of the metric is further discussed in Sec. 7.6.
+% ============================================================
+
+\subsection{The Self-Referential Origin of Temporal Succession}
+  \label{sec:temporal-succession}
+
+  The framework introduced in the preceding sections places the substrate field~$\chi$
+  at a pre-geometric level: no spacetime manifold, no metric, and no notion of physical time is presupposed.
+  Observable physics---including time itself---emerges through the admissibility constraints and the projection~$\Pi$.
+  This raises a structural question that must be addressed explicitly:
+  if $\chi$ is timeless, in what sense does the universe ``evolve,'' and what
+  determines the succession from one projected state to the next?
+  The present section provides a logically closed account of temporal emergence
+  within the framework and clarifies how the spatial and temporal sectors, despite
+  having distinct logical origins, remain coupled in the manner required by special
+  relativity.
+
+  \paragraph{Two levels: structural rules and their execution.}
+    The relational rules encoded by~$\chi$---the Laplacian weights~$w_{ij}$,
+    the saturation bound~$c_\chi$, the admissibility envelopes, the fiber
+    topology of~$\Pi$---constitute a fixed structural layer.
+    They are written once and do not themselves change.
+    This layer is analogous to the source code of a deterministic program:
+    all rules are simultaneously present, yet the rules alone do not constitute a running computation.
+    Physical time belongs to the execution layer, not to the code layer.
+    The apparent paradox of a ``timeless'' substrate generating temporal order
+    dissolves once these two levels are kept distinct.
+
+  \paragraph{The ordering parameter $\tau$ and the relational energy.}
+    The relaxation cascade introduced in Section~\ref{sec:relax-cascade}
+    is governed by the flow equation
+    \begin{equation}
+      \frac{d\varphi_i}{d\tau} = -(\mathcal{L}\,\varphi)_i,
+    \end{equation}
+    where $\tau$ is a monotonically increasing parameter indexing the sequence
+    of configurations.
+    No physical interpretation of~$\tau$ as a fundamental time is imposed at this level.
+    Instead, $\tau$ labels a strict ordering on the space of relational configurations
+    defined by the monotone decrease of the relational energy
+    \begin{equation}
+      E_\chi[\varphi] \;=\; \|\mathcal{L}\,\varphi\|^2
+      \;=\; \sum_{i,j} w_{ij}\,(\varphi_i - \varphi_j)^2,
+    \end{equation}
+    already defined in Eq.~\eqref{eq:relational-energy}.
+    This ordering is intrinsic: it follows from the structure of~$\mathcal{L}$ alone,
+    without reference to any background clock.
+    Physical time is the coarse-grained, projected image of this ordering,
+    once the hyperbolic signature of the effective operator is established
+    (Section~\ref{sec:minkowski-emergence}).
+
+  \paragraph{The universe state $U$ as its own cursor.}
+    The central self-referential feature of the framework is the following.
+    The current macroscopic state of the universe~$U_n$---understood as the totality
+    of projected observable data at a given level of the cascade---does not merely
+    record the outcome of the preceding transition.
+    It determines which successor states~$U_{n+1}$ are admissible.
+
+    More precisely:
+    \begin{itemize}
+      \item $U_n$ encodes the current spectral structure of the effective Laplacian,
+      including the local connectivity weights, the saturation regime, and the
+      descriptive resolution scale~$\ell(U_n)$~(cf.~\cite{Beau2026d}).
+      \item These data define the admissibility constraints on the next projection:
+      which configurations of~$\chi$ project injectively onto observable fields,
+      and which local transitions remain within the bounded-flux regime.
+      \item Among these constraints, the bounded-flux condition~$c_\chi$ imposes that
+      the local relational flux must remain at saturation throughout an admissible
+      transition: any descent along~$E_\chi$ that is shallower than the steepest
+      admissible gradient would leave residual flux below the saturation bound,
+      meaning that the projection retains further resolvable structure and the
+      transition is not yet complete.
+      Only the steepest admissible descent exhausts the available flux budget and
+      closes the transition.
+      No external selection principle is involved; the saturation condition itself
+      determines the unique realised step.
+    \end{itemize}
+    There is therefore no external cursor advancing the universe from~$U_n$
+    to~$U_{n+1}$.
+    The state~$U_n$ is the cursor.
+    It carries within itself the conditions that make the next step both determinate
+    and admissible.
+
+  \paragraph{The cursor acts on fibre classes, not on $\chi$ directly.}
+    Because the projection~$\Pi : \Omega \to \mathcal{O}$ is non-injective, a single
+    observable state~$U_n$ corresponds to an entire fibre of substrate
+    configurations,
+    \begin{equation}
+      \Pi^{-1}(U_n) \;\subset\; \Omega.
+    \end{equation}
+    The cursor does not select a unique microscopic configuration of~$\chi$; it selects
+    an admissible fibre class.
+    The residual multiplicity within~$\Pi^{-1}(U_n)$ is precisely the source of
+    projective fluctuations: the effective observables at level~$U_n$ cannot
+    distinguish between the microscopic configurations in the fibre, and this
+    irreducible indeterminacy propagates into the next transition.
+    Quantum fluctuations, in this picture, are not imposed as an additional
+    postulate: they reflect the bounded resolvability of the projection at each step
+    of the cascade.
+
+  \paragraph{Irreversibility and the arrow of time.}
+    The succession $U_n \to U_{n+1}$ is irreversible by construction:
+    $E_\chi$ is non-increasing along admissible transitions, with a strict decrease
+    whenever~$U_n$ is not already a stationary configuration of~$\mathcal{L}$.
+    This monotone decrease constitutes the arrow of time.
+    It does not require a separate thermodynamic argument or a special initial
+    condition external to the framework; it is built into the admissibility structure of the code layer.
+    The question ``why does time have a direction?'' thus reduces to
+    ``why is the initial state~$U_0$ not already a global minimum of~$E_\chi$?''---a
+    question about the boundary conditions of the cascade, not about the nature of time itself.
+
+  \paragraph{The present as a dynamical frontier.}
+    Within the cascade, the universe state~$U_n$ partitions the space of relational
+    configurations into two complementary sectors:
+    \begin{itemize}
+      \item configurations already stabilised under~$\Pi$, whose projected images
+      are fixed and no longer carry residual relational gradient;
+      \item configurations that are not yet admissible, in the sense that the
+      current spectral structure of~$\mathcal{L}$ does not yet support a locally injective projection onto them.
+    \end{itemize}
+    The present corresponds to the dynamical frontier between these two sectors:
+    the region where the projection is becoming stable but where the cascade has not yet terminated.
+    Because the non-injective fibre~$\Pi^{-1}(U_n)$ retains finite multiplicity at
+    this frontier, the present is not an infinitesimal instant but a zone of finite
+    relational extent, consistent with the finite propagation speeds imposed by the bounded-flux constraint.
+    This provides a structural account of the physical thickness of the present
+    without invoking additional postulates.
+
+  \paragraph{Co-emergence of space and time from a single operator.}
+    The preceding paragraphs have described space and time as having logically distinct
+    origins within the framework: spatial structure follows from the admissibility
+    envelopes of~$\chi$ and the fibre topology of~$\Pi$
+    (see~\cite{Beau2026aa} and Section~\ref{sec:spectral-admissibility}),
+    while temporal succession follows from the ordered execution of the cascade.
+    One might therefore ask why space and time remain as tightly coupled as special relativity requires.
+
+    The answer lies in the structure of the effective operator~$\mathcal{L}$.
+    As established in Section~\ref{sec:minkowski-emergence} and in~\cite{Beau2026c},
+    the bounded-flux condition~$c_\chi$ constrains the admissible forms of the
+    effective Laplacian~$\mathcal{L}$ simultaneously in its spatial and its cascade (temporal) sectors.
+    Specifically:
+    \begin{itemize}
+      \item A purely elliptic (spatial) operator is excluded because it would admit
+      instantaneous propagation, violating~$c_\chi$.
+      \item An ultra-hyperbolic operator (more than one time-like direction) is
+      excluded because it leads to an ill-posed Cauchy problem, destabilising the cascade.
+      \item The unique compatible class is a hyperbolic operator with exactly one
+      time-like direction and three space-like directions, whose principal symbol
+      defines the Minkowski metric~$\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$.
+    \end{itemize}
+    The Lorentz group therefore emerges not from a separate postulate but as the
+    symmetry group of the unique operator class that is simultaneously compatible with
+    three-dimensional spatial admissibility and with the irreversible, bounded-flux cascade.
+    Space and time are logically separable in their origins---admissibility selects the
+    former, cascade ordering generates the latter---but they are dynamically inseparable
+    in the effective description, because only one operator class satisfies both constraints at once.
+    This is why the universal ratio of spatial to temporal extents is fixed at~$c$,
+    and why no admissible state of the cascade can disentangle space from time at the macroscopic level.
+
+  \paragraph{Metric rigidity and the general-relativistic space--time budget.}
+    The signature argument above operates at the level of special relativity:
+    it establishes the existence of a pseudo-Riemannian metric~$g_{\mu\nu}$ with
+    signature~$(-+++)$ and guarantees Lorentz invariance of the flat effective geometry.
+    It does not, however, explain why the space--time budget remains exact and
+    self-consistent in the presence of matter and curvature, i.e.\ why dilating the
+    temporal metric coefficient at one point is compensated by a corresponding
+    contraction of the spatial coefficients so that~$ds^2 = g_{\mu\nu}dx^\mu dx^\nu$
+    remains a well-defined invariant throughout a curved spacetime.
+
+    This stronger rigidity is enforced at a second level, through the spectral entropy
+    functional
+    \begin{equation}
+      S_\Pi[g] \;=\; \tfrac{1}{2}\log\det' A_g,
+    \end{equation}
+    where~$A_g = -\nabla_g^2$ is the Laplace-type operator on the effective geometry
+    (Section~\ref{sec:spectral-entropy} and~\cite{Beau2026h}).
+    The renormalised metric variation of~$S_\Pi[g]$ generates, as its dominant infrared
+    term, the Einstein tensor:
+    \begin{equation}
+      \frac{\delta S_\Pi^{\mathrm{ren}}}{\delta g^{\mu\nu}}
+      \;=\; c_{\mathrm{EH}}\,G_{\mu\nu}
+      + c_\Lambda\,g_{\mu\nu}
+      + \text{(higher-derivative and non-local terms)}.
+    \end{equation}
+    The stationarity condition~$\delta S_\Pi[g]/\delta g^{\mu\nu} = 0$, imposed as the
+    equilibrium requirement of the projection, therefore yields the Einstein field
+    equations as the constraint that the effective metric must satisfy at each step of
+    the cascade~\cite{Beau2026h, Beau2026i}.
+    It is precisely these equations that lock the relationship between the temporal and
+    spatial components of~$g_{\mu\nu}$ at every spacetime point: they prevent the metric
+    from being deformed in a way that would violate the invariance of~$ds^2$.
+    The~$A(r) = B(r)^{-1}$ identity of the Schwarzschild solution, which is the most
+    explicit expression of this space--time budget compensation, is a direct consequence
+    of flux conservation under the constrained effective operator~(Section~\ref{sec:gravity-schwarzschild}
+    and~\cite{Beau2026c, Beau2026h}).
+
+    The logical chain is therefore the following.
+    The bounded-flux condition~$c_\chi$ selects the $(-+++)$ signature, guaranteeing
+    the existence of a pseudo-Riemannian metric and the universality of~$c$~(special relativity level).
+    The spectral entropy functional~$S_\Pi[g]$, whose extremisation encodes the
+    equilibrium of the cascade projection, then dynamically locks the metric coefficients
+    through the Einstein equations, enforcing the exact compensation of the space--time
+    budget under arbitrary matter distributions and curvature~(general relativity level).
+    The two levels are not independent: both follow from the same bounded-projection
+    structure of~$\chi$, operating at different orders in the effective gradient expansion.
+
+  \paragraph{Relation to the block-universe picture.}
+    The present account differs from a block-universe interpretation.
+    A block universe asserts that all states~$U_n$ co-exist in a four-dimensional
+    manifold, and that temporal flow is an illusion of perspective.
+    In the present framework, the structural rules co-exist (the code is fixed),
+    but the realisation of~$U_n$ is sequential and self-generated.
+    No co-existence of all states is required or implied.
+    Each state engenders its successor through its own admissibility structure.
+    The appropriate analogy is a causal automaton rather than a static manifold:
+    the program runs, step by step, driven by its own output.
+
+  \paragraph{Summary.}
+    The five elements that together constitute a logically closed account of temporal
+    emergence and space--time coupling are:
+    \begin{enumerate}
+      \item \emph{$\chi$ as static code.}
+      The admissibility rules, the Laplacian structure, and the saturation
+      bound~$c_\chi$ are fixed and atemporal; they form the structural layer.
+      \item \emph{$U_n$ as cursor on fibre classes.}
+      The current universe state is self-referential: it determines, via its
+      own spectral structure, which fibre classes are admissible successors.
+      No external parameter advances the system.
+      \item \emph{The bounded-flux constraint as the unique selector.}
+      Among candidate transitions, only the steepest admissible descent along~$E_\chi$
+      satisfies~$c_\chi$; the constraint itself acts as the selection mechanism,
+      with no additional rule required.
+      \item \emph{Co-emergence of space and time (special relativity level).}
+      The spatial and temporal sectors are logically distinct in origin but
+      dynamically inseparable: the bounded-flux operator uniquely selects the
+      $(-+++)$ signature, fixing the universal ratio~$c$ and coupling the two
+      sectors into Lorentz-invariant structure.
+      \item \emph{Metric rigidity (general relativity level).}
+      The spectral entropy functional~$S_\Pi[g]$, whose extremisation encodes the
+      equilibrium of the cascade projection, generates the Einstein equations as its
+      dominant infrared condition.
+      These equations dynamically lock the relationship between spatial and temporal
+      metric coefficients at every point, enforcing the exact compensation of the
+      space--time budget---the invariance of~$ds^2$---under arbitrary matter
+      distributions and curvature.
+    \end{enumerate}
+    \noindent
+    Items 4 and~5 answer the question of space--time coupling at two distinct levels:
+    item~4 explains why there is a single universal speed~$c$ and Lorentz invariance;
+    item~5 explains why the metric compensation remains exact and position-dependent
+    in the presence of gravity.
+    Both levels follow from the same bounded-projection structure of~$\chi$, operating
+    at different orders in the effective gradient expansion.
+    Together, all five elements provide a logically closed account of temporal emergence
+    that is consistent with the spatial structure established in the spectral admissibility
+    programme~\cite{Beau2026aa}, with the Lorentz and Einstein structures
+    derived in~\cite{Beau2026c, Beau2026h}, and with the relational fluctuation structure
+    that underlies quantum indeterminacy in the framework.
