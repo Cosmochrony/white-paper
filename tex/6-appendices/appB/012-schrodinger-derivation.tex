@@ -31,21 +31,21 @@
         \]
 
         \item[(C2)] \textbf{Unique modal evolution.}
-        For each mode $u_n$, the unique global solution of the projected dynamics is
+        For each mode $u_n$, the unique solution of the projected dynamics is
         $c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}$,
-        giving the modal equation
+        giving the modal Schr\"{o}dinger equation
         \[
-          i\hbar_{\mathrm{eff}}\,\partial_\tau a_n = E_n\,a_n,
+          i\hbar_{\mathrm{eff}}\,\partial_\tau c_n = E_n\,c_n,
           \qquad E_n = \hbar_{\mathrm{eff}}\,\omega_n.
         \]
 
         \item[(C3)] \textbf{Effective Schr\"{o}dinger equation.}
-        The projected wavefunction $\psi(x,t) = \sum_n a_n(t)\,\phi_n(x)$ satisfies
+        The projected wavefunction $\psi(x,t) = \sum_n c_n(t)\,\phi_n(x)$ satisfies
         \[
           i\hbar_{\mathrm{eff}}\,\partial_t\psi
           = \hat{H}_{\mathrm{eff}}\,\psi + \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
         \]
-        where $\hat{H}_{\mathrm{eff}}$ is Hermitian on the projected-stable Hilbert space, defined spectrally by
+        where $\hat{H}_{\mathrm{eff}}$ is Hermitian, defined spectrally by
         $\hat{H}_{\mathrm{eff}}\phi_n = E_n\phi_n$,
         and $\mathcal{N}_{\Pi,\mathrm{BI}} = O(A_n/A_n^{\max},\,\ell_\chi^2\Delta_g)$.
 
@@ -64,7 +64,7 @@
         \item[(C5)] \textbf{Structural status of unitarity.}
         Norm preservation on the projected-stable sector, and hence unitarity of the
         effective dynamics, is not an independent postulate.
-        It holds if and only if (H2) and (H3) hold simultaneously on the projected-stable sector:
+        It holds if and only if (H2) and (H3) hold simultaneously:
         \[
           \textup{unitarity}
           \;\Longleftrightarrow\;
@@ -80,35 +80,41 @@
       structurally admissible value, giving $\mu_n = -i\omega_n$ and
       $\mathcal{L}|_{\mathrm{proj}} = -i\Omega$.
 
-      (C2) follows by direct integration of $\partial_\tau c_n = -i\omega_n c_n$ (unique
-      solution of a linear ODE with constant coefficients).
+      (C2) follows by direct integration of $\partial_\tau c_n = -i\omega_n c_n$, which is a
+      first-order linear ODE with constant coefficients whose unique global solution is
+      $c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}$.
       Multiplication by $\hbar_{\mathrm{eff}}$ and the energy-frequency relation
-      $E_n = \hbar_{\mathrm{eff}}\omega_n$ (Section~\ref{subsec:energy-frequency-solitons})
-      give the modal equation.
+      $E_n = \hbar_{\mathrm{eff}}\omega_n$
+      (Section~\ref{subsec:energy-frequency-solitons}) give
+      $i\hbar_{\mathrm{eff}}\,\partial_\tau c_n = E_n\,c_n$.
 
-      (C3) follows from (C2) by reconstruction: $\psi = \sum_n a_n\phi_n$, and
-      $i\hbar_{\mathrm{eff}}\partial_t\psi = \sum_n E_n a_n\phi_n = \hat{H}_{\mathrm{eff}}\psi$
+      (C3) follows from (C2) by reconstruction: setting
+      $\psi = \sum_n c_n\phi_n$ and applying $i\hbar_{\mathrm{eff}}\partial_t$,
+      \[
+        i\hbar_{\mathrm{eff}}\,\partial_t\psi
+        = \sum_n E_n\,c_n(t)\,\phi_n(x) = \hat{H}_{\mathrm{eff}}\psi
+      \]
       at leading order.
       The correction $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects Born--Infeld nonlinearities
-      $O(A_n/A_n^{\max})$ from (H3) and inter-modal coupling
-      $O(\partial_\tau a_n) = O(a_n^2, \nabla a_n, \Pi_{\mathrm{sat}})$ from (H4).
-      Both are negligible under (H4).
+      $O(A_n/A_n^{\max})$ from (H3) and inter-modal coupling from (H4); both are
+      negligible under (H4).
 
       (C4) follows from the spectral identification in
       Appendix~B.\ref{app:schrodinger-hamiltonian}:
-      $\omega_n^2 = \lambda_n$ at leading order (from the admissibility envelope~\cite{Beau2026a1}),
-      combined with the operator--metric correspondence
-      $\sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}k_\mu k_\nu$~\cite{Beau2026c},
-      and the non-relativistic expansion
-      $\hbar_{\mathrm{eff}}\sqrt{-\Delta_g} \simeq m_{\mathrm{eff}}c^2 - \hbar_{\mathrm{eff}}^2\Delta_g/(2m_{\mathrm{eff}})$.
+      $\omega_n^2 = \lambda_n$ at leading order (from the admissibility
+      envelope~\cite{Beau2026a1}), combined with the operator--metric correspondence
+      $\sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}k_\mu k_\nu$~\cite{Beau2026c}, and the
+      non-relativistic expansion
+      $\hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
+      \simeq m_{\mathrm{eff}}c^2 - \hbar_{\mathrm{eff}}^2\Delta_g/(2m_{\mathrm{eff}})$.
 
       (C5) is the logical converse of (C1): $\operatorname{Re}(\mu_n) = 0$ requires both
-      (H2) and (H3); if either fails, modes with $\operatorname{Re}(\mu_n) \neq 0$ enter the
-      sector, breaking norm preservation.
+      (H2) and (H3); if either fails, modes with $\operatorname{Re}(\mu_n) \neq 0$ enter
+      the sector, breaking norm preservation.
     \end{proof}
 
     \begin{remark}
-      Hypothesis (H5) --- spectral admissibility of the projected sector --- is a structural
+      Hypothesis~(H5) --- spectral admissibility of the projected sector --- is a structural
       assumption on the relational substrate, not an additional quantization postulate.
       It asserts that the low-lying modes of $\mathcal{L}$ are diagonalizable within the
       projected-stable sector.
@@ -118,104 +124,104 @@
 
     \begin{remark}
       The theorem makes explicit that two distinct regimes are involved.
-      Conclusions (C1)--(C3) require only (H1)--(H5) and hold at the level of general
+      Conclusions~(C1)--(C3) require only~(H1)--(H5) and hold at the level of general
       projected substrate dynamics.
-      Conclusion (C4) requires the additional continuum-metric hypothesis implicit in
+      Conclusion~(C4) requires the additional continuum-metric hypothesis implicit in
       Step~B of Appendix~B.\ref{app:schrodinger-hamiltonian}.
       The non-relativistic Hamiltonian $-\hbar^2\Delta_g/(2m)$ is therefore a further
       specialization, not the most general output of the theorem.
     \end{remark}
 
-  The quantum formalism does not need to be postulated as fundamental within Cosmochrony.
-  It arises as the weak-amplitude, approximately injective limit of the projected dynamics of
-  admissible $\chi$-configurations.
-  In this regime, the effective evolution of projected modal amplitudes reduces to a
-  Schr\"{o}dinger-type equation.
+    The quantum formalism does not need to be postulated as fundamental within Cosmochrony.
+    It arises as the weak-amplitude, approximately injective limit of the projected dynamics of
+    admissible $\chi$-configurations.
+    In this regime, the effective evolution of projected modal amplitudes reduces to a
+    Schr\"{o}dinger-type equation.
 
-  Let $\Omega$ denote the space of admissible relational configurations and
-  \[
-    \Pi : \Omega \to O
-  \]
-  the generally non-injective projection defining the effective observables.
-  A projected state does not correspond to a single microscopic configuration, but to an
-  equivalence class of configurations under $\Pi$.
-  The effective state therefore encodes only the resolvable modal content that survives the
-  projection at finite projective resolution.
-
-  \paragraph{Step 1: Substrate relaxation and linearization.}
-
-    At the substrate level, the primitive dynamics takes the generic relaxation form
+    Let $\Omega$ denote the space of admissible relational configurations and
     \[
-      \partial_{\tau}\chi = \mathcal{R}[\chi],
+      \Pi : \Omega \to O
     \]
-    where $\tau$ denotes the intrinsic ordering parameter of the substrate and $\mathcal{R}$ is
-    the nonlinear relaxation operator.
-    In the weak-amplitude regime around a quasi-stable background configuration $\bar{\chi}$,
-    we write $\chi = \bar{\chi} + \delta\chi$ with $\|\delta\chi\| \ll 1$.
-    Linearizing gives
-    \[
-      \partial_{\tau}\delta\chi = \mathcal{L}\,\delta\chi + O(\delta\chi^2),
-      \qquad
-      \mathcal{L} \equiv D\mathcal{R}\big|_{\bar{\chi}}.
-    \]
+    the generally non-injective projection defining the effective observables.
+    A projected state does not correspond to a single microscopic configuration, but to an
+    equivalence class of configurations under $\Pi$.
+    The effective state therefore encodes only the resolvable modal content that survives the
+    projection at finite projective resolution.
 
-  \paragraph{Step 2: Modal decomposition in the spectrally admissible sector.}
+    \paragraph{Step 1: Substrate relaxation and linearization.}
 
-    We assume that the projected regime is spectrally admissible, so that the relevant sector of
-    $\delta\chi$ can be expanded on a discrete family of effective modes:
-    \[
-      \delta\chi(\tau) = \sum_n c_n(\tau)\,u_n,
-      \qquad
-      \mathcal{L}\,u_n = \mu_n\,u_n.
-    \]
-    In the stable dissipative sector of the full substrate, $\operatorname{Re}(\mu_n) \leq 0$.
-    When $\mu_n$ is real and negative, one recovers a purely damped mode
-    $c_n(\tau) \propto e^{\mu_n \tau}$.
-    This is the generic substrate behavior and does not by itself produce quantum-like dynamics.
+      At the substrate level, the primitive dynamics takes the generic relaxation form
+      \[
+        \partial_{\tau}\chi = \mathcal{R}[\chi],
+      \]
+      where $\tau$ denotes the intrinsic ordering parameter of the substrate and $\mathcal{R}$ is
+      the nonlinear relaxation operator.
+      In the weak-amplitude regime around a quasi-stable background configuration $\bar{\chi}$,
+      we write $\chi = \bar{\chi} + \delta\chi$ with $\|\delta\chi\| \ll 1$.
+      Linearizing gives
+      \[
+        \partial_{\tau}\delta\chi = \mathcal{L}\,\delta\chi + O(\delta\chi^2),
+        \qquad
+        \mathcal{L} \equiv D\mathcal{R}\big|_{\bar{\chi}}.
+      \]
 
-  \paragraph{Step 3: Restriction to the projected-stable sector and anti-Hermitian reduction.}
+    \paragraph{Step 2: Modal decomposition in the spectrally admissible sector.}
 
-    The key step is the restriction to the \emph{projected-stable sector}: the subspace of modes
-    that contribute a finite and persistently resolvable effective amplitude to the observable
-    sector $O$ at finite projective resolution.
-    Membership in this sector is governed by two independent structural constraints inherited
-    from the BAT framework.
+      We assume that the projected regime is spectrally admissible, so that the relevant sector of
+      $\delta\chi$ can be expanded on a discrete family of effective modes:
+      \[
+        \delta\chi(\tau) = \sum_n c_n(\tau)\,u_n,
+        \qquad
+        \mathcal{L}\,u_n = \mu_n\,u_n.
+      \]
+      In the stable dissipative sector of the full substrate, $\operatorname{Re}(\mu_n) \leq 0$.
+      When $\mu_n$ is real and negative, one recovers a purely damped mode
+      $c_n(\tau) \propto e^{\mu_n \tau}$.
+      This is the generic substrate behavior and does not by itself produce quantum-like dynamics.
 
-    The first constraint is the Born--Infeld admissibility bound established in the spectral
-    admissibility programme~\cite{Beau2026a1}.
-    A mode with Laplacian eigenvalue $\lambda_n$ is dynamically admissible if and only if its
-    effective amplitude satisfies
-    \[
-      A_n(\tau) \leq A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
-    \]
-    at all values of $\tau$.
-    In the linearized regime, $A_n(\tau) = A_n(0)\,e^{\operatorname{Re}(\mu_n)\,\tau}$.
-    If $\operatorname{Re}(\mu_n) > 0$, the amplitude grows without bound in finite intrinsic time,
-    violating the Born--Infeld bound.
-    Growing modes are therefore strictly excluded from the admissible sector.
+    \paragraph{Step 3: Restriction to the projected-stable sector and anti-Hermitian reduction.}
 
-    The second constraint is projectability.
-    The projection $\Pi$ identifies configurations within the same equivalence class
-    $\Pi^{-1}(o)$, and possesses a finite projective resolution: two configurations are
-    indistinguishable under $\Pi$ whenever their effective amplitudes differ by less than the
-    resolvability threshold of the projection.
-    A mode with $\operatorname{Re}(\mu_n) < 0$ has a decaying effective amplitude and therefore
-    becomes indistinguishable from the trivial configuration once it falls below the resolvability
-    threshold of $\Pi$, contributing nothing distinguishable to any effective observable at the
-    given projective resolution.
-    This exclusion does not rely on the asymptotic limit $\tau \to \infty$.
-    It holds at every finite value of $\tau$ at which the amplitude has decayed below the
-    projective resolution scale.
-    Decaying modes therefore do not belong to the projected-stable sector.
+      The key step is the restriction to the \emph{projected-stable sector}: the subspace of modes
+      that contribute a finite and persistently resolvable effective amplitude to the observable
+      sector $O$ at finite projective resolution.
+      Membership in this sector is governed by two independent structural constraints inherited
+      from the BAT framework.
 
-    The two constraints together leave $\operatorname{Re}(\mu_n) = 0$ as the only structurally
-    admissible possibility for modes in the projected-stable sector.
-    The eigenvalues therefore take the form $\mu_n = -i\omega_n$ with $\omega_n \in \mathbb{R}$.
-    Equivalently, the restriction of $\mathcal{L}$ to the projected-stable sector is anti-Hermitian:
-    \[
-      \mathcal{L}\big|_{\mathrm{proj}} = -i\,\Omega,
-    \]
-    where $\Omega$ is a Hermitian operator with real spectrum $\{\omega_n\}$.
+      The first constraint is the Born--Infeld admissibility bound established in the spectral
+      admissibility programme~\cite{Beau2026a1}.
+      A mode with Laplacian eigenvalue $\lambda_n$ is dynamically admissible if and only if its
+      effective amplitude satisfies
+      \[
+        A_n(\tau) \leq A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
+      \]
+      at all values of $\tau$.
+      In the linearized regime, $A_n(\tau) = A_n(0)\,e^{\operatorname{Re}(\mu_n)\,\tau}$.
+      If $\operatorname{Re}(\mu_n) > 0$, the amplitude grows without bound in finite intrinsic time,
+      violating the Born--Infeld bound.
+      Growing modes are therefore strictly excluded from the admissible sector.
+
+      The second constraint is projectability.
+      The projection $\Pi$ identifies configurations within the same equivalence class
+      $\Pi^{-1}(o)$, and possesses a finite projective resolution: two configurations are
+      indistinguishable under $\Pi$ whenever their effective amplitudes differ by less than the
+      resolvability threshold of the projection.
+      A mode with $\operatorname{Re}(\mu_n) < 0$ has a decaying effective amplitude and therefore
+      becomes indistinguishable from the trivial configuration once it falls below the resolvability
+      threshold of $\Pi$, contributing nothing distinguishable to any effective observable at the
+      given projective resolution.
+      This exclusion does not rely on the asymptotic limit $\tau \to \infty$.
+      It holds at every finite value of $\tau$ at which the amplitude has decayed below the
+      projective resolution scale.
+      Decaying modes therefore do not belong to the projected-stable sector.
+
+      The two constraints together leave $\operatorname{Re}(\mu_n) = 0$ as the only structurally
+      admissible possibility for modes in the projected-stable sector.
+      The eigenvalues therefore take the form $\mu_n = -i\omega_n$ with $\omega_n \in \mathbb{R}$.
+      Equivalently, the restriction of $\mathcal{L}$ to the projected-stable sector is anti-Hermitian:
+      \[
+        \mathcal{L}\big|_{\mathrm{proj}} = -i\,\Omega,
+      \]
+      where $\Omega$ is a Hermitian operator with real spectrum $\{\omega_n\}$.
 
     \begin{remark}
       The two constraints play complementary and non-redundant roles.
@@ -236,132 +242,123 @@
         \textup{unitarity}
         = (\textup{Born--Infeld capacity}) \cap (\textup{non-injective projection}).
       \]
-    \end{remark}
+      \end{remark}
 
-  \paragraph{Step 4: From anti-Hermitian operator to phase evolution --- the closure
-  argument.}
+    \paragraph{Step 4: From anti-Hermitian operator to phase evolution ---
+    the closure argument.}
 
-    The anti-Hermitian reduction $\mathcal{L}|_{\mathrm{proj}} = -i\,\Omega$ established in
-    Step~3 determines the modal evolution completely.
-    For any mode $u_n$ in the projected-stable sector, the linearized equation reads
-    \[
-      \partial_\tau c_n = -i\,\omega_n\,c_n,
-      \qquad \omega_n \in \mathbb{R},\; \omega_n \geq 0.
-    \]
-    This is an ordinary differential equation with unique solution
-    \[
-      c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}.
-    \]
-    as the unique solution of a first-order linear ODE with constant coefficients.
-    The decomposition $c_n(\tau) = a_n(\tau)\,e^{-i\omega_n\tau}$ with slowly varying
-    $a_n$ is therefore not an ansatz: it is the exact solution at leading order, with
-    $a_n(\tau)$ absorbing residual corrections from nonlinear and inter-modal terms,
-    \[
-      \partial_\tau a_n
-      = \bigl[\partial_\tau c_n + i\omega_n c_n\bigr] e^{i\omega_n\tau}
-      = O\!\left(a_n^2,\,\nabla a_n,\,\Pi_{\mathrm{sat}}\right).
-    \]
-    In the weak-amplitude, approximately injective regime all three correction terms are
-    negligible, so $a_n$ is constant to leading order.
+      The anti-Hermitian reduction $\mathcal{L}|_{\mathrm{proj}} = -i\,\Omega$ established
+      in Step~3 determines the modal evolution completely.
+      For any mode $u_n$ in the projected-stable sector, the linearized equation reads
+      \[
+        \partial_\tau c_n = -i\,\omega_n\,c_n,
+        \qquad \omega_n \in \mathbb{R},\; \omega_n \geq 0.
+      \]
+      This is a first-order linear ordinary differential equation with constant coefficients,
+      whose unique global solution is
+      \[
+        c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}.
+      \]
+      The decomposition $c_n(\tau) = a_n(\tau)\,e^{-i\omega_n\tau}$ with slowly varying
+      $a_n$ is therefore not an ansatz but a rewriting of the exact solution, with $a_n$
+      absorbing only residual corrections from nonlinear and inter-modal terms:
+      \[
+        \partial_\tau a_n
+        = \bigl[\partial_\tau c_n + i\omega_n c_n\bigr] e^{i\omega_n\tau}
+        = O\!\left(a_n^2,\,\nabla a_n,\,\Pi_{\mathrm{sat}}\right).
+      \]
+      In the weak-amplitude, approximately injective regime these correction terms are
+      negligible, so $a_n$ is constant to leading order.
 
-    Multiplying the modal equation by $\hbar_{\mathrm{eff}}$ and using the effective
-    energy-frequency relation established in Section~\ref{subsec:energy-frequency-solitons},
-    $E_n = \hbar_{\mathrm{eff}}\,\omega_n$, one obtains
-    \[
-      i\hbar_{\mathrm{eff}}\,\partial_{\tau} a_n = E_n\,a_n.
-    \]
-    This is the modal Schr\"{o}dinger equation.
-    It follows from $\mathcal{L}|_{\mathrm{proj}} = -i\,\Omega$ by direct integration,
-    with no additional hypothesis.
+      Multiplying the exact modal equation by $\hbar_{\mathrm{eff}}$ and using
+      $E_n = \hbar_{\mathrm{eff}}\,\omega_n$, one obtains
+      \[
+        i\hbar_{\mathrm{eff}}\,\partial_\tau c_n = E_n\,c_n.
+      \]
+      This is the modal Schr\"{o}dinger equation.
+      It follows from $\mathcal{L}|_{\mathrm{proj}} = -i\,\Omega$ by direct integration,
+      with no additional hypothesis.
 
-  \paragraph{Step 5: Reconstruction of the wavefunction and the operator equation.}
+    \paragraph{Step 5: Reconstruction of the wavefunction and the operator equation.}
 
-    Passing from the intrinsic ordering parameter $\tau$ to the effective projected time
-    coordinate $t$ amounts, in the weak-curvature regime, to a monotone reparametrization
-    $\partial_{\tau} = \zeta(x,t)\,\partial_t$ with $\zeta \simeq 1$ in a locally Minkowskian
-    domain.
-    Absorbing $\zeta$ into the local normalization of $\hbar_{\mathrm{eff}}$ gives, to leading
-    order,
-    \[
-      i\hbar_{\mathrm{eff}}\,\partial_t a_n = E_n\,a_n.
-    \]
-    Let $\phi_n(x)$ denote the effective projected spatial eigenmodes.
-    The projected state reconstructs as $\psi(x,t) = \sum_n a_n(t)\,\phi_n(x)$, and
-    applying $i\hbar_{\mathrm{eff}}\,\partial_t$ to both sides:
-    \[
-      i\hbar_{\mathrm{eff}}\,\partial_t\psi
-      = \sum_n \bigl(i\hbar_{\mathrm{eff}}\,\partial_t a_n\bigr)\phi_n(x)
-      = \sum_n E_n\,a_n(t)\,\phi_n(x)
-      = \hat{H}_{\mathrm{eff}}\,\psi,
-    \]
-    where the effective Hamiltonian is defined spectrally by
-    $\hat{H}_{\mathrm{eff}}\phi_n \equiv E_n\phi_n$.
-    This yields
-    \[
-      \boxed{i\hbar_{\mathrm{eff}}\,\partial_t\psi = \hat{H}_{\mathrm{eff}}\,\psi.}
-    \]
+      Passing from the intrinsic ordering parameter $\tau$ to the effective projected time
+      coordinate $t$ amounts, in the weak-curvature regime, to a monotone reparametrization
+      $\partial_{\tau} = \zeta(x,t)\,\partial_t$ with $\zeta \simeq 1$ in a locally
+      Minkowskian domain.
+      Absorbing $\zeta$ into the local normalization of $\hbar_{\mathrm{eff}}$ gives, to
+      leading order,
+      \[
+        i\hbar_{\mathrm{eff}}\,\partial_t c_n = E_n\,c_n.
+      \]
+      Let $\phi_n(x)$ denote the effective projected spatial eigenmodes.
+      The projected state reconstructs as
+      \[
+        \psi(x,t) = \sum_n c_n(t)\,\phi_n(x).
+      \]
+      Applying $i\hbar_{\mathrm{eff}}\,\partial_t$ to both sides gives
+      \[
+        i\hbar_{\mathrm{eff}}\,\partial_t\psi
+        = \sum_n \bigl(i\hbar_{\mathrm{eff}}\,\partial_t c_n\bigr)\phi_n(x)
+        = \sum_n E_n\,c_n(t)\,\phi_n(x)
+        = \hat{H}_{\mathrm{eff}}\,\psi,
+      \]
+      where the effective Hamiltonian is defined spectrally by
+      $\hat{H}_{\mathrm{eff}}\phi_n \equiv E_n\phi_n$.
+      This yields
+      \[
+        \boxed{i\hbar_{\mathrm{eff}}\,\partial_t\psi = \hat{H}_{\mathrm{eff}}\,\psi.}
+      \]
 
     \begin{proposition}[Effective Schr\"{o}dinger equation]
-    Let $\chi = \bar{\chi} + \delta\chi$ be a weak-amplitude perturbation of a quasi-stable
-    substrate background, and assume the projected-stable sector is non-empty and
-    spectrally admissible.
-    Then the effective evolution of the projected wavefunction $\psi(x,t)$ is governed by
+    Under hypotheses \textup{(H1)--(H5)} of Theorem~\ref{thm:schrodinger-emergence},
+    the projected wavefunction $\psi(x,t) = \sum_n c_n(t)\,\phi_n(x)$ satisfies
     \[
       i\hbar_{\mathrm{eff}}\,\partial_t\psi
       = \hat{H}_{\mathrm{eff}}\,\psi + \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
     \]
-    where $\hat{H}_{\mathrm{eff}}$ is the Hermitian operator defined spectrally by
-    $\hat{H}_{\mathrm{eff}}\phi_n = \hbar_{\mathrm{eff}}\omega_n\phi_n$, and
-    $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects corrections suppressed by
-    $A_n/A_n^{\max}$ and $\ell_\chi^2\Delta_g$.
+    where $\hat{H}_{\mathrm{eff}}$ is Hermitian and spectrally defined by
+    $\hat{H}_{\mathrm{eff}}\phi_n = E_n\phi_n$, and
+    $\mathcal{N}_{\Pi,\mathrm{BI}} = O(A_n/A_n^{\max},\,\ell_\chi^2\Delta_g)$.
     In the regime $A_n \ll A_n^{\max}$ and $\ell_\chi^2\Delta_g \ll 1$, the correction
     vanishes and the equation reduces to the standard linear Schr\"{o}dinger equation.
-    \end{proposition}
+      \end{proposition}
 
     \begin{proof}
-      Steps~1--3 establish $\mathcal{L}|_{\mathrm{proj}} = -i\,\Omega$ under the joint action
-      of the Born--Infeld bound and finite projective resolution.
-      Step~4 shows that $c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}$ is the unique solution of
-      the resulting modal ODE at leading order, giving
-      $i\hbar_{\mathrm{eff}}\,\partial_\tau a_n = E_n\,a_n$ after multiplication by
-      $\hbar_{\mathrm{eff}}$.
-      Step~5 reconstructs $\psi = \sum_n a_n\phi_n$ and identifies $\hat{H}_{\mathrm{eff}}$
-      as the spectral generator of the phase flow.
-      The correction term $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects the Born--Infeld
-      nonlinearities quantified in Appendix~B.\ref{app:schrodinger-hamiltonian} and the
-      inter-modal coupling from the residual $\partial_\tau a_n$.
-      In the stated regime both are negligible by the weak-amplitude and weak-curvature
-      assumptions, and the linear equation follows.
-    \end{proof}
+      Conclusion~(C2) of Theorem~\ref{thm:schrodinger-emergence} gives
+      $i\hbar_{\mathrm{eff}}\,\partial_t c_n = E_n\,c_n$.
+      Reconstruction via $\psi = \sum_n c_n\phi_n$ and the spectral definition of
+      $\hat{H}_{\mathrm{eff}}$ give~(C3).
+      The correction $\mathcal{N}_{\Pi,\mathrm{BI}}$ is negligible under~(H4).
+      \end{proof}
 
-  \paragraph{Structural conclusions.}
+    \paragraph{Structural conclusions.}
 
-    This derivation clarifies the status of the standard quantum formalism.
+      This derivation clarifies the status of the standard quantum formalism.
 
-    First, the wavefunction $\psi$ is not fundamental.
-    It is the compressed descriptor of a spectrally admissible family of projected substrate
-    modes belonging to the projected-stable sector at finite projective resolution.
+      First, the wavefunction $\psi$ is not fundamental.
+      It is the compressed descriptor of a spectrally admissible family of projected substrate
+      modes belonging to the projected-stable sector at finite projective resolution.
 
-    Second, $\hbar_{\mathrm{eff}}$ is not a primitive parameter.
-    It measures the finite projective resolvability of the effective description and appears
-    because phase transport remains observable after non-injective compression.
+      Second, $\hbar_{\mathrm{eff}}$ is not a primitive parameter.
+      It measures the finite projective resolvability of the effective description and appears
+      because phase transport remains observable after non-injective compression.
 
-    Third, the factor $i$ does not require a fundamental complex ontology.
-    It is the algebraic consequence of the anti-Hermitian reduction of
-    $\mathcal{L}|_{\mathrm{proj}}$, which itself follows from the joint action of the
-    Born--Infeld bound and finite projective resolution.
+      Third, the factor $i$ does not require a fundamental complex ontology.
+      It is the algebraic consequence of the anti-Hermitian reduction of
+      $\mathcal{L}|_{\mathrm{proj}}$, which itself follows from the joint action of the
+      Born--Infeld bound and finite projective resolution.
 
-    Fourth, linearity is not exact at all scales.
-    It holds only when three conditions are simultaneously satisfied: the substrate remains
-    sufficiently close to a quasi-stable background, Born--Infeld-type saturation effects
-    remain negligible, and the projection remains approximately injective over the support
-    of the state.
-    Outside this regime,
-    \[
-      i\hbar_{\mathrm{eff}}\,\partial_t \psi
-      = \hat{H}_{\mathrm{eff}}\,\psi + \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
-    \]
-    where $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects the nonlinear contributions induced by
-    bounded projective capacity and substrate saturation.
-    The ordinary Schr\"{o}dinger equation is recovered as the universal infrared transport
-    law of projected coherence within the projected-stable sector.
+      Fourth, linearity is not exact at all scales.
+      It holds only when three conditions are simultaneously satisfied: the substrate remains
+      sufficiently close to a quasi-stable background, Born--Infeld-type saturation effects
+      remain negligible, and the projection remains approximately injective over the support
+      of the state.
+      Outside this regime,
+      \[
+        i\hbar_{\mathrm{eff}}\,\partial_t \psi
+        = \hat{H}_{\mathrm{eff}}\,\psi + \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
+      \]
+      where $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects the nonlinear contributions induced by
+      bounded projective capacity and substrate saturation.
+      The ordinary Schr\"{o}dinger equation is recovered as the universal infrared transport
+      law of projected coherence within the projected-stable sector.
