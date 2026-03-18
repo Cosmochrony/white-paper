@@ -9,14 +9,18 @@
   function of the substrate Laplacian, and deriving the standard form of $\hat{H}_{\mathrm{eff}}$
   as a consequence.
 
+  We adopt the convention that the Laplace--Beltrami operator $\Delta_g$ is non-positive,
+  so that $-\Delta_g$ is positive definite.
+  All eigenvalues $\lambda_n$ of $-\Delta_g$ are therefore non-negative.
+
   \paragraph{Step A: Linearized dispersion in the spectrally admissible regime.}
 
     In the spectrally admissible regime, the substrate modes $u_n$ satisfy
     $\mathcal{L}\,u_n = -i\omega_n u_n$ with $\omega_n \in \mathbb{R}$.
     The same modes satisfy the relational Laplacian eigenvalue equation
-    $\Delta_\chi\,u_n = \lambda_n\,u_n$,
+    $-\Delta_\chi\,u_n = \lambda_n\,u_n$,
     where $\Delta_\chi$ denotes the substrate Laplacian associated with the relational
-    connectivity of $\chi$.
+    connectivity of $\chi$ and $\lambda_n \geq 0$.
     In the linearized (weak-amplitude) regime, the dispersion relation between the
     effective phase frequency $\omega_n$ and the Laplacian eigenvalue $\lambda_n$ follows
     from the admissibility envelope derived in~\cite{Beau2026a1}:
@@ -29,7 +33,8 @@
     \[
       \omega_n = \sqrt{\lambda_n},
     \]
-    so that $\Omega = \sqrt{\Delta_\chi}|_{\mathrm{proj}}$ in the projected-stable sector.
+    so that $\Omega = \sqrt{-\Delta_\chi}|_{\mathrm{proj}}$ in the projected-stable sector,
+    where the square root is defined through the spectral functional calculus.
 
   \paragraph{Step B: Projected Laplacian and effective metric.}
 
@@ -41,44 +46,42 @@
     where $P$ denotes the spectral projection operator onto the projected-stable sector
     (Section~5.1).
     In the continuum limit of a locally homogeneous and isotropic relational substrate,
-    the principal symbol of $\Delta_\chi$ defines an effective metric tensor $g^{\mu\nu}(x)$
+    the principal symbol of $-\Delta_\chi$ defines an effective metric tensor $g^{\mu\nu}(x)$
     through the operator--metric correspondence established in~\cite{Beau2026c}:
     \[
-      \sigma_2(\Delta_\chi)(x,k) = g^{\mu\nu}(x)\,k_\mu k_\nu.
+      \sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}(x)\,k_\mu k_\nu.
     \]
     The projected Laplacian $\Delta_\Pi$ therefore inherits this metric structure,
     and in the low-lying spectral sector one has
     \[
-      \Delta_\Pi \simeq \Delta_g + O(\ell_\chi^2\,\Delta_g^2),
+      -\Delta_\Pi \simeq -\Delta_g + O(\ell_\chi^2\,\Delta_g^2),
     \]
-    where $\Delta_g$ is the scalar Laplace--Beltrami operator of the effective metric $g$,
-    and corrections are suppressed by the pre-geometric scale $\ell_\chi$.
+    where $-\Delta_g \geq 0$ is the scalar Laplace--Beltrami operator of the effective
+    metric $g$, and corrections are suppressed by the pre-geometric scale $\ell_\chi$.
 
   \paragraph{Step C: Effective Hamiltonian from spectral identification.}
 
-    Combining Steps A and B, the effective phase frequencies satisfy
+    The effective phase frequencies are related to the projected Laplacian eigenvalues by
+    $\omega_n = \sqrt{\lambda_n}$.
+    In Fourier space, the corresponding dispersion relation reads
     \[
-      E_n = \hbar_{\mathrm{eff}}\,\omega_n = \hbar_{\mathrm{eff}}\,\sqrt{\lambda_n},
+      \omega(k) = \sqrt{m_{\mathrm{eff}}^2 c^4 + c^2 k^2},
     \]
-    with $\lambda_n$ the eigenvalues of $\Delta_\Pi \simeq \Delta_g$.
-    The effective Hamiltonian $\hat{H}_{\mathrm{eff}}$ defined spectrally by
-    $\hat{H}_{\mathrm{eff}}\phi_n = E_n\phi_n$ therefore acts on projected spatial modes as
+    where $m_{\mathrm{eff}}$ is the inertial parameter of the mode family, defined by the
+    spectral gap separating the ground state of the projected sector from the first
+    admissible excitation within a given mode family.
+    Expanding in the non-relativistic regime $ck \ll m_{\mathrm{eff}} c^2$,
     \[
-      \hat{H}_{\mathrm{eff}} = \hbar_{\mathrm{eff}}\,\sqrt{\Delta_g}
-      + O(\ell_\chi^2\,\Delta_g^{3/2}).
+      \omega(k) \simeq m_{\mathrm{eff}} c^2 + \frac{k^2}{2m_{\mathrm{eff}}} + \cdots,
     \]
-    In the non-relativistic regime, one restricts to low-lying modes for which
-    $\lambda_n \ll \ell_\chi^{-2}$.
-    Expanding the square root to second order in $k$ around $k = 0$ gives
+    which translates at the operator level into
     \[
-      \hbar_{\mathrm{eff}}\,\sqrt{\Delta_g}
-      \simeq \hbar_{\mathrm{eff}}\left(m_{\mathrm{eff}} c^2
-      + \frac{\Delta_g}{2m_{\mathrm{eff}}} + \cdots\right),
+      \hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
+      \simeq m_{\mathrm{eff}} c^2
+      + \frac{-\Delta_g}{2m_{\mathrm{eff}}} + \cdots.
     \]
-    where $m_{\mathrm{eff}}$ is the inertial parameter of the mode family, defined by
-    the spectral gap separating the zero mode from the first admissible excited mode.
-    Subtracting the rest-energy contribution and working in natural units for the
-    effective description, one recovers
+    Multiplying by $\hbar_{\mathrm{eff}}$ and using $E_n = \hbar_{\mathrm{eff}}\,\omega_n$,
+    then subtracting the rest-energy contribution $m_{\mathrm{eff}} c^2$, one obtains
     \[
       \hat{H}_{\mathrm{eff}}
       = -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g + V_{\mathrm{eff}}(x)
@@ -94,11 +97,11 @@
     The complete derivation chain is:
     \[
       \partial_\tau \chi = \mathcal{R}[\chi]
-      \;\xrightarrow{\text{linearize}}\;
+      \;\xrightarrow{\;\text{linearize}\;}\;
       \mathcal{L}|_{\mathrm{proj}} = -i\,\Omega
-      \;\xrightarrow{\omega_n^2 = \lambda_n}\;
-      \Omega = \sqrt{\Delta_\Pi}
-      \;\xrightarrow{\Delta_\Pi \simeq \Delta_g}\;
+      \;\xrightarrow{\;\omega_n^2 = \lambda_n\;}\;
+      \Omega = \sqrt{-\Delta_\Pi}
+      \;\xrightarrow{\;-\Delta_\Pi \simeq -\Delta_g\;}\;
       \hat{H}_{\mathrm{eff}} \simeq -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g.
     \]
 
@@ -106,11 +109,14 @@
 
     First, the identification $\omega_n^2 = \lambda_n$ holds in the linearized regime.
     The Born--Infeld correction modifies this as
-    $\omega_n^2(A_n) \approx \lambda_n(1 - 3\lambda_n A_n^2/8c_\chi^2)$,
+    \[
+      \omega_n^2(A_n) \approx \lambda_n\!\left(1 - \frac{3\lambda_n A_n^2}{8c_\chi^2}\right),
+    \]
     inducing an amplitude-dependent softening of the effective Hamiltonian that is
     negligible for $A_n \ll A_n^{\max}$ but becomes significant near saturation.
 
-    Second, the operator--metric correspondence $\sigma_2(\Delta_\chi) = g^{\mu\nu}k_\mu k_\nu$
+    Second, the operator--metric correspondence
+    $\sigma_2(-\Delta_\chi) = g^{\mu\nu}k_\mu k_\nu$
     is established in the continuum limit of a locally homogeneous substrate.
     In strongly inhomogeneous or pre-geometric regimes, the principal symbol may depart
     from a metric tensor, and $\hat{H}_{\mathrm{eff}}$ receives non-metric corrections.
