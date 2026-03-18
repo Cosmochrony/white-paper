@@ -1,6 +1,131 @@
 \subsection{Emergence of the Schr\"{o}dinger equation as an effective projected dynamics}
   \label{app:schrodinger-derivation}
 
+  \subsubsection*{Main theorem}
+
+    The following theorem states the complete result.
+    Steps~1--5 and Appendix~B.\ref{app:schrodinger-hamiltonian} constitute its proof.
+
+    \begin{theorem}[Emergence of quantum dynamics from projected substrate relaxation]
+      \label{thm:schrodinger-emergence}
+      Let $(\Omega, \mathcal{R}, \Pi)$ be a BAT triple consisting of:
+      \begin{itemize}
+        \item[(H1)] a space $\Omega$ of admissible relational configurations with a nonlinear
+        relaxation operator $\mathcal{R}$,
+        \item[(H2)] a generally non-injective projection $\Pi : \Omega \to O$ with finite
+        projective resolution $\varepsilon_\Pi > 0$,
+        \item[(H3)] a Born--Infeld admissibility bound: every mode satisfies
+        $A_n(\tau) \leq c_\chi/\sqrt{\lambda_n}$ at all $\tau$,
+        \item[(H4)] a quasi-stable background $\bar{\chi}$ with $\|\delta\chi\| \ll 1$
+        and $A_n \ll A_n^{\max}$,
+        \item[(H5)] a spectrally admissible projected sector: the low-lying modes of
+        $\delta\chi$ diagonalize $\mathcal{L} \equiv D\mathcal{R}|_{\bar\chi}$.
+      \end{itemize}
+      Then:
+      \begin{enumerate}
+        \item[(C1)] \textbf{Anti-Hermitian reduction.}
+        The restriction of $\mathcal{L}$ to the projected-stable sector is anti-Hermitian:
+        \[
+          \mathcal{L}\big|_{\mathrm{proj}} = -i\,\Omega,
+          \qquad \Omega = \Omega^\dagger,\quad \sigma(\Omega) \subset \mathbb{R}_{\geq 0}.
+        \]
+
+        \item[(C2)] \textbf{Unique modal evolution.}
+        For each mode $u_n$, the unique global solution of the projected dynamics is
+        $c_n(\tau) = c_n(0)\,e^{-i\omega_n\tau}$,
+        giving the modal equation
+        \[
+          i\hbar_{\mathrm{eff}}\,\partial_\tau a_n = E_n\,a_n,
+          \qquad E_n = \hbar_{\mathrm{eff}}\,\omega_n.
+        \]
+
+        \item[(C3)] \textbf{Effective Schr\"{o}dinger equation.}
+        The projected wavefunction $\psi(x,t) = \sum_n a_n(t)\,\phi_n(x)$ satisfies
+        \[
+          i\hbar_{\mathrm{eff}}\,\partial_t\psi
+          = \hat{H}_{\mathrm{eff}}\,\psi + \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
+        \]
+        where $\hat{H}_{\mathrm{eff}}$ is Hermitian on the projected-stable Hilbert space, defined spectrally by
+        $\hat{H}_{\mathrm{eff}}\phi_n = E_n\phi_n$,
+        and $\mathcal{N}_{\Pi,\mathrm{BI}} = O(A_n/A_n^{\max},\,\ell_\chi^2\Delta_g)$.
+
+        \item[(C4)] \textbf{Standard Hamiltonian in the non-relativistic limit.}
+        In the additional regime $\ell_\chi^2\Delta_g \ll 1$ and locally homogeneous substrate,
+        \[
+          \hat{H}_{\mathrm{eff}}
+          = -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g
+          + V_{\mathrm{eff}}(x)
+          + O(\ell_\chi^2\,\Delta_g^2),
+        \]
+        where $\Delta_g$ is the Laplace--Beltrami operator of the emergent metric $g^{\mu\nu}$
+        defined by $\sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}(x)\,k_\mu k_\nu$,
+        and $m_{\mathrm{eff}}$ is determined by the spectral gap of the mode family.
+
+        \item[(C5)] \textbf{Structural status of unitarity.}
+        Norm preservation on the projected-stable sector, and hence unitarity of the
+        effective dynamics, is not an independent postulate.
+        It holds if and only if (H2) and (H3) hold simultaneously on the projected-stable sector:
+        \[
+          \textup{unitarity}
+          \;\Longleftrightarrow\;
+          (\textup{Born--Infeld capacity}) \cap (\textup{finite projective resolution}).
+        \]
+      \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+      (C1) is established in Step~3: $\operatorname{Re}(\mu_n) > 0$ is excluded by (H3);
+      $\operatorname{Re}(\mu_n) < 0$ is excluded by (H2) since the mode amplitude falls below
+      $\varepsilon_\Pi$ at finite $\tau$; hence $\operatorname{Re}(\mu_n) = 0$ is the only
+      structurally admissible value, giving $\mu_n = -i\omega_n$ and
+      $\mathcal{L}|_{\mathrm{proj}} = -i\Omega$.
+
+      (C2) follows by direct integration of $\partial_\tau c_n = -i\omega_n c_n$ (unique
+      solution of a linear ODE with constant coefficients).
+      Multiplication by $\hbar_{\mathrm{eff}}$ and the energy-frequency relation
+      $E_n = \hbar_{\mathrm{eff}}\omega_n$ (Section~\ref{subsec:energy-frequency-solitons})
+      give the modal equation.
+
+      (C3) follows from (C2) by reconstruction: $\psi = \sum_n a_n\phi_n$, and
+      $i\hbar_{\mathrm{eff}}\partial_t\psi = \sum_n E_n a_n\phi_n = \hat{H}_{\mathrm{eff}}\psi$
+      at leading order.
+      The correction $\mathcal{N}_{\Pi,\mathrm{BI}}$ collects Born--Infeld nonlinearities
+      $O(A_n/A_n^{\max})$ from (H3) and inter-modal coupling
+      $O(\partial_\tau a_n) = O(a_n^2, \nabla a_n, \Pi_{\mathrm{sat}})$ from (H4).
+      Both are negligible under (H4).
+
+      (C4) follows from the spectral identification in
+      Appendix~B.\ref{app:schrodinger-hamiltonian}:
+      $\omega_n^2 = \lambda_n$ at leading order (from the admissibility envelope~\cite{Beau2026a1}),
+      combined with the operator--metric correspondence
+      $\sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}k_\mu k_\nu$~\cite{Beau2026c},
+      and the non-relativistic expansion
+      $\hbar_{\mathrm{eff}}\sqrt{-\Delta_g} \simeq m_{\mathrm{eff}}c^2 - \hbar_{\mathrm{eff}}^2\Delta_g/(2m_{\mathrm{eff}})$.
+
+      (C5) is the logical converse of (C1): $\operatorname{Re}(\mu_n) = 0$ requires both
+      (H2) and (H3); if either fails, modes with $\operatorname{Re}(\mu_n) \neq 0$ enter the
+      sector, breaking norm preservation.
+    \end{proof}
+
+    \begin{remark}
+      Hypothesis (H5) --- spectral admissibility of the projected sector --- is a structural
+      assumption on the relational substrate, not an additional quantization postulate.
+      It asserts that the low-lying modes of $\mathcal{L}$ are diagonalizable within the
+      projected-stable sector.
+      This is guaranteed whenever the substrate background $\bar{\chi}$ is spectrally
+      admissible in the sense of~\cite{Beau2026a1}.
+    \end{remark}
+
+    \begin{remark}
+      The theorem makes explicit that two distinct regimes are involved.
+      Conclusions (C1)--(C3) require only (H1)--(H5) and hold at the level of general
+      projected substrate dynamics.
+      Conclusion (C4) requires the additional continuum-metric hypothesis implicit in
+      Step~B of Appendix~B.\ref{app:schrodinger-hamiltonian}.
+      The non-relativistic Hamiltonian $-\hbar^2\Delta_g/(2m)$ is therefore a further
+      specialization, not the most general output of the theorem.
+    \end{remark}
+
   The quantum formalism does not need to be postulated as fundamental within Cosmochrony.
   It arises as the weak-amplitude, approximately injective limit of the projected dynamics of
   admissible $\chi$-configurations.
@@ -240,114 +365,3 @@
     bounded projective capacity and substrate saturation.
     The ordinary Schr\"{o}dinger equation is recovered as the universal infrared transport
     law of projected coherence within the projected-stable sector.
-
-\subsection{Spectral identification of the effective Hamiltonian}
-\label{app:schrodinger-hamiltonian}
-
-We adopt the convention that the Laplace--Beltrami operator $\Delta_g$ is non-positive,
-so that $-\Delta_g$ is positive definite.
-All eigenvalues $\lambda_n$ of $-\Delta_g$ are therefore non-negative.
-
-\paragraph{Step A: Linearized dispersion in the spectrally admissible regime.}
-
-  In the spectrally admissible regime, the substrate modes $u_n$ satisfy
-  $-\Delta_\chi\,u_n = \lambda_n\,u_n$ with $\lambda_n \geq 0$.
-  In the linearized (weak-amplitude) regime, the dispersion relation between $\omega_n$
-  and $\lambda_n$ follows from the admissibility envelope~\cite{Beau2026a1}:
-  \[
-    \omega_n^2 = \lambda_n + O\!\left(\lambda_n^2 A_n^2 / c_\chi^2\right).
-  \]
-  To leading order: $\omega_n = \sqrt{\lambda_n}$, so that
-  $\Omega = \sqrt{-\Delta_\chi}|_{\mathrm{proj}}$.
-
-\paragraph{Step B: Projected Laplacian and effective metric.}
-
-  The projection $\Pi$ restricts the substrate Laplacian to the admissible spectral
-  subspace via $\Delta_\Pi = P^\dagger \Delta_\chi\, P$ (Section~5.1), where $P$ projects
-  onto the projected-stable sector.
-  In the continuum limit of a locally homogeneous and isotropic relational substrate,
-  the principal symbol of $-\Delta_\chi$ defines an effective metric through the
-  operator--metric correspondence~\cite{Beau2026c}:
-  \[
-    \sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}(x)\,k_\mu k_\nu.
-  \]
-  In the low-lying spectral sector:
-  \[
-    -\Delta_\Pi \simeq -\Delta_g + O(\ell_\chi^2\,\Delta_g^2),
-  \]
-  where $-\Delta_g \geq 0$ is the Laplace--Beltrami operator of the effective metric $g$.
-
-\paragraph{Step C: Effective Hamiltonian from spectral identification.}
-
-  Expanding the dispersion relation in Fourier space,
-  \[
-    \omega(k) = \sqrt{m_{\mathrm{eff}}^2 c^4 + c^2 k^2}
-    \simeq m_{\mathrm{eff}} c^2 + \frac{k^2}{2m_{\mathrm{eff}}} + \cdots,
-  \]
-  where $m_{\mathrm{eff}}$ is defined by the spectral gap separating the ground state of
-  the projected sector from the first admissible excitation within a given mode family.
-  At the operator level this gives
-  \[
-    \hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
-    \simeq m_{\mathrm{eff}} c^2 + \frac{-\Delta_g}{2m_{\mathrm{eff}}} + \cdots.
-  \]
-  Subtracting the rest-energy contribution:
-  \[
-    \hat{H}_{\mathrm{eff}}
-    = -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g + V_{\mathrm{eff}}(x)
-    + O\!\left(\ell_{\chi}^2\,\Delta_g^2\right).
-  \]
-
-\paragraph{Complete derivation chain.}
-
-  \[
-    \partial_\tau \chi = \mathcal{R}[\chi]
-    \;\xrightarrow{\;\text{linearize}\;}\;
-    \mathcal{L}|_{\mathrm{proj}} = -i\,\Omega
-    \;\xrightarrow{\;\omega_n^2 = \lambda_n\;}\;
-    \Omega = \sqrt{-\Delta_\Pi}
-    \;\xrightarrow{\;{-\Delta_\Pi \simeq -\Delta_g}\;}\;
-    \hat{H}_{\mathrm{eff}} \simeq -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g.
-  \]
-
-  Three limitations apply.
-  First, $\omega_n^2 = \lambda_n$ holds in the linearized regime; the Born--Infeld
-  correction gives $\omega_n^2(A_n) \approx \lambda_n(1 - 3\lambda_n A_n^2/8c_\chi^2)$,
-  negligible for $A_n \ll A_n^{\max}$.
-  Second, the operator--metric correspondence is established in the locally homogeneous
-  continuum limit; strongly inhomogeneous regimes receive non-metric corrections.
-  Third, the numerical value of $m_{\mathrm{eff}}$ for specific particle species requires
-  microscopic identification of the relevant mode family, addressed in~\cite{Beau2026e}.
-
-\paragraph{Continuity with the standard formalism and expected corrections}
-
-  The emergence of the Schr\"{o}dinger equation in the projected weak-amplitude regime
-  explains why standard quantum mechanics remains empirically valid across all currently
-  accessible laboratory domains.
-  In those regimes, the effective description is sufficiently far from the saturation threshold
-  that the nonlinear corrections induced by bounded projective capacity remain negligible.
-
-  The present framework nevertheless predicts that exact linearity cannot hold arbitrarily.
-  When localization becomes too sharp, when relational gradients become too large, or when
-  the projective description approaches a saturation boundary, the effective Schr\"{o}dinger
-  dynamics must receive corrections.
-  These corrections preserve the ordinary formalism in the infrared and moderate-resolution
-  regime, while producing departures only near the structural limits of projectability.
-
-  Cosmochrony does not reinterpret the Schr\"{o}dinger equation as false or merely
-  approximate in an informal sense.
-  Rather, it identifies the precise structural reason why it must arise, and also why it cannot
-  be ultimate.
-  The quantum formalism is the natural low-resolution description of a deeper relational
-  dynamics, just as effective geometry is the low-curvature description of a deeper projective
-  structure.
-
-  In this sense, the relation between Cosmochrony and quantum mechanics is analogous to
-  the relation between kinetic theory and hydrodynamics.
-  The effective equation is real, predictive, and operationally complete within its domain.
-  Its domain of validity is, however, determined by a more primitive substrate.
-  The wavefunction $\psi$ is therefore not eliminated, but reinterpreted:
-  it remains the correct effective descriptor of projected modal structure within the
-  projected-stable sector, while its apparent fundamentality is replaced by an emergent
-  status grounded in the joint structural constraints of bounded substrate capacity and
-  finite projective resolution.

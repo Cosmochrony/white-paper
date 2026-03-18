@@ -1,0 +1,110 @@
+\subsection{Spectral identification of the effective Hamiltonian}
+\label{app:schrodinger-hamiltonian}
+
+We adopt the convention that the Laplace--Beltrami operator $\Delta_g$ is non-positive,
+so that $-\Delta_g$ is positive definite.
+All eigenvalues $\lambda_n$ of $-\Delta_g$ are therefore non-negative.
+
+\paragraph{Step A: Linearized dispersion in the spectrally admissible regime.}
+
+  In the spectrally admissible regime, the substrate modes $u_n$ satisfy
+  $-\Delta_\chi\,u_n = \lambda_n\,u_n$ with $\lambda_n \geq 0$.
+  In the linearized (weak-amplitude) regime, the dispersion relation between $\omega_n$
+  and $\lambda_n$ follows from the admissibility envelope~\cite{Beau2026a1}:
+  \[
+    \omega_n^2 = \lambda_n + O\!\left(\lambda_n^2 A_n^2 / c_\chi^2\right).
+  \]
+  To leading order: $\omega_n = \sqrt{\lambda_n}$, so that
+  $\Omega = \sqrt{-\Delta_\chi}|_{\mathrm{proj}}$.
+
+\paragraph{Step B: Projected Laplacian and effective metric.}
+
+  The projection $\Pi$ restricts the substrate Laplacian to the admissible spectral
+  subspace via $\Delta_\Pi = P^\dagger \Delta_\chi\, P$ (Section~5.1), where $P$ projects
+  onto the projected-stable sector.
+  In the continuum limit of a locally homogeneous and isotropic relational substrate,
+  the principal symbol of $-\Delta_\chi$ defines an effective metric through the
+  operator--metric correspondence~\cite{Beau2026c}:
+  \[
+    \sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}(x)\,k_\mu k_\nu.
+  \]
+  In the low-lying spectral sector:
+  \[
+    -\Delta_\Pi \simeq -\Delta_g + O(\ell_\chi^2\,\Delta_g^2),
+  \]
+  where $-\Delta_g \geq 0$ is the Laplace--Beltrami operator of the effective metric $g$.
+
+\paragraph{Step C: Effective Hamiltonian from spectral identification.}
+
+  Expanding the dispersion relation in Fourier space,
+  \[
+    \omega(k) = \sqrt{m_{\mathrm{eff}}^2 c^4 + c^2 k^2}
+    \simeq m_{\mathrm{eff}} c^2 + \frac{k^2}{2m_{\mathrm{eff}}} + \cdots,
+  \]
+  where $m_{\mathrm{eff}}$ is defined by the spectral gap separating the ground state of
+  the projected sector from the first admissible excitation within a given mode family.
+  At the operator level this gives
+  \[
+    \hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
+    \simeq m_{\mathrm{eff}} c^2 + \frac{-\Delta_g}{2m_{\mathrm{eff}}} + \cdots.
+  \]
+  Subtracting the rest-energy contribution:
+  \[
+    \hat{H}_{\mathrm{eff}}
+    = -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g + V_{\mathrm{eff}}(x)
+    + O\!\left(\ell_{\chi}^2\,\Delta_g^2\right).
+  \]
+
+\paragraph{Complete derivation chain.}
+
+  \[
+    \partial_\tau \chi = \mathcal{R}[\chi]
+    \;\xrightarrow{\;\text{linearize}\;}\;
+    \mathcal{L}|_{\mathrm{proj}} = -i\,\Omega
+    \;\xrightarrow{\;\omega_n^2 = \lambda_n\;}\;
+    \Omega = \sqrt{-\Delta_\Pi}
+    \;\xrightarrow{\;{-\Delta_\Pi \simeq -\Delta_g}\;}\;
+    \hat{H}_{\mathrm{eff}} \simeq -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\,\Delta_g.
+  \]
+
+  Three limitations apply.
+  First, $\omega_n^2 = \lambda_n$ holds in the linearized regime; the Born--Infeld
+  correction gives $\omega_n^2(A_n) \approx \lambda_n(1 - 3\lambda_n A_n^2/8c_\chi^2)$,
+  negligible for $A_n \ll A_n^{\max}$.
+  Second, the operator--metric correspondence is established in the locally homogeneous
+  continuum limit; strongly inhomogeneous regimes receive non-metric corrections.
+  Third, the numerical value of $m_{\mathrm{eff}}$ for specific particle species requires
+  microscopic identification of the relevant mode family, addressed in~\cite{Beau2026e}.
+
+\paragraph{Continuity with the standard formalism and expected corrections}
+
+  The emergence of the Schr\"{o}dinger equation in the projected weak-amplitude regime
+  explains why standard quantum mechanics remains empirically valid across all currently
+  accessible laboratory domains.
+  In those regimes, the effective description is sufficiently far from the saturation threshold
+  that the nonlinear corrections induced by bounded projective capacity remain negligible.
+
+  The present framework nevertheless predicts that exact linearity cannot hold arbitrarily.
+  When localization becomes too sharp, when relational gradients become too large, or when
+  the projective description approaches a saturation boundary, the effective Schr\"{o}dinger
+  dynamics must receive corrections.
+  These corrections preserve the ordinary formalism in the infrared and moderate-resolution
+  regime, while producing departures only near the structural limits of projectability.
+
+  Cosmochrony does not reinterpret the Schr\"{o}dinger equation as false or merely
+  approximate in an informal sense.
+  Rather, it identifies the precise structural reason why it must arise, and also why it cannot
+  be ultimate.
+  The quantum formalism is the natural low-resolution description of a deeper relational
+  dynamics, just as effective geometry is the low-curvature description of a deeper projective
+  structure.
+
+  In this sense, the relation between Cosmochrony and quantum mechanics is analogous to
+  the relation between kinetic theory and hydrodynamics.
+  The effective equation is real, predictive, and operationally complete within its domain.
+  Its domain of validity is, however, determined by a more primitive substrate.
+  The wavefunction $\psi$ is therefore not eliminated, but reinterpreted:
+  it remains the correct effective descriptor of projected modal structure within the
+  projected-stable sector, while its apparent fundamentality is replaced by an emergent
+  status grounded in the joint structural constraints of bounded substrate capacity and
+  finite projective resolution.
