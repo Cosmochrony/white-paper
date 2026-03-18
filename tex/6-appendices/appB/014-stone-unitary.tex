@@ -1,0 +1,168 @@
+\subsection{Unitary evolution group and Stone's theorem}
+  \label{app:stone-unitary}
+
+  The modal Schr\"{o}dinger equation established in
+  Theorem~\ref{thm:schrodinger-emergence} admits a global operator formulation.
+  This subsection shows that the projected dynamics generates a strongly continuous
+  one-parameter unitary group, and identifies the precise role of the BAT hypotheses
+  in the applicability of Stone's theorem.
+
+  \paragraph{Setting.}
+
+    Let $\mathcal{H}_{\mathrm{proj}}$ denote the Hilbert space of projected-stable amplitudes,
+    defined as the $\ell^2$-completion of the projected-stable sector:
+    \[
+      \mathcal{H}_{\mathrm{proj}}
+      \equiv \overline{\mathrm{span}\{u_n : \operatorname{Re}(\mu_n) = 0\}}^{\,\ell^2}.
+    \]
+    In the spectrally admissible regime of hypothesis~(H5), this space is separable.
+    The operator $\Omega$ established in conclusion~(C1) acts on $\mathcal{H}_{\mathrm{proj}}$
+    with domain
+    \[
+      \mathcal{D}(\Omega)
+      = \left\{ \psi = \sum_n c_n u_n \in \mathcal{H}_{\mathrm{proj}}
+          : \sum_n \omega_n^2 |c_n|^2 < \infty \right\}.
+    \]
+
+    \begin{proposition}[Self-adjointness of $\Omega$]
+      \label{prop:omega-selfadjoint}
+      Under hypotheses \textup{(H1)--(H5)}, the operator $\Omega$ defined by
+      $\Omega u_n = \omega_n u_n$, $\omega_n \geq 0$, is self-adjoint on
+      $\mathcal{D}(\Omega) \subset \mathcal{H}_{\mathrm{proj}}$.
+    \end{proposition}
+
+    \begin{proof}
+      The modes $\{u_n\}$ form an orthonormal basis of $\mathcal{H}_{\mathrm{proj}}$ by
+      hypothesis~(H5).
+      The operator $\Omega$ is diagonal in this basis with real eigenvalues $\omega_n \geq 0$.
+      A diagonal operator with real spectrum on an orthonormal basis is self-adjoint on the
+      domain of square-summable sequences of weighted coefficients, which is precisely
+      $\mathcal{D}(\Omega)$.
+      In the finite-dimensional case (finitely many admissible modes), self-adjointness is
+      immediate since every Hermitian matrix on $\mathbb{C}^N$ is self-adjoint.
+      In the infinite-dimensional case, $\Omega$ is essentially self-adjoint on the dense
+      subspace of finite linear combinations of $\{u_n\}$, and its unique self-adjoint
+      extension has domain $\mathcal{D}(\Omega)$.
+    \end{proof}
+
+    \begin{remark}
+      Proposition~\ref{prop:omega-selfadjoint} is not independent of the BAT hypotheses.
+      It relies on (C1): the eigenvalues $\omega_n$ are real because $\mathcal{L}|_{\mathrm{proj}}
+      = -i\Omega$ with $\Omega$ Hermitian, which itself follows from the joint action of
+      (H2) and~(H3).
+      If either the Born--Infeld bound or the finite projective resolution were absent, modes
+      with $\operatorname{Re}(\mu_n) \neq 0$ would enter the sector, $\Omega$ would acquire
+      a non-zero imaginary part in its spectrum, and self-adjointness would fail.
+    \end{remark}
+
+    \begin{theorem}[Unitary evolution group]
+      \label{thm:unitary-group}
+      Under hypotheses \textup{(H1)--(H5)}, define the one-parameter family of operators
+      \[
+        U(t) \equiv e^{-i\Omega t/\hbar_{\mathrm{eff}}},
+        \qquad t \in \mathbb{R},
+      \]
+      acting on $\mathcal{H}_{\mathrm{proj}}$ by
+      $U(t)\,u_n = e^{-i\omega_n t/\hbar_{\mathrm{eff}}}\,u_n$.
+      Then:
+      \begin{enumerate}
+        \item[(U1)] \textbf{Strong continuity.}
+        $t \mapsto U(t)$ is strongly continuous: for every
+        $\psi \in \mathcal{H}_{\mathrm{proj}}$,
+        $\|U(t)\psi - \psi\|_{\mathcal{H}} \to 0$ as $t \to 0$.
+
+        \item[(U2)] \textbf{Unitarity.}
+        $U(t)^* = U(-t) = U(t)^{-1}$ for all $t \in \mathbb{R}$:
+        the family $\{U(t)\}_{t \in \mathbb{R}}$ is a one-parameter unitary group.
+
+        \item[(U3)] \textbf{Group law.}
+        $U(t+s) = U(t)\,U(s)$ for all $t, s \in \mathbb{R}$.
+
+        \item[(U4)] \textbf{Generator.}
+        The infinitesimal generator of $\{U(t)\}$ is $-i\Omega/\hbar_{\mathrm{eff}}$:
+        for $\psi \in \mathcal{D}(\Omega)$,
+        \[
+          \lim_{t \to 0} \frac{U(t)\psi - \psi}{t}
+          = -\frac{i\Omega}{\hbar_{\mathrm{eff}}}\,\psi,
+        \]
+        equivalently,
+        \[
+          i\hbar_{\mathrm{eff}}\,\partial_t\,U(t)\psi = \hat{H}_{\mathrm{eff}}\,U(t)\psi,
+          \qquad \hat{H}_{\mathrm{eff}} = \hbar_{\mathrm{eff}}\,\Omega.
+        \]
+
+        \item[(U5)] \textbf{Uniqueness.}
+        $\{U(t)\}_{t \in \mathbb{R}}$ is the unique strongly continuous unitary group on
+        $\mathcal{H}_{\mathrm{proj}}$ with generator $\hat{H}_{\mathrm{eff}}/\hbar_{\mathrm{eff}}$.
+      \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+      By Proposition~\ref{prop:omega-selfadjoint}, $\Omega/\hbar_{\mathrm{eff}}$ is self-adjoint
+      on $\mathcal{D}(\Omega)$.
+      Stone's theorem (see e.g.~\cite{Reed1972}) states that every self-adjoint operator $A$
+      on a separable Hilbert space generates a unique strongly continuous one-parameter
+      unitary group $e^{-iAt}$, and conversely every such group arises from a self-adjoint
+      generator.
+      Applying this to $A = \Omega/\hbar_{\mathrm{eff}}$ on the separable space
+      $\mathcal{H}_{\mathrm{proj}}$ gives (U1)--(U5) directly.
+
+      The identification of the generator with $\hat{H}_{\mathrm{eff}}/\hbar_{\mathrm{eff}}$
+      in (U4) follows from conclusion~(C2): the modal equation
+      $i\hbar_{\mathrm{eff}}\partial_t c_n = E_n c_n$ with $E_n = \hbar_{\mathrm{eff}}\omega_n$
+      is the component form of $i\hbar_{\mathrm{eff}}\partial_t U(t)\psi = \hat{H}_{\mathrm{eff}}
+      U(t)\psi$.
+    \end{proof}
+
+    \begin{corollary}[Norm preservation]
+      \label{cor:norm-preservation}
+      For every $\psi \in \mathcal{H}_{\mathrm{proj}}$ and all $t \in \mathbb{R}$,
+      \[
+        \|U(t)\psi\|_{\mathcal{H}} = \|\psi\|_{\mathcal{H}}.
+      \]
+      In particular, $\sum_n |c_n(t)|^2 = \sum_n |c_n(0)|^2$ for all $t$.
+    \end{corollary}
+
+    \begin{proof}
+      Unitarity (U2) gives $U(t)^*U(t) = \mathrm{Id}$, hence
+      $\|U(t)\psi\|^2 = \langle U(t)\psi, U(t)\psi\rangle
+      = \langle \psi, U(t)^*U(t)\psi\rangle = \|\psi\|^2$.
+    \end{proof}
+
+    \begin{remark}[Relation to Conclusion~(C5)]
+      Corollary~\ref{cor:norm-preservation} is the global, time-integrated form of
+      Conclusion~(C5) of Theorem~\ref{thm:schrodinger-emergence}.
+      (C5) establishes norm preservation as a structural consequence of (H2)$\cap$(H3)
+      at the infinitesimal level (via the anti-Hermitian reduction).
+      Theorem~\ref{thm:unitary-group} upgrades this to a global statement via Stone's
+      theorem: the infinitesimal generator being self-adjoint is sufficient to guarantee
+      exact norm preservation for all time, with no approximation.
+      The logical chain is therefore:
+      \[
+        \textup{(H2)} \cap \textup{(H3)}
+        \;\xrightarrow{\;\textup{(C1)}\;}\;
+        \Omega = \Omega^\dagger
+        \;\xrightarrow{\;\textup{Stone}\;}\;
+        U(t) = e^{-i\Omega t/\hbar_{\mathrm{eff}}} \textup{ unitary}
+        \;\Rightarrow\;
+        \|U(t)\psi\| = \|\psi\|.
+      \]
+    \end{remark}
+
+    \begin{remark}[Scope and limitations]
+  Theorem~\ref{thm:unitary-group} applies within the projected-stable sector and in the
+  weak-amplitude regime~(H4).
+  Outside this regime, the correction term $\mathcal{N}_{\Pi,\mathrm{BI}}[\psi]$ in~(C3)
+  modifies the effective dynamics and generally breaks the exact unitary-group structure.
+
+  The evolution is then no longer described by a strongly continuous unitary group.
+  Instead, it is governed by a nonlinear and generally non-unitary effective flow,
+  reflecting the amplitude-dependent corrections induced by Born--Infeld saturation
+  and finite projective capacity.
+  In particular, exact norm conservation need not hold near the projective capacity boundary.
+
+  This departure from exact unitarity is not a defect of the framework but a structural
+  prediction: the standard unitary quantum dynamics is recovered precisely in the regime
+  where Born--Infeld saturation and projective non-injectivity effects are simultaneously
+  negligible.
+    \end{remark}
