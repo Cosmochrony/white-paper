@@ -68,6 +68,12 @@
     \end{equation}
     where $\mu_0$ is the dilute-regime value (determined by the spectral gap) and
     $\gamma$ is a saturation coefficient with the dimension of an energy.
+    The coefficient $\gamma$ encodes the first-order response of the admissible
+    capacity constraint to variations of the local occupancy.
+    In principle, it can be expressed in terms of the local derivative of the
+    Born--Infeld saturation functional with respect to the projected density,
+    but its explicit form depends on the detailed microstructure of the preimage
+    dynamics and is left as an open derivation.
     Substituting the definition~\eqref{eq:eta-def} of $\eta$ into~\eqref{eq:mu-expansion},
     the correction term contributes to the equation of motion as
     $\mu_{\mathrm{eff}}(\eta)\,\psi = \mu_0\,\psi + (\gamma/\Sigma)\,|\psi|^2\psi +
@@ -182,7 +188,10 @@
       correction; Gross--Pitaevskii-type dynamics; possible soliton formation in the
       focusing case.
       \item $\eta \to 1$ (near-saturated regime): higher-order terms in $\mathcal{O}(\eta^2)$
-      become relevant; unitarity is no longer exact (Remark after Theorem~B.2); the
+      become relevant; the effective description departs from exact unitary evolution
+      at the level of the projected dynamics, signalling the breakdown of the
+      low-occupancy approximation and the onset of strongly constrained projective
+      regimes; the
       effective description approaches the boundary of projectability.
     \end{itemize}
 
@@ -200,6 +209,13 @@
     It is determined by the local spectral admissible capacity $\Sigma$, which is itself
     fixed by the Born--Infeld admissibility envelope and the local spectral weights.
     The nonlinearity is therefore structurally constrained, not phenomenological.
+    In particular, the origin of the coupling $g(x,t)$ can be traced back to the
+    Born--Infeld saturation constraint on the substrate amplitudes: the nonlinear
+    term is the effective manifestation, at the level of the projected dynamics,
+    of the bounded-flux condition $|\partial_t\chi_v| \leq c_\chi$.
+    This closes the logical chain from the admissibility bound (Section~2.4)
+    through the linear Schr\"{o}dinger emergence (§B.12) to the present nonlinear
+    correction.
 
     Third, the equation~\eqref{eq:NLS-cosmo} with the identification~\eqref{eq:g-eff}
     provides a natural bridge to collective quantum phenomena:
