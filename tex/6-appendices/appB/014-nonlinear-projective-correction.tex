@@ -1,0 +1,211 @@
+\subsection{First nonlinear correction from finite projective capacity}
+  \label{subsec:nonlinear-projective-correction}
+
+  \subsubsection*{Context and scope}
+
+    Proposition~B.1 establishes the effective Schr\"{o}dinger equation in the form
+    \begin{equation}
+      \label{eq:schro-full}
+      i\hbar_{\mathrm{eff}}\,\partial_t\psi
+      \;=\;
+      \hat{H}_{\mathrm{eff}}\,\psi \;+\; \mathcal{N}_{\Pi,\mathrm{BI}}[\psi],
+    \end{equation}
+    where the correction term $\mathcal{N}_{\Pi,\mathrm{BI}} = \mathcal{O}(A_n/A_n^{\max},\,\ell_\chi^2\Delta_g)$
+    collects contributions from Born--Infeld saturation and finite projective capacity.
+    Under hypothesis~(H4), this term is negligible and the linear equation is recovered.
+
+    The present section relaxes~(H4) partially: we keep $\ell_\chi^2\Delta_g\ll 1$ (continuum
+    regime) but allow the local projective occupancy to be non-negligible.
+    The goal is to identify the leading-order structure of $\mathcal{N}_{\Pi,\mathrm{BI}}[\psi]$
+    in this regime and show that it takes the form of a cubic nonlinearity of
+    Gross--Pitaevskii type, with an effective coupling constant determined by the local
+    spectral admissible capacity.
+
+  \subsubsection*{Projective occupancy}
+
+    Let $\Sigma(x,t)$ denote the \emph{local spectral admissible capacity}: the effective
+    total admissible amplitude available in the projected-stable sector at point $x$ and
+    time~$t$.
+    Concretely, it is defined by
+    \begin{equation}
+      \label{eq:Sigma-def}
+      \Sigma(x,t) \;:=\; \sum_n w_n(x,t)\,A_n^{\max}(x,t),
+    \end{equation}
+    where the sum runs over spectrally admissible modes, $w_n(x,t)$ are local spectral
+    weights (normalised to unity), and $A_n^{\max} = c_\chi/\sqrt{\lambda_n}$ is the
+    Born--Infeld admissibility envelope of mode~$n$.
+    The quantity $\Sigma$ carries the dimension of an amplitude; it encodes the local
+    ``room'' left in the projected sector before saturation.
+
+    The \emph{projective occupancy ratio}
+    \begin{equation}
+      \label{eq:eta-def}
+      \eta(x,t) \;:=\; \frac{|\psi(x,t)|^2}{\Sigma(x,t)}
+    \end{equation}
+    measures the fraction of local admissible capacity currently occupied by the projected
+    wavefunction.
+    By definition, $\eta \in [0,1]$.
+    The regime~(H4) of Theorem~B.1 corresponds to $\eta\ll 1$.
+
+  \subsubsection*{Density-dependent correction to the local phase evolution}
+
+    When $\eta$ is no longer negligible, the finite admissible capacity induces a
+    density-dependent correction to the local phase evolution.
+    The mechanism is the following.
+    Each microconfiguration $\omega\in\Pi^{-1}(x)$ contributes to the projected amplitude
+    $\psi(x,t)$ with a phase weight determined by its substrate relaxation rate.
+    At low occupancy, these contributions are independent.
+    At higher occupancy, the constraint that the total projected amplitude must remain
+    within the admissible envelope introduces a correlation: configurations are
+    ``competing'' for the available admissible capacity.
+    This competition feeds back on the effective local chemical potential.
+
+    More precisely, the effective local phase-evolution rate acquires a correction of the
+    form
+    \begin{equation}
+      \label{eq:mu-expansion}
+      \mu_{\mathrm{eff}}(\eta) \;=\; \mu_0 \;+\; \gamma\,\eta \;+\; \mathcal{O}(\eta^2),
+    \end{equation}
+    where $\mu_0$ is the dilute-regime value (determined by the spectral gap) and
+    $\gamma$ is a saturation coefficient with the dimension of an energy.
+    Substituting the definition~\eqref{eq:eta-def} of $\eta$ into~\eqref{eq:mu-expansion},
+    the correction term contributes to the equation of motion as
+    $\mu_{\mathrm{eff}}(\eta)\,\psi = \mu_0\,\psi + (\gamma/\Sigma)\,|\psi|^2\psi +
+    \mathcal{O}(|\psi|^4\psi)$.
+
+  \subsubsection*{Effective nonlinear equation}
+
+    Incorporating this correction into~\eqref{eq:schro-full}, the projected dynamics in
+    the finite-occupancy regime takes the form
+
+    \begin{equation}
+      \label{eq:NLS-cosmo}
+      \boxed{
+        i\hbar_{\mathrm{eff}}\,\partial_t\psi
+        \;=\;
+        -\kappa\,\Delta_g\,\psi
+        \;+\; V_{\mathrm{eff}}(x,t)\,\psi
+        \;+\; g(x,t)\,|\psi|^2\,\psi
+        \;+\; \mathcal{O}(|\psi|^4\psi),
+      }
+    \end{equation}
+    where $\kappa = \hbar_{\mathrm{eff}}^2/(2m_{\mathrm{eff}})$ is the dispersion coefficient
+    (inherited from §B.13) and the \emph{effective nonlinear coupling} is
+    \begin{equation}
+      \label{eq:g-eff}
+      g(x,t) \;:=\; \frac{\gamma}{\Sigma(x,t)}.
+    \end{equation}
+
+    Equation~\eqref{eq:NLS-cosmo} has the form of the Gross--Pitaevskii / nonlinear
+    Schr\"{o}dinger equation, but with a fundamental difference in interpretation:
+    the coupling $g(x,t)$ is \emph{not postulated} but \emph{derived} from the finite
+    local spectral admissible capacity.
+    It varies in space and time through $\Sigma(x,t)$, reflecting the local structure of
+    the admissible spectral sector.
+
+    \begin{remark}[Structural interpretation of the cubic term]
+      \label{rem:cubic-interpretation}
+      In this framework, the term $g\,|\psi|^2\psi$ does not represent a literal
+      self-interaction of the wavefunction with itself.
+      It encodes the \emph{self-rétroaction of projective multiplicity}: the density
+      $|\psi|^2$ measures how densely the local projected image is occupied by
+      preimage configurations, and this density modifies the effective phase-evolution
+      rate via the admissible capacity constraint.
+    \end{remark}
+
+    \begin{remark}[Sign of $g$ and focusing/defocusing regimes]
+      \label{rem:sign-g}
+      The sign of $\gamma$ depends on the dominant correction mechanism.
+      If the saturation constraint acts as a repulsive pressure (as in the standard
+      Born--Infeld saturating regime), one expects $\gamma > 0$, giving $g > 0$: a
+      \emph{defocusing} nonlinearity that further spreads the wavefunction.
+      In regimes where the competition between preimages leads to \emph{constructive
+      mutual reinforcement} of phase-coherent configurations, one can have $\gamma < 0$
+      and $g < 0$: a \emph{focusing} nonlinearity capable of balancing dispersive
+      spreading.
+      The physically relevant regime for localised structures corresponds to the focusing
+      case.
+    \end{remark}
+
+  \subsubsection*{Solitonic self-coherent projected states}
+
+    In the focusing regime ($g < 0$) and in one spatial dimension, equation~\eqref{eq:NLS-cosmo}
+    admits stationary localised solutions of the form
+    \begin{equation}
+      \label{eq:soliton-ansatz}
+      \psi(x,t) \;=\; \phi(x)\,e^{-i\omega t/\hbar_{\mathrm{eff}}},
+    \end{equation}
+    where $\phi$ satisfies the nonlinear eigenvalue problem
+    \begin{equation}
+      \label{eq:soliton-ode}
+      -\kappa\,\phi'' \;+\; V_{\mathrm{eff}}\,\phi \;+\; g\,|\phi|^2\,\phi
+      \;=\; \omega\,\phi.
+    \end{equation}
+    In the homogeneous case ($V_{\mathrm{eff}} = 0$, $g$ constant), the exact solution is
+    \begin{equation}
+      \label{eq:soliton-exact}
+      \phi(x) \;\propto\; \operatorname{sech}\!\!\left(\frac{x - x_0}{L}\right),
+      \qquad L = \sqrt{\frac{2\kappa}{|\omega|}},
+    \end{equation}
+    with amplitude and width determined jointly by $\kappa$, $|g|$, and $\omega$.
+
+    Within the Cosmochrony framework, these solutions receive a specific interpretation:
+
+    \begin{proposition}[Solitonic states as self-coherent projective classes]
+      \label{prop:soliton-cosmo}
+      A solitonic solution of the form~\eqref{eq:soliton-ansatz}--\eqref{eq:soliton-exact}
+      corresponds to a class of relational configurations
+      $\{\omega \in \Omega : \Pi(\omega) \approx \phi\}$ that is \emph{projectivement
+      auto-cohérente}: the tendency of substrate modes to dephase and disperse (the term
+      $-\kappa\Delta_g\psi$) is exactly balanced by the saturation-induced localisation
+      (the term $g|\psi|^2\psi$).
+
+      Equivalently, these are configurations in which the dispersive divergence of
+      preimage phases is compensated by the projective multiplicity feedback, so that the
+      projected image remains stationary in shape.
+    \end{proposition}
+
+    The dispersive term $-\kappa\Delta_g\psi$ arises, as shown in~§B.13, from the
+    divergence of projected mode phases across the preimage $\Pi^{-1}(x)$.
+    The nonlinear term $g|\psi|^2\psi$ is the leading correction from the finite
+    admissible capacity, which constrains how many independent phase contributions can
+    accumulate.
+    The soliton is the configuration where these two effects exactly cancel.
+
+  \subsubsection*{Regime diagram}
+
+    The three qualitative regimes are summarised as follows:
+    \begin{itemize}
+      \item $\eta \ll 1$ (dilute projective regime): $g\,|\psi|^2\psi \approx 0$;
+      standard linear Schr\"{o}dinger equation; no localisation beyond external potential.
+      \item $\eta \lesssim 1$ (moderate occupancy): $g\,|\psi|^2\psi$ is the leading
+      correction; Gross--Pitaevskii-type dynamics; possible soliton formation in the
+      focusing case.
+      \item $\eta \to 1$ (near-saturated regime): higher-order terms in $\mathcal{O}(\eta^2)$
+      become relevant; unitarity is no longer exact (Remark after Theorem~B.2); the
+      effective description approaches the boundary of projectability.
+    \end{itemize}
+
+  \subsubsection*{Structural status}
+
+    Three points deserve emphasis.
+
+    First, equation~\eqref{eq:NLS-cosmo} is not a modification of quantum mechanics.
+    It is the leading-order effective equation in a regime where hypothesis~(H4) partially
+    fails.
+    In all regimes currently accessible to laboratory experiments, $\eta \ll 1$ and the
+    linear Schr\"{o}dinger equation remains valid to all measurable precision.
+
+    Second, the coupling $g(x,t) = \gamma/\Sigma(x,t)$ is not a free parameter.
+    It is determined by the local spectral admissible capacity $\Sigma$, which is itself
+    fixed by the Born--Infeld admissibility envelope and the local spectral weights.
+    The nonlinearity is therefore structurally constrained, not phenomenological.
+
+    Third, the equation~\eqref{eq:NLS-cosmo} with the identification~\eqref{eq:g-eff}
+    provides a natural bridge to collective quantum phenomena:
+    in a regime where many particles share the same projected spatial mode (Bose--Einstein
+    condensation), the effective coupling $g(x,t)$ encodes the collective projective
+    pressure, making contact with the Gross--Pitaevskii equation of condensate physics
+    without postulating inter-particle interactions as fundamental.
+    These connections are developed further in the companion papers on superconductivity
+    and collective quantum dynamics~\cite{Superconductivity1}.
