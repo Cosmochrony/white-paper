@@ -1,0 +1,161 @@
+\subsection{Domain of validity of the effective geometric description}
+  \label{sec:injectivity-domain}
+
+  The recovery of the Schwarzschild exterior geometry establishes that, in the
+  presence of a localized isotropic obstruction, bounded relational flux conservation
+  selects a nonlinear stationary metric configuration.
+  This metric provides an effective geometric description of the projected dynamics,
+  from which standard gravitational phenomena, including perihelion precession,
+  follow without additional assumptions.
+
+  It is therefore essential to characterize the domain of validity of this effective
+  geometric description.
+
+  \subsubsection*{Injectivity as a condition of geometric observability}
+
+    The emergence of an effective metric relies on the assumption that the projection
+    $\Pi : \Omega \to O$ remains locally injective at the observational scale.
+    In this regime, distinct underlying configurations correspond to distinguishable
+    observables, and the relational dynamics admits a geometric description in terms of
+    a smooth metric $g_{\mu\nu}$.
+
+    This condition can be expressed by comparing the projective resolution scale
+    $\ell_\chi$ to the local curvature scale of the effective geometry.
+    In the infrared regime, the geometric description remains valid when curvature
+    invariants are small in projective units.
+    A covariant injectivity condition may therefore be written schematically as
+    \begin{equation}
+      \mathcal{I}(x)\,\ell_\chi^2 \ll 1,
+      \label{eq:injectivity-invariant}
+    \end{equation}
+    where $\mathcal{I}(x)$ denotes a characteristic local curvature scale.
+    This relation should be understood as an order-of-magnitude criterion,
+    not as an exact spectral identity.
+
+  \subsubsection*{Application to the Schwarzschild exterior}
+
+    For a static spherically symmetric exterior geometry, the Ricci scalar vanishes,
+    and the relevant curvature scale is provided by the Kretschner invariant
+    \begin{equation}
+      \mathcal{K}(r)
+      \equiv
+      \sqrt{R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}}
+      \sim
+      \frac{r_s}{r^3},
+      \label{eq:kretschner-scale}
+    \end{equation}
+    with $r_s = 2G_{\mathrm{eff}}M/c^2$.
+
+    The injectivity condition~\eqref{eq:injectivity-invariant} therefore becomes
+    \begin{equation}
+      \mathcal{K}(r)\,\ell_\chi^2 \ll 1.
+      \label{eq:injectivity-kretsch}
+    \end{equation}
+
+    When this bound is satisfied, the projection remains locally injective and the
+    effective metric description is valid.
+    Conversely, when $\mathcal{K}(r)\,\ell_\chi^2 \sim 1$, distinct underlying
+    configurations become observationally indistinguishable, and the geometric
+    description breaks down.
+
+  \subsubsection*{Characteristic scale of injectivity breakdown}
+
+    The condition $\mathcal{K}(r)\,\ell_\chi^2 \sim 1$ defines a characteristic radial
+    scale
+    \begin{equation}
+      r_{\mathrm{NI}}
+      \sim
+      \left(r_s \ell_\chi^2\right)^{1/3}.
+      \label{eq:rNI}
+    \end{equation}
+
+    For $r \gg r_{\mathrm{NI}}$, the effective metric description is valid.
+    As $r \to r_{\mathrm{NI}}$, the projective resolution limit is reached, and
+    geometric observables cease to provide a complete description of the relational
+    state.
+
+    Importantly, $r_{\mathrm{NI}}$ does not in general coincide with the Schwarzschild
+    radius $r_s$.
+    The breakdown of geometric observability is therefore controlled by projective
+    resolution rather than by the existence of a causal horizon.
+
+  \subsubsection*{Hierarchy of regimes and observational consequences}
+
+    The ratio between the injectivity breakdown scale and the Schwarzschild radius is
+    parametrically
+    \begin{equation}
+      \frac{r_{\mathrm{NI}}}{r_s}
+      \sim
+      \left(\frac{\ell_\chi}{r_s}\right)^{2/3}.
+      \label{eq:rNI-rs}
+    \end{equation}
+
+    For any microscopic value of $\ell_\chi$, one has $\ell_\chi \ll r_s$ for
+    astrophysical objects, implying
+    \begin{equation}
+      r_{\mathrm{NI}} \ll r_s.
+    \end{equation}
+
+    The breakdown of local injectivity therefore occurs deep inside the Schwarzschild
+    radius, well beyond the domain accessible to external observers.
+    All currently tested gravitational phenomena, including orbital dynamics,
+    light deflection, and black hole imaging, lie in the regime
+    \begin{equation}
+      \mathcal{K}\,\ell_\chi^2 \ll 1,
+    \end{equation}
+    where the effective metric description is exact.
+
+    This provides a structural explanation for the empirical success of general
+    relativity in weak and moderately strong gravitational fields, without requiring
+    fine tuning or additional corrections at observable scales.
+
+  \subsubsection*{Relation to higher-order dynamical corrections}
+
+    The breakdown of local injectivity concerns the validity of the effective geometric
+    description itself.
+    This should be distinguished from the higher-order corrections to the dynamics of
+    excitations discussed in Appendix~B.13, which arise within the injective regime and
+    do not modify the exterior metric.
+
+    Deviations from standard relativistic predictions are therefore expected only in
+    regimes where the projection ceases to be locally injective or where strong-field
+    saturation effects become relevant.
+
+  \subsubsection*{Physical interpretation of the non-injective regime}
+
+    The breakdown of local injectivity signals a transition in the nature of observable
+    quantities.
+    In the injective regime, each observable configuration corresponds to a unique
+    underlying relational state, and the dynamics admits a geometric description in
+    terms of a smooth metric and well-defined trajectories.
+
+    When the condition $\mathcal{K}\,\ell_\chi^2 \ll 1$ is violated, this correspondence
+    fails.
+    Multiple distinct configurations of the relational substrate become indistinguishable
+    under the projection $\Pi$, and the notion of a pointwise geometric state loses
+    operational meaning.
+
+    In this regime, the effective metric description ceases to be complete.
+    Geometric observables such as distances, trajectories, or local curvature no longer
+    provide a faithful description of the underlying dynamics.
+    Instead, observables correspond to equivalence classes of configurations, reflecting
+    the non-injective nature of the projection.
+
+    This transition does not correspond to a breakdown of the underlying dynamics,
+    but to a limitation of the geometric description.
+    The relational substrate remains well-defined, but its evolution can no longer be
+    captured by a local metric structure.
+
+    From this perspective, the emergence of geometry is intrinsically tied to the
+    resolvability of relational configurations.
+    Geometry is not a fundamental structure, but an effective description valid only
+    within the injective regime.
+
+    The non-injective regime therefore represents a genuinely non-geometric phase of the
+    theory, in which the appropriate description is expected to be spectral or relational
+    rather than metric.
+
+    This interpretation provides a natural framework for understanding regimes where
+    classical spacetime notions are expected to fail, such as the interior of compact
+    objects or the early stages of cosmological evolution, without requiring singular
+    behavior of the underlying dynamics.
