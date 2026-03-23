@@ -60,7 +60,31 @@ coinciding with the standard Schwarzschild weak-field expansion:
   \label{eq:schwarzschild_matching}
 \end{equation}
 
-\paragraph{Comparison to classic observational tests.}
+    \begin{figure}[htbp]
+      \centering
+      \begin{tikzpicture}[scale=1]
+    \filldraw[black] (0,0) circle (0.25);
+    \node[below] at (0,-0.35)
+      {Localized projected configuration};
+    \foreach \r in {0.8,1.2,1.7,2.3} {
+      \draw[blue!60] (0,0) circle (\r);
+    }
+    \draw[blue, thick, decorate,
+      decoration={snake, amplitude=0.5mm}]
+    (0,0) circle (1.7);
+    \draw[->, gray] (2.8,0) -- (1.8,0);
+    \node[right] at (2.8,0.2)
+      {Reduced admissible ordering};
+      \end{tikzpicture}
+      \caption{Emergence of Schwarzschild-like behavior.
+      A localized projected configuration induces a spatially varying
+      reduction of admissible relaxation ordering, manifesting as
+      differential proper-time accumulation and emergent metric
+      curvature.}
+      \label{fig:chi_gravity}
+    \end{figure}
+
+  \paragraph{Comparison to classic observational tests.}
 Gravitational redshift follows directly from $g_{tt}$:
 \begin{equation}
   \frac{\nu_{\mathrm{obs}}}{\nu_{\mathrm{emit}}}
@@ -74,27 +98,3 @@ Light deflection yields the standard angle
     \frac{4G_{\mathrm{eff}}M}{b c^2},
 \end{equation}
 with $b$ the impact parameter.
-
-\begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[scale=1]
-    \filldraw[black] (0,0) circle (0.25);
-    \node[below] at (0,-0.35)
-      {Localized projected configuration};
-    \foreach \r in {0.8,1.2,1.7,2.3} {
-      \draw[blue!60] (0,0) circle (\r);
-    }
-    \draw[blue, thick, decorate,
-      decoration={snake, amplitude=0.5mm}]
-      (0,0) circle (1.7);
-    \draw[->, gray] (2.8,0) -- (1.8,0);
-    \node[right] at (2.8,0.2)
-      {Reduced admissible ordering};
-  \end{tikzpicture}
-  \caption{Emergence of Schwarzschild-like behavior.
-    A localized projected configuration induces a spatially varying
-    reduction of admissible relaxation ordering, manifesting as
-    differential proper-time accumulation and emergent metric
-    curvature.}
-  \label{fig:chi_gravity}
-\end{figure}
