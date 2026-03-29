@@ -59,6 +59,26 @@
     Mass emerges as a spectral and topological consequence of persistent
     non-contractible structures within the projection fiber.
 
+    \begin{remark}[Winding conjugation and the spectral pair structure]
+      \label{rem:winding-conjugation}
+      Charge conjugation corresponds to the reversal $w \mapsto -w$ of the
+      winding number.
+      In the discrete Weil realisation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
+      the conjugation identity $\rho_{q-c} = \overline{\rho_c}$ shows that
+      complex conjugation of the representation is realised by the map
+      $c \mapsto q - c$ on the central character.
+      In the present setting, the winding number is encoded in the phase of
+      the representation, so complex conjugation acts as orientation reversal
+      on phase windings, i.e.\ $w \mapsto -w$.
+      The pair $\{c,\, q-c\}$ is therefore precisely the discrete realisation of
+      the topological conjugate pair $\{w,\,-w\}$, and identifies the conjugate
+      Weil pair as the minimal spectral realisation of a topological charge class.
+      This identification is canonical: it follows from the representation
+      theory of the Heisenberg group and requires no additional hypothesis.
+      Its spectral consequences~--- in particular the doubling
+      $\delta_{\mathrm{pair}} = 2\delta_c$~--- are developed in~\cite{Beau2026a21,Beau2026k}.
+    \end{remark}
+
     Unlike the standard Dirac argument~--- which derives charge quantisation from
     the existence of magnetic monopoles via single-valuedness of the wave function
     on a surrounding sphere~--- charge quantisation in Cosmochrony follows from
@@ -117,9 +137,13 @@
     The extension of Corollary~\ref{cor:no-monopoles} from the canonical
     admissible base to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
     is well-posed but remains open.
-    The expectation that the result extends is motivated by the fact that the
-    bounded-flux constraint removes precisely the gradient singularities
-    required to support non-trivial $\pi_2$ classes.
+    The canonical model is not arbitrary: it captures precisely the universal
+    effect of the bounded-flux constraint, which removes the polar regions of~$S^2$
+    wherever the fiber phase gradient diverges.
+    Since this divergence is the generic mechanism generating non-trivial
+    $\pi_2(S^2) \cong \mathbb{Z}$ classes, this strongly suggests that any
+    admissible base in~$\mathcal{C}_{\mathrm{eff}}$ is subject to the same
+    polar removal, and hence has trivial~$\pi_2$.
 
   \subsubsection*{Projective chirality and parity violation}
     \label{sec:projective-chirality}
@@ -169,9 +193,19 @@
       The maximal parity violation observed in weak interactions (polarised beta
       decay of ${}^{60}\mathrm{Co}$) can be interpreted as the manifestation of a
       maximally chiral projection in the $SU(2)$ sector of~$\Pi$.
-      This correspondence is currently qualitative; a derivation of the full
-      $V{-}A$ structure requires showing that the admissibility filter selects a
-      single chirality sector completely, which remains open.
+      Three levels of status should be distinguished.
+      At the \emph{structural} level, the non-injectivity of~$\Pi$ makes
+      $\Gamma(Q) \neq \Gamma(-Q)$ possible without explicit parity breaking
+      in the substrate dynamics: this is established by Definition~\ref{def:projective-chirality}.
+      At the \emph{mechanistic} level, the spinorial selection of
+      Chapter~\ref{sec:spectral-admissibility} provides the concrete selection
+      filter: the bounded-flux constraint retains a single chirality sector
+      via the double-cover structure $SU(2) \to SO(3)$.
+      At the \emph{quantitative} level, $\Gamma(Q)$ is not yet expressed as a
+      calculable observable of the spectral programme (e.g.\ via
+      $\delta_{\mathrm{pair}}$ or $\sigma_{\mathrm{pair}}$ of the O-series);
+      the derivation of the full $V{-}A$ structure from the admissibility filter
+      remains open.
       The relation between projective chirality and CP asymmetry is further
       developed in Appendix~\ref{subsec:cp-asymmetry-and-chiral-selection}.
 
@@ -179,9 +213,9 @@
     \label{sec:topological-summary}
 
     The three results above are unified by a single structural principle: the
-    effective physics is determined by the topological invariants that the
-    admissibility constraint renders available, and by the orientation that the
-    projection selects among their generators.
+    effective physics is classified and constrained by the topological invariants
+    that the admissibility constraint renders available, and by the orientation
+    that the projection selects among their generators.
 
     \begin{table}[h]
       \centering
