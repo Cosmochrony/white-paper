@@ -1,27 +1,204 @@
-\subsection{Topological Constraints and Invariants}
-\label{sec:topological-constraints}
+\subsection{Topological Invariants of the Projection Fiber}
+  \label{sec:topological-constraints}
 
-The stability of localized physical descriptions within~$\Pi$ is governed
-by the conservation of topological invariants.
-When an excitation of~$\chi$ admits a closed, non-contractible
-configuration within~$\Pi$, it forms a persistent topological obstruction
-to complete relaxation.
-Such configurations cannot be eliminated by smooth deformation without
-violating admissibility constraints.
+  The stability of localized physical descriptions within~$\Pi$ is governed
+  by the conservation of topological invariants.
+  When an excitation of~$\chi$ admits a closed, non-contractible
+  configuration within~$\Pi$, it forms a persistent topological obstruction
+  to complete relaxation.
+  Such configurations cannot be eliminated by smooth deformation without
+  violating admissibility constraints.
+  These obstructions are described in terms of knot-like (non-contractible loop and
+  self-linking) topological structures within the projection fiber.
+  Once formed, they impose global constraints on the relaxation process and
+  give rise to long-lived, localized projected configurations.
+  Particles correspond to stable topological defects of the projection.
 
-These obstructions are described in terms of knot-like (non-contractible
-loop and self-linking) topological structures within the projection fiber.
-Once formed, they impose global constraints on the relaxation process and
-give rise to long-lived, localized projected configurations.
-Particles correspond to stable topological defects of the projection.
+  The homotopy groups of the admissible fiber~$\Pi$ and of its admissible
+  base determine which topological invariants are structurally available,
+  and hence which physical phenomena can arise.
+  Three consequences are established on the canonical admissible configuration model;
+  their extension to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
+  remains open (see~\cite{Beau2026k} for the complete treatment).
 
-The winding number~$w$ constitutes the primary invariant characterizing
-these obstructions.
-It labels distinct equivalence classes of admissible projected
-configurations and plays a central role in the organization of the mass
-spectrum (Section~\ref{sec:spectral-mass-hierarchy}).
-The energetic cost required to maintain a non-trivial winding against the
-global pressure of relaxation is perceived, at the effective level, as
-rest energy~($mc^2$).
-Mass emerges as a spectral and topological consequence of persistent
-non-contractible structures within the projection fiber.
+  \subsubsection*{Charge quantisation as a $\pi_1$ invariant}
+    \label{sec:charge-quantisation-pi1}
+
+    The Hopf fibration of the projection fiber $\Pi \cong S^3$,
+    \begin{equation}
+      S^1 \hookrightarrow S^3 \xrightarrow{\pi_H} S^2,
+    \end{equation}
+    decomposes~$\Pi$ into a circular fiber~$S^1$ and a two-dimensional base~$S^2$.
+    The fundamental group of the $U(1)$ fiber is
+    \begin{equation}
+      \pi_1(S^1) \cong \mathbb{Z}.
+    \end{equation}
+    A closed loop in the fiber defines a winding number $w \in \mathbb{Z}$,
+    which is a topological invariant: it cannot change under continuous deformation
+    of an admissible configuration.
+
+    \begin{proposition}[Charge quantisation]
+      \label{prop:charge-quantisation}
+      In the Cosmochrony framework, electric charge is quantised as a consequence of
+      $\pi_1(S^1) \cong \mathbb{Z}$.
+      The admissibility constraint removes configurations exceeding the flux bound
+      but does not introduce identifications that would contract the fiber,
+      so the fundamental group of the fiber sector remains that of $U(1)$.
+      Electric charge is therefore an integer multiple of the elementary charge~$e$,
+      \begin{equation}
+        q_{\mathrm{eff}} = w \cdot e, \qquad w \in \mathbb{Z}.
+      \end{equation}
+    \end{proposition}
+
+    The winding number~$w$ labels distinct equivalence classes of admissible
+    projected configurations and plays a central role in the organization of
+    the mass spectrum (Section~\ref{sec:spectral-mass-hierarchy}).
+    The energetic cost required to maintain a non-trivial winding against
+    the global pressure of relaxation is perceived, at the effective level,
+    as rest energy~($mc^2$).
+    Mass emerges as a spectral and topological consequence of persistent
+    non-contractible structures within the projection fiber.
+
+    Unlike the standard Dirac argument~--- which derives charge quantisation from
+    the existence of magnetic monopoles via single-valuedness of the wave function
+    on a surrounding sphere~--- charge quantisation in Cosmochrony follows from
+    the topology of the $U(1)$ fiber itself, independently of whether
+    magnetic monopoles exist.
+    The two mechanisms are logically independent.
+
+  \subsubsection*{Absence of magnetic monopoles}
+    \label{sec:no-monopoles}
+
+    In the unconstrained Hopf fibration, the base manifold is the full two-sphere~$S^2$,
+    with $\pi_2(S^2) \cong \mathbb{Z}$.
+    A non-trivial element of $\pi_2(S^2)$ corresponds, in gauge-theoretic language,
+    to a Dirac magnetic monopole: a point-like source of magnetic flux classified by
+    an integer topological charge.
+    If the full~$S^2$ were the admissible base, magnetic monopoles would be
+    topologically admissible.
+
+    The bounded-flux constraint $|\partial_t \chi_v| \le c_\chi$ restricts the
+    set of admissible fiber configurations.
+    On the canonical admissible configuration model, the constraint removes a
+    neighbourhood of each pole of~$S^2$ (the points where the fiber degenerates,
+    corresponding to maximal flux concentration).
+    The admissible base is then
+    \begin{equation}
+      S^2_{\mathrm{adm}} = S^2 \setminus (D^2_N \cup D^2_S) \simeq S^1 \times (0,1),
+    \end{equation}
+    where $D^2_N$ and $D^2_S$ are open discs around the north and south poles.
+
+    \begin{proposition}[Homotopy of the canonical admissible base]
+      \label{prop:pi2-trivial}
+      The canonical admissible base $S^2_{\mathrm{adm}}$ is homotopy equivalent
+      to $S^1 \times (0,1)$.
+      Its homotopy groups are
+      \begin{equation}
+        \pi_1(S^2_{\mathrm{adm}}) \cong \mathbb{Z}, \qquad \pi_2(S^2_{\mathrm{adm}}) = 0.
+      \end{equation}
+    \end{proposition}
+
+    \begin{corollary}[No isolated magnetic charge]
+      \label{cor:no-monopoles}
+      On the canonical admissible model, no isolated magnetic monopole is a
+      topologically admissible excitation.
+    \end{corollary}
+
+    In the standard Dirac~--~'t~Hooft~--~Polyakov framework, monopoles are
+    topologically admissible and their absence must be explained dynamically.
+    In Cosmochrony, the situation is reversed: the absence of monopoles is
+    not a dynamical accident but a topological consequence of admissibility.
+    The bounded-flux constraint removes the topological support for
+    monopole-type excitations.
+    Magnetic flux lines (corresponding to $\mathbf{B} = \nabla \times \mathbf{A}_T$)
+    remain admissible as long as they form closed loops; only isolated magnetic
+    sources are excluded.
+
+    The extension of Corollary~\ref{cor:no-monopoles} from the canonical
+    admissible base to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
+    is well-posed but remains open.
+    The expectation that the result extends is motivated by the fact that the
+    bounded-flux constraint removes precisely the gradient singularities
+    required to support non-trivial $\pi_2$ classes.
+
+  \subsubsection*{Projective chirality and parity violation}
+    \label{sec:projective-chirality}
+
+    The winding number $w \in \mathbb{Z}$ carries a sign determined by the
+    orientation of the fiber phase.
+    In a parity-symmetric theory, configurations with $w$ and $-w$ would be
+    related by a mirror transformation and have equal dynamical weight.
+    In Cosmochrony, the projection $\Pi : \chi \to \chi_{\mathrm{eff}}$ is
+    non-injective, and this non-injectivity can be chiral.
+
+    \begin{definition}[Projective chirality]
+      \label{def:projective-chirality}
+      A projection is \emph{projectively chiral} if the effective
+      stabilisation rates satisfy
+      \begin{equation}
+        \Gamma(Q) \neq \Gamma(-Q),
+      \end{equation}
+      where $\Gamma(Q)$ is the effective stabilisation rate for configurations
+      of topological charge~$Q$, and $-Q$ denotes the charge-conjugate
+      configuration.
+    \end{definition}
+
+    When the projection is chiral, parity is violated: mirror-related
+    configurations are not equally admissible.
+    Two structural mechanisms within the framework produce chirality selection.
+
+    \paragraph{Spinorial selection.}
+      The spectral admissibility programme establishes that the bounded-flux
+      constraint selects spinorial ($\mathrm{spin}$-$\tfrac{1}{2}$) representations
+      as the most admissible along the chain $Q_8 \subset 2I \subset SU(2)$
+      (Section~\ref{sec:spectral-admissibility} and~\cite{Beau2026a1}).
+      Spinorial representations carry an intrinsic handedness through the
+      double-cover structure $SU(2) \to SO(3)$: the central $\mathbb{Z}_2$
+      retained by binary covers is precisely the element that distinguishes
+      left- and right-handed spinors.
+
+    \paragraph{Non-injective projection.}
+      The non-injectivity of the projection creates a fiber degeneracy:
+      multiple $\chi$-configurations map to the same effective state.
+      The orientation of the winding within this fiber is not preserved by a
+      generic projection, so parity invariance is not automatic.
+      A chiral projection selects one orientation over its conjugate, producing
+      $\Gamma(Q) \neq \Gamma(-Q)$ without any explicit parity-breaking term at
+      the substrate level.
+
+      The maximal parity violation observed in weak interactions (polarised beta
+      decay of ${}^{60}\mathrm{Co}$) can be interpreted as the manifestation of a
+      maximally chiral projection in the $SU(2)$ sector of~$\Pi$.
+      This correspondence is currently qualitative; a derivation of the full
+      $V{-}A$ structure requires showing that the admissibility filter selects a
+      single chirality sector completely, which remains open.
+      The relation between projective chirality and CP asymmetry is further
+      developed in Appendix~\ref{subsec:cp-asymmetry-and-chiral-selection}.
+
+  \subsubsection*{Unified topological picture}
+    \label{sec:topological-summary}
+
+    The three results above are unified by a single structural principle: the
+    effective physics is determined by the topological invariants that the
+    admissibility constraint renders available, and by the orientation that the
+    projection selects among their generators.
+
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{lll}
+        \hline
+        Topological invariant & Physical consequence & Mechanism \\
+        \hline
+        $\pi_1(S^1) \cong \mathbb{Z}$   & Charge quantisation   & Winding of $U(1)$ fiber \\
+        $\pi_2(S^2_{\mathrm{adm}}) = 0$ & No magnetic monopoles & Bounded-flux reduction of base \\
+        Orientation of $\pi_1$          & Parity violation      & Projective chirality \\
+        \hline
+      \end{tabular}
+      \caption{Topological invariants of the canonical admissible configuration model
+      and their physical consequences.
+      The first two rows are proved on the canonical model; their extension
+      to~$\mathcal{C}_{\mathrm{eff}}$ is open.
+      The third row is established at the framework level as a structural mechanism.
+      See~\cite{Beau2026k} for the complete treatment.}
+      \label{tab:topological-invariants}
+    \end{table}
