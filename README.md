@@ -1,8 +1,5 @@
-# Cosmochrony White Paper
-
 This repository contains the source of the
-[Cosmochrony white paper](out/Cosmochrony.pdf)
-(current consolidated release).
+[Cosmochrony white paper](out/Cosmochrony.pdf).
 
 Cosmochrony is a **pre-geometric theoretical framework** in which time
 ordering, spacetime geometry, dynamics, and matter emerge from the
@@ -124,6 +121,11 @@ Q_8, \qquad \mathrm{Dic}_n \ (n \ge 3), \qquad 2O, \qquad 2I
 
 while the binary tetrahedral group $2T$ is structurally excluded.
 
+This spectral structure also underlies the emergence of mass hierarchies
+and connects directly to the spectral admissibility programme
+(O1–O17), which investigates the growth and stability of admissible
+configurations on discrete relational models.
+
 # Matter, Charge, Gravitation, and Spectral Structure
 
 Within Cosmochrony:
@@ -132,11 +134,15 @@ Within Cosmochrony:
   matter-like excitations
 - stability is characterized by **spectral and topological invariants**
   rather than fundamental couplings
-- mass emerges as resistance to relaxation ordering
-- electric charge is interpreted as a **chiral–torsional invariant**
-  of bounded relaxation fluxes
-- gravitation arises from sustained inhibition of relaxation and is
-  recovered as an effective geometric description
+- mass emerges from the energetic cost of maintaining
+  non-contractible spectral and topological configurations
+  against global relaxation
+- electric charge is identified as a **$\pi_1$ winding invariant**
+  of the $U(1)$ projection fiber
+- the absence of magnetic monopoles follows from the admissibility-induced
+  triviality of $\pi_2$ on the canonical admissible base
+- gravitation arises from sustained inhibition of relaxation,
+  recovering general-relativistic behaviour in appropriate regimes.
 
 Spacetime curvature, time dilation, and gravitational dynamics emerge
 as continuum and thermodynamic limits of relational structure.
@@ -154,6 +160,8 @@ Instead:
   without invoking superluminal influence or dynamical nonlocality
 - the wavefunction is an effective descriptor rather than an
   ontological object
+- chirality and CP asymmetry can arise as structural consequences of
+  non-injective projection
 
 Classical behavior is recovered when the effective projection becomes
 approximately injective.
