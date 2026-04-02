@@ -28,6 +28,43 @@
   infra-physical dynamics of~$\chi$, but the effective translation of relaxation-ordering
   differences between co-projecting configurations.
 
+  A natural question arises at this point: why do projection residuals \emph{appear random}
+  rather than repeating identically under successive projections?
+  If the substrate~$\chi$ were stationary and the projection~$\Pi$ were applied repeatedly to
+  the same fibre configuration, the residuals would indeed repeat identically.
+  The appearance of randomness is therefore not a property of~$\chi$ itself, but a consequence
+  of the fact that the effective projection is not applied at a fixed relaxation stage.
+  More precisely, the projection must be understood as implicitly $\lambda$-dependent:
+  one effectively probes a family of maps~$\Pi_\lambda$.
+  At each effective step~$U_n$, one probes not a fixed fibre $\Pi^{-1}(o)$, but a slice of the
+  co-projecting set determined by the current value of the relaxation-ordering
+  parameter~$\lambda$.
+  Between two successive steps $U_n$ and $U_{n+1}$, $\lambda$ has advanced, and the set of
+  substrate configurations that co-project onto the same observable~$o$ is therefore not
+  identical.
+  The advance of~$\lambda$ is monotonic but remains unobservable at the effective level,
+  since $\lambda$-ordering is precisely what the effective description identifies as time.
+  Each reprojection thus samples a \emph{different slice} of an evolving fibre, and the
+  residual differences between these slices are registered as fluctuations in the effective
+  description.
+  In this sense, the apparent stochasticity of fluctuations is the observable signature of the
+  irreversible advance of~$\lambda$, rather than an intrinsic indeterminacy of~$\chi$.
+  Equivalently, if relaxation could be suspended while reprojections continued, the same
+  residuals would repeat identically.
+  Fluctuations therefore arise because the projection cannot be iterated at fixed~$\lambda$:
+  time, understood as the projected image of relaxation ordering, is the minimal and
+  irreducible source of the observed noise.
+
+  \begin{remark}[Fluctuations as $\lambda$-induced fibre drift]
+  The mechanism identified above admits a natural geometric reading.
+  The family $\{\Pi_\lambda\}_{\lambda \in \Lambda}$ defines a $\lambda$-parametrised bundle
+  of co-projecting fibres over the observable space~$\mathcal{O}$.
+  Fluctuations correspond to the transverse variation of successive fibre slices along the
+  relaxation flow, i.e.\ to the drift of~$\Pi_\lambda^{-1}(o)$ as $\lambda$ advances.
+  A rigorous formulation of this drift---as a connection on the fibre bundle, or as a
+  Lie-derivative along the relaxation vector field---is left as an open structural direction.
+  \end{remark}
+
   Two structural predictions follow from this picture.
   First, in a regime where the effective projection becomes \emph{locally} injective,
   the local projective entropy $S_\Pi$ is suppressed and quantum fluctuations are
