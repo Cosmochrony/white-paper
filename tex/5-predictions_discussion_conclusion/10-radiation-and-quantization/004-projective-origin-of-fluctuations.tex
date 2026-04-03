@@ -36,9 +36,11 @@
   More precisely, the projection must be understood as implicitly $\lambda$-dependent:
   one effectively probes a family of maps~$\Pi_\lambda$.
   At each effective step~$U_n$, one probes not a fixed fibre $\Pi^{-1}(o)$, but a slice of
-  the co-projecting set determined by the current value of the relaxation-ordering parameter~$\lambda$.
+  the co-projecting set determined by the current value of the relaxation-ordering
+  parameter~$\lambda$.
   Between two successive steps $U_n$ and $U_{n+1}$, $\lambda$ has advanced, and the set
-  of substrate configurations that co-project onto the same observable~$o$ is therefore not identical.
+  of substrate configurations that co-project onto the same observable~$o$ is therefore
+  not identical.
   The advance of~$\lambda$ is monotonic but remains unobservable at the effective level,
   since $\lambda$-ordering is precisely what the effective description identifies as time.
   Each reprojection thus samples a \emph{different slice} of an evolving fibre, and the
@@ -53,31 +55,43 @@
   minimal and irreducible source of the observed noise.
 
   \begin{remark}[Fluctuations as $\lambda$-induced fibre drift]
-The mechanism identified above admits a natural geometric reading.
-The family $\{\Pi_\lambda\}_{\lambda \in \Lambda}$ defines a $\lambda$-parametrised bundle
-of co-projecting fibres over the observable space~$\mathcal{O}$.
-Fluctuations correspond to the transverse variation of successive fibre slices along the
-relaxation flow, i.e.\ to the drift of~$\Pi_\lambda^{-1}(o)$ as $\lambda$ advances.
-A rigorous formulation of this drift---as a connection on the fibre bundle, or as a
-Lie-derivative along the relaxation vector field---is left as an open structural direction.
+    The mechanism identified above admits a natural geometric reading.
+    The family $\{\Pi_\lambda\}_{\lambda \in \Lambda}$ defines a $\lambda$-parametrised bundle
+    of co-projecting fibres over the observable space~$\mathcal{O}$.
+    Fluctuations correspond to the transverse variation of successive fibre slices along the
+    relaxation flow, i.e.\ to the drift of~$\Pi_\lambda^{-1}(o)$ as $\lambda$ advances.
+    A rigorous formulation of this drift---as a connection on the fibre bundle, or as a
+    Lie-derivative along the relaxation vector field---is left as an open structural direction.
   \end{remark}
 
-  Two distinct mechanisms may contribute to the apparent randomisation of successive projection residuals.
+  Two distinct mechanisms may contribute to the apparent randomisation of successive
+  projection residuals.
   The first is \emph{fibre decorrelation}: even if the norm of the residual differences
   remains approximately constant, the relaxation dynamics~$F$ generically drives
   successive fibre slices into increasingly orthogonal directions within~$\Omega_\chi$,
-  so that successive residuals become uncorrelated without necessarily growing in amplitude.
+  so that successive residuals become uncorrelated without necessarily growing in
+  amplitude.
   This decorrelation is sufficient to account for the apparent randomness of fluctuations
   and does not require any energy growth at the substrate level.
   The second, potentially distinct mechanism is \emph{projective amplification}: if the
   restriction of~$F$ to the fibre admits unstable directions in~$\Omega_\chi$, residual
   norms may grow along the relaxation sequence until bounded by the Born--Infeld
-  admissibility constraint~$A^{\mathrm{BI}}_{\max}$, at which point the projection enters
-  a saturation regime and structural compensation mechanisms become
-  operative~\ref{subsec:structural-interpretation-projective-thermodynamics}.
-  Whether this second mechanism is active, and how it relates to the decorrelation
-  regime, remains an open structural question.
-  The Born--Infeld bound thus plays a dual role: it caps the amplitude of projective
-  amplification, and replaces the ultraviolet divergences of standard quantum field theory
-  with a finite structural ceiling, rendering renormalisation unnecessary as an independent
-  procedure.
+  admissibility constraint~$A^{\mathrm{BI}}_{\max}$.
+  Once this ceiling is reached, the projection enters a saturation regime and structural
+  compensation mechanisms become operative; the full hierarchy of saturation responses
+  is developed in
+  Section~\ref{subsec:structural-interpretation-projective-thermodynamics}.
+  Whether projective amplification is active alongside decorrelation, and under what
+  conditions each mechanism dominates, remains an open structural question.
+
+  The Born--Infeld bound plays a dual role in this picture.
+  It caps the amplitude of projective amplification, providing a finite structural ceiling
+  on fluctuation growth.
+  Crucially, this ceiling is not imposed by hand but follows from the admissibility
+  constraint on the projection~$\Pi$ itself.
+  In standard quantum field theory, the absence of such a bound forces the introduction
+  of ultraviolet regulators and renormalisation procedures to control divergent loop
+  integrals.
+  In the present framework, renormalisation is not required as an independent procedure:
+  the Born--Infeld bound replaces it with a structurally motivated finite cutoff,
+  grounded in the projective architecture of the effective description.
