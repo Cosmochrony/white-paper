@@ -1,17 +1,87 @@
-\subsection{Entanglement as a Critical Regime of Projective Compression}
+\subsection{Entanglement as a Resolution Event in Reprojection Dynamics}
   \label{subsec:entanglement-critical-compression}
 
-  Quantum entanglement arises as a structural consequence of the non-injective
-  projection $\Pi:\chi \rightarrow \chi_{\mathrm{eff}}$.
-  The projection reduces a high-dimensional relational configuration to a
-  lower-dimensional effective description; the resulting fiber $\Pi^{-1}(\chi_{\mathrm{eff}})$ constitutes an
-  information-theoretic channel whose bandwidth depends on unresolved modes of~$\chi$.
+  The preceding sections establish the structural origin of non-factorizable
+  correlations.
+  This section gives a unified account of entanglement, disentanglement,
+  anti-correlated entanglement, entanglement swapping, and monogamy within a
+  single mechanism: the finite-resolution reprojection sequence.
 
-  Non-factorizable correlations emerge only in an intermediate
-  \emph{critical} regime of projective compression: the effective
-  description is sufficiently coarse-grained to permit subsystem
-  identification, yet retains enough global relational structure to prevent full factorization.
-  Increased compression (environmental coupling, decoherence) suppresses
-  correlations, yielding classical behavior; decreased compression breaks subsystem separation.
-  The critical regime may be intermittent, with correlations appearing
-  during specific spectral reconfiguration events (Appendix~\ref{sec:appendix-simulation}).
+  \paragraph{Generic reprojection.}
+    At each step $t \to t+1$ the effective state $\chi_{\mathrm{eff}}(t)$ is
+    reprojected through the fixed mapping $\Pi$.
+    The generic outcome is a deformed image: information is lost
+    (non-injectivity), and the new effective state differs from the old one by
+    projective noise.
+    Two excitations $A$ and $B$ that $\Pi$ can resolve as distinct produce
+    separable fibers $\Pi^{-1}(o_A) \times \Pi^{-1}(o_B)$, and no entanglement
+    arises.
+
+  \paragraph{Entanglement.}
+    Entanglement arises when the geometry of $\chi_{\mathrm{eff}}(t)$ places
+    two degrees of freedom $A$ and $B$ within the same resolution cell of $\Pi$
+    in the relevant observable sector.
+    The joint fiber $\Pi^{-1}(o_{AB})$ is non-decomposable, and the global
+    balance invariant $I_{AB}$ is infra-projectable: it cannot be assigned
+    independently to $A$ and $B$.
+    No pre-selected or distinguished configuration of $\chi$ is involved.
+
+  \paragraph{Direct and anti-correlated entanglement.}
+    The sign of the correlation is not a separate mechanism but a property of
+    the infra-projectable invariant $I_{AB}$ carried by the fiber.
+    When the invariant selects decompositions in which local values coincide
+    (e.g.\ $s_A = s_B = +\tfrac{1}{2}$), the correlation is direct.
+    When the invariant is a conservation law that forces opposite local values
+    (e.g.\ $s_A + s_B = 0$), the correlation is anti-correlated.
+    The singlet and triplet states correspond to distinct global invariants
+    carried by distinct fibers, not to distinct mechanisms.
+
+  \paragraph{Disentanglement by measurement or decoherence.}
+    Measurement and environmental coupling modify the effective state
+    $\chi_{\mathrm{eff}}(t)$.
+    The subsequent reprojection places $A$ and $B$ at resolvable positions in
+    the observable sector: the joint fiber becomes decomposable, the global
+    invariant $I_{AB}$ becomes locally projectable, and the entanglement
+    disappears.
+    No collapse or destruction of information is involved.
+    The balance constraint that was infra-projectable becomes projectable once
+    the effective state has moved sufficiently in the space of observable
+    configurations; $\Pi$ has not changed, only the image it is reading.
+
+  \paragraph{Entanglement swapping.}
+    Suppose at step $t_1$ excitations $A$ and $B$ fall below resolution and
+    share the infra-projectable invariant $I_{AB}$; at step $t_2$ excitations
+    $B$ and $C$ share $I_{BC}$.
+    A measurement on $B$ forces a locally admissible decomposition of $I_{AB}$
+    and simultaneously restricts the admissible decompositions of $I_{BC}$.
+    The residual constraint propagates to $A$ and $C$: the subsequent effective
+    state places $A$ and $C$ in a jointly constrained fiber $\Pi^{-1}(o_{AC})$,
+    even though $A$ and $C$ have never shared a resolution cell directly.
+    Swapping is transitive propagation of fiber constraints through an
+    intermediate reprojection event, not a transmission of influence.
+
+  \paragraph{Monogamy.}
+    A resolution cell has bounded capacity, set by the Born--Infeld saturation
+    condition on the projection fiber.
+    A single cell cannot simultaneously carry independent infra-projectable
+    invariants for multiple disjoint pairs without saturating.
+    Monogamy of entanglement is therefore a capacity constraint on the fiber,
+    not an additional postulate.
+
+  \paragraph{Summary.}
+    The five phenomena---entanglement, direct and anti-correlated correlations,
+    disentanglement, swapping, and monogamy---share a single mechanism: the
+    interaction of the evolving effective state $\chi_{\mathrm{eff}}(t)$ with
+    the fixed finite-resolution projection $\Pi$.
+    Entanglement is a local resolution event in the reprojection dynamics; it
+    requires no special configuration of $\chi$, no modification of $\Pi$, and
+    no non-local dynamical influence.
+    The balance constraints that become infra-projectable originate in the
+    admissibility structure of $\chi$---which is a coherence space, not a data
+    store---and not in any classically rich hidden state or pre-selected
+    substrate configuration.
+    This position is distinct from both na\"{\i}ve realism (no observable values
+    are stored in $\chi$) and eliminativism (the admissibility structure of
+    $\chi$ is the genuine source of all invariants).
+    The key principle is: \emph{what lies below the projective resolution is
+not a value, but a constraint.}

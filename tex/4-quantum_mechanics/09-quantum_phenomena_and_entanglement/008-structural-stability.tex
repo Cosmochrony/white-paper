@@ -22,18 +22,19 @@
       lab/.style={font=\small, align=center}
     ]
     \node[box] (chi)
-    {$\chi$\\[-2pt]\footnotesize unique relational config.};
+    {$\chi$\\[-2pt]\footnotesize coherence space\\
+    [-2pt]\footnotesize (admissibility constraints)};
     \node[box, below=of chi] (proj)
     {non-injective\\[-2pt]\footnotesize projection $\Pi$};
     \node[box, below=of proj] (chieff)
-    {$\chi_{\mathrm{eff}}$\\[-2pt]\footnotesize global
-    projected description};
+    {$\chi_{\mathrm{eff}}$\\[-2pt]\footnotesize constrained
+    reconstruction};
     \node[box, below left=16mm and 24mm of chieff] (stable)
     {stable\\[-2pt]\footnotesize (non-factorizable)};
     \node[box, below right=16mm and 24mm of chieff] (unstable)
     {unstable\\[-2pt]\footnotesize (non-factorizable)};
     \node[box, below=of stable] (ent)
-    {entanglement\\[-2pt]\footnotesize unity preserved};
+    {entanglement\\[-2pt]\footnotesize resolution event};
     \node[box, below=of unstable] (frag)
     {fragmentation\\[-2pt]\footnotesize (decay)};
     \node[box, below=of frag] (sum)
@@ -48,10 +49,17 @@
     \draw[arr] (unstable) -- (frag);
     \draw[arr] (frag) -- (sum);
     \end{tikzpicture}
-    \caption{Conceptual branching induced by non-injective projection.
-    Stable non-factorizable descriptions manifest as entanglement;
-    unstable ones fragment into localized factorizable descriptions
-      (particle decay).}
+    \caption{Reprojection branching induced by the finite-resolution
+    projection~$\Pi$.
+      $\chi$ is a coherence space whose admissibility structure constrains
+      which reconstructions can consistently emerge; it does not pre-select
+      a unique substrate configuration.
+      At each reprojection step the effective state $\chi_{\mathrm{eff}}$
+      either remains jointly non-factorizable---entanglement, arising when
+      two degrees of freedom share a resolution cell---or fragments into
+      localized factorizable descriptions (particle decay).
+      The branching is a property of the reprojection dynamics, not of a
+      distinguished substrate configuration.}
     \label{fig:noninjective-branching-entanglement-decay}
   \end{figure}
 

@@ -1,48 +1,84 @@
 \subsection{Non-Factorizable Projected Descriptions and Quantum Correlations}
   \label{subsec:non-injective-projection}
 
-  A single admissible configuration of~$\chi$ may correspond to multiple
-  distinct effective degrees of freedom.
-  What appear as separate particles or subsystems are multiple projective
-  manifestations of a single underlying ontological configuration.
-  Effective degrees of freedom cannot be assigned independent states; any
-  admissible description must be globally consistent with the
-  underlying~$\chi$ configuration, leading to persistent correlations that
-  do not rely on signal exchange or spacetime proximity.
+  The projection $\Pi$ is a fixed mapping with intrinsic finite resolution
+  and irreducible projection noise: its pixelisation is set by the spectral
+  admissibility threshold $\lambda^*$ (Section~\ref{subsec:relational-projection}) and its capacity is
+  bounded by the Born--Infeld saturation condition.
+  Observable dynamics is not a dynamics of $\chi$, which is atemporally
+  fixed, but a sequence of admissible reprojections of the effective state:
+  %
+  \begin{equation}
+    \chi_{\mathrm{eff}}(t) \;\longrightarrow\; \chi_{\mathrm{eff}}(t+1).
+  \end{equation}
+  %
+  Each step generically loses information (non-injectivity), introduces a
+  projective deformation (projection noise), and preserves certain global
+  invariants (admissibility constraints).
+  What appears as separate particles or subsystems at time~$t$ are
+  excitations of $\chi_{\mathrm{eff}}(t)$ that $\Pi$ can resolve as distinct.
 
-  The deeper reason for this non-factorizability can be identified at the level of the
-  spectral structure of the projection.
-  A configuration $\omega \in \Omega_\chi$ may carry a global invariant $I(\omega)$---total
-  charge, total angular momentum, winding number, or more generally any topological
-  raccordement constraint---that belongs to a sector of the substrate which is not
-  individually projectable within the effective description.
-  Such invariants belong to spectral sectors of $L_\chi$ below the projection threshold
-  $\lambda^*$ (Section~2.4) and therefore cannot appear as independent local observables
-  in the effective description: they are not representable as a separable pair
-  $I_A(\omega_A) \oplus I_B(\omega_B)$ projectable independently into $O_A \times O_B$,
-  but exist once, at the level of $\chi$, and can only appear in the effective description
-  as a property of the joint fiber $\Pi^{-1}(o_{AB})$.
-  The relevant pre-image is therefore not $\Pi^{-1}(o_A) \times \Pi^{-1}(o_B)$ but the
-  non-factorisable global class $\Pi^{-1}(o_{AB})$, whose elements are configurations
-  constrained jointly by $I(\omega)$.
-  This is the structural origin of entanglement: not a causal memory of past interaction,
-  but the irreducible representation constraint imposed by a globally unique infra-projectable
-  invariant.
+  Entanglement arises as a resolution event in this reprojection sequence:
+  two degrees of freedom $A$ and $B$ of $\chi_{\mathrm{eff}}(t)$ fall below
+  the resolution of $\Pi$ in the relevant observable sector, so that
+  $\Pi(A) \approx \Pi(B)$ within that sector.
+  They share an effective resolution cell.
+  No special or pre-selected configuration of $\chi$ is required, and no
+  superdeterminism is implied: whether two excitations fall into the same
+  cell is determined by the structure of $\chi_{\mathrm{eff}}(t)$ relative
+  to the fixed pixelisation of $\Pi$, exactly as two distinct inputs may
+  land on the same pixel of a camera whose resolution is fixed.
 
-  Spatial separation does not duplicate the invariant; it only changes the relational frame
-  through which it is read.
-  The two effective observables $o_A$ and $o_B$ are not two independent properties: they
-  are two projections of the same substrate invariant, evaluated from distinct local relational
-  contexts $\Pi_A$ and $\Pi_B$.
-  Entanglement arises precisely in the regime where the effective description separates
-  two subsystems that remain jointly constrained by an invariant which is not separately
-  projectable in either subsystem alone.
-  Measurement at $A$ selects a locally stable reprojection $\Pi_A(\omega) = o_A^*$; because
-  the fiber $\Pi^{-1}(o_{AB})$ is non-factorizable, this selection simultaneously restricts the
-  class of configurations admissible for $B$ to those compatible with $I(\omega)$ and $o_A^*$,
-  without any signal propagating from $A$ to $B$.
-  The apparent ``collapse'' at $B$ is a restriction of admissible projected descriptions
-  imposed by the global uniqueness of the invariant, not a dynamical influence.
+  This does not reduce $\chi$ to a passive or contentless mirror.
+  $\chi$ does not encode observable values, but it carries the full
+  structural information determining which relational configurations are
+  admissible.
+  The global balance invariants---total spin, total charge, winding
+  number---that appear as infra-projectable constraints of the fiber
+  $\Pi^{-1}(o_{AB})$ originate in this admissibility structure, not in the
+  effective state $\chi_{\mathrm{eff}}(t)$ and not in a classically rich
+  hidden state.
+  $\chi$ is minimal in observable content and maximal in structural
+  constraint: it is a coherence space, not a data store.
+  Observable dynamics is therefore not a self-reflection of the universe
+  through a deforming mirror, but a sequence of constrained reconstructions
+  in which $\chi$ determines what can consistently emerge, without itself
+  containing what will emerge.
+
+  The deeper reason for this non-factorizability can be identified at the
+  level of the spectral structure of the projection.
+  A configuration $\omega \in \Omega_\chi$ may carry a global
+  invariant $I(\omega)$---total charge, total angular momentum, winding
+  number, or more generally any topological raccordement constraint---that
+  belongs to a sector of the substrate which is not individually projectable
+  within the effective description.
+  Such invariants belong to spectral sectors of $L_\chi$ below the
+  projection threshold $\lambda^*$ (Section~2.4) and therefore cannot appear
+  as independent local observables in the effective description: they are not
+  representable as a separable pair $I_A(\omega_A) \oplus I_B(\omega_B)$
+  projectable independently into $O_A \times O_B$, but exist once, at the
+  level of $\chi$, and can only appear in the effective description as a
+  property of the joint fiber $\Pi^{-1}(o_{AB})$.
+  The relevant pre-image is therefore not $\Pi^{-1}(o_A) \times \Pi^{-1}(o_B)$
+  but the non-factorisable global class $\Pi^{-1}(o_{AB})$, whose elements
+  are configurations constrained jointly by $I(\omega)$.
+
+  The type of correlation is determined by which balance constraint is
+  infra-projectable, not by a different mechanism.
+  Direct correlations ($s_A = s_B$) arise when the infra-projectable
+  invariant selects decompositions with equal local values;
+  anti-correlations ($s_A + s_B = 0$) arise when the invariant forces
+  opposite local values.
+  In both cases the constraint is carried by the fiber, not by individual
+  pre-images.
+  Measurement at~$A$ selects a locally stable reprojection
+  $\Pi_A(\omega) = o_A^*$; because the fiber $\Pi^{-1}(o_{AB})$ is
+  non-factorizable, this selection simultaneously restricts the class of
+  configurations admissible for~$B$ to those compatible with $I(\omega)$
+  and $o_A^*$, without any signal propagating from $A$ to $B$.
+  The apparent ``collapse'' at~$B$ is a restriction of admissible projected
+  descriptions imposed by the global non-decomposability of the fiber, not a
+  dynamical influence.
 
   \subsubsection*{Ontological Monism and the Shared Projection Hypothesis}
     \label{subsec:ontological-monism-shared-projection}
@@ -78,13 +114,13 @@
     \node[micro] (c4) at ( 1.2, 1.75) {};
     \node[micro] (c5) at ( 2.4, 1.6) {};
     \node[note, above=3mm of c3, align=center]
-    {Multiple admissible $\chi$ configurations\\
-    (same fiber under $\pi$)};
+    {Admissible $\chi$-configurations\\
+    (non-decomposable joint fiber)};
     \node[box, below=16mm of c3,
       minimum width=6.8cm] (chieff)
     {$\chi_{\mathrm{eff}}$\\
-    \footnotesize single effective reality\\
-    \footnotesize non-factorisable (entangled)};
+    \footnotesize constrained reconstruction\\
+    \footnotesize (non-factorizable)};
     \node[box, below left=12mm and 14mm of chieff] (obsA)
     {Outcomes in context $A$};
     \node[box, below right=12mm and 14mm of chieff] (obsB)
@@ -102,11 +138,14 @@
     \draw[arrow] (chieff)
     -- node[right=2mm, note] {$\mathcal{O}_B$} (obsB);
       \end{tikzpicture}
-      \caption{Entangled (non-factorisable) regime.
-      Multiple underlying $\chi$ configurations map to the same
-        $\chi_{\mathrm{eff}}$.
-        Different measurement contexts define distinct operational
-        projections producing correlated outcomes without introducing
-        multiple effective realities.}
+      \caption{Non-factorizable regime.
+      The joint fiber $\Pi^{-1}(o_{AB})$ is non-decomposable: no
+      independent pre-images can be assigned to subsystems $A$ and $B$.
+      The admissibility structure of $\chi$ determines which balance
+      invariants are infra-projectable; it does not select a unique
+      pre-existing configuration.
+      Different measurement contexts define distinct admissible
+      reprojections of the same constrained fiber, producing correlated
+      outcomes without superluminal influence.}
       \label{fig:entanglement-two-projections}
       \end{figure}
