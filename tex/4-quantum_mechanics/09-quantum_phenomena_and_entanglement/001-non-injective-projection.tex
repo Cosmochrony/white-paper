@@ -21,14 +21,19 @@
   $\sigma$ lifts the current state back into the configuration space,
   and $\Pi$ reflects it into the next observable state.
   Because $\sigma$ is not the inverse of~$\Pi$, the reflection is
-  deformed by two distinct mechanisms: the structural non-injectivity
-  of~$\Pi$ (the curvature of the mirror, which makes the fiber
-  $\Pi^{-1}(U_t)$ non-trivial and renders certain global invariants
-  infra-projectable) and the projection noise at each step (the
-  particular selection of $\omega_t$ within the fiber, which determines
-  which admissible successor $U_{t+1}$ is realized).
-  Together they ensure $U_{t+1} \neq U_t$ in general and make the
-  sequence irreversible.
+  deformed by two distinct mechanisms.
+  First, the admissibility constraints encoded in~$\chi$ govern which
+  configuration $\omega_t$ within the fiber $\Pi^{-1}(U_t)$ is selected:
+  the selection is structural, not random.
+  Second, the projection noise: distinct configurations within the same
+  fiber never overlap perfectly under~$\Pi$; their residual differences,
+  inaccessible to the effective description, appear as fluctuations in
+  $U_{t+1}$.
+  It is this irreducible residue that guarantees $U_{t+1} \neq U_t$ and
+  makes the sequence irreversible: a configuration with no residue would
+  imply fibers whose elements project identically, leaving no relational
+  difference to motivate a next state---the structural analogue of
+  absolute zero (Section ~\ref{subsec:absolute-zero-necessity}).
   The substrate~$\chi$ constrains the admissibility of~$\sigma$ but does
   not supply dynamical content: it governs what can be reflected, not what
   is.
