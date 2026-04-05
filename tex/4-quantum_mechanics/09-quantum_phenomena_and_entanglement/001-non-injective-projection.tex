@@ -3,20 +3,40 @@
 
   The projection $\Pi$ is a fixed mapping with intrinsic finite resolution
   and irreducible projection noise: its pixelisation is set by the spectral
-  admissibility threshold $\lambda^*$ (Section~\ref{subsec:relational-projection}) and its capacity is
+  admissibility threshold $\lambda^*$ (Section~2.4) and its capacity is
   bounded by the Born--Infeld saturation condition.
   Observable dynamics is not a dynamics of $\chi$, which is atemporally
-  fixed, but a sequence of admissible reprojections of the effective state:
+  fixed, but an iterated reprojection of the effective state through the
+  deforming mirror $\Pi \circ \sigma$:
   %
   \begin{equation}
-    \chi_{\mathrm{eff}}(t) \;\longrightarrow\; \chi_{\mathrm{eff}}(t+1).
+    \label{eq:reprojection-mirror}
+    U_{t+1} = \Pi \circ \sigma(U_t),
   \end{equation}
   %
+  where $\sigma : O \to \Omega$ is an admissible section selecting a
+  configuration $\omega_t = \sigma(U_t)$ within the fiber $\Pi^{-1}(U_t)$
+  under the constraints of~$\chi$.
+  The composition $\Pi \circ \sigma$ acts as a deforming mirror:
+  $\sigma$ lifts the current state back into the configuration space,
+  and $\Pi$ reflects it into the next observable state.
+  Because $\sigma$ is not the inverse of~$\Pi$, the reflection is
+  deformed by two distinct mechanisms: the structural non-injectivity
+  of~$\Pi$ (the curvature of the mirror, which makes the fiber
+  $\Pi^{-1}(U_t)$ non-trivial and renders certain global invariants
+  infra-projectable) and the projection noise at each step (the
+  particular selection of $\omega_t$ within the fiber, which determines
+  which admissible successor $U_{t+1}$ is realized).
+  Together they ensure $U_{t+1} \neq U_t$ in general and make the
+  sequence irreversible.
+  The substrate~$\chi$ constrains the admissibility of~$\sigma$ but does
+  not supply dynamical content: it governs what can be reflected, not what
+  is.
   Each step generically loses information (non-injectivity), introduces a
   projective deformation (projection noise), and preserves certain global
   invariants (admissibility constraints).
   What appears as separate particles or subsystems at time~$t$ are
-  excitations of $\chi_{\mathrm{eff}}(t)$ that $\Pi$ can resolve as distinct.
+  excitations of $U_t$ that $\Pi$ can resolve as distinct.
 
   Entanglement arises as a resolution event in this reprojection sequence:
   two degrees of freedom $A$ and $B$ of $\chi_{\mathrm{eff}}(t)$ fall below
@@ -40,10 +60,11 @@
   hidden state.
   $\chi$ is minimal in observable content and maximal in structural
   constraint: it is a coherence space, not a data store.
-  Observable dynamics is therefore not a self-reflection of the universe
-  through a deforming mirror, but a sequence of constrained reconstructions
-  in which $\chi$ determines what can consistently emerge, without itself
-  containing what will emerge.
+  The observable universe does not merely reflect itself through a passive
+  mirror; it reads itself through a deforming one.
+  The deformation---the fact that $\sigma$ is not the inverse of $\Pi$---is
+  what makes successive states different, and what the admissibility
+  structure of~$\chi$ constrains without prescribing.
 
   The deeper reason for this non-factorizability can be identified at the
   level of the spectral structure of the projection.
@@ -53,7 +74,7 @@
   belongs to a sector of the substrate which is not individually projectable
   within the effective description.
   Such invariants belong to spectral sectors of $L_\chi$ below the
-  projection threshold $\lambda^*$ (Section~\ref{subsec:relational-projection}) and therefore cannot appear
+  projection threshold $\lambda^*$ (Section~2.4) and therefore cannot appear
   as independent local observables in the effective description: they are not
   representable as a separable pair $I_A(\omega_A) \oplus I_B(\omega_B)$
   projectable independently into $O_A \times O_B$, but exist once, at the

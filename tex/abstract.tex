@@ -1,54 +1,86 @@
-\abstract{
+\begin{abstract}
   Cosmochrony is a pre-geometric relational framework in which time,
   spacetime geometry, and physical observables emerge from an ordered
-  sequence of effective reprojections under a fixed, non-injective map
-  $\Pi$, constrained by a single underlying substrate $\chi$.
-  The substrate $\chi$ is static and encodes only admissibility
+  sequence of effective reprojections constrained by a single underlying
+  substrate, denoted~$\chi$.
+  The substrate~$\chi$ is static and encodes only admissibility
   constraints; it does not carry dynamical evolution.
+  Observable dynamics corresponds to the iterated reprojection
+  \begin{equation*}
+    U_{t+1} = \Pi \circ \sigma(U_t),
+  \end{equation*}
+  where $\Pi$ is a fixed, generically non-injective projection,
+  $\sigma : O \to \Omega$ is an admissible section selecting a
+  configuration $\omega_t = \sigma(U_t)$ within the fiber
+  $\Pi^{-1}(U_t)$ under the constraints of~$\chi$, and the
+  composition $\Pi \circ \sigma$ acts as a deforming mirror:
+  $\sigma$ lifts the current state back into the configuration space,
+  and $\Pi$ reflects it into the next observable state.
+  Because $\sigma$ is not the inverse of~$\Pi$, the reflection is
+  deformed by two distinct mechanisms.
+  First, the admissibility constraints encoded in~$\chi$ govern which
+  configuration $\omega_t$ within the fiber $\Pi^{-1}(U_t)$ is selected:
+  the selection is structural, not random.
+  Second, the projection noise: distinct configurations within the same
+  fiber never overlap perfectly under~$\Pi$; their residual differences,
+  inaccessible to the effective description, appear as fluctuations in
+  $U_{t+1}$.
+  It is this irreducible residue that guarantees $U_{t+1} \neq U_t$ and
+  makes the sequence irreversible: a state with no residue would imply
+  configurations projecting identically with no relational difference,
+  leaving no motive for a next state---the structural analogue of absolute
+  zero.
+  The substrate~$\chi$ constrains the admissibility of~$\sigma$ but
+  does not supply dynamical content: it governs what can be reflected,
+  not what is.
 
   The framework adopts a principle of ontological minimalism,
   postulating no fundamental spacetime, metric, or quantum structure.
   Effective geometric and dynamical descriptions arise solely through
-  coarse-grained projections of configurations admissible under $\chi$.
+  coarse-grained projections of configurations admissible under~$\chi$.
 
   The admissible sector is characterized by a spectral structure
-  defined by a relational operator on the configuration space of $\chi$.
-  Physical observables correspond to projectable modes selected by a
-  spectral admissibility condition.
-
+  defined by a relational operator on the configuration space of~$\chi$.
+  Physical observables correspond to projectable modes selected by
+  a spectral admissibility condition.
   Temporal order is identified with the monotonic ordering of the
-  reprojection sequence, rather than with an evolution of the substrate.
+  reprojection sequence, not with an evolution of the substrate itself.
   Spatial relations and curvature emerge as effective summaries of
   correlations within projectable configurations.
 
   Bounded-response regimes arise from saturation of admissibility
   constraints, yielding Born--Infeld-like effective dynamics without
-  introducing additional fundamental fields. In this context, the speed
-  of light and Planck's constant appear as bounds on projectability and
-  resolvability.
+  introducing additional fundamental fields.
+  In this context, the speed of light and Planck's constant appear as
+  complementary bounds on projectability and resolvability rather
+  than as primitive constants.
 
   Matter, inertia, and electric charge correspond to stable or
   metastable invariants of the effective reprojection sequence,
-  associated with localized spectral configurations. The topology of
-  the projection fiber constrains admissible configurations: electric
-  charge is identified with a winding invariant of the $U(1)$ fiber,
-  isolated magnetic monopoles are excluded in the canonical admissible
-  sector, and parity asymmetry arises from projective chirality induced
-  by non-injectivity.
+  associated with localized spectral configurations.
+  The topology of the projection fiber further constrains admissible
+  configurations: electric charge is identified with a winding invariant
+  of the $U(1)$ fiber, isolated magnetic monopoles are excluded in the
+  canonical admissible sector, and parity asymmetry arises from
+  projective chirality induced by non-injectivity.
 
   Quantum indeterminacy, entanglement, and violations of Bell
-  inequalities arise as structural consequences of non-injective
-  projection, without superluminal influence or fundamental collapse.
+  inequalities arise as structural consequences of the non-injective
+  character of~$\Pi$: the fiber $\Pi^{-1}(U_t)$ generically contains
+  multiple admissible configurations whose joint projection is
+  non-factorizable, without requiring superluminal influences or
+  fundamental wavefunction collapse.
 
   At macroscopic scales, gravitation emerges as a collective effect of
   constrained reprojection, recovering general-relativistic behavior in
-  appropriate regimes. At galactic and cosmological scales, the same
-  bounded-response mechanism accounts for flat rotation curves and
-  environment-dependent Hubble inference without invoking dark matter
-  particles or a fundamental dark energy component.
+  appropriate regimes.
+  At galactic and cosmological scales, the same bounded-response
+  mechanism accounts for flat rotation curves and
+  environment-dependent Hubble parameter inference without invoking
+  dark matter particles or a fundamental dark energy component.
 
   Cosmochrony is proposed as a structural unification framework,
   clarifying how time, geometry, quantum phenomena, and cosmological
   behavior arise from a common pre-geometric substrate governed solely
-  by admissibility constraints.
-}
+  by admissibility constraints on an iterated non-injective projection.
+\end{abstract}
