@@ -1,34 +1,68 @@
-\subsection{Monotonicity and Arrow of Time}
+\subsection{Projective Temporal Ordering and One-Way Activation}
   \label{subsec:monotonicity-and-arrow-of-time}
 
-  A central structural postulate is that~$\chi$ encodes an admissibility
-  structure that orients the effective reprojection sequence toward
-  configurations of decreasing relational capacity.
-  In effective descriptions, this orientation manifests as the monotonic
-  behavior of the projected scalar descriptor along admissible ordering paths:
+  Temporal ordering in Cosmochrony is not postulated as a property of the
+  substrate~$\chi$, nor derived from an intrinsic dynamics.
+  It emerges as a structural consequence of the admissibility cascade.
+
+  Along the breadth-first search cascade on the Cayley graphs of the Heisenberg
+  group~$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, define the \emph{cumulative
+projected capacity}
   \begin{equation}
-    \mathcal{D}_{\lambda} \chi_{\mathrm{eff}} \ge 0 .
+    I(n) \;=\; \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n),
   \end{equation}
-  Here $\lambda$ denotes an ordering parameter associated with the reprojection
-  sequence, not a fundamental time coordinate.
-  The inequality is a structural constraint on admissible projected
-  representations; it is a property of the sequence $\chi_{\mathrm{eff}}(t)$,
-  not of~$\chi$ itself, which is atemporally fixed.
+  where $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\cdot\sigma_{q-c}(n)$ is the
+  residual projective capacity of the conjugate pair~$(c,q{-}c)$ at BFS
+  depth~$n$~\cite{Beau2026a28}.
+  The quantity~$I(n)$ measures the spectral structure stably projected up to
+  depth~$n$.
 
-  Energy is interpreted as the remaining capacity of projected configurations
-  to undergo further admissible reprojection.
-  Admissible ordering paths exclude any effective decrease
-  of~$\chi_{\mathrm{eff}}$, which would correspond to a restoration of
-  relational capacity incompatible with the underlying admissibility structure.
-  The arrow of time is identified with this directional ordering: the
-  progression from configurations with greater relational capacity toward
-  configurations in which that capacity has been exhausted.
-  This temporal orientation arises prior to any statistical or thermodynamic
-  description~\cite{Prigogine1997,Rovelli1991}.
-  The relation to thermodynamic irreversibility is discussed further in
-  Section~\ref{subsec:entropy-arrow-of-time}.
+  \begin{proposition}[Projective temporal ordering --- numerical
+  form~\cite{Beau2026pto}]
+  For $q \in \{29, 61, 101, 151\}$, $I(n)$ is strictly non-decreasing at every
+  BFS step and for every conjugate pair~$(c,q{-}c)$, with no physically
+  meaningful regression across~$169$ pairs and~$310$ post-burn-in steps.
+  \end{proposition}
 
-  \paragraph{Projectability and Kinematic Saturation.}
+  This monotonicity defines an intrinsic ordering on effective states:
+  \begin{equation}
+    U_t \prec U_{t+1}
+    \;\Longleftrightarrow\;
+    I(U_t) \le I(U_{t+1}).
+  \end{equation}
+  The ordering is not a dynamics on~$\chi$ but a relational structure induced
+  by the non-injective projection~$\Pi$: it acts entirely within the fixed
+  observable rank established in~\cite{Beau2026a28}, without enlarging the
+  observable degrees of freedom.
+
+  \paragraph{One-way activation.}
+    The observed monotonicity is underpinned by an empirical property of the
+    cascade: spectral modes, once stably projected, do not deactivate.
+    This \emph{one-way activation} property is a numerical result; its
+    analytical derivation from the admissibility constraints of~$\Pi$ remains
+    an open direction.
+
+  \paragraph{Arrow of time and irreversibility.}
+    Irreversibility follows directly from one-way activation: no admissible
+    trajectory can decrease~$I(n)$.
+    The arrow of time is identified with the directed growth of~$I(n)$, arising
+    prior to any statistical or thermodynamic
+    description~\cite{Prigogine1997,Rovelli1991}.
+    The relation to thermodynamic irreversibility is discussed in
+    Section~\ref{subsec:entropy-arrow-of-time}.
+
+  \paragraph{Energy as residual projective capacity.}
+    Energy is interpreted as the residual projective capacity of effective
+    configurations: it measures the degree to which further accumulation of
+    projected spectral structure remains admissible.
+    Formally, $\sigma_{\mathrm{pair}}(n) = \sigma_{\mathrm{pair}}(0) - I(n)$
+    is the remaining capacity at depth~$n$, decreasing monotonically as the
+    cascade advances.
+    Admissible ordering paths exclude any effective decrease of~$I(n)$, which
+    would correspond to a restoration of projective capacity incompatible with
+    the one-way activation property.
+
+  \paragraph{Projectability and kinematic saturation.}
     \label{par:projectability-kinematics}
     A change of velocity corresponds to a modification of the relational
     coherence constraints maintained by the projection.
@@ -40,12 +74,12 @@
     inaccessible to the effective description, manifesting as time dilation,
     length contraction, and horizon formation.
     Relativistic kinematics thus emerges as a consequence of finite projection
-    capacity\footnote{%
+    capacity.\footnote{%
   This kinematic saturation concerns the ordering and coherence capacity of
-  the projection itself and should not be conflated with thermodynamic
-  entropy production.}.
+  the projection itself and should not be conflated with thermodynamic entropy
+  production.}
 
-  \paragraph{Planck Scale and Relativistic Bounds as Projection Limits.}
+  \paragraph{Planck scale and relativistic bounds as projection limits.}
     \label{par:planck-c-projective-limits}
     The constants~$c$ and~$h$ are interpreted as complementary manifestations of
     a finite resolution of the projection from~$\chi$ to effective observables.
