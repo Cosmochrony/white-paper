@@ -16,9 +16,9 @@
   \subsubsection*{Operational definitions and standing assumptions}
     \label{subsec:necessity-defs}
 
-    We work with a microscopic configuration space $\mathcal{C}_\chi$ endowed with an autonomous
-    relaxation rule $F$ (the $\chi$-dynamics of
-    Section~\ref{sec:definition-and-fundamental-properties-of-the-chi-field}).
+    We work with a microscopic configuration space $\mathcal{C}_\chi$ endowed
+    with an admissibility rule $F$ encoding the structural constraints of~$\chi$
+    (Section~\ref{sec:definition-and-fundamental-properties-of-the-chi-field}).
     The space of effective observables is $\mathcal{M}$.
     A projection (coarse-graining) map $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ defines the
     effective state $y = \Pi(x)$ for each substrate configuration $x \in \mathcal{C}_\chi$.
@@ -28,7 +28,7 @@
     \begin{equation}
       Q_{\mathrm{eff}} = Q(\Pi, F, x),
       \end{equation}
-      determined solely by the relaxation rule $F$ and the projection $\Pi$.
+      determined solely by the admissibility rule $F$ and the projection $\Pi$.
       No independent free parameter carrying $Q$ is introduced at the effective level.
 
     \paragraph{Ontological uniqueness.}
@@ -186,7 +186,7 @@
       (Section~\ref{subsec:physical-interpretation}, Appendix~A.12).
       This eliminates the freedom in ultraviolet completions that conditions~\ref{D1}--\ref{D4} alone leave open.
       \item \textit{Exclusion of projective pathologies.}
-      Unbounded relaxation gradients correspond to configurations where the fiber $\Pi^{-1}(y)$ collapses,
+      Unbounded admissible flux gradients correspond to configurations where the fiber $\Pi^{-1}(y)$ collapses,
       meaning the projection becomes locally injective and the geometric description breaks down.
       The bound excludes these configurations, ensuring the projective description remains globally admissible.
       \item \textit{Quantitative prediction.}
@@ -205,7 +205,7 @@
     higher-derivative corrections.
     \end{proof}
 
-  \subsubsection*{Theorem: Necessity of non-injective projection and bounded relaxation flux}
+  \subsubsection*{Theorem: Necessity of non-injective projection and bounded admissible flux}
     \label{subsec:necessity-theorem}
 
     \begin{theorem}[Necessity of non-injective projection and bounded relaxation]
@@ -224,7 +224,7 @@
   Equivalently, there must exist an effective equivalence relation on $\mathcal{C}_\chi$
   compatible with universal coupling.
   \item \label{thm:b}
-  The substrate relaxation flux must be bounded, providing the selection principle required for a unique infrared
+  The substrate admissible flux must be bounded, providing the selection principle required for a unique infrared
   dynamics
   with controlled higher-order corrections.
       \end{enumerate}
@@ -242,7 +242,7 @@
       \textit{Part~\ref{thm:b}.}
       By Lemma~\ref{lem:saturation-selects}, non-injectivity alone does not select a unique infrared dynamics compatible
       with~\ref{D1}--\ref{D4}.
-      The bounded relaxation flux $|\partial_t \chi| \leq c_\chi$
+      The bounded admissible flux $|\partial_t \chi| \leq c_\chi$
       supplies the selection mechanism by fixing the nonlinear
       completion and organizing higher-order corrections by a single capacity scale.
     \end{proof}
