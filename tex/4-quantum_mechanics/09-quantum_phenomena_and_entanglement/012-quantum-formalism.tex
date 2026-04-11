@@ -17,17 +17,45 @@
     local descriptions; its modulus determines the statistical weight of
     accessible reprojections.
 
+  \paragraph{Why a Hilbert Space.}
+    \label{subsec:why-hilbert-space}
+    Because the effective description has no access to~$\chi$ itself, it
+    must represent, at the level of observables alone, the coexistence of
+    distinct configurations belonging to the same fiber $\Pi^{-1}(o)$.
+    This representational requirement imposes three successive constraints.
+    First, contributions from different pre-images must be combinable:
+    the space of effective descriptions must be additive.
+    Second, observed interference phenomena---constructive or destructive
+    superposition of projectively admissible contributions---require a phase
+    structure that a purely real or purely positive representation cannot
+    support: complex scalars are forced.
+    Third, the effective dynamics must preserve the total statistical weight
+    of admissible reprojections, imposing a conserved norm.
+    Together, these three constraints single out a complex Hilbert space as
+    the minimal representational closure compatible with non-injective
+    projection.
+    This is not a postulate but a structurally motivated consequence of
+    the non-injectivity of~$\Pi$; it does not yet constitute a fully
+    derived theorem, and the precise conditions under which the
+    representation is unique are left for future work.
+
   \paragraph{Emergence of Hilbert Space Structure.}
     \label{subsec:emergence-of-hilbert-space-structure}
+    Quantum superposition is the observable trace of fiber multiplicity:
+    a state of the form $\alpha\,|{o_1}\rangle + \beta\,|{o_2}\rangle$
+    encodes, within the effective description, the coexistence of
+    projectively admissible contributions from $\Pi^{-1}(o_1)$
+    and~$\Pi^{-1}(o_2)$, not a literal simultaneous occupation of two
+    distinct ontic states.
     In regimes where relational constraints are weak and approximately
     factorizable, distinct admissible descriptions can be combined, giving
     rise to approximate linear structure.
-    Superposition reflects the formal coexistence of compatible descriptive
-    alternatives.
     The inner product encodes mutual compatibility; orthogonality corresponds
     to mutually exclusive descriptive regimes.
     Unitary evolution is a consistency-preserving transformation valid as long
     as projectability and factorizability remain intact.
+    The structural derivation of the effective Schr\"odinger dynamics from
+    these constraints is given in Appendix~\ref{app:schrodinger-derivation}.
 
   \paragraph{Emergence of the Schr\"odinger Equation.}
     \label{subsec:schrodinger-emergence}
