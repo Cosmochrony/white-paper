@@ -35,11 +35,37 @@
     since it ensures that the adjacency contribution $\mu_\rho$ vanishes and the Laplacian
     eigenvalue satisfies $\lambda_\rho = |S|$.
 
+  \paragraph{Cumulative projected capacity \texorpdfstring{$I(n)$}{I(n)}.}
+    For a conjugate pair $(c,\,q-c)$ of Weil representations on
+    $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, the cumulative projected capacity is
+    \[
+      I(n) \;=\; \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n),
+    \]
+    where $n$ indexes BFS shell depth and $\sigma_{\mathrm{pair}}(n)$ is the
+    residual projective capacity at depth~$n$.
+    $I(n)$ measures the spectral structure already stably projected up to depth~$n$.
+    Its strict non-decreasing character along tested BFS trajectories (Proposition~1
+    of~\cite{Beau2026a28}) provides the canonical numerical realization of the
+    projective temporal ordering~$\tau$: a larger $I(n)$ corresponds to a later
+    effective state.
+    \emph{Status:} numerical result for $q \in \{29,61,101,151\}$; analytical
+    derivation of the monotonicity remains an open problem.
+
+  \paragraph{Capacity exponent \texorpdfstring{$\delta_{\mathrm{pair}}$}{δpair}.}
+    The power-law exponent governing the decay of the residual projective capacity
+    $\sigma_{\mathrm{pair}}(n) \sim n^{-\delta_{\mathrm{pair}}}$ along the BFS
+    cascade.
+    It is the primary spectral observable of the O-series and connects to the
+    cascade exponent $\beta^*$ governing the fermion mass hierarchy via
+    the structural relation established in~O24.
+    Current numerical values: $\delta_{\mathrm{pair}} \approx 8.89$ ($q=29$),
+    $9.98$ ($q=61$), $9.55$ ($q=101$).
+
   \paragraph{Energy.}
     Energy is an effective quantity measuring the operational cost associated
     with modifying a projected configuration while preserving coherence under
     admissible updates.
-    This cost reflects the mobilization of the underlying relaxation capacity
+    This cost reflects the mobilization of the underlying projective capacity
     of the $\chi$ substrate under projection, but energy itself is not a
     fundamental property of $\chi$.
     Standard conservation laws remain valid at the effective level.
@@ -86,6 +112,60 @@
     sector does not receive constructive alignment from the generating set and therefore
     admits the maximal admissibility window compatible with bounded relational flux.
 
+  \paragraph{One-way activation.}
+    The property that a spectral mode, once stably projected at BFS depth~$n$,
+    does not leave the Gram--Schmidt span at any subsequent depth $n' > n$.
+    Formally, $\delta r_n \geq 0$ at every step, so that $I(n)$ is non-decreasing.
+    One-way activation is the spectral mechanism underlying the irre\-versibility
+    of the projective temporal ordering: it provides a structural arrow of time
+    without invoking thermodynamic entropy or a background temporal coordinate.
+    \emph{Status:} established numerically for $q \in \{29,61,101,151\}$;
+    the analytical proof from BFS admissibility constraints remains open.
+
+  \paragraph{Projective temporal ordering.}
+    The ordering relation on effective states defined by
+    \[
+      U_t \prec U_{t+1} \;\Longleftrightarrow\; I(U_t) \leq I(U_{t+1}).
+    \]
+    This ordering is not a dynamics on $\chi$ but a relational structure induced
+    by the non-injective projection~$\Pi$: it reorders admissible fibre selections
+    within the fixed observable rank, without introducing additional observable
+    degrees of freedom.
+    It is compatible with and complementary to the observable rank stability
+    established in~O24.
+    See~\cite{Beau2026a28} for the numerical evidence and formal statement.
+
+  \paragraph{Reprojection sequence.}
+    The iterated map
+    \[
+      U_{t+1} = \Pi \circ \sigma(U_t),
+    \]
+    where $\sigma(U_t) \in \Pi^{-1}(U_t)$ selects an admissible configuration
+    within the fibre compatible with the current effective state~$U_t$.
+    The reprojection sequence is the formal carrier of effective dynamics in
+    Cosmochrony: all observable evolution arises from successive admissible
+    fibre selections, not from any evolution of the static substrate~$\chi$.
+    Successive steps correspond to distinct admissible realisations drawn from
+    different regions of the fibres; the effective time parameter $\tau$ indexes
+    this sequence via the monotone accumulation of $I(n)$.
+
+  \paragraph{Residual projective capacity \texorpdfstring{$\sigma_{\mathrm{pair}}(n)$}{σpair(n)}.}
+    For a conjugate pair $(c,\,q-c)$, the residual projective capacity at BFS
+    depth~$n$ is
+    \[
+      \sigma_{\mathrm{pair}}(n)
+      = \sigma_c(n)\cdot\sigma_{q-c}(n),
+      \quad
+      \sigma_c(n) = \frac{\delta r_n}{|S_n|},
+    \]
+    where $\delta r_n$ counts new linearly independent Weil fingerprint vectors
+    in BFS shell~$S_n$ and $|S_n|$ is the shell size.
+    $\sigma_{\mathrm{pair}}(n)$ decays monotonically toward zero as the spectral
+    capacity of the pair is exhausted; its complement is the cumulative projected
+    capacity $I(n)$.
+    The Born--Infeld saturation plateau is reached when $\sigma_{\mathrm{pair}}(n)
+\approx 0$.
+
   \paragraph{Spectral capacity.}
     For a finite group $G$ with symmetric generating set $S$, the
     \emph{spectral capacity} functional is defined as
@@ -99,7 +179,7 @@
     The functional aggregates the admissible amplitude windows of all spectral sectors
     weighted by their Peter--Weyl multiplicities.
     Spectral capacity provides a global measure of how efficiently a relational structure
-    supports dynamically admissible modes under bounded relaxation flux.
+    supports dynamically admissible modes under bounded projective flux.
 
   \paragraph{Probability.}
     An emergent descriptor reflecting the multiplicity of projected realizations
@@ -107,12 +187,17 @@
     Probability is projective rather than fundamental, and does not correspond
     to intrinsic randomness of the substrate.
 
-  \paragraph{Relaxation (of the \texorpdfstring{$\chi$}{χ} field).}
-    The intrinsic irreversible reorganization of relational configurations of
-    $\chi$ under internal coupling constraints.
-    Relaxation supplies the flux of candidate configurations required for
-    successive projected updates.
-    It is pre-thermodynamic and does not correspond to dissipation.
+  \paragraph{Projective capacity.}
+    The available ``room'' within the admissible projective structure for
+    further structural reorganization.
+    At the spectral level it is quantified by $\sigma_{\mathrm{pair}}(n)$
+    and its integral $I(n)$ along the BFS cascade.
+    At the effective level it governs the coupling $g(x,t) = \gamma/\Sigma(x,t)$
+    in the nonlinear Schrödinger correction (§B.14) and the differential between
+    constrained and unconstrained vacuum configurations (Casimir effect).
+    Projective capacity is contextual and non-extensive; it replaces the
+    notion of ``relaxation capacity of $\chi$'' used in earlier formulations
+    of the framework.
 
   \paragraph{Spacetime.}
     An emergent relational structure arising from large-scale configurations of
@@ -120,12 +205,15 @@
     Its metric description remains valid within its domain of applicability.
 
   \paragraph{Time.}
-    An effective parameter associated with the local rate of $\chi$ relaxation.
+    An effective ordering parameter associated with the local rate of projective
+    ordering.
     Operational and relativistic notions of time are recovered without modification.
+    The canonical spectral realization is the cumulative projected capacity
+    $I(n)$ (see above).
 
-  \paragraph{Relaxation transmittance (gauge interpretation).}
-    An effective, context-dependent measure of how efficiently relaxation flux (or
-    ordering capacity) is transmitted through a given projected configuration.
+  \paragraph{Projective transmittance (gauge interpretation).}
+    An effective, context-dependent measure of how efficiently admissible projective
+    flux is transmitted through a given projected configuration.
     In Cosmochrony, gauge structure can be interpreted as a parametrization of
     transmittance variations across the projection fiber, rather than as a fundamental
     interaction field.
