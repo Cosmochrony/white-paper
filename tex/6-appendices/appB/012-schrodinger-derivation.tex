@@ -6,12 +6,12 @@
     The following theorem states the complete result.
     Steps~1--5 and Appendix~\ref{app:schrodinger-hamiltonian} constitute its proof.
 
-    \begin{theorem}[Emergence of quantum dynamics from projected substrate relaxation]
+    \begin{theorem}[Emergence of quantum dynamics from projected admissibility structure]
       \label{thm:schrodinger-emergence}
       Let $(\Omega, \mathcal{R}, \Pi)$ be a Cosmochrony triple consisting of:
       \begin{itemize}
         \item[(H1)] a space $\Omega$ of admissible relational configurations with a nonlinear
-        relaxation operator $\mathcal{R}$,
+        admissibility operator $\mathcal{R}$,
         \item[(H2)] a generally non-injective projection $\Pi : \Omega \to O$ with finite
         projective resolution $\varepsilon_\Pi > 0$,
         \item[(H3)] a Born--Infeld admissibility bound: every mode satisfies
@@ -105,7 +105,7 @@
       envelope~\cite{Beau2026a1}), combined with the operator--metric correspondence
       $\sigma_2(-\Delta_\chi)(x,k) = g^{\mu\nu}k_\mu k_\nu$~\cite{Beau2026c}, and the
       non-relativistic expansion
-      $\\hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
+      $\hbar_{\mathrm{eff}}\sqrt{-\Delta_g}
       \simeq m_{\mathrm{eff}}c^2 + \frac{-\hbar_{\mathrm{eff}}^2\Delta_g}{2m_{\mathrm{eff}}}$.
 
       (C5) is the logical converse of (C1): $\operatorname{Re}(\mu_n) = 0$ requires both
@@ -134,8 +134,8 @@
 
     We now develop the theorem step by step.
     The purpose of the following construction is not to introduce additional assumptions,
-    but to make explicit how the effective Schr\"odinger dynamics follows from projected
-    substrate relaxation in the weak-amplitude regime.
+    but to make explicit how the effective Schr\"odinger dynamics follows from the
+    projected admissibility structure of the substrate in the weak-amplitude regime.
 
     Let $\Omega$ denote the space of admissible relational configurations and
     \[
@@ -147,68 +147,52 @@
     The effective state therefore encodes only the resolvable modal content that survives the
     projection at finite projective resolution.
 
-    \paragraph{Step 1: Substrate relaxation and linearization.}
+    \paragraph{Step 1: Substrate dynamics and linearization.}
 
-      At the substrate level, the primitive dynamics takes the generic relaxation form
+      At the substrate level, the primitive dynamics is governed by the admissibility
+      structure of $\Pi$ and takes the generic form
       \[
         \partial_{\tau}\chi = \mathcal{R}[\chi],
       \]
-      where $\tau$ denotes the intrinsic ordering parameter of the substrate and $\mathcal{R}$ is
-      the nonlinear relaxation operator.
-      In the weak-amplitude regime around a quasi-stable background configuration $\bar{\chi}$,
-      we write $\chi = \bar{\chi} + \delta\chi$ with $\|\delta\chi\| \ll 1$.
-      Linearizing gives
+      where $\tau$ denotes the projective ordering parameter and $\mathcal{R}$ is the
+      nonlinear admissibility operator encoding the constraints of~$\Pi$ and the
+      Born--Infeld bound.
+      The label ``$\mathcal{R}$'' is retained for continuity with the formal literature;
+      it does not imply that $\chi$ undergoes an independent dynamical relaxation.
+      The operator $\mathcal{R}$ encodes admissibility constraints, not a temporal
+      evolution of the static substrate~$\chi$.
+      A configuration $\bar\chi$ is a fixed point of $\mathcal{R}$ if and only if it is
+      admissible; small perturbations $\delta\chi = \chi - \bar\chi$ then evolve as
       \[
-        \partial_{\tau}\delta\chi = \mathcal{L}\,\delta\chi + O(\delta\chi^2),
-        \qquad
-        \mathcal{L} \equiv D\mathcal{R}\big|_{\bar{\chi}}.
+        \partial_\tau\,\delta\chi = \mathcal{L}\,\delta\chi + O(\delta\chi^2),
+        \qquad \mathcal{L} \equiv D\mathcal{R}\big|_{\bar\chi}.
       \]
 
-    \paragraph{Step 2: Modal decomposition in the spectrally admissible sector.}
+    \paragraph{Step 2: Spectral decomposition.}
 
-      We assume that the projected regime is spectrally admissible, so that the relevant sector of
-      $\delta\chi$ can be expanded on a discrete family of effective modes:
+      Hypothesis~(H5) asserts that the low-lying modes of $\mathcal{L}$ are
+      diagonalizable within the projected-stable sector.
+      Let $\{u_n\}$ be a basis of eigenvectors with eigenvalues $\{\mu_n\}$:
+      $\mathcal{L}\,u_n = \mu_n\,u_n$.
+      Decompose the perturbation as $\delta\chi = \sum_n c_n(\tau)\,u_n$; each
+      coefficient then satisfies
       \[
-        \delta\chi(\tau) = \sum_n c_n(\tau)\,u_n,
-        \qquad
-        \mathcal{L}\,u_n = \mu_n\,u_n.
+        \partial_\tau c_n = \mu_n\,c_n,
+        \qquad c_n(\tau) = c_n(0)\,e^{\mu_n\tau}.
       \]
-      In the stable dissipative sector of the full substrate, $\operatorname{Re}(\mu_n) \leq 0$.
-      When $\mu_n$ is real and negative, one recovers a purely damped mode
-      $c_n(\tau) \propto e^{\mu_n \tau}$.
-      This is the generic substrate behavior and does not by itself produce quantum-like dynamics.
 
-    \paragraph{Step 3: Restriction to the projected-stable sector and anti-Hermitian reduction.}
+    \paragraph{Step 3: Projection constraints fix $\mathrm{Re}(\mu_n) = 0$.}
 
-      The key step is the restriction to the \emph{projected-stable sector}: the subspace of modes
-      that contribute a finite and persistently resolvable effective amplitude to the observable
-      sector $O$ at finite projective resolution.
-      Membership in this sector is governed by two independent structural constraints inherited
-      from the Cosmochrony framework.
+      Two independent structural constraints act on the eigenvalues.
 
-      The first constraint is the Born--Infeld admissibility bound established in the spectral
-      admissibility programme~\cite{Beau2026a1}.
-      A mode with Laplacian eigenvalue $\lambda_n$ is dynamically admissible if and only if its
-      effective amplitude satisfies
-      \[
-        A_n(\tau) \leq A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
-      \]
-      at all values of $\tau$.
-      In the linearized regime, $A_n(\tau) = A_n(0)\,e^{\operatorname{Re}(\mu_n)\,\tau}$.
-      If $\operatorname{Re}(\mu_n) > 0$, the amplitude grows without bound in finite intrinsic time,
-      violating the Born--Infeld bound.
-      Growing modes are therefore strictly excluded from the admissible sector.
+      \emph{Born--Infeld bound~(H3).}
+      The amplitude bound $A_n(\tau) \leq c_\chi/\sqrt{\lambda_n}$ excludes
+      $\operatorname{Re}(\mu_n) > 0$: a growing mode would eventually violate the
+      admissibility envelope and exit the domain of validity of the linearized dynamics.
 
-      The second constraint is projectability.
-      The projection $\Pi$ identifies configurations within the same equivalence class
-      $\Pi^{-1}(o)$, and possesses a finite projective resolution: two configurations are
-      indistinguishable under $\Pi$ whenever their effective amplitudes differ by less than the
-      resolvability threshold of the projection.
-      A mode with $\operatorname{Re}(\mu_n) < 0$ has a decaying effective amplitude and therefore
-      becomes indistinguishable from the trivial configuration once it falls below the resolvability
-      threshold of $\Pi$, contributing nothing distinguishable to any effective observable at the
-      given projective resolution.
-      This exclusion does not rely on the asymptotic limit $\tau \to \infty$.
+      \emph{Finite projective resolution~(H2).}
+      A mode with $\operatorname{Re}(\mu_n) < 0$ has amplitude decaying as
+      $|c_n(\tau)| = |c_n(0)|\,e^{\operatorname{Re}(\mu_n)\tau} \to 0$.
       It holds at every finite value of $\tau$ at which the amplitude has decayed below the
       projective resolution scale.
       Decaying modes therefore do not belong to the projected-stable sector.
@@ -280,7 +264,7 @@
 
     \paragraph{Step 5: Reconstruction of the wavefunction and the operator equation.}
 
-      Passing from the intrinsic ordering parameter $\tau$ to the effective projected time
+      Passing from the projective ordering parameter $\tau$ to the effective projected time
       coordinate $t$ amounts, in the weak-curvature regime, to a monotone reparametrization
       $\partial_{\tau} = \zeta(x,t)\,\partial_t$ with $\zeta \simeq 1$ in a locally
       Minkowskian domain.
