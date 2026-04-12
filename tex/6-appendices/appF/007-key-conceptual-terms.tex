@@ -119,35 +119,49 @@
     One-way activation is the spectral mechanism underlying the irre\-versibility
     of the projective temporal ordering: it provides a structural arrow of time
     without invoking thermodynamic entropy or a background temporal coordinate.
+    The rigidity theorem of~O27~\cite{Beau2026a31} constrains the Weil fingerprint
+    vectors to a three-dimensional real sector identified with~$\mathfrak{su}(2)$,
+    providing the non-concentration structure that any analytical proof of
+    one-way activation must exploit.
     \emph{Status:} established numerically for $q \in \{29,61,101,151\}$;
-    the analytical proof from BFS admissibility constraints remains open.
+    the analytical proof from BFS admissibility constraints and the
+    $\mathfrak{su}(2)$ rigidity of~O27 remains open
+    (Conjecture~\ref{conj:one-way-activation}).
 
   \paragraph{Projective temporal ordering.}
     The ordering relation on effective states defined by
     \[
-      U_t \prec U_{t+1} \;\Longleftrightarrow\; I(U_t) \leq I(U_{t+1}).
+      U_n \prec U_{n+1} \;\Longleftrightarrow\; I(U_n) \leq I(U_{n+1}),
     \]
+    where $n$ is the BFS shell depth, an ordering parameter on projected
+    configurations that does not represent a physical time variable at the
+    substrate level.
     This ordering is not a dynamics on $\chi$ but a relational structure induced
     by the non-injective projection~$\Pi$: it reorders admissible fibre selections
     within the fixed observable rank, without introducing additional observable
     degrees of freedom.
     It is compatible with and complementary to the observable rank stability
     established in~O24.
-    See~\cite{Beau2026a28} for the numerical evidence and formal statement.
+    See~\cite{Beau2026pto} for the numerical evidence and formal statement.
 
   \paragraph{Reprojection sequence.}
     The iterated map
     \[
-      U_{t+1} = \Pi \circ \sigma(U_t),
+      U_{n+1} = \Pi \circ \sigma(U_n),
     \]
-    where $\sigma(U_t) \in \Pi^{-1}(U_t)$ selects an admissible configuration
-    within the fibre compatible with the current effective state~$U_t$.
+    where $\sigma(U_n) \in \Pi^{-1}(U_n)$ selects an admissible configuration
+    within the fibre compatible with the current effective state~$U_n$.
+    The operator~$\sigma$ is a structural descriptor of admissible fibre
+    transitions; it is not a generator of temporal evolution at the substrate
+    level.
     The reprojection sequence is the formal carrier of effective dynamics in
     Cosmochrony: all observable evolution arises from successive admissible
     fibre selections, not from any evolution of the static substrate~$\chi$.
     Successive steps correspond to distinct admissible realisations drawn from
-    different regions of the fibres; the effective time parameter $\tau$ indexes
-    this sequence via the monotone accumulation of $I(n)$.
+    different regions of the fibres; the ordering parameter~$n$ is given
+    physical meaning only through the monotone accumulation of~$I(n)$,
+    which constitutes the canonical spectral realization of operational
+    time~$\tau$ (see the entry for~$\tau$ in \S\ref{subsec:fundamental-quantities}).
 
   \paragraph{Residual projective capacity \texorpdfstring{$\sigma_{\mathrm{pair}}(n)$}{σpair(n)}.}
     For a conjugate pair $(c,\,q-c)$, the residual projective capacity at BFS

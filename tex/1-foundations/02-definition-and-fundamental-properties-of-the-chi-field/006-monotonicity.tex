@@ -26,10 +26,13 @@ projected capacity}
 
   This monotonicity defines an intrinsic ordering on effective states:
   \begin{equation}
-    U_t \prec U_{t+1}
+    U_n \prec U_{n+1}
     \;\Longleftrightarrow\;
-    I(U_t) \le I(U_{t+1}).
+    I(U_n) \le I(U_{n+1}).
   \end{equation}
+  The index~$n$ is the BFS shell depth, an ordering parameter on projected
+  configurations; it does not represent a physical time variable at the
+  substrate level.
   The ordering is not a dynamics on~$\chi$ but a relational structure induced
   by the non-injective projection~$\Pi$: it acts entirely within the fixed
   observable rank established in~\cite{Beau2026a28}, without enlarging the
@@ -63,13 +66,19 @@ projected capacity}
     \begin{enumerate}[label=(\roman*)]
       \item the Gram--Schmidt monotonicity of cumulative rank,
       \item the Born--Infeld admissibility constraints on the amplitude
-      of admissible projective flux, and
+      of admissible projective flux --- here BI acts as a structural
+      admissibility constraint, not as a fundamental dynamical law --- and
       \item the non-injectivity of~$\Pi$, which controls how spectral
       structure accumulates across fibres.
     \end{enumerate}
-    Quantitative control of shell-wise spectral saturation in the Weil sector
-    of~$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ is the analytical task
-    required to close the conjecture.
+    A fourth structural ingredient, identified in~\cite{Beau2026a31}, is the
+    rigidity theorem of~O27: any admissible morphism~$\Phi_{q,\rho}$ necessarily
+    factors through~$\mathfrak{su}(2)$, confining the Weil fingerprint
+    vectors to a three-dimensional real sector and providing the non-concentration
+    structure required to control shell-wise efficiency.
+    Quantitative control of shell-wise spectral saturation in this
+    $\mathfrak{su}(2)$-confined sector of~$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+    is the analytical task required to close the conjecture.
 
   \paragraph{Arrow of time and irreversibility.}
     Irreversibility follows directly from one-way activation: no admissible
