@@ -38,9 +38,38 @@ projected capacity}
   \paragraph{One-way activation.}
     The observed monotonicity is underpinned by an empirical property of the
     cascade: spectral modes, once stably projected, do not deactivate.
-    This \emph{one-way activation} property is a numerical result; its
-    analytical derivation from the admissibility constraints of~$\Pi$ remains
-    an open direction.
+    This \emph{one-way activation} property is a numerical result established
+    in~\cite{Beau2026pto}; its analytical derivation from first principles
+    constitutes the central open conjecture of the temporal ordering programme.
+
+    \begin{conjecture}[One-way activation]
+      \label{conj:one-way-activation}
+      For all admissible primes~$q$, all conjugate pairs~$(c, q{-}c)$, and all
+      $n \ge 1$,
+      \begin{equation}
+        \sigma_{\mathrm{pair}}(n) \;\le\; \sigma_{\mathrm{pair}}(n-1).
+      \end{equation}
+    \end{conjecture}
+
+    Three structural facts are immediate from the Gram--Schmidt construction ---
+    the cumulative span $V_n = \mathrm{span}\{f_\omega : \omega \in S_0 \cup
+\cdots \cup S_n\}$ is non-decreasing, $\dim V_n \le q$, and the rank
+    increment $\delta r_n = \dim V_n - \dim V_{n-1} \ge 0$ at every step ---
+    but they do not imply Conjecture~\ref{conj:one-way-activation}.
+    The conjecture requires, in addition, quantitative control of the
+    shell-wise efficiency with which successive BFS shells generate new
+    independent Weil fingerprint vectors relative to shell size~$|S_n|$.
+    A proof would rest on three identified structural ingredients:
+    \begin{enumerate}[label=(\roman*)]
+      \item the Gram--Schmidt monotonicity of cumulative rank,
+      \item the Born--Infeld admissibility constraints on the amplitude
+      of admissible projective flux, and
+      \item the non-injectivity of~$\Pi$, which controls how spectral
+      structure accumulates across fibres.
+    \end{enumerate}
+    Quantitative control of shell-wise spectral saturation in the Weil sector
+    of~$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ is the analytical task
+    required to close the conjecture.
 
   \paragraph{Arrow of time and irreversibility.}
     Irreversibility follows directly from one-way activation: no admissible
