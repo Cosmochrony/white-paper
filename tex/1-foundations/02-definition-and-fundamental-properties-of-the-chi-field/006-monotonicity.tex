@@ -38,6 +38,36 @@ projected capacity}
   observable rank established in~\cite{Beau2026a28}, without enlarging the
   observable degrees of freedom.
 
+  \paragraph{Admissible neighbourhood and recursive structure.}
+    Each state~$U_n$ reached by the cascade determines the set of admissible
+    successors at the next step.
+    We denote this set the \emph{admissible neighbourhood from~$U_n$}:
+    \begin{equation}
+      \mathcal{A}(U_n) \;:=\;
+      \bigl\{\, U_{n+1} \mid
+      I(U_{n+1}) \ge I(U_n)
+      \text{ and the transition } U_n \to U_{n+1}
+      \text{ respects the Born--Infeld flux bound}
+      \,\bigr\}.
+    \end{equation}
+    Admissibility is therefore never an absolute predicate of~$U_{n+1}$ taken
+    in isolation, but a relational property of the transition: $U_{n+1}$ is
+    admissible \emph{from}~$U_n$.
+    The cascade proceeds as the recursive chain
+    \begin{equation}
+      \label{eq:recursive-chain-monotonicity}
+      U_{n-1}
+      \;\longrightarrow\; U_n
+      \;\longrightarrow\; \mathcal{A}(U_n)
+      \;\longrightarrow\; U_{n+1},
+    \end{equation}
+    in which the reached state immediately becomes the generator of the next
+    set of constraints.
+    Because $\mathcal{A}(U_n) \neq \mathcal{A}(U_{n-1})$ generically, the
+    cascade never evolves from an invariant reference frame: the observable
+    structure at step~$n$ is the current projective position within the space
+    of admissible reprojections, not a static section of a fixed ambient space.
+
   \paragraph{One-way activation.}
     The observed monotonicity is underpinned by an empirical property of the
     cascade: spectral modes, once stably projected, do not deactivate.
