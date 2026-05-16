@@ -19,9 +19,9 @@ projected capacity}
 
   \begin{proposition}[Projective temporal ordering --- numerical
   form~\cite{Beau2026pto}]
-  For $q \in \{29, 61, 101, 151\}$, $I(n)$ is strictly non-decreasing at every
+@  For $q \in \{29, 61, 101, 151, 211\}$, $I(n)$ is strictly non-decreasing at every
   BFS step and for every conjugate pair~$(c,q{-}c)$, with no physically
-  meaningful regression across~$169$ pairs and~$310$ post-burn-in steps.
+  meaningful regression across~$274$ pairs and~$360$ post-burn-in steps.
   \end{proposition}
 
   This monotonicity defines an intrinsic ordering on effective states:
@@ -67,6 +67,26 @@ projected capacity}
     cascade never evolves from an invariant reference frame: the observable
     structure at step~$n$ is the current projective position within the space
     of admissible reprojections, not a static section of a fixed ambient space.
+
+  \paragraph{Dynamics as the oriented topology of the admissibility graph.}
+    The recursive structure~\eqref{eq:recursive-chain-monotonicity} admits a
+    compact reformulation: the admissible cascade is an \emph{oriented state
+machine} whose nodes are admissible projections, edges are admissible
+    transitions, and physical histories are directed paths in this graph.
+    When $|\mathcal{A}(U_n)| = 1$, the successor is uniquely determined by the
+    admissibility structure alone — no external dynamical law is required.
+    When $|\mathcal{A}(U_n)| > 1$, branching occurs; the relative admissibility
+    weights of the branches are the projective analogues of quantum
+    probabilities.
+    In both cases, the index~$n$ acquires its temporal meaning entirely from the
+    orientation of the graph; the dynamics of the cascade is this oriented
+    topology, not a law superimposed upon it from outside.
+    Moreover, the first transition $U_0 \to U_1$ requires no external trigger:
+    the non-commutativity of the admissible fibre generators
+    ($[X,\sigma(X)] = Z \neq 0$) guarantees that $\ker\Pi_0 \neq \{0\}$ for
+    every admissible projection~\cite{Beau2026m}, so that $\mathcal{A}(U_0)$
+    is always non-empty.
+    Temporal ordering begins not as a postulate but as a structural necessity.
 
   \paragraph{One-way activation.}
     The observed monotonicity is underpinned by an empirical property of the
