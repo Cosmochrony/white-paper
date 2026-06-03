@@ -1,0 +1,47 @@
+\subsection{Admissibility Envelope by Sector: $\mu_\rho$, $\lambda_\rho$, $A_\rho^{\max}$}
+  \label{subsec:admissibility-envelope-by-sector}
+
+  For a finite group $G$ with symmetric generating set $S$ of size $|S|$, the
+  Laplacian eigenvalue in irreducible sector $\rho$ is
+  \begin{equation}
+    \lambda_\rho \;=\; |S| - \frac{1}{\dim\rho}\sum_{s\in S}\chi_\rho(s)
+    \;\equiv\; |S|\,\mu_\rho,
+    \qquad
+    \mu_\rho \;=\; 1 - \frac{1}{|S|\dim\rho}\sum_{s\in S}\chi_\rho(s).
+  \end{equation}
+  The admissibility envelope (Eq.~48 of the main text) then gives
+  \begin{equation}
+    A_\rho^{\max} \;=\; \frac{c_\chi}{\sqrt{|S|\,\mu_\rho}}.
+  \end{equation}
+
+  For $Q_8$ with $S=\{\pm i,\pm j,\pm k\}$, $|S|=6$:
+
+  \begin{center}
+    \begin{tabular}{lcccc}
+      \hline
+      Sector $\rho$ & $\dim\rho$ & $\mu_\rho$ & $\lambda_\rho$ & $A_\rho^{\max}/c_\chi$ \\
+      \hline
+      $\rho_1$ (trivial) & 1 & 0 & 0 & $\infty$ (zero mode) \\
+      $\rho_2,\rho_3,\rho_4$ (abelian) & 1 & $4/3$ & 8 & $1/\sqrt{8}$ \\
+      $\rho_s$ (spinorial) & 2 & 1 & 6 & $1/\sqrt{6}$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  The spinorial sector admits amplitude $1/\sqrt{6}$ versus $1/\sqrt{8}$ for the
+  abelian sectors.
+  The admissibility ratio is
+  \begin{equation}
+    R_p(Q_8) \;=\; \frac{A_{\rho_s}^{\max}}{A_{\rho_k}^{\max}}
+    \;=\; \sqrt{\frac{8}{6}} \;=\; \sqrt{\frac{4}{3}} \;\approx\; 1.155.
+  \end{equation}
+
+  For $2I$ with its standard Cayley graph, an analogous calculation gives
+  $\lambda_{\rho_s}=14$, $\lambda_{\rho_1}=9$ (lowest non-trivial abelian eigenvalue),
+  yielding
+  \begin{equation}
+    R_p(2I) \;=\; \sqrt{\frac{14}{9}} \;\approx\; 1.247.
+  \end{equation}
+
+  The hierarchy is more pronounced in $2I$ than in $Q_8$, consistent with the
+  strengthening of the spinorial selection described in Section~\ref{subsec:q8-to-2i}.

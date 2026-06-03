@@ -1,0 +1,94 @@
+\subsection{Infrared expansion of the coherence functional}
+  \label{subsec:IR}
+
+  This subsection completes the necessity argument introduced in Section~\ref{sec:necessity-noninjective}.
+  Having excluded injective admissible projections in
+  Section~\ref{subsec:injective-holonomy},
+  we now show that under non-injective admissible projection
+  satisfying the saturation bound of Section~\ref{sec:dynamical-equation-for-the-chi-field},
+  the infrared effective dynamics is uniquely selected.
+  In particular, the Einstein--Hilbert term arises as the leading
+  infrared contribution of the coherence functional.
+
+  To extract the dominant infrared behavior of $S_{\mathrm{coh}}$, we expand
+  $\mathcal{L}_{\mathrm{defect}}$ in powers of the curvature scale $\ell_c^{-2}$,
+  where $\ell_c$ is the characteristic scale of curvature variations.
+  In the infrared regime $\ell_c \gg \ell_\chi$ (with $\ell_\chi = \hbar_\chi / c_\chi$
+  the microscopic capacity length), curvature is slowly varying and the expansion is
+  controlled.
+
+  \paragraph{Step 1: metric from the operator symbol.}
+    Following the derivation in~\cite{Beau2026b} and Appendix~A.12, the effective metric
+    $g_{\mu\nu}$ is identified with the principal symbol of the effective continuum
+    operator $\mathcal{L}_\Pi = \nabla^\mu(A^{\mu\nu}(x) \nabla_\nu)$:
+    \begin{equation}
+      g^{\mu\nu}(x) \propto A^{\mu\nu}(x),
+      \label{eq:metric-symbol}
+    \end{equation}
+    where $A^{\mu\nu}$ encodes the local connectivity and stiffness of the relational
+    substrate~\cite{Beau2026b}.
+    This is an emergent metric: it is not introduced as an independent variable but arises
+    from the spectral structure of $\Pi$.
+
+  \paragraph{Step 2: from fiber curvature to effective Laplacian to Riemann tensor.}
+    The curvature 2-form $\Omega_{\mu\nu}$ of the fiber connection acts on sections of the
+    adjoint bundle $\mathrm{ad}\,P$ over $\mathcal{M}$.
+    Its square $\|\Omega_{\mu\nu}\|^2_{\mathfrak{g}_\Pi}$, integrated over $\mathcal{M}$,
+    defines a Yang--Mills-type functional on $\mathcal{M}$.
+    In the Kaluza--Klein reduction from $\mathcal{C}_\chi$ to $\mathcal{M}$, the fiber
+    curvature contributes to the effective operator $\mathcal{L}_\Pi$ through its symbol.
+    Following~\cite{Beau2026b}, the principal symbol of $\mathcal{L}_\Pi$ is
+    $\sigma_2(\mathcal{L}_\Pi)(x,k)=A^{\mu\nu}(x)k_\mu k_\nu$, which identifies
+    $g^{\mu\nu}\propto A^{\mu\nu}$.
+    The fiber curvature $\Omega$ modifies the sub-principal symbol of $\mathcal{L}_\Pi$ at
+    order $\ell_c^{-2}$, contributing a term proportional to $R_{\mu\nu}k^\mu k^\nu$ through
+    the standard formula for the sub-principal symbol of a connection Laplacian
+    $\nabla^\mu\nabla_\mu$ acting on sections of a bundle with curvature $\Omega$:
+    \[
+      \sigma_1(\nabla^\mu \nabla_\mu) \supset \frac{1}{6} R \cdot \mathrm{id}
+      + \mathcal{F}(\Omega),
+    \]
+    where the first term is the Lichnerowicz correction and $\mathcal{F}(\Omega)$ encodes
+    the fiber curvature contribution.
+    It is this sub-principal symbol, not the Yang--Mills square $\|\Omega\|^2$ directly,
+    that generates $R$ at two-derivative order.
+    The Yang--Mills square $\|\Omega\|^2\sim R_{\mu\nu\rho\sigma}^2$ appears only at
+    four-derivative order and is subdominant under (D3).
+    The two-derivative IR term $R$ arises from the sub-principal symbol of the connection
+    Laplacian on the fiber bundle, via the Lichnerowicz--Weitzenb\"ock identity.
+    We summarize the infrared content of this statement as:
+    \begin{equation}
+      \sigma_1(\mathcal{L}_\Pi)\big|_{\mathrm{fiber}}
+      \supset \frac{1}{6} R + \mathcal{O}(\ell_c^{-4}),
+      \label{eq:subprincipal-symbol}
+    \end{equation}
+    yielding $\mathcal{L}_{\mathrm{defect}}^{\mathrm{geom}} \propto R$ at two-derivative
+    order, with the four-derivative Yang--Mills term $\|\Omega\|^2$ entering only as a
+    subleading correction.
+
+    However, conditions (D1)--(D4) impose additional constraints.
+    In particular, (D3) (infrared dominance of a low-derivative action) requires that
+    the action be organized by the number of derivatives, with the lowest-derivative
+    terms dominating in the infrared.
+
+  \paragraph{Step 3: integration by parts and the Gauss--Bonnet identity.}
+    In four dimensions, the Gauss--Bonnet combination
+    $\mathcal{G} = R_{\mu\nu\rho\sigma} R^{\mu\nu\rho\sigma} - 4 R_{\mu\nu} R^{\mu\nu}
+    + R^2$ is a total derivative and does not contribute to the equations of motion.
+    Therefore, among all quadratic curvature invariants, only $R^2$ and
+    $R_{\mu\nu} R^{\mu\nu}$ are independent at the level of the action, modulo
+    boundary terms.
+    But both are of order $\ell_c^{-4}$, subdominant under (D3).
+
+    The leading IR contribution to the defect density from the geometric sector is
+    therefore:
+    \begin{equation}
+      \mathcal{L}_{\mathrm{defect}}^{\mathrm{geom}}
+      = \frac{c_\chi^3}{\hbar_\chi} \cdot \frac{1}{16\pi} \cdot R
+      + \mathcal{O}(\ell_c^{-4}),
+      \label{eq:defect-IR-expansion}
+    \end{equation}
+    where the prefactor $c_\chi^3 / \hbar_\chi$ matches the dimensions of the
+    Einstein--Hilbert density up to the normalization fixed by the precise operator
+    mapping.
+    The normalization is tracked explicitly in Section~\ref{subsec:stepB-G}.

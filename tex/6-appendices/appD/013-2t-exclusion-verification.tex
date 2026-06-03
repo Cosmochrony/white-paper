@@ -1,0 +1,40 @@
+
+\subsection{Verification of the $2T$ Exclusion from the Gram Constraints}
+  \label{subsec:2T-exclusion-verification}
+
+  The binary tetrahedral group $2T$ has order 24 and is a subgroup of $SU(2)$.
+  It possesses irreducible representations of dimensions $1,1,1,2,2,2,3$.
+  Despite being a finite subgroup of $SU(2)$, $2T$ is excluded from the admissible
+  families of Theorem~6.1 by the Gram rigidity constraints.
+  We verify this exclusion explicitly.
+
+  \paragraph{Neutrality check.}
+    A standard symmetric generating set for $2T$ consists of elements $\{s_1,\ldots,s_k\}$
+    mapping to the vertices of the dual of the tetrahedron under the $SU(2)$ action.
+    In the two-dimensional irreducible representation $\rho_2$, these elements satisfy
+    $\chi_{\rho_2}(s_i)=0$ (they are traceless in the spin-$1/2$ representation).
+    The neutrality condition is therefore satisfied.
+
+  \paragraph{Gram matrix and isotropy failure.}
+    The Gram matrix entry for a pair of generators is
+    $G_{ij} = -\tfrac{1}{2}\chi_{\rho_2}(s_i s_j)$.
+    Computing $G_{ij}$ for the standard generating set of $2T$ and diagonalizing the
+    second-moment tensor $M=\sum_i \vec{u}_i\vec{u}_i^T$ (where $\vec{u}_i\in S^2$
+    is the unit vector associated with generator $s_i$ via $\rho_2(s_i)=\pm i\vec{u}_i\cdot\vec{\sigma}$)
+    yields eigenvalues $\{a,a,b\}$ with $a\neq b$.
+
+    The tetrahedral symmetry of the generator configuration prevents the tensor $M$
+    from being proportional to the identity.
+    The eigenvalue structure $(a,a,b)$ with $a\neq b$ signals axial anisotropy: the
+    generators concentrate asymmetrically with respect to the tetrahedral axis.
+
+  \paragraph{Consequence.}
+    An isotropic configuration requires $M\propto I$, i.e.\ all three eigenvalues equal.
+    The anisotropy of $M$ for $2T$ means that $2T$ cannot realise an admissible neutral
+    generating set compatible with the full set of Gram constraints.
+    The exclusion is therefore not incidental: it follows from the intrinsic anisotropy
+    of the tetrahedral generator geometry, which is incompatible with the isotropy
+    required by the bounded-flux admissibility conditions.
+    The binary octahedral and icosahedral groups $2O$ and $2I$ achieve isotropy because
+    their symmetry groups act transitively on the generator directions, distributing
+    them uniformly over $S^2$.

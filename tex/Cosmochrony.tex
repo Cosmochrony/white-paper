@@ -30,6 +30,7 @@
 }
 % Plots (pgfplots provides axis/addplot)
 \usepackage{pgfplots}
+
 \usetikzlibrary{intersections}
 \usepgfplotslibrary{fillbetween}
 \pgfplotsset{compat=1.18}
@@ -47,14 +48,20 @@
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}{Conjecture}[section]
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{proposition}{Proposition}[section]
 \newtheorem{corollary}{Corollary}[section]
+\newtheorem{hypothesis}{Hypothesis}
 
-\title[Cosmochrony]
-{Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics}
+\title{%
+\centering
+Cosmochrony: A Non-Injective Projection Theory of Emergent Physics\\[0.5em]
+\normalsize Quantum Mechanics, Spacetime Geometry, and Gauge-Matter Structure\\
+from a Static Relational Substrate%
+}
 \author*[1]{\fnm{Jérôme} \sur{Beau}}\email{jerome.beau@cosmochrony.org}
-\affil*[1]{\orgname{Independent Researcher}, \country{France}}
+\affil*[1]{\orgname{Independent Researcher}, Paris, \country{France}}
 \date{}
 
 \input{abstract}
@@ -87,6 +94,6 @@
     development of this manuscript.
     All conceptual contributions, theoretical choices, and interpretations remain the sole responsibility of the author.
 
-    \bibliography{references}
+    \bibliography{references,cosmochrony-bibliography}
 
 \end{document}

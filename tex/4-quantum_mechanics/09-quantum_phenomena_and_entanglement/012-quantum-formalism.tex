@@ -1,0 +1,163 @@
+\subsection{Relation to Quantum Formalism}
+  \label{sec:relation-to-quantum-formalism}
+
+  The formal apparatus of quantum mechanics arises as an effective
+  framework organizing admissible projected descriptions in regimes where
+  localization, linearity, and approximate factorization hold.
+  Quantum mechanics is not replaced but reinterpreted as an effective
+  theory whose validity is restricted to regimes admitting a stable,
+  approximately linear, spacetime-based description.
+
+  \paragraph{Status of the Wavefunction.}
+    \label{subsec:status-of-the-wavefunction}
+    The wavefunction~$\psi$ is not a fundamental physical entity but a
+    statistical encoding of admissible local reprojections compatible with a
+    given non-factorizable projected configuration.
+    Its complex phase encodes relational constraints between alternative
+    local descriptions; its modulus determines the statistical weight of
+    accessible reprojections.
+
+  \paragraph{Why a Hilbert Space.}
+    \label{subsec:why-hilbert-space}
+    Because the effective description has no access to~$\chi$ itself, it
+    must represent, at the level of observables alone, the coexistence of
+    distinct configurations belonging to the same fiber $\Pi^{-1}(o)$.
+    This representational requirement imposes three successive constraints.
+    First, contributions from different pre-images must be combinable:
+    the space of effective descriptions must be additive.
+    Second, observed interference phenomena---constructive or destructive
+    superposition of projectively admissible contributions---require a phase
+    structure that a purely real or purely positive representation cannot
+    support: complex scalars are forced.
+    Third, the effective dynamics must preserve the total statistical weight
+    of admissible reprojections, imposing a conserved norm.
+    Together, these three constraints single out a complex Hilbert space as
+    the minimal representational closure compatible with non-injective
+    projection.
+    This is not a postulate but a structurally motivated consequence of
+    the non-injectivity of~$\Pi$; it does not yet constitute a fully
+    derived theorem, and the precise conditions under which the
+    representation is unique are left for future work.
+
+  \paragraph{Emergence of Hilbert Space Structure.}
+    \label{subsec:emergence-of-hilbert-space-structure}
+    Quantum superposition is the observable trace of fiber multiplicity:
+    a state of the form $\alpha\,|{o_1}\rangle + \beta\,|{o_2}\rangle$
+    encodes, within the effective description, the coexistence of
+    projectively admissible contributions from $\Pi^{-1}(o_1)$
+    and~$\Pi^{-1}(o_2)$, not a literal simultaneous occupation of two
+    distinct ontic states.
+    In regimes where relational constraints are weak and approximately
+    factorizable, distinct admissible descriptions can be combined, giving
+    rise to approximate linear structure.
+    The inner product encodes mutual compatibility; orthogonality corresponds
+    to mutually exclusive descriptive regimes.
+    Unitary evolution is a consistency-preserving transformation valid as long
+    as projectability and factorizability remain intact.
+    The structural derivation of the effective Schr\"odinger dynamics from
+    these constraints is given in Appendix~\ref{app:schrodinger-derivation}.
+
+  \paragraph{Emergence of the Schr\"odinger Equation.}
+    \label{subsec:schrodinger-emergence}
+
+    In the non-relativistic regime, the effective dynamics of projected modal amplitudes
+    reduces to a Schr\"odinger-type evolution equation.
+    Within Cosmochrony, this equation is not taken as fundamental, but arises as the
+    weak-amplitude, approximately injective limit of the projected dynamics of admissible
+    $\chi$-configurations.
+    Separating a rapidly varying phase from a slowly varying envelope yields
+    \begin{equation}
+      i\hbar_{\mathrm{eff}}\,\partial_t \psi
+      = -\frac{\hbar_{\mathrm{eff}}^2}{2m_{\mathrm{eff}}}\nabla^2 \psi
+      + V_{\mathrm{eff}}(x)\psi.
+      \label{eq:schrodinger-effective}
+    \end{equation}
+    A structural derivation of this effective equation is given in
+    Appendix~\ref{app:schrodinger-derivation}.
+
+  \paragraph{Operators and Non-Commutativity.}
+    \label{subsec:operators-from-chi}
+    The canonical commutation relation $[\hat{x}, \hat{p}] = i \hbar_{\mathrm{eff}}$
+    expresses the non-commutativity of geometric measurements induced by projection from the pre-geometric substrate.
+    The uncertainty principle emerges as a geometric consistency condition on admissible effective descriptions.
+
+    This canonical non-commutativity operates at the level of effective spacetime observables.
+    It should be distinguished from the spectral and sectorial non-commutativities discussed in
+    Sections~\ref{sec:noncommutativity-mass} and~\ref{subsec:flavor-structure-cp}, which arise within the projection
+    fiber itself and manifest respectively as inertial mass and CP-violating geometric phases.
+
+  \paragraph{Origin of Quantization.}
+    \label{subsec:origin-of-quantization}
+    Only a restricted class of localized projected configurations admits
+    long-lived, internally consistent descriptions.
+    Admissible configurations form discrete equivalence classes, yielding
+    effective energy quantization.
+    Planck's constant emerges as a universal conversion factor characterizing
+    the minimal structural scale at which projected descriptions remain
+    stable.
+
+  \paragraph{Measurement and the Born Rule.}
+    \label{subsec:measurement-and-the-born-rule}
+    Measurement outcomes correspond to effective reprojections onto mutually
+    exclusive descriptive regimes.
+    The Born rule emerges as the unique stable measure on the space of
+    admissible projected descriptions that remains invariant under loss of
+    phase coherence, coarse-graining, and environmental coupling.
+
+    Within the effective quantum framework, a variational characterisation of the
+    Born weights is available: for each measurement context~$C$ (an abelian
+    subalgebra), the Born probabilities $p_C(i) = \mathrm{Tr}(\rho P_i)$ arise as
+    the unique minimisers of the Umegaki relative entropy of the state~$\rho$
+    projected onto~$C$~\cite{Zaghi2025}.
+    This characterisation is synchronic: it operates at a fixed step~$n$ for a
+    given state~$\rho$ and measurement context.
+    It presupposes the Hilbert space structure and the trace functional, and is
+    therefore a characterisation within the quantum framework rather than a
+    derivation from the pre-quantum level.
+
+    The deeper programme of Cosmochrony is to derive the Born weights from the
+    admissible transition structure itself.
+    In the present framework, the relevant context is not fixed externally: it
+    is generated by the admissible neighbourhood~$\mathcal{A}(U_{n-1})$, which
+    conditions which measurements are accessible at step~$n$ given the
+    previously realised state~$U_{n-1}$.
+    Contextuality is therefore not only synchronic (choice of subalgebra at
+    fixed~$n$) but diachronic (dependence on the projective history
+    $U_0 \leadsto \cdots \leadsto U_{n-1}$).
+    A full derivation of Born probabilities from these diachronic admissibility
+    constraints is left for future work.
+
+  \paragraph{Entanglement and Nonlocal Correlations.}
+    \label{subsec:entanglement-nonlocality}
+    Entangled systems arise when a unified relational configuration admits an
+    effective projection onto spatially separated degrees of freedom.
+    Correlations are fully compatible with relativistic causality
+    (Appendix~\ref{subsec:non-factorization-entanglement}).
+
+  \paragraph{Spin and Statistics.}
+    \label{subsec:spin-statistics}
+    Spin emerges as a topological property of admissible projected
+    configurations.
+    $4\pi$-periodic configurations correspond to fermionic behavior;
+    $2\pi$-periodic ones to bosonic behavior.
+    The spin--statistics connection follows from the same topological
+    constraints
+    (Appendix~\ref{subsec:4pi_soliton}).
+
+  \paragraph{Orbital Geometry as Probabilistic Visibility.}
+    \label{sec:orbital_geometry_visibility}
+    Atomic orbitals correspond to effective probabilistic visibility patterns
+    of admissible projected descriptions.
+    Regions of high probability correspond to domains where consistent
+    reprojection is most robust; nodal regions correspond to incompatible
+    descriptive regimes.
+
+  \paragraph{Scope and Limitations.}
+    \label{subsec:scope-and-limitations}
+    All standard quantum-mechanical formalisms remain valid and unchanged
+    within their domains.
+    Cosmochrony provides an interpretative and unificatory account of the
+    structural origin of quantum phenomena without introducing new degrees of
+    freedom or hidden variables.
+    A complete formal correspondence between the relational substrate and the
+    operator-based structures of quantum theory is left for future work.

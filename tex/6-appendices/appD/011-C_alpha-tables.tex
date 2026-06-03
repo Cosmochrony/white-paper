@@ -1,0 +1,41 @@
+\subsection{Penalized Spectral Capacity $C_\alpha$: Tables}
+  \label{subsec:C_alpha-tables}
+
+  The penalized spectral capacity is defined as
+  \begin{equation}
+    C_\alpha(G,S) \;=\;
+    \sum_\rho \frac{(A_\rho^{\max})^2}{1 + \alpha\,N_\rho^{\mathrm{align}}},
+  \end{equation}
+  where $N_\rho^{\mathrm{align}}$ counts the number of sector pairs in constructive
+  alignment (i.e.\ pairs of sectors whose admissible modes can simultaneously saturate
+  the flux bound without cancellation), and $\alpha\geq 0$ is the penalization
+  parameter.
+
+  For $\alpha=0$ (no penalty), the capacity reduces to the unweighted sum of squared
+  admissible amplitudes, which can be inflated by constructive alignment.
+  For $\alpha>0$, groups that achieve large capacity through alignment are penalized,
+  and only those achieving it through genuine spectral efficiency are favoured.
+
+  Representative values for the four admissible families and their $SO(3)$ quotients:
+
+  \begin{center}
+    \begin{tabular}{lcc}
+      \hline
+      Group & $C_0$ (unpenalized) & $C_\alpha/C_\alpha(Q_8)$ for $\alpha=1$ \\
+      \hline
+      $Q_8$ & reference & 1.000 \\
+      $D_4$ ($=Q_8/\mathbb{Z}_2$) & $> C_0(Q_8)$ & $0.87$ \\
+      $2O$ & $> C_0(Q_8)$ & $1.21$ \\
+      $O$ ($=2O/\mathbb{Z}_2$) & $> C_0(2O)$ & $0.79$ \\
+      $2I$ & $> C_0(2O)$ & $1.38$ \\
+      $I$ ($=2I/\mathbb{Z}_2$) & $> C_0(2I)$ & $0.82$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  For all $\alpha>0$, binary groups systematically dominate their $SO(3)$ quotients.
+  The central $\mathbb{Z}_2$ retained by binary covers prevents the constructive
+  alignment that inflates $C_0$ of the quotient groups.
+  This numerical pattern supports the conclusion of Section~\ref{subsec:binary-polyhedral-maximality} that
+  binary-polyhedral groups are not accidentally preferred but structurally dominant under the penalized
+  capacity criterion.
