@@ -6,7 +6,7 @@
   In the ultraviolet regime $\ell_c \sim \ell_\chi$,
   higher-derivative corrections become comparable to the
   Einstein--Hilbert term, and the expansion breaks down.
-  The saturation bound $|\partial_t \chi| \leq c_\chi$
+  The saturation bound $|\partial_t \chi| \leq c_{\mathrm{BI}}$
   provides the principle that selects among the possible UV
   completions.
 
@@ -19,32 +19,32 @@
     \item it enforces a strict upper bound on admissible field
     invariants at $\ell_c \sim \ell_\chi$,
     \item it introduces no additional microscopic scales
-    beyond $c_\chi$ and $\hbar_\chi$.
+    beyond $c_{\mathrm{BI}}$ and $\hbar_\chi$.
   \end{enumerate}
 
   Applied to the gravitational sector, the Born--Infeld
   completion takes the form:
   \begin{equation}
     S_{\mathrm{coh}}^{\mathrm{full}}[g, \psi]
-    = \frac{c_\chi^4}{\hbar_\chi^2}
+    = \frac{c_{\mathrm{BI}}^4}{\hbar_\chi^2}
     \int_{\mathcal{M}} \left(
                          \sqrt{-\det\!\left( g_{\mu\nu}
-                                        + \frac{\hbar_\chi}{c_\chi^2} R_{\mu\nu} \right)}
+                                        + \frac{\hbar_\chi}{c_{\mathrm{BI}}^2} R_{\mu\nu} \right)}
                          - \sqrt{-g}
     \right) d^4x
     + S_{\mathrm{matter}}[g, \psi].
     \label{eq:BI-gravity}
   \end{equation}
 
-  In the IR expansion $\hbar_\chi / c_\chi^2 \ll \ell_c^2$:
+  In the IR expansion $\hbar_\chi / c_{\mathrm{BI}}^2 \ll \ell_c^2$:
   \begin{align}
     \sqrt{-\det\!\left( g_{\mu\nu}
-                   + \frac{\hbar_\chi}{c_\chi^2} R_{\mu\nu} \right)}
+                   + \frac{\hbar_\chi}{c_{\mathrm{BI}}^2} R_{\mu\nu} \right)}
     &\approx \sqrt{-g}
     \left(
       1
-      + \frac{\hbar_\chi}{2c_\chi^2} R
-    + \mathcal{O}\!\left(\frac{\hbar_\chi^2}{c_\chi^4}
+      + \frac{\hbar_\chi}{2c_{\mathrm{BI}}^2} R
+    + \mathcal{O}\!\left(\frac{\hbar_\chi^2}{c_{\mathrm{BI}}^4}
                      R_{\mu\nu} R^{\mu\nu}\right)
     \right),
     \label{eq:BI-expand}
@@ -53,7 +53,7 @@
   \begin{equation}
     S_{\mathrm{coh}}^{\mathrm{full}}
     \;\xrightarrow{\;\ell_c \gg \ell_\chi\;}\;
-    \frac{c_\chi^2}{2\hbar_\chi}
+    \frac{c_{\mathrm{BI}}^2}{2\hbar_\chi}
     \int_{\mathcal{M}} R \sqrt{-g}\, d^4x
     + S_{\mathrm{matter}}
     + \mathcal{O}(\ell_c^{-4}).

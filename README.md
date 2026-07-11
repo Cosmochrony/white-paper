@@ -110,7 +110,7 @@ configurations producing the same effective observable state.
 
 Cosmochrony distinguishes between:
 
-- **$c_{\chi}$**: an invariant structural bound governing admissible
+- **$c_{\mathrm{BI}}$**: an invariant structural bound governing admissible
   relational fluxes in the $\chi$ substrate
 - **$c$**: the emergent causal constraint appearing within effective
   spacetime descriptions
@@ -129,7 +129,7 @@ substrate.
 Under bounded relaxation fluxes, each spectral mode admits a maximal
 effective amplitude
 
-$$A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}$$
+$$A_n^{\max} = \frac{c_{\mathrm{BI}}}{\sqrt{\lambda_n}}$$
 
 which defines an **admissibility envelope** for the projected dynamics.
 
