@@ -9,3 +9,7 @@ out/
 *.synctex.gz
 *.toc
 /tex/Cosmochrony.pdf
+
+# Local-only archive and editor settings (never committed)
+pdfs/
+.claude/
