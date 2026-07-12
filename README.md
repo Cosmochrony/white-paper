@@ -1,7 +1,6 @@
 # Cosmochrony
 
-This repository contains the source of the
-[Cosmochrony white paper](out/Cosmochrony.pdf).
+This repository contains the source of the Cosmochrony white paper.
 
 **Cosmochrony: A Non-Injective Projection Framework for Emergent Physics**
 *Quantum Mechanics, Spacetime Geometry, and Gauge-Matter Structure
