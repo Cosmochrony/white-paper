@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata from this file."
+title: "Cosmochrony: A Non-Injective Projection Theory of Emergent Physics Quantum Mechanics, Spacetime Geometry, and Gauge-Matter Structure from a Static Relational Substrate"
+type: software
+authors:
+  - family-names: "Beau"
+    given-names: "Jérôme"
+repository-code: "https://github.com/Cosmochrony/white-paper"
+url: "https://cosmochrony.org/science/"
+version: "3.9.1"
+doi: "10.5281/zenodo.17957509"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: article
+  title: "Cosmochrony: A Non-Injective Projection Theory of Emergent Physics Quantum Mechanics, Spacetime Geometry, and Gauge-Matter Structure from a Static Relational Substrate"
+  authors:
+    - family-names: "Beau"
+      given-names: "Jérôme"
+  year: 2026
+  doi: "10.5281/zenodo.17957509"
+  url: "https://doi.org/10.5281/zenodo.17957509"
