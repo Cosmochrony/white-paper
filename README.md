@@ -141,11 +141,14 @@ $$Q_8, \qquad \mathrm{Dic}_n\ (n \ge 3), \qquad 2O, \qquad 2I$$
 
 while the binary tetrahedral group $2T$ is structurally excluded.
 
-This spectral structure underlies the emergence of mass hierarchies and
-connects directly to the spectral admissibility programme (O-series,
-O1–O26), which investigates the growth and stability of Weil
-representations of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and their
-connection to the charged-lepton mass hierarchy.
+This spectral structure fixes the generation count and an order-one
+splitting of the squared Yukawa levels, and connects directly to the
+spectral admissibility programme (O-series, O1–O26), which investigates
+the growth and stability of Weil representations of
+$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+The structural carrier of the inter-generation mass hierarchy remains an
+open problem, bounded by the no-go results of the fermionic-matter
+sub-programme.
 
 ## Matter, Charge, Gravitation, and Spectral Structure
 
@@ -212,8 +215,8 @@ The framework yields concrete, falsifiable predictions:
 - a ~5% enhancement of $H(z)$ at $z \sim 1$ relative to $\Lambda$CDM
 - environment-dependent deviations in kinematic inference in cosmic
   voids, testable with current surveys
-- a structural upper bound on the capacity exponent governing the
-  fermion mass hierarchy
+- a structural upper bound on the capacity exponent associated with the
+  fermionic sector
 
 ## Status of the Framework
 
