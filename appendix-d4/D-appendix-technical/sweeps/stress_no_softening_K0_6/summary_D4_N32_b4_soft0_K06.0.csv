@@ -1,0 +1,4 @@
+case,softening,K0,N,block,dt,steps,epsilon_L2,epsilon_Linf,saturation_fraction
+smooth,False,6.0,32,4,0.03,80,0.02394429718971912,0.0645063276116146,0.37384033203125
+rough,False,6.0,32,4,0.03,80,0.014534044802252408,0.04794582584298516,0.37408447265625
+nonprojectable,False,6.0,32,4,0.03,80,0.0,0.0,1.0
