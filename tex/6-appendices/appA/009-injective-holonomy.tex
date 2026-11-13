@@ -219,8 +219,10 @@
     additional hypotheses that are not among the admissibility conditions~\ref{A1}--\ref{A3}:
     \begin{enumerate}[label=(K\arabic*)]
       \item \label{K1}
-      $\mathcal{C}_\chi$ carries a metric $\hat g$ for which $\Pi$ is a Riemannian submersion with totally geodesic
-      fibers, a bi-invariant fiber metric, and horizontal distribution given by $\omega$;
+      $\mathcal{C}_\chi$ carries the metric $\hat g = \Pi^* g + q(\omega, \omega)$, where $g$ is a metric on
+      $\mathcal{M}$ and $q$ is an $\mathrm{Ad}$-invariant inner product on $\mathfrak{g}_\Pi$, independent of the
+      base point; $\Pi$ is then a Riemannian submersion with totally geodesic fibers, bi-invariant fiber metric,
+      and horizontal distribution $\ker\omega$;
       \item \label{K2}
       the effective metric on $\mathcal{M}$ is identified with the base metric of that submersion;
       \item \label{K3}
@@ -232,22 +234,46 @@
       \label{prop:fiber-base-curvature}
       Let $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ be an admissible principal $G_\Pi$-bundle with connection $\omega$
       and curvature $\Omega$, and assume~\ref{K1} and~\ref{K2}.
-      Then, on horizontal vectors, the base Ricci tensor and the total-space Ricci tensor differ by a term quadratic
-      in the curvature,
+      Write $\Omega = \Omega^a T_a$ in a basis $(T_a)$ of $\mathfrak{g}_\Pi$, with $q_{ab} = q(T_a, T_b)$, and use the
+      convention in which the Ricci tensor is positive on round spheres.
+      Then, on horizontal lifts of vectors tangent to $\mathcal{M}$, the base Ricci tensor and the total-space Ricci
+      tensor differ by a term quadratic in the curvature,
       \begin{equation}
         R^\mathrm{eff}_{\mu\nu}
         =
         \widehat{R}^{\,\mathrm{hor}}_{\mu\nu}
-        + c\,\mathrm{tr}_{\mathfrak{g}_\Pi}\!\bigl(\Omega_{\mu\alpha}\,\Omega_\nu{}^\alpha\bigr),
+        + \frac{1}{2}\, q_{ab}\,\Omega^a_{\mu\alpha}\,\Omega^b{}_{\nu}{}^{\alpha},
         \label{eq:fiber-to-base-curvature}
       \end{equation}
-      with a coefficient $c$ fixed by the normalization of the fiber metric and the sign conventions.
+      where the index $\alpha$ is raised with $g$.
+      The contraction uses the inner product $q$ and not a trace in a chosen representation; in particular it does not
+      vanish for $G_\Pi = \mathrm{U}(1)$.
     \end{proposition}
 
     \begin{proof}
-      This is the standard curvature identity for a Riemannian submersion with totally geodesic fibers, which is the
-      Kaluza--Klein reduction of $\hat g$; under~\ref{K1} the integrability tensor of the horizontal distribution is
-      determined by $\Omega$.
+      Choose a $q$-orthonormal basis $(T_a)$, so that the structure constants $f_{abc}$ are totally antisymmetric
+      by $\mathrm{Ad}$-invariance, and use the orthonormal coframe $(e^i, e^a)$ of $\hat g$,
+      where $(e^i)$ is the pull-back of an orthonormal coframe of $g$ with Levi-Civita forms $\omega^i{}_j$,
+      and $e^a = \omega^a$.
+      The structure equation $d\omega = \Omega - \tfrac12[\omega,\omega]$ gives
+      $de^a = \tfrac12\Omega^a_{ij}\,e^i\wedge e^j - \tfrac12 f^a{}_{bc}\,e^b\wedge e^c$
+      and $de^i = -\omega^i{}_j\wedge e^j$.
+      The torsion-free, metric connection forms of $\hat g$ are therefore
+      \begin{equation*}
+        \hat\omega^i{}_j = \omega^i{}_j - \tfrac12\,\Omega^a_{ij}\,e^a,
+        \qquad
+        \hat\omega^a{}_i = -\hat\omega^i{}_a = \tfrac12\,\Omega^a_{ij}\,e^j,
+        \qquad
+        \hat\omega^a{}_b = -\tfrac12\, f^a{}_{bc}\,e^c .
+      \end{equation*}
+      Computing the horizontal components of the Ricci tensor from these forms, the terms involving $f_{abc}$ drop out,
+      because they enter only through $f^a{}_{ba} = 0$ or through vertical--vertical components.
+      What remains is the abelian Kaluza--Klein computation, applied component by component, which gives
+      $\widehat{R}_{ij} = R_{ij} - \tfrac12\,\Omega^a_{ik}\,\Omega^a_{jk}$ in the orthonormal frame, that is,
+      Eq.~\eqref{eq:fiber-to-base-curvature}.
+      For $G_\Pi = \mathrm{U}(1)$ with $\hat g = g + \phi^2(dz + A)^2$ over a two-dimensional base with metric
+      $e^{2f}(dx^2 + dy^2)$, the coefficient $\tfrac12$ was checked by direct symbolic computation of the Christoffel
+      symbols of $\hat g$ (script \texttt{code/kk\_horizontal\_ricci\_check.py} in the paper repository).
       Hypothesis~\ref{K2} is what allows the base metric to be read as the effective metric.
     \end{proof}
 
