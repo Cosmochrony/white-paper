@@ -101,10 +101,12 @@
       curvature values $\Omega(u,v)$ for all horizontal vectors $u, v$ at points reachable
       from $x_0$.
 
-      A flat connection ($\Omega = 0$) has holonomy group contained in a discrete subgroup of $G_\Pi$
+      A flat connection ($\Omega = 0$) has trivial restricted holonomy, hence trivial holonomy
       when $\mathcal{M}$ is simply connected.
-      In the general case, the holonomy of a flat connection is a representation of
-      $\pi_1(\mathcal{M})$ into $G_\Pi$, which may be non-trivial.
+      In the general case, the holonomy of a flat connection is the image of a representation of
+      $\pi_1(\mathcal{M})$ into $G_\Pi$, which may be non-trivial on a non-simply-connected base.
+      These remarks concern only the flat case; they are not a proof of the remaining statements of the
+      proposition.
 
       However, under injectivity $G_\Pi = \{e\}$ (Theorem~\ref{thm:injective-trivial-holonomy}).
       So the holonomy group is trivial regardless of the topology of $\mathcal{M}$.
@@ -190,17 +192,18 @@
       contradicting emergence and ontological uniqueness.
     \end{proof}
 
-  \subsubsection*{Closing the gap: from holonomy to gravitational curvature}
+  \subsubsection*{Fiber curvature and base curvature: status of the bridge}
     \label{subsec:stepA-curvature}
 
     The preceding results establish that injective projections cannot produce the structural prerequisites of emergent
     gravity,
     namely re-identification symmetry and descriptive invariance as consequences of the projection.
-    We now connect fiber curvature to effective base curvature in the standard bundle-induced manner.
+    This subsection records what is, and what is not, established about a contribution of fiber curvature to the
+    curvature of the effective base metric.
 
     In the Cosmochrony framework, the effective metric on $\mathcal{M}$
-    is induced by the Hessian of the effective Lagrangian
-    (Section~A.12, Eq.~(117)):
+    is defined by the Hessian of the effective Lagrangian
+    (Appendix~\ref{sec:born-lagrangian_derivation}, Eq.~\eqref{eq:A12-emergent-metric_v171}):
     \begin{equation}
       g^\mathrm{eff}_{\mu\nu}
       \propto
@@ -209,42 +212,60 @@
       \label{eq:eff-metric-hessian}
     \end{equation}
     valid in projectable regimes.
+    This expression involves neither the connection $\omega$ nor any metric on the total space $\mathcal{C}_\chi$.
+    By itself, it therefore provides no mechanism through which the fiber curvature $\Omega$ enters $g^\mathrm{eff}$.
 
-    \begin{proposition}[Fiber curvature contributes to base curvature]
+    A fiber-to-base curvature relation of Kaluza--Klein type exists only for a different object, and only under
+    additional hypotheses that are not among the admissibility conditions~\ref{A1}--\ref{A3}:
+    \begin{enumerate}[label=(K\arabic*)]
+      \item \label{K1}
+      $\mathcal{C}_\chi$ carries a metric $\hat g$ for which $\Pi$ is a Riemannian submersion with totally geodesic
+      fibers, a bi-invariant fiber metric, and horizontal distribution given by $\omega$;
+      \item \label{K2}
+      the effective metric on $\mathcal{M}$ is identified with the base metric of that submersion;
+      \item \label{K3}
+      for a sourcing reading, a field equation is imposed on the total space (for instance
+      $\widehat{\mathrm{Ric}} = 0$).
+    \end{enumerate}
+
+    \begin{proposition}[Conditional fiber-to-base curvature relation]
       \label{prop:fiber-base-curvature}
       Let $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ be an admissible principal $G_\Pi$-bundle with connection $\omega$
-      and curvature $\Omega$.
-      If $g^\mathrm{eff}$ is induced from the bundle geometry via Eq.~\eqref{eq:eff-metric-hessian},
-      then the projection-induced contribution to the effective Ricci tensor contains a term of the form
+      and curvature $\Omega$, and assume~\ref{K1} and~\ref{K2}.
+      Then, on horizontal vectors, the base Ricci tensor and the total-space Ricci tensor differ by a term quadratic
+      in the curvature,
       \begin{equation}
         R^\mathrm{eff}_{\mu\nu}
-        \supset
-        \mathrm{tr}_{\mathfrak{g}_\Pi}\!\bigl(\Omega_{\mu\alpha}\,\Omega_\nu{}^\alpha\bigr) + \ldots,
+        =
+        \widehat{R}^{\,\mathrm{hor}}_{\mu\nu}
+        + c\,\mathrm{tr}_{\mathfrak{g}_\Pi}\!\bigl(\Omega_{\mu\alpha}\,\Omega_\nu{}^\alpha\bigr),
         \label{eq:fiber-to-base-curvature}
       \end{equation}
-      where the trace runs over $\mathfrak{g}_\Pi$
-      and the ellipsis denotes additional terms fixed by the same induction scheme.
-
-      Flat connection ($\Omega = 0$, hence $G_\Pi = \{e\}$ under injectivity).
-      The fiber-induced contribution to effective base curvature vanishes.
-      The term
-      $\mathrm{tr}_{\mathfrak{g}_\Pi}\!\bigl(\Omega_{\mu\alpha}\Omega_\nu{}^\alpha\bigr)$
-      in Eq.~\eqref{eq:fiber-to-base-curvature} is identically zero since $\Omega = 0$.
-      The effective metric $g^\mathrm{eff}$ on $\mathcal{M}$ receives no curvature sourcing
-      from the fiber geometry.
-      Whether $g^\mathrm{eff}$ is globally flat depends on additional structure of $\mathcal{M}$.
-      The claim here is only that no curvature is generated by the projection without an independent postulate at the
-      effective level.
+      with a coefficient $c$ fixed by the normalization of the fiber metric and the sign conventions.
     \end{proposition}
 
     \begin{proof}
-      In a principal bundle with non-flat connection, $\Omega$ is a horizontal adjoint-valued 2-form.
-      Bundle-induced reductions yield quadratic curvature contributions of Yang\textendash Mills type,
-      which appear in the base Ricci tensor in the standard Kaluza\textendash Klein reduction.
-      If $G_\Pi = \{e\}$, then $\mathfrak{g}_\Pi = \{0\}$ and $\Omega = 0$, so the term vanishes identically.
+      This is the standard curvature identity for a Riemannian submersion with totally geodesic fibers, which is the
+      Kaluza--Klein reduction of $\hat g$; under~\ref{K1} the integrability tensor of the horizontal distribution is
+      determined by $\Omega$.
+      Hypothesis~\ref{K2} is what allows the base metric to be read as the effective metric.
     \end{proof}
 
-    \begin{remark}
+    \begin{remark}[Status]
+      Equation~\eqref{eq:fiber-to-base-curvature} is an identity between two Ricci tensors.
+      It generates base curvature from fiber curvature only together with a field equation on the total space,
+      as in~\ref{K3}.
+      Hypotheses~\ref{K1}--\ref{K3} are not derived in this paper, and~\ref{K2} is a different definition of the
+      effective metric from Eq.~\eqref{eq:eff-metric-hessian}; their mutual consistency is not shown.
+      Earlier versions of this appendix presented the relation as following from Eq.~\eqref{eq:eff-metric-hessian}
+      through an unspecified ``induction scheme''.
+      That argument is withdrawn.
+      The missing element is a construction of $\hat g$, or of another explicit relation, from $(F, \Pi)$; no result
+      here shows that such a construction cannot exist.
+    \end{remark}
+
+    \begin{remark}[The injective case]
+      In the principal specialization,
       \begin{equation}
         \Pi \text{ injective}
         \Rightarrow
@@ -252,19 +273,15 @@
         \Rightarrow
         \Omega = 0
         \Rightarrow
-        \text{no fiber-induced curvature on } \mathcal{M}
-        \Rightarrow
-        R^\mathrm{eff}_{\mu\nu\rho\sigma}
-        \text{ receives no projective sourcing.}
+        \text{no fiber-induced curvature term on } \mathcal{M}.
         \label{eq:injective-chain}
       \end{equation}
-      Equation~\eqref{eq:injective-chain} shows that effective gravitational curvature on $\mathcal{M}$
-      receives no sourcing from the fiber geometry when $\Pi$ is injective.
-      Any non-zero curvature of $g^\mathrm{eff}$ would then require an independent postulate at the level of
-      $\mathcal{M}$,
-      violating ontological uniqueness.
-      The chain is topological, not dynamical, and holds for any admissible projection in the sense of
-      Definition~\ref{def:admissible-projection}.
+      The implication runs from the trivial group to the vanishing curvature (Corollary~\ref{cor:no-gauge}); a flat
+      connection does not by itself make the structure group trivial.
+      With singleton fibers there is no fiber geometry, so every fiber-induced term vanishes by definition.
+      Equation~\eqref{eq:injective-chain} therefore adds nothing to Theorem~\ref{thm:injective-trivial-holonomy}
+      and Corollary~\ref{cor:no-gauge}, and it does not depend on Proposition~\ref{prop:fiber-base-curvature}.
+      It holds in the principal case; the general fiber-bundle case is not covered.
     \end{remark}
 
   \subsubsection*{The minimal non-injective case: $G_\Pi = \mathrm{U}(1)$}
@@ -308,17 +325,21 @@
         & $\mathrm{U}(1)$ gauge field, electromagnetic curvature \\
         Three-sphere ($S^3$, Cosmochrony setting)
         & $G_\Pi \supseteq \mathrm{SU}(2) \times \mathrm{U}(1)$
-        & Gauge structure and projection-induced curvature via Prop.~\ref{prop:fiber-base-curvature} \\
+        & Gauge structure; base-curvature term only under~\ref{K1}--\ref{K3} (Prop.~\ref{prop:fiber-base-curvature}) \\
         \hline
       \end{tabular}
     \end{center}
 
-    The injective case is the unique case in which no re-identification symmetry and no projection-induced curvature can
-    arise without an independent postulate.
-    Non-injectivity is therefore not merely sufficient but necessary for emergent gauge and gravitational structure
+    In the principal case, the injective case is the unique case in which no re-identification symmetry and no
+    fiber-induced curvature term can arise without an independent postulate.
+    Non-injectivity is therefore necessary for emergent gauge structure and for re-identification symmetry
     under Hypothesis~H and ontological uniqueness.
+    It is not shown to be sufficient for either.
+    Whether a non-injective projection sources the curvature of the effective base metric is not established here:
+    it requires hypotheses~\ref{K1}--\ref{K3} or another explicit construction
+    (Proposition~\ref{prop:fiber-base-curvature} and the remark following it).
 
     This excludes injective admissible projections as candidates for emergent gravitational dynamics.
-    The complementary constructive part of the necessity proof is developed in
-    Section~\ref{subsec:IR}, where we show that under non-injective admissible projections satisfying the saturation
-    bound, the infrared dynamics is uniquely selected.
+    The complementary constructive question, the infrared dynamics under non-injective admissible projections
+    satisfying the saturation bound, is examined in Section~\ref{subsec:IR}, which records the operator-level
+    construction it still requires.
