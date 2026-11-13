@@ -72,8 +72,10 @@ side forces an emergent metric on the gravitational side: the projection
 $\Pi$ cannot be globally injective, so the effective metric $g_{\mu\nu}$
 is a descriptive construct encoding variations in the local projective
 ordering rate.
-The Born–Infeld bound selects the unique infrared dynamics compatible
-with descriptive invariance.
+The infrared construction remains incomplete: Appendix A.10 does not derive
+the Einstein–Hilbert term from the coherence functional.
+It identifies the missing operator, spectral functional, and their relation
+to the coherence functional; the curvature coefficient remains undetermined.
 
 ### Dynamics are derived, not postulated
 
