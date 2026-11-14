@@ -16,8 +16,9 @@
     configurations, providing a natural explanation for the
     $10^{16}$--$10^{19}$ hierarchy between the Planck energy and
     observed particle energies;
-    \item Planck's constant $\hbar$ is an epoch-dependent invariant of the current projective cascade epoch,
-    fixed by $K_0$ and $\chi_c$ through Eq.~\eqref{eq:hbar_chi_def};
+    \item Planck's constant $\hbar$ is read as an epoch-dependent invariant of the current projective cascade epoch,
+    fixed by $K_0$ and $\chi_c$ through Eq.~\eqref{eq:hbar_chi_def} and by the mass scale $M_\chi$ of
+    Eq.~\eqref{eq:hbar-Mchi}, which is not supplied;
     \item the Big Bang corresponds precisely to the first globally
     projectable configuration of $\chi$, whose existence is
     characterised by a finite saturation condition derived from the
@@ -161,11 +162,12 @@
       The minimum action exchanged per step is bounded below by the projection granularity
     \begin{equation}
       \label{eq:rc-delta-S}
-      \Delta S_n \;\geq\; \hbar_\chi
+      \Delta S_n \;\geq\; M_\chi\hbar_\chi
       \;\equiv\;
-      \frac{c^3}{K_0\,\chi_c},
+      M_\chi\,\frac{c^3}{K_0\,\chi_c},
       \end{equation}
-      which is Eq.~\eqref{eq:hbar_chi_def}.
+      where $\hbar_\chi$ is Eq.~\eqref{eq:hbar_chi_def} and the mass scale $M_\chi$ of Eq.~\eqref{eq:hbar-Mchi}
+      converts it into an action; $M_\chi$ is not supplied in this paper.
       Relaxation is therefore intrinsically discrete: the continuum effective
       description is an approximation valid between successive steps.
 
@@ -187,8 +189,8 @@
       projected configurations $\Omega_n$, the energy per configuration decreases.
       Under the assumption that each step redistributes the remaining energy
       uniformly over the newly accessible configurations, and assuming in addition that this step structure is
-      self-similar across scales (an assumption; the gravitational reading of such a self-similarity in earlier
-      versions is withdrawn, Appendix~\ref{subsec:chi-parameters}), one obtains
+      self-similar across scales (an assumption, with no gravitational reading established in this paper,
+      Appendix~\ref{subsec:chi-parameters}), one obtains
     \begin{equation}
       \label{eq:rc-cascade}
       E_n \;\sim\; \frac{E_P}{n},
@@ -251,7 +253,7 @@
     \label{sec:relax-cascade-hbar}
 
     \paragraph[Starting point: Eq. hbar-chi-def]{Starting point: Eq.~\eqref{eq:hbar_chi_def}.}
-      The effective action quantum is defined structurally as
+      The structural quantum (an action per unit mass) is defined as
     \begin{equation}
       \label{eq:rc-hbar-def}
       \hbar_\chi
@@ -260,29 +262,27 @@
       \end{equation}
       where $K_0$ is the maximal projective conductivity and $\chi_c$ is the
       critical relaxation threshold (Appendix~\ref{subsec:fundamental-quantities}).
-      The identification $\hbar_\chi \simeq \hbar$ is operationally enforced
-      in projectable regimes (Appendix~\ref{subsec:renormalization-hbar}, Eq.~\eqref{eq:hbar-chi}).
+      It has dimension $\mathrm{m}^2\,\mathrm{s}^{-1}$; its identification with Planck's constant,
+      $\hbar = M_\chi\hbar_\chi$ (Eq.~\eqref{eq:hbar-Mchi}), is conditional on a mass scale $M_\chi$ that this paper
+      does not supply (Appendix~\ref{subsec:renormalization-hbar}, Eq.~\eqref{eq:hbar-chi}).
 
-    \paragraph{Normalization: withdrawn estimates.}
-      Earlier versions combined Eq.~\eqref{eq:rc-hbar-def} with the relation $K_0\,\chi_c^2 \sim c^4/(16\pi G)$
-      and two identifications of $\chi_c$ ($c/H_0$ and $\ell_P$) to obtain a cosmological action scale
-      $\hbar_\chi \sim 10^{70}~\mathrm{J\,s}$ and a Planck branch with $\hbar_\chi \simeq \hbar$.
-      That relation is withdrawn (Appendix~\ref{subsec:fundamental-quantities}): it is not derived, and in none of
-      the conventions stated in this paper is it dimensionally compatible with Eq.~\eqref{eq:rc-hbar-def}.
-      The two branches, the quoted values of $K_0$ and $\hbar_\chi$, and their reading as a spectral
-      self-similarity at fixed $G$ are therefore not results of this paper; their recomputation requires a
-      normalization of the substrate constants, which is left open.
+    \paragraph{Normalization.}
+      No numerical value of $K_0$ or $\hbar_\chi$ is derived in this paper; $\chi_c$ is only calibrated
+      (Appendix~\ref{sec:consistency_checks}); and no relation between
+      them and $G$ is established (Appendix~\ref{subsec:fundamental-quantities}).
       Equation~\eqref{eq:rc-hbar-def} by itself involves only the product $K_0\,\chi_c$; it fixes neither factor
-      separately and does not relate them to $G$.
+      separately, and it yields an action only through the mass scale $M_\chi$, which is not supplied.
+      A determination of these constants requires a normalization of the substrate, which is left open.
 
     \paragraph{Interpretation.}
       Within Eq.~\eqref{eq:rc-hbar-def}, $\hbar_\chi$ is set by $K_0$ and $\chi_c$, read as invariants of the
-      current projective epoch.
+      current projective epoch, and $\hbar$ by $\hbar_\chi$ and $M_\chi$.
       On this reading, $\hbar$ is not a fundamental constant of $\chi$ but the action quantum of the current
       projectable regime; this is an interpretation of Eq.~\eqref{eq:rc-hbar-def}, not a derived value.
       If, in primordial high-constraint regimes approaching the initial projection
-      (Section~\ref{subsec:local-slowdown-of-chi-relaxation}), $\chi_c$ differs from its present-epoch value,
-      $\hbar$ and the fine-structure constant $\alpha$ would scale accordingly (Eq.~(9)).
+      (Section~\ref{subsec:local-slowdown-of-chi-relaxation}), $\chi_c$ differs from its present-epoch value
+      at fixed $M_\chi$,
+      $\hbar$ and the fine-structure constant $\alpha$ would scale accordingly (Eq.~\eqref{eq:alpha-functional}).
       Whether $G$ remains invariant in that case is not established here, since no relation between $K_0$,
       $\chi_c$ and $G$ is.
 
@@ -324,18 +324,20 @@
 
     \paragraph{Energy at first projection.}
       At $t_{\mathrm proj}$, the minimal action available per projectable
-      configuration is $\hbar_\chi$, and the total number of simultaneously
-      projectable modes is of order unity (by definition of the first crossing of $\Theta_p$).
-      The effective energy density associated with the first projection is
-      therefore set by the Planck energy per Planck volume,
+      configuration is $M_\chi\hbar_\chi$, identified with $\hbar$ under Eq.~\eqref{eq:hbar-Mchi}, and the total
+      number of simultaneously projectable modes is of order unity (by definition of the first crossing of $\Theta_p$).
+      If, in addition, that first configuration is assigned the Planck scale, the associated mass density is the
+      Planck energy per Planck volume divided by $c^2$,
     \begin{equation}
       \label{eq:rc-rho-planck}
       \rho_{\mathrm proj}
-      \;\sim\; \frac{E_P}{\ell_P^3}
+      \;\sim\; \frac{E_P}{c^2\,\ell_P^3}
       \;=\; \frac{c^5}{\hbar G^2}
       \;\approx\; 5 \times 10^{96}~\mathrm{kg\,m^{-3}},
       \end{equation}
-      consistently with the standard Planck density.
+      which is the standard Planck density.
+      The Planck-scale assignment is an input: it uses $\hbar$ and $G$ directly, and neither is derived here from
+      $K_0$, $\chi_c$ or $M_\chi$.
       The subsequent cascade described in Section~\ref{sec:relax-cascade-hier}
       then accounts for the reduction from $\rho_{\mathrm proj}$ to the present-day densities.
 
@@ -369,7 +371,7 @@
         & $E_n \sim E_P/n$
         & Eqs.~\eqref{eq:hbar_chi_def}, \eqref{eq:rc-cascade} \\
         $\hbar$ as epoch-dependent invariant
-        & $\hbar_\chi = c^3/(K_0\chi_c)$
+        & $\hbar = M_\chi c^3/(K_0\chi_c)$ (conditional)
         & Eq.~\eqref{eq:hbar_chi_def} (interpretation; normalization open) \\
         Big Bang $=$ first projectable state
         & $\lambda_2(L_G(t_{\mathrm proj})) > 0$

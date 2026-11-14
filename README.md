@@ -119,9 +119,12 @@ Cosmochrony distinguishes between:
 
 Relativistic causality is recovered as a projective limit of more
 primitive saturation constraints.
-Planck's constant $\hbar$ arises analogously as a bound on the minimal
+Planck's constant $\hbar$ is read analogously as a bound on the minimal
 resolvable granularity of reprojection, placing relativistic and quantum
 limits on a common structural footing.
+The substrate quantum $\hbar_\chi = c^3/(K_0\chi_c)$ has the dimension of an action per unit mass
+($K_0$ in $\mathrm{s}^{-2}$, $\chi_c$ a length); its identification $\hbar = M_\chi\hbar_\chi$ requires a mass
+scale $M_\chi$ that the paper does not supply.
 
 ## Spectral Structure and Admissibility
 
