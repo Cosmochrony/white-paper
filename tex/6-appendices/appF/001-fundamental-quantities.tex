@@ -30,27 +30,48 @@
     admissible projected updates.
 
     \medskip
-    \noindent\textit{Physical dimension and operational identification.}
+    \noindent\textit{Dimensional convention.}
     The local bound $|D_{\mathrm{loc}}\chi_{\mathrm{eff}}| \leq c$
     (Eq.~\eqref{eq:relaxation-constraint}) implies that
     $\chi_{\mathrm{eff}}$ carries dimension of length.
     Accordingly, $\chi_c$ carries dimension of length.
-    The effective action unit is defined by Eq.~\eqref{eq:spectral-invariant},
+    The coupling $K_0$ is the rate constant of the discrete admissibility rule:
+    in Eq.~\eqref{eq:D4_Si_Kij} the local slope $S_i = c^{-2}\sum_j K_{ij}(\chi_i-\chi_j)^2$ is dimensionless, so
+    $K_0$ has the dimension of an inverse time squared, $\mathrm{s}^{-2}$.
+    This is the convention of the whole paper.
+    The structural quantum of Eq.~\eqref{eq:spectral-invariant},
     \begin{equation}
       \hbar_\chi \;\equiv\; \frac{c^3}{K_0\,\chi_c},
       \label{eq:hbar_chi_def}
     \end{equation}
-    which fixes the physical dimension of $K_0$ once $\chi_c$ is specified.
+    then has dimension $\mathrm{m}^2\,\mathrm{s}^{-1}$: it is an action per unit mass, and
+    $\ell_\chi = \hbar_\chi/c_{\mathrm{BI}}$ (Appendix~\ref{subsec:IR}) is a length.
+
+    \medskip
+    \noindent\textit{The missing mass scale.}
+    Every monomial $c^{a}\chi_c^{b}K_0^{d}$ has dimension $\mathrm{m}^{a+b}\,\mathrm{s}^{-a-2d}$, so no action can be
+    formed from $c$, $\chi_c$ and $K_0$ alone.
+    The identification of $\hbar_\chi$ with Planck's constant therefore takes the form
+    \begin{equation}
+      \hbar \;=\; M_\chi\,\hbar_\chi ,
+      \label{eq:hbar-Mchi}
+    \end{equation}
+    where $M_\chi$ is a mass scale that this paper does not supply.
+    Equation~\eqref{eq:hbar-Mchi} is a conditional identification: it holds once such a mass scale is constructed
+    from the substrate, and choosing $M_\chi$ so as to reproduce the measured value of $\hbar$ would be a fit, not a
+    derivation.
+    Every statement of this paper that identifies $\hbar_\chi$, or a quantity built from it, with $\hbar$ or with an
+    energy is conditional on Eq.~\eqref{eq:hbar-Mchi}.
 
     \medskip
     \noindent\textit{A dimensionless threshold parameter.}
     A unit-independent characterization of the threshold is provided by the ratio
     \begin{equation}
-      \tilde{\chi}_c \;\equiv\; \frac{\hbar}{\hbar_\chi}
-      \;=\; \frac{K_0\,\chi_c}{c^3/\hbar},
+      \tilde{\chi}_c \;\equiv\; \frac{\chi_c}{\ell_\chi}
+      \;=\; \frac{K_0\,\chi_c^2}{c^2},
       \label{eq:chitilde}
     \end{equation}
-    which is dimensionless by construction.
+    with $c_{\mathrm{BI}} = c$ in projectable regimes, which is dimensionless by construction.
     When a numerical value is quoted for $\chi_c$ in heuristic estimates
     (e.g.\ Appendix~\ref{app:relational_spin_statistics}), it refers to
     $\tilde{\chi}_c$ unless the dimensional quantity $\chi_c$ is explicitly
@@ -58,24 +79,13 @@
 
     \medskip
     \noindent\textit{No relation to the gravitational coupling.}
-    Earlier versions stated a constraint $K_0\,\chi_c^2 \sim c^4/(16\pi G)$, obtained by matching the infrared
-    expansion of the coherence functional to the Einstein--Hilbert normalization through
-    Appendices~\ref{subsec:stepB-BI}--\ref{subsec:stepB-G}, with numerical factors fixed by the tensorial
-    Born--Infeld completion.
-    That matching is not performed: Appendix~\ref{subsec:IR} leaves the Einstein coefficient undetermined, and
-    Appendix~\ref{subsec:stepB-G} states the Newton coupling as an open matching problem.
-    Nor can the relation be kept as an independent constitutive postulate in the conventions of this paper.
-    With $\chi_c$ a length and $\hbar_\chi$ an action unit, as stated above, Eq.~\eqref{eq:hbar_chi_def} gives
-    $K_0$ the dimension $\mathrm{kg}^{-1}\,\mathrm{s}^{-2}$, so that $K_0\,\chi_c^2$ has dimension
-    $\mathrm{kg}^{-1}\,\mathrm{m}^{2}\,\mathrm{s}^{-2}$, whereas $c^4/G$ is a force.
-    The reading $\ell_\chi = \hbar_\chi/c_{\mathrm{BI}}$ of Appendix~\ref{subsec:IR} gives $K_0\,\chi_c^2$ the
-    dimension $\mathrm{m}^{2}\,\mathrm{s}^{-2}$, again not a force.
-    In units with $G = c = 1$ and $K_0$ an inverse area, the relation is consistent on its own, but
-    Eq.~\eqref{eq:hbar_chi_def} then makes $\hbar_\chi$ a length, whereas an action has the dimension of an area
-    in those units.
-    The relation is therefore withdrawn, pending a normalization of the substrate constants.
-    No relation between $K_0$, $\chi_c$ and $G$ is established in this paper, and gravitational normalization does
-    not fix the scale at which $\hbar_\chi$ and $\hbar$ can be identified.
+    No relation between $K_0$, $\chi_c$ and $G$ is established in this paper.
+    Appendix~\ref{subsec:IR} leaves the Einstein coefficient undetermined, and Appendix~\ref{subsec:stepB-G} states the
+    Newton coupling as an open matching problem.
+    A constitutive relation of the form $K_0\,\chi_c^2 \sim c^4/(16\pi G)$ is not available as a postulate either: in
+    the convention above $K_0\,\chi_c^2$ has dimension $\mathrm{m}^{2}\,\mathrm{s}^{-2}$, whereas $c^4/G$ is a force.
+    Gravitational normalization therefore does not fix $M_\chi$, nor the scale at which $\hbar_\chi$ and $\hbar$ can
+    be identified.
 
   \paragraph{\texorpdfstring{$\tau$}{τ} (Operational time).}
     An effective ordering parameter defined from the monotonic succession of
