@@ -6,8 +6,8 @@
   and $H(t) = \dot{\chi}/\chi$ as the emergent Hubble rate (Section~\ref{subsec:emergent-hubble-law},
   Eq.~\eqref{eq:hubble-like}).
   This section develops four structural consequences that follow directly
-  from these definitions together with the constitutive relations
-  Eqs.~\eqref{eq:hbar_chi_def} and~\eqref{eq:K0chic_gravity}:
+  from these definitions together with the constitutive relation
+  Eq.~\eqref{eq:hbar_chi_def}:
   \begin{enumerate}
     \item the effective cosmological constant $\Lambda_{\mathrm{eff}}$ is
     not a fundamental constant but a dynamical residual of ongoing projective cascade evolution,
@@ -23,8 +23,9 @@
     characterised by a finite saturation condition derived from the
     Born--Infeld threshold.
   \end{enumerate}
-  Each result is an internal consequence of the Cosmochrony framework;
-  no new free parameter is introduced.
+  Each result is an internal consequence of the Cosmochrony framework.
+  The normalization of $K_0$ and $\chi_c$ is not fixed in this paper
+  (Appendix~\ref{subsec:fundamental-quantities}).
 
   \subsubsection*{Dynamical $\Lambda_{\mathrm{eff}}$ from Residual Projective Capacity}
     \label{sec:relax-cascade-lambda}
@@ -185,9 +186,9 @@
       Since each step irreversibly increases the number of distinguishable
       projected configurations $\Omega_n$, the energy per configuration decreases.
       Under the assumption that each step redistributes the remaining energy
-      uniformly over the newly accessible configurations, and using the
-      self-similar spectral structure established in Appendix~\ref{subsec:chi-parameters}
-      (the ratio $G_\mathrm{eff} \propto K_0/\chi_c^2$ is preserved under renormalisation), one obtains
+      uniformly over the newly accessible configurations, and assuming in addition that this step structure is
+      self-similar across scales (an assumption; the gravitational reading of such a self-similarity in earlier
+      versions is withdrawn, Appendix~\ref{subsec:chi-parameters}), one obtains
     \begin{equation}
       \label{eq:rc-cascade}
       E_n \;\sim\; \frac{E_P}{n},
@@ -262,52 +263,28 @@
       The identification $\hbar_\chi \simeq \hbar$ is operationally enforced
       in projectable regimes (Appendix~\ref{subsec:renormalization-hbar}, Eq.~\eqref{eq:hbar-chi}).
 
-    \paragraph{Cosmological normalisation.}
-      Appendix~\ref{subsec:chi-parameters} establishes that the dynamics are spectrally self-similar:
-      $G$ remains constant under renormalisation provided the ratio $K_0/\chi_c^2$ is preserved.
-      The cosmological-scale identification $\chi_c \sim c/H_0 = \chi(t_0)$
-      (Appendix~\ref{subsec:observational-estimates}) then gives, using Eq.~\eqref{eq:K0chic_gravity},
-    \begin{equation}
-      \label{eq:rc-K0-cosmo}
-      K_0 \;\sim\; \frac{c^4}{16\pi G\,\chi_c^2}
-      \;\sim\; \frac{H_0^2}{16\pi G}
-      \;\sim\; 10^{-52}~\mathrm{m}^{-2},
-      \end{equation}
-      which is the cosmological-scale entry of Table~\ref{tab:chi-parameters}.
-      Substituting into Eq.~\eqref{eq:rc-hbar-def}:
-    \begin{equation}
-      \label{eq:rc-hbar-cosmo}
-      \hbar_\chi
-      \;\sim\; \frac{c^3}{K_0\,\chi_c}
-      \;\sim\; \frac{c^3\,\cdot\, 16\pi G}{H_0^2/H_0}
-      \;\sim\; \frac{16\pi G c^3}{H_0}
-      \;\approx\; 10^{70}~\mathrm{J\,s},
-      \end{equation}
-      a cosmological action scale, not the microscopic $\hbar$.
-      The microscopic Planck-scale identification $\chi_c \sim \ell_P$
-      instead yields $K_0 \sim 10^{93}~\mathrm{m}^{-2}$ and recovers
-      $\hbar_\chi \simeq \hbar = 1.05 \times 10^{-34}~\mathrm{J\,s}$.
-      Both branches are internally consistent, as stated in Appendix~\ref{subsec:chi-parameters}.
+    \paragraph{Normalization: withdrawn estimates.}
+      Earlier versions combined Eq.~\eqref{eq:rc-hbar-def} with the relation $K_0\,\chi_c^2 \sim c^4/(16\pi G)$
+      and two identifications of $\chi_c$ ($c/H_0$ and $\ell_P$) to obtain a cosmological action scale
+      $\hbar_\chi \sim 10^{70}~\mathrm{J\,s}$ and a Planck branch with $\hbar_\chi \simeq \hbar$.
+      That relation is withdrawn (Appendix~\ref{subsec:fundamental-quantities}): it is not derived, and it is not
+      dimensionally consistent in the conventions of this paper.
+      The two branches, the quoted values of $K_0$ and $\hbar_\chi$, and their reading as a spectral
+      self-similarity at fixed $G$ are therefore not results of this paper; their recomputation requires a
+      normalization of the substrate constants, which is left open.
+      Equation~\eqref{eq:rc-hbar-def} by itself involves only the product $K_0\,\chi_c$; it fixes neither factor
+      separately and does not relate them to $G$.
 
     \paragraph{Interpretation.}
-      The two branches reflect the spectral self-similarity of the cascade:
-      at each scale, the ratio $K_0\,\chi_c^2$ is fixed by $G$, while
-      $\hbar_\chi$ tracks the granularity of that scale's projection.
-      The universal microscopic $\hbar$ is therefore the action granularity
-      of the \emph{current particle-scale} projectable regime.
-      It is not a fundamental constant of $\chi$; it is the action quantum
-      that emerges when the projection resolves configurations at the
-      length scale $\ell_P$, as encoded by the Planck-branch normalisation.
-      The cosmological branch ($\hbar_\chi \sim 10^{70}~\mathrm{J\,s}$)
-      corresponds to the action scale of the relaxation field itself on
-      Hubble scales and is not directly observable in particle dynamics;
-      it characterises the global projective flux, not the granularity of
-      quantum transitions in the effective projected description.
-      This implies a further structural consequence: in primordial
-      high-constraint regimes approaching the initial projection
-      (Section~\ref{subsec:local-slowdown-of-chi-relaxation}), $\chi_c$ may differ from its present-epoch value,
-      causing both $\hbar$ and the fine-structure constant $\alpha$ to scale
-      accordingly (Eq.~(9)), while leaving the product $K_0\,\chi_c^2 \propto G^{-1}$ invariant.
+      Within Eq.~\eqref{eq:rc-hbar-def}, $\hbar_\chi$ is set by $K_0$ and $\chi_c$, read as invariants of the
+      current projective epoch.
+      On this reading, $\hbar$ is not a fundamental constant of $\chi$ but the action quantum of the current
+      projectable regime; this is an interpretation of Eq.~\eqref{eq:rc-hbar-def}, not a derived value.
+      If, in primordial high-constraint regimes approaching the initial projection
+      (Section~\ref{subsec:local-slowdown-of-chi-relaxation}), $\chi_c$ differs from its present-epoch value,
+      $\hbar$ and the fine-structure constant $\alpha$ would scale accordingly (Eq.~(9)).
+      Whether $G$ remains invariant in that case is not established here, since no relation between $K_0$,
+      $\chi_c$ and $G$ is.
 
   \subsubsection*{The Big Bang as the First Globally Projectable Configuration}
     \label{sec:relax-cascade-bigbang}
@@ -379,7 +356,7 @@
     \begin{table}[h]
       \centering
       \caption{Summary of the four structural results derived in Section~\ref{sec:relax-cascade}.
-      Each result is a consequence of existing Cosmochrony equations; no new free parameter is introduced.}
+      Each result is a consequence of existing Cosmochrony equations; the normalization of $K_0$ and $\chi_c$ is open.}
       \label{tab:rc-summary}
       \begin{tabular}{lll}
         \hline
@@ -393,7 +370,7 @@
         & Eqs.~\eqref{eq:hbar_chi_def}, \eqref{eq:rc-cascade} \\
         $\hbar$ as epoch-dependent invariant
         & $\hbar_\chi = c^3/(K_0\chi_c)$
-        & Eqs.~\eqref{eq:hbar_chi_def}, \eqref{eq:K0chic_gravity}, \eqref{eq:rc-hbar-cosmo} \\
+        & Eq.~\eqref{eq:hbar_chi_def} (interpretation; normalization open) \\
         Big Bang $=$ first projectable state
         & $\lambda_2(L_G(t_{\mathrm proj})) > 0$
         & Eqs.~(179), \eqref{eq:rc-firstproj} \\
