@@ -1,96 +1,115 @@
 \subsection{Saturation and the Born--Infeld candidate completion}
   \label{subsec:stepB-BI}
 
-  The IR expansion~\eqref{eq:EH-result} is valid only for
-  $\ell_c \gg \ell_\chi$.
-  In the ultraviolet regime $\ell_c \sim \ell_\chi$,
-  higher-derivative corrections become comparable to the
-  Einstein--Hilbert term, and the expansion breaks down.
-  The saturation bound $|\partial_t \chi| \leq c_{\mathrm{BI}}$
-  provides the principle that constrains the possible UV
-  completions.
+  This paper does not derive an Einstein--Hilbert term from the coherence functional
+  $S_{\mathrm{coh}}$ of Eq.~\eqref{eq:EH-result}: Appendix~\ref{subsec:IR} leaves the coefficient
+  $\kappa_{\mathrm{coh}}$ of $R$ undetermined and records the operator-level construction that is missing.
+  The present subsection addresses a separate, conditional question.
+  Given an Einstein infrared term, which local tensorial completions are admissible when the curvature approaches
+  the saturation regime?
+  The answer used here is the classification of the companion gravity paper~\cite{Beau2026h}, restated with its
+  hypotheses.
+  It is a statement about the completion of a supplied Einstein term, not a derivation of that term, or of its
+  completion, from $S_{\mathrm{coh}}$.
 
-  As formulated in~\cite{Beau2026c}, minimal conditions
-  for a UV completion compatible with bounded flux propagation
-  are:
-  \begin{enumerate}[label=(\roman*)]
-    \item it reduces to a quadratic (Einstein--Hilbert-like)
-    form in the IR ($\ell_c \gg \ell_\chi$),
-    \item it enforces a strict upper bound on admissible field
-    invariants at $\ell_c \sim \ell_\chi$,
-    \item it introduces no additional microscopic scales
-    beyond $c_{\mathrm{BI}}$ and $\hbar_\chi$.
-  \end{enumerate}
+  \paragraph{Setup.}
+    Following~\cite{Beau2026h}, let $\ell_{\mathrm{sp}}$ be the length of its spectral proper-time cutoff
+    ($\Lambda = \ell_{\mathrm{sp}}^{-1}$), and define the mixed Ricci endomorphism
+    \begin{equation}
+      X^{\mu}{}_{\nu} = \ell_{\mathrm{sp}}^{2}\, g^{\mu\rho} R_{\rho\nu}.
+      \label{eq:BI-mixed-ricci}
+    \end{equation}
+    The relation of $\ell_{\mathrm{sp}}$ to the substrate scales of this paper is not established here.
+    A local covariant completer has density $\sqrt{-g}\,[\Phi(X) - 1]$, with $\Phi$ a smooth scalar function of the
+    endomorphism.
+    The conditions of~\cite{Beau2026h} are:
+    \begin{enumerate}[label=(C\arabic*)]
+      \item spectral covariance: $\Phi$ depends on $X$ only through its eigenvalues;
+      \item Einstein infrared limit: $\Phi(X) = 1 + \tfrac12\,\mathrm{tr}\,X + \mathcal{O}(\|X\|^2)$ for weak
+      curvature;
+      \item algebraic Born--Infeld saturation: $\Phi$ is defined on the whole region where $I + X$ is positive and
+      vanishes on its boundary, that is, as an eigenvalue of $I + X$ tends to zero with the remaining eigenvalues of
+      $X$ in a compact subset of $(-1, +\infty)$;
+      \item spectral isotropy: $\Phi$ is a symmetric function of the eigenvalues;
+      \item coherence extensivity: $\log\Phi$ is additive over admissibly independent sectors.
+    \end{enumerate}
+    In~\cite{Beau2026h}, (C5) is the open Hypothesis~[H-ext]; it is not derived from Axiom~A3 of the
+    Foundation paper~\cite{Beau2026m}, nor from the sector reading of that axiom.
+    The capacity analysis of~\cite{Beau2026c} motivates a saturating, square-root type response; it does not
+    formulate these gravitational conditions and does not fix the relation between $c_{\mathrm{BI}}$ and any
+    continuum length, including $\ell_{\mathrm{sp}}$.
 
-  Applied to the gravitational sector, the Born--Infeld
-  candidate completion takes the form:
-  \begin{equation}
-    S_{\mathrm{coh}}^{\mathrm{full}}[g, \psi]
-    = \frac{c_{\mathrm{BI}}^4}{\hbar_\chi^2}
-    \int_{\mathcal{M}} \left(
-                         \sqrt{-\det\!\left( g_{\mu\nu}
-                                        + \frac{\hbar_\chi}{c_{\mathrm{BI}}^2} R_{\mu\nu} \right)}
-                         - \sqrt{-g}
-    \right) d^4x
-    + S_{\mathrm{matter}}[g, \psi].
-    \label{eq:BI-gravity}
-  \end{equation}
+  \paragraph{Determinantal member.}
+    The Born--Infeld candidate completion is
+    \begin{equation}
+      S_{\mathrm{coh}}^{\mathrm{full}}[g, \psi]
+      = \mathcal{N} \int_{\mathcal{M}} \sqrt{-g}\,
+      \left( \sqrt{\det\!\left( \delta^{\mu}{}_{\nu} + X^{\mu}{}_{\nu} \right)} - 1 \right) d^4x
+      + S_{\mathrm{matter}}[g, \psi],
+      \label{eq:BI-gravity}
+    \end{equation}
+    where the overall constant $\mathcal{N}$ is not fixed by the completion conditions.
+    The eigenvalue algebra of~\cite{Beau2026h} is carried out on the Riemannian section; the form with
+    $\sqrt{-g}$ presupposes a Lorentzian continuation that is not performed there.
+    For $\|X\| \ll 1$,
+    \begin{equation}
+      \sqrt{\det(I + X)}
+      = 1 + \tfrac12\,\mathrm{tr}\,X
+      + \tfrac18\,(\mathrm{tr}\,X)^2 - \tfrac14\,\mathrm{tr}\,X^2
+      + \mathcal{O}(\|X\|^3),
+      \label{eq:BI-expand}
+    \end{equation}
+    that is, $\tfrac12\,\ell_{\mathrm{sp}}^2 R + \ell_{\mathrm{sp}}^4\bigl(\tfrac18 R^2
+    - \tfrac14 R_{\mu\nu}R^{\mu\nu}\bigr)$ at the first two orders.
+    Hence
+    \begin{equation}
+      S_{\mathrm{coh}}^{\mathrm{full}}
+      = \frac{\mathcal{N}\,\ell_{\mathrm{sp}}^{2}}{2}
+      \int_{\mathcal{M}} R \sqrt{-g}\, d^4x
+      + S_{\mathrm{matter}}
+      + \mathcal{O}\!\left(\mathcal{N}\,\ell_{\mathrm{sp}}^{4}\,\mathcal{R}^{2}\right),
+      \label{eq:BI-IR}
+    \end{equation}
+    where $\mathcal{R}^{2}$ stands for the quadratic curvature invariants.
+    The leading term is the supplied Einstein term only once its coefficient is matched
+    (Section~\ref{subsec:stepB-G}).
+    The infrared regime is $R\,\ell_{\mathrm{sp}}^{2} \ll 1$, with the qualifications on the renormalised
+    coefficients stated in~\cite{Beau2026h}.
 
-  In the IR expansion $\hbar_\chi / c_{\mathrm{BI}}^2 \ll \ell_c^2$:
-  \begin{align}
-    \sqrt{-\det\!\left( g_{\mu\nu}
-                   + \frac{\hbar_\chi}{c_{\mathrm{BI}}^2} R_{\mu\nu} \right)}
-    &\approx \sqrt{-g}
-    \left(
-      1
-      + \frac{\hbar_\chi}{2c_{\mathrm{BI}}^2} R
-    + \mathcal{O}\!\left(\frac{\hbar_\chi^2}{c_{\mathrm{BI}}^4}
-                     R_{\mu\nu} R^{\mu\nu}\right)
-    \right),
-    \label{eq:BI-expand}
-  \end{align}
-  so that:
-  \begin{equation}
-    S_{\mathrm{coh}}^{\mathrm{full}}
-    \;\xrightarrow{\;\ell_c \gg \ell_\chi\;}\;
-    \frac{c_{\mathrm{BI}}^2}{2\hbar_\chi}
-    \int_{\mathcal{M}} R \sqrt{-g}\, d^4x
-    + S_{\mathrm{matter}}
-    + \mathcal{O}(\ell_c^{-4}).
-    \label{eq:BI-IR}
-  \end{equation}
-
-  \begin{proposition}[Born--Infeld structure as an
-  admissible gravitational UV completion]
+  \begin{proposition}[Admissibility and non-uniqueness of the Born--Infeld completion of a supplied Einstein term]
     \label{prop:BI-unique}
-    Under conditions (i)--(iii), ontological uniqueness, and
-    Hypothesis~[H-ext] (admissible coherence extensivity),
-    the Eddington-inspired Born--Infeld
-    form~\eqref{eq:BI-gravity} with
-    $\mathcal{R}_{\mu\nu} = R_{\mu\nu}$ is an admissible UV
-    completion of the Einstein--Hilbert term in
-    $S_{\mathrm{coh}}$; the admissible completions form an
-    explicitly parametrised family, within which the
-    determinantal member is not uniquely selected.
+    Let the completer density be $\sqrt{-g}\,[\Phi - 1]$, with the argument of $\Phi$ a carrier of the family of
+    \cite{Beau2026h}: an endomorphism obtained by raising one index of a local covariant symmetric tensor linear in
+    the curvature and of two-derivative order, with spectrum not a multiple of the identity in general, normalised so
+    that its trace is $\ell_{\mathrm{sp}}^{2} R$.
+    Assume (C1)--(C4) and Hypothesis~[H-ext], with (C3) and (C5) applied to the curvature endomorphism $X$ and to
+    its eigenvalue sectors.
+    Then:
+    \begin{enumerate}[label=(\alph*)]
+      \item among the completers $\Phi = \exp\sum_i h(\mu_i)$ built on a carrier
+      $Y_\alpha = \ell_{\mathrm{sp}}^{2}\, g^{-1}(\mathrm{Ric} - \alpha R\, g)/(1 - \alpha d)$, $\alpha \neq 1/d$, with $d$ the dimension,
+      $\mu_i$ its eigenvalues and $h$ subject to the constraints of~\cite{Beau2026h} at the origin and at the saturation
+      boundary, only $\alpha = 0$ satisfies (C3); the carrier is then $X$;
+      \item the determinantal density of Eq.~\eqref{eq:BI-gravity}, with sector function
+      $h(\lambda) = \tfrac12\log(1 + \lambda)$, is an admissible completion;
+      \item it is not the only one: the general admissible completer is $\Phi = \exp\sum_i h(\lambda_i)$, with $h$
+      any smooth function subject to the same constraints, and the one-parameter family
+      $\Phi_a(X) = \sqrt{\det(I + X)}\,\exp(a\,\mathrm{tr}\,X^2)$, $a \in \mathbb{R}$, satisfies (C1)--(C5) for
+      every $a$ and differs from the determinantal member at second order in the infrared expansion.
+    \end{enumerate}
   \end{proposition}
 
   \begin{proof}
-    The classification is established in~\cite{Beau2026h}:
-    under~[H-ext] the admissible completers take the
-    spectral form $\exp\sum_i h(\lambda_i)$, with the sector
-    function $h$ constrained only at the origin and at the
-    saturation boundary; the determinantal member
-    corresponds to $h(\lambda) = \tfrac12\log(1+\lambda)$,
-    and an explicit one-parameter family of distinct
-    admissible completers realises the residual freedom.
-    A classification of two-derivative covariant
-    endomorphisms selects $g^{\mu\alpha}R_{\alpha\nu}$ as
-    the unique admissible spectral carrier, and the trace
-    ambiguity
-    $R_{\mu\nu} \mapsto R_{\mu\nu} - \alpha\,g_{\mu\nu}R$
-    is resolved by matching to the $a_2$ heat-kernel
-    coefficient of~\cite{Beau2026h}, selecting
-    $\alpha = 0$.
-    The input a unique selection would require is stated
-    in~\cite{Beau2026h}.
+    This is the theorem on admissibility and non-uniqueness of the tensorial completion of~\cite{Beau2026h},
+    restated without change of hypotheses or conclusion; its proof is given there.
+    The selection $\alpha = 0$ in~(a) follows from the saturation condition (C3) applied to the curvature
+    endomorphism, and the residual freedom in~(c) is the freedom of the sector function $h$.
+    The additional input that a uniqueness result would require is stated in~\cite{Beau2026h}.
   \end{proof}
+
+  \begin{remark}[Scope]
+    Proposition~\ref{prop:BI-unique} classifies completions of an Einstein term that is supplied, not derived.
+    It does not derive the Einstein--Hilbert term from $S_{\mathrm{coh}}$, does not select the determinantal member
+    within the admissible family, and fixes neither $\mathcal{N}$, nor $\ell_{\mathrm{sp}}$, nor the Newton coupling.
+    It is conditional on the open Hypothesis~[H-ext].
+  \end{remark}
