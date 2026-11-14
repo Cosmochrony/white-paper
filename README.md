@@ -67,11 +67,12 @@ Schrödinger type follows as a proved result.
 
 Spacetime geometry arises as an effective continuum encoding of
 relational connectivity.
-The same non-injectivity that forces Hilbert structure on the quantum
-side forces an emergent metric on the gravitational side: the projection
-$\Pi$ cannot be globally injective, so the effective metric $g_{\mu\nu}$
-is a descriptive construct encoding variations in the local projective
-ordering rate.
+Non-injectivity is necessary for nontrivial vertical re-identification and,
+in the admissible principal-bundle setting, fiber holonomy or connection curvature.
+It does not by itself force a base metric or exclude gravity under injectivity.
+A metric described through local projective ordering rates remains a proposed construction.
+The flux bound is a candidate gravitational selection principle; it does not here
+select a unique nonlinear action, determine its coefficients, or predict $G$.
 The infrared construction remains incomplete: Appendix A.10 does not derive
 the Einstein–Hilbert term from the coherence functional.
 It identifies the missing operator, spectral functional, and their relation

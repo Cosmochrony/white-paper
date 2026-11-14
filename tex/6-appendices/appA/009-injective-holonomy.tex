@@ -1,17 +1,11 @@
 \subsection{Admissible Injective Projections Have Trivial Holonomy}
   \label{subsec:injective-holonomy}
 
-  This appendix formalizes Step~A announced in Section~\ref{subsec:necessity-open}, the first part of the necessity
-  argument formulated in Section~\ref{sec:necessity-noninjective}.
-  We show that admissible injective projections necessarily have trivial holonomy.
-  Since non-trivial holonomy is the minimal structural condition for re-identification
-  symmetry, injective admissible projections cannot support emergent gravitational dynamics.
-
-  We classify admissible projection maps $\Pi : \mathcal{C}_\chi \to \mathcal{M}$ by their fiber topology.
-  We show that injective maps in this class have trivial holonomy.
-  Since non-trivial holonomy is the minimal condition for a re-identification symmetry to arise as a descriptive
-  invariance,
-  injectivity structurally precludes emergent gravity under Hypothesis~H and ontological uniqueness.
+  This appendix supplies the fiber obstruction used in Section~\ref{sec:necessity-noninjective}.
+  In the admissible principal-bundle setting, injectivity makes the structure group, holonomy and connection
+  curvature trivial and removes vertical re-identification symmetries.
+  These conclusions concern the fibers of $\Pi$; they do not exclude effective base geometry or
+  diffeomorphism covariance.
 
   \subsubsection*{Setup: admissible projections as fibered structures}
     \label{subsec:stepA-setup}
@@ -175,29 +169,26 @@
       violating ontological uniqueness.
     \end{proof}
 
-    \begin{corollary}[No emergent diffeomorphism invariance from injective projection]
+    \begin{corollary}[No vertical re-identification under injectivity]
       \label{cor:no-diffeo}
-      Under the hypotheses of Theorem~\ref{thm:injective-trivial-holonomy} and Hypothesis~H,
-      no diffeomorphism invariance as a descriptive invariance can arise from $\Pi$ alone.
+      Under the hypotheses of Theorem~\ref{thm:injective-trivial-holonomy}, every fiber-preserving
+      transformation $\phi$ with $\Pi\circ\phi=\Pi$ is the identity.
     \end{corollary}
 
     \begin{proof}
-      Diffeomorphism invariance as a descriptive invariance (D2) requires multiple representatives of the same effective
-      state.
-      That is, it requires $|\Pi^{-1}(y)|>1$ on some region of $\mathcal{M}$.
-      Under injectivity, $|\Pi^{-1}(y)| = 1$ everywhere.
-      Therefore, the diffeomorphism group of $\mathcal{M}$ cannot arise as a re-identification symmetry induced by $\Pi$
-      .
-      Any such invariance would have to be postulated directly at the level of $\mathcal{M}$,
-      contradicting emergence and ontological uniqueness.
+      Injectivity gives $\phi(x)=x$ from $\Pi(\phi(x))=\Pi(x)$ for every $x$.
     \end{proof}
+
+    This vertical statement supplies no obstruction to D2.
+    Even for a non-injective projection, vertical transformations fix all base states and therefore do not
+    generate base diffeomorphisms.
+    Redundancy among metric representatives on the base is a different quotient.
 
   \subsubsection*{Fiber curvature and base curvature: status of the bridge}
     \label{subsec:stepA-curvature}
 
-    The preceding results establish that injective projections cannot produce the structural prerequisites of emergent
-    gravity,
-    namely re-identification symmetry and descriptive invariance as consequences of the projection.
+    The preceding results exclude nontrivial vertical re-identification under injectivity.
+    They do not exclude a curved effective metric on the base.
     This subsection records what is, and what is not, established about a contribution of fiber curvature to the
     curvature of the effective base metric.
 
@@ -335,8 +326,8 @@
   \subsubsection*{Summary of Step A}
     \label{subsec:stepA-summary}
 
-    The classification of admissible injective projections establishes the following hierarchy,
-    completing Step~A of Theorem~\ref{thm:necessity}.
+    The following table summarizes the principal-bundle fiber obstruction used in
+    Proposition~\ref{thm:necessity} and the additional geometric constructions discussed above.
 
     \begin{center}
       \begin{tabular}{p{0.26\linewidth}p{0.24\linewidth}p{0.38\linewidth}}
@@ -346,7 +337,7 @@
         \hline
         \raggedright Point ($|\Pi^{-1}(y)| = 1$, injective)
         & \raggedright $G_\Pi = \{e\}$
-        & \raggedright No gauge, no projection-induced curvature, no re-identification symmetry
+        & \raggedright No fiber gauge field, no fiber-induced curvature term, no vertical re-identification
         \tabularnewline
         \raggedright Circle ($S^1$, minimal non-injective)
         & \raggedright $G_\Pi = \mathrm{U}(1)$
@@ -361,16 +352,11 @@
       \end{tabular}
     \end{center}
 
-    In the principal case, the injective case is the unique case in which no re-identification symmetry and no
-    fiber-induced curvature term can arise without an independent postulate.
-    Non-injectivity is therefore necessary for emergent gauge structure and for re-identification symmetry
-    under Hypothesis~H and ontological uniqueness.
-    It is not shown to be sufficient for either.
-    Whether a non-injective projection sources the curvature of the effective base metric is not established here:
-    it requires hypotheses~\ref{K1}--\ref{K3} or another explicit construction
-    (Proposition~\ref{prop:fiber-base-curvature} and the remark following it).
-
-    This excludes injective admissible projections as candidates for emergent gravitational dynamics.
-    The complementary constructive question, the infrared dynamics under non-injective admissible projections
-    satisfying the saturation bound, is examined in Section~\ref{subsec:IR}, which records the operator-level
-    construction it still requires.
+    In the principal case, injectivity removes vertical re-identification symmetry and fiber-induced curvature.
+    Conversely, non-injectivity alone is not sufficient for nontrivial holonomy, nonzero connection curvature,
+    or a gravitational response.
+    Whether a non-injective projection sources effective base curvature requires hypotheses~\ref{K1}--\ref{K3}
+    or another explicit construction (Proposition~\ref{prop:fiber-base-curvature}).
+    A base metric defined independently of fiber curvature, including the Hessian proposal above, is not
+    ruled out under injectivity.
+    Appendix~\ref{subsec:IR} records a separate open question: construction of the infrared gravitational action.
