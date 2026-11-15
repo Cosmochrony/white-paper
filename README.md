@@ -168,9 +168,8 @@ Within Cosmochrony:
   spectral and topological configurations against global relaxation
 - electric charge is identified as a $\pi_1$ winding invariant of the
   $\mathrm{U}(1)$ projection fiber
-- the absence of magnetic monopoles follows from the
-  admissibility-induced triviality of $\pi_2$ on the canonical
-  admissible base
+- the triviality of $\pi_2$ holds on a chosen domain of the Hopf base
+  and does not exclude magnetic monopoles, whose absence is open
 - gravitation arises from sustained inhibition of relaxation,
   recovering general-relativistic behaviour in appropriate regimes
 
@@ -309,6 +308,10 @@ welcome.
 Please open an issue to discuss conceptual points, technical details,
 or potential extensions.
 
-## BI-1 correction candidate
+## Current version
 
-Version 3.20, pending independent review and publication. Withdraws the unsupported attribution of a Mosco limit of the discrete admissibility cascade to BornInfeld. Continuous-parameter unitary dynamics is retained; the discrete convergence bridge is open.
+Version 3.21 states that the framework derives no exclusion of magnetic monopoles: $\pi_2 = 0$ holds on a chosen
+domain of the Hopf base, the capacity axiom bounds a per-node relaxation rate and selects no region of the base,
+and the reading of $\pi_2$ of this internal base as a classification of magnetic defects is not derived.
+Version 3.20 withdraws the unsupported attribution of a Mosco limit of the discrete admissibility cascade to
+BornInfeld; continuous-parameter unitary dynamics is retained and the discrete convergence bridge is open.
