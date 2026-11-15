@@ -4,5 +4,5 @@
   "main_tex": "tex/Cosmochrony.tex",
   "zenodo_id": 17957509,
   "doi": "10.5281/zenodo.17957509",
-  "notes": "Version 3.20. Withdraws the unsupported attribution of a Mosco limit of the discrete admissibility cascade to BornInfeld. Continuous-parameter unitary dynamics is retained; the discrete convergence bridge is open."
+  "notes": "Version 3.21 states that the framework derives no exclusion of magnetic monopoles. pi_2 = 0 holds on a chosen domain of the Hopf base; the capacity axiom bounds a per-node relaxation rate and selects no region of the base, the Hopf base has no distinguished points, and the reading of pi_2 of this internal base as a classification of magnetic defects is not derived. The abstract, the testable-predictions section, the conclusion and the topological summary table are aligned."
 }
