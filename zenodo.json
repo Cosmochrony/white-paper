@@ -3,5 +3,6 @@
   "web_url": "https://cosmochrony.org/science/",
   "main_tex": "tex/Cosmochrony.tex",
   "zenodo_id": 17957509,
-  "doi": "10.5281/zenodo.17957509"
+  "doi": "10.5281/zenodo.17957509",
+  "notes": "Version 3.20. Withdraws the unsupported attribution of a Mosco limit of the discrete admissibility cascade to BornInfeld. Continuous-parameter unitary dynamics is retained; the discrete convergence bridge is open."
 }

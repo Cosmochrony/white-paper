@@ -308,3 +308,7 @@ Critical feedback, independent analyses, and theoretical scrutiny are
 welcome.
 Please open an issue to discuss conceptual points, technical details,
 or potential extensions.
+
+## BI-1 correction candidate
+
+Version 3.20, pending independent review and publication. Withdraws the unsupported attribution of a Mosco limit of the discrete admissibility cascade to BornInfeld. Continuous-parameter unitary dynamics is retained; the discrete convergence bridge is open.
