@@ -16,7 +16,8 @@
   The homotopy groups of the admissible fiber~$\Pi$ and of its admissible
   base determine which topological invariants are structurally available,
   and hence which physical phenomena can arise.
-  Three consequences are established on the canonical admissible configuration model;
+  Three statements are examined below: charge quantisation and projective chirality, and a
+  computation of~$\pi_2$ on a chosen domain of the base that does not exclude magnetic monopoles;
   their extension to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
   remains open (see~\cite{Beau2026k} for the complete treatment).
 
@@ -87,7 +88,7 @@
     magnetic monopoles exist.
     The two mechanisms are logically independent.
 
-  \subsubsection*{Absence of magnetic monopoles}
+  \subsubsection*{The open monopole question}
     \label{sec:no-monopoles}
 
     In the unconstrained Hopf fibration, the base manifold is the full two-sphere~$S^2$,
@@ -98,11 +99,16 @@
     If the full~$S^2$ were the admissible base, magnetic monopoles would be
     topologically admissible.
 
-    The bounded-flux constraint $|\partial_t \chi_v| \le c_{\mathrm{BI}}$ restricts the
-    set of admissible fiber configurations.
-    On the canonical admissible configuration model, the constraint removes a
-    neighbourhood of each pole of~$S^2$ (the points where the fiber degenerates,
-    corresponding to maximal flux concentration).
+    The capacity axiom [A-cap], $|\partial_\tau \chi_v| \le c_{\mathrm{BI}}$, is a hypothesis on the
+    discrete per-node relaxation rate~\cite{Beau2026c}.
+    It does not bound any continuum field strength, and no bound on the gradient of the fiber phase
+    is derived from it; TopologicalInvariants uses such a bound only as a hypothesis~\cite{Beau2026k}.
+    Neither selects a region of the base.
+    The Hopf fibration is a principal $U(1)$ bundle on which $SU(2)$ acts transitively on the
+    base: no point of~$S^2$ is distinguished and no fiber degenerates, and a divergence of the phase
+    coordinate belongs to a chosen local section, not to the bundle.
+    The canonical admissible model removes, as a choice, two disjoint open discs around the poles
+    of a chosen axis.
     The admissible base is then
     \begin{equation}
       S^2_{\mathrm{adm}} = S^2 \setminus (D^2_N \cup D^2_S) \simeq S^1 \times (0,1),
@@ -119,32 +125,25 @@
       \end{equation}
     \end{proposition}
 
-    \begin{corollary}[No isolated magnetic charge]
+    \begin{remark}[No derived exclusion]
       \label{cor:no-monopoles}
-      On the canonical admissible model, no isolated magnetic monopole is a
-      topologically admissible excitation.
-    \end{corollary}
+      Proposition~\ref{prop:pi2-trivial} does not exclude magnetic monopoles.
+      An exclusion would require two steps that are not derived: that the admissible base is a
+      domain with trivial~$\pi_2$, obtained from the projection structure rather than chosen; and
+      that $\pi_2$ of this base, the base of the internal Hopf fibration of the projection fiber and
+      not a sphere surrounding a source in the emergent space, classifies the magnetic defects of
+      the projected description.
+      Assuming both would build the exclusion into the assumptions rather than derive it.
+    \end{remark}
 
     In the standard Dirac~--~'t~Hooft~--~Polyakov framework, monopoles are
     topologically admissible and their absence must be explained dynamically.
-    In Cosmochrony, the situation is reversed: the absence of monopoles is
-    not a dynamical accident but a topological consequence of admissibility.
-    The bounded-flux constraint removes the topological support for
-    monopole-type excitations.
-    Magnetic flux lines (corresponding to $\mathbf{B} = \nabla \times \mathbf{A}_T$)
-    remain admissible as long as they form closed loops; only isolated magnetic
-    sources are excluded.
-
-    The extension of Corollary~\ref{cor:no-monopoles} from the canonical
-    admissible base to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
-    is well-posed but remains open.
-    The canonical model is not arbitrary: it captures precisely the universal
-    effect of the bounded-flux constraint, which removes the polar regions of~$S^2$
-    wherever the fiber phase gradient diverges.
-    Since this divergence is the generic mechanism generating non-trivial
-    $\pi_2(S^2) \cong \mathbb{Z}$ classes, this strongly suggests that any
-    admissible base in~$\mathcal{C}_{\mathrm{eff}}$ is subject to the same
-    polar removal, and hence has trivial~$\pi_2$.
+    The present framework does not supply a topological alternative: the absence of magnetic
+    monopoles is an open question.
+    Closed magnetic flux lines (corresponding to $\mathbf{B} = \nabla \times \mathbf{A}_T$)
+    carry no magnetic charge and are not affected by this question.
+    Deriving the admissible base from the projection structure, and determining whether $\pi_2$ of
+    the Hopf base bears on magnetic defects at all, are open problems.
 
   \subsubsection*{Projective chirality and parity violation}
     \label{sec:projective-chirality}
@@ -226,13 +225,14 @@
         Topological invariant           & Physical consequence  & Mechanism                      \\
         \hline
         $\pi_1(S^1) \cong \mathbb{Z}$   & Charge quantisation   & Winding of $U(1)$ fiber        \\
-        $\pi_2(S^2_{\mathrm{adm}}) = 0$ & No magnetic monopoles & Bounded-flux reduction of base \\
+        $\pi_2(S^2_{\mathrm{adm}}) = 0$ & None derived (monopoles open) & Chosen domain of base \\
         Orientation of $\pi_1$          & Parity violation      & Projective chirality           \\
         \hline
       \end{tabular}
       \caption{Topological invariants of the canonical admissible configuration model
       and their physical consequences.
-      The first two rows are proved on the canonical model; their extension
+      The first row is proved on the supplied fiber identification and the second for the chosen
+      domain of the base, without a derived physical consequence; their extension
       to~$\mathcal{C}_{\mathrm{eff}}$ is open.
       The third row is established at the framework level as a structural mechanism.
       See~\cite{Beau2026k} for the complete treatment.}
