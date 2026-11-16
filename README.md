@@ -166,8 +166,9 @@ Within Cosmochrony:
   rather than fundamental couplings
 - mass emerges from the energetic cost of maintaining non-contractible
   spectral and topological configurations against global relaxation
-- electric charge is identified as a $\pi_1$ winding invariant of the
-  $\mathrm{U}(1)$ projection fiber
+- the $\mathrm{U}(1)$ projection fiber carries a $\pi_1$ winding invariant
+  (in a fixed fiber or over a trivialising domain of the base); its
+  identification with electric charge is not derived
 - the triviality of $\pi_2$ holds on a chosen domain of the Hopf base
   and does not exclude magnetic monopoles, whose absence is open
 - gravitation arises from sustained inhibition of relaxation,
@@ -310,6 +311,13 @@ or potential extensions.
 
 ## Current version
 
+Version 3.22 types the fiber winding: it is invariant for configurations in a fixed fiber or over a trivialising
+domain of the base, not for configurations in the whole fiber $S^3$, where every loop is contractible. Its
+identification with electric charge in the emergent description is not derived, so charge quantisation there is
+open. The Hopf fibration is the bundle of the unit Dirac monopole over the internal base, so the former claim that the
+fiber mechanism is logically independent of Dirac's is withdrawn, and Appendix A separates this internal class from a
+class on spacetime, which would need a specified map and pull-back. The bibliography entry of TopologicalInvariants
+now carries its current title and its own DOI.
 Version 3.21 states that the framework derives no exclusion of magnetic monopoles: $\pi_2 = 0$ holds on a chosen
 domain of the Hopf base, the capacity axiom bounds a per-node relaxation rate and selects no region of the base,
 and the reading of $\pi_2$ of this internal base as a classification of magnetic defects is not derived.
