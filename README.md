@@ -255,7 +255,7 @@ The white paper is supported by a series of companion papers:
 
 | Key | Title |
 |-----|-------|
-| BornInfeld | Born–Infeld admissibility and bounded flux |
+| BornInfeld | Bounded relational capacity and its conditional continuum dynamics |
 | Gravity | Emergent spacetime geometry from bounded relational relaxation |
 | Bell | Non-injective projection and Bell inequality violations |
 | Spectral | Spectral admissibility and spinorial structure |
