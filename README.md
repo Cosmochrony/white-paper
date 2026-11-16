@@ -316,7 +316,9 @@ domain of the base, not for configurations in the whole fiber $S^3$, where every
 identification with electric charge in the emergent description is not derived, so charge quantisation there is
 open. The Hopf fibration is the bundle of the unit Dirac monopole over the internal base, so the former claim that the
 fiber mechanism is logically independent of Dirac's is withdrawn, and Appendix A separates this internal class from a
-class on spacetime, which would need a specified map and pull-back. The bibliography entry of TopologicalInvariants
+class on spacetime, which would need a specified map and pull-back. Section 5.8 no longer states that charge was
+derived: the association of winding $w = 1$ with charge $e$ is a proposed identification, and the $2e$ covariant
+gradient is stated under explicit hypotheses. The bibliography entry of TopologicalInvariants
 now carries its current title and its own DOI.
 Version 3.21 states that the framework derives no exclusion of magnetic monopoles: $\pi_2 = 0$ holds on a chosen
 domain of the Hopf base, the capacity axiom bounds a per-node relaxation rate and selects no region of the base,
