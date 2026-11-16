@@ -381,13 +381,22 @@
       \Omega &= d\omega \in \Omega^2(\mathcal{M}, i\mathbb{R}),
     \end{align}
     where $\Omega$ is interpreted as the electromagnetic field strength in the Cosmochrony setting (Section~A.11).
-    The first Chern class $c_1(\Pi) = [\Omega / 2\pi i] \in H^2(\mathcal{M}, \mathbb{Z})$
-    is non-trivial if and only if the
-    bundle is topologically non-trivial.
+    The first Chern class $c_1 = [\Omega / 2\pi i] \in H^2(\mathcal{M}, \mathbb{Z})$ of this bundle over
+    $\mathcal{M}$ is non-trivial if and only if the bundle is topologically non-trivial.
 
-    This matches the structure of Section~\ref{sec:gauges-transmittance}.
-    The electromagnetic $\mathrm{U}(1)$ gauge symmetry emerges because the projection fiber supports a non-trivial
-    Hopf fibration $S^1 \hookrightarrow S^3 \to S^2$.
+    Two classes must be kept apart.
+    The Hopf fibration $S^1 \hookrightarrow S^3 \to S^2$ of the projection fiber has first Chern number of
+    absolute value one, a class in $H^2(S^2, \mathbb{Z})$ of the internal base: it is the bundle of the unit Dirac
+    monopole over that internal sphere~\cite{Trautman1977}.
+    It is not a class on $\mathcal{M}$.
+    A $\mathrm{U}(1)$ bundle over $\mathcal{M}$ inherits a class from it only through a specified map
+    $n : \mathcal{M} \to S^2$ (or from a domain in $\mathcal{M}$) and the pull-back $n^*$ of the Hopf bundle,
+    whose class is $n^* c_1$; on a closed surface in $\mathcal{M}$ it equals the degree of~$n$ there, and it
+    vanishes whenever $n$ lifts to a map into $S^3$.
+    No such map, and no identification of the pulled-back connection with the electromagnetic potential, is
+    supplied here, so the non-triviality of the Hopf fibration does not by itself make the electromagnetic bundle
+    over $\mathcal{M}$ non-trivial, nor does it derive the electromagnetic $\mathrm{U}(1)$ gauge symmetry, which
+    Section~\ref{sec:gauges-transmittance} reads from the fiber as structural input.
 
     In the injective limit, where the fiber degenerates to a point, the bundle trivializes and the $\mathrm{U}(1)$ gauge
     structure disappears, consistent with Eq.~\eqref{eq:injective-chain}.

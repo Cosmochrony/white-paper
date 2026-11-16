@@ -3,8 +3,12 @@
 
   The stability of localized physical descriptions within~$\Pi$ is governed
   by the conservation of topological invariants.
-  When an excitation of~$\chi$ admits a closed, non-contractible
-  configuration within~$\Pi$, it forms a persistent topological obstruction within the admissibility structure.
+  When an excitation of~$\chi$ admits a closed configuration that is
+  non-contractible in the space of allowed configurations, it forms a persistent topological obstruction within the
+  admissibility structure.
+  Non-contractibility depends on that space: in the fiber $\Pi \cong S^3$ itself every loop is contractible, while
+  loops in one circle fiber, or over a trivialising domain of the base, carry an integer winding
+  (Proposition~\ref{prop:charge-quantisation}).
   Such configurations cannot be eliminated by smooth deformation without
   violating admissibility constraints.
   These obstructions are described in terms of knot-like (non-contractible loop and
@@ -16,12 +20,13 @@
   The homotopy groups of the admissible fiber~$\Pi$ and of its admissible
   base determine which topological invariants are structurally available,
   and hence which physical phenomena can arise.
-  Three statements are examined below: charge quantisation and projective chirality, and a
+  Three statements are examined below: the fiber winding, whose reading as electric charge is not derived,
+  projective chirality, and a
   computation of~$\pi_2$ on a chosen domain of the base that does not exclude magnetic monopoles;
   their extension to the full effective configuration space~$\mathcal{C}_{\mathrm{eff}}$
   remains open (see~\cite{Beau2026k} for the complete treatment).
 
-  \subsubsection*{Charge quantisation as a $\pi_1$ invariant}
+  \subsubsection*{Fiber winding as a $\pi_1$ invariant, and the missing link to charge}
     \label{sec:charge-quantisation-pi1}
 
     The Hopf fibration of the projection fiber $\Pi \cong S^3$,
@@ -33,33 +38,51 @@
     \begin{equation}
       \pi_1(S^1) \cong \mathbb{Z}.
     \end{equation}
-    A closed loop in the fiber defines a winding number $w \in \mathbb{Z}$,
-    which is a topological invariant: it cannot change under continuous deformation
-    of an admissible configuration.
+    Whether a winding number is invariant depends on the configurations and
+    deformations allowed.
+    For maps of a loop into one circle fiber, the degree $w \in \mathbb{Z}$ is a
+    homotopy invariant.
+    For maps into the whole fiber $\Pi \cong S^3$ there is no such invariant,
+    since $\pi_1(S^3) = 0$: a loop winding around one fiber is contracted by
+    moving its base point across the base, and the boundary map
+    $\pi_2(S^2) \to \pi_1(S^1)$ of the fibration is an isomorphism.
+    Over a domain of the base on which the bundle is trivial, the fiber coordinate
+    is global and its winding is invariant under deformations whose base image
+    stays in that domain, which is then a choice.
 
-    \begin{proposition}[Charge quantisation]
+    \begin{proposition}[Integer fiber winding]
       \label{prop:charge-quantisation}
-      In the Cosmochrony framework, electric charge is quantised as a consequence of
-      $\pi_1(S^1) \cong \mathbb{Z}$.
+      For configurations with values in a fixed fiber, or in the restriction of
+      the Hopf bundle over a trivialising domain of the base, the winding number
+      $w \in \pi_1(S^1) \cong \mathbb{Z}$ is invariant under the allowed deformations.
       The admissibility constraint removes configurations exceeding the flux bound
-      but does not introduce identifications that would contract the fiber,
-      so the fundamental group of the fiber sector remains that of $U(1)$.
-      Electric charge is therefore an integer multiple of the elementary charge~$e$,
-      \begin{equation}
-        q_{\mathrm{eff}} = w \cdot e, \qquad w \in \mathbb{Z}.
-      \end{equation}
+      but does not introduce identifications that would contract the fiber.
+      For configurations with values in the whole fiber $\Pi \cong S^3$ there is
+      no such invariant.
     \end{proposition}
 
+    The framework reads the winding as electric charge,
+    \begin{equation}
+      q_{\mathrm{eff}} = w \cdot e, \qquad w \in \mathbb{Z},
+    \end{equation}
+    with $q_{\mathrm{eff}}$ the circulation of the transverse flux around a loop
+    in the emergent description.
+    This identification is not derived: $w$ is an invariant of maps into the
+    internal fiber, and equating it with a line integral in the emergent
+    description requires a specified relation between the fiber and an
+    electromagnetic potential there, which is not supplied~\cite{Beau2026k}.
+    Charge quantisation in the emergent description is therefore open.
+
     The winding number~$w$ labels distinct equivalence classes of admissible
-    projected configurations and organizes the quantization of electric
-    charge.
+    projected configurations in the settings above.
     The organization of the mass spectrum is carried by a distinct abstract
     torsion sector index (Section~\ref{sec:spectral-mass-hierarchy}).
     The energetic cost required to maintain a non-trivial topological
     structure against the global advance of projective ordering is
     perceived, at the effective level, as rest energy~($mc^2$).
     Mass emerges as a spectral and topological consequence of persistent
-    non-contractible structures within the projection fiber.
+    structures that are non-contractible in the allowed configuration space,
+    not in the fiber~$\Pi$ itself.
 
     \begin{remark}[Winding conjugation and the spectral pair structure]
       \label{rem:winding-conjugation}
@@ -81,12 +104,19 @@
       $\delta_{\mathrm{pair}} = 2\delta_c$~--- are developed in~\cite{Beau2026a21,Beau2026k}.
     \end{remark}
 
-    Unlike the standard Dirac argument~--- which derives charge quantisation from
-    the existence of magnetic monopoles via single-valuedness of the wave function
-    on a surrounding sphere~--- charge quantisation in Cosmochrony follows from
-    the topology of the $U(1)$ fiber itself, independently of whether
-    magnetic monopoles exist.
-    The two mechanisms are logically independent.
+    The standard Dirac argument derives charge quantisation from the existence of
+    magnetic monopoles via single-valuedness of the wave function on a surrounding
+    sphere~\cite{Dirac1931}.
+    The fiber used here is not independent of that structure: the Hopf fibration
+    is the principal $U(1)$ bundle over $S^2$ whose first Chern number has
+    absolute value one (its sign depends on orientation conventions), and its
+    natural connection is the magnetic pole of lowest
+    strength~\cite{Trautman1977,WuYang1975}.
+    Its fiber winding is the image of the class of the base, so the integer~$w$ is
+    the integer of a unit monopole over the internal base~$S^2$, not over a sphere
+    in the emergent space.
+    Whether charge in the emergent description is quantised, and how that would
+    relate to monopoles there, is open.
 
   \subsubsection*{The open monopole question}
     \label{sec:no-monopoles}
@@ -214,7 +244,7 @@
   \subsubsection*{Unified topological picture}
     \label{sec:topological-summary}
 
-    Charge quantisation and parity violation are read under a single structural principle: the
+    The fiber winding and parity violation are read under a single structural principle: the
     effective physics is classified and constrained by the topological invariants
     that the admissibility constraint renders available, and by the orientation
     that the projection selects among their generators.
@@ -225,14 +255,15 @@
         \hline
         Topological invariant           & Physical consequence  & Mechanism                      \\
         \hline
-        $\pi_1(S^1) \cong \mathbb{Z}$   & Charge quantisation   & Winding of $U(1)$ fiber        \\
+        $\pi_1(S^1) \cong \mathbb{Z}$   & Integer winding (charge reading open) & Fixed fiber or trivialising domain \\
         $\pi_2(S^2_{\mathrm{adm}}) = 0$ & None derived (monopoles open) & Chosen domain of base \\
         Orientation of $\pi_1$          & Parity violation      & Projective chirality           \\
         \hline
       \end{tabular}
       \caption{Topological invariants of the canonical admissible configuration model
       and their physical consequences.
-      The first row is proved on the supplied fiber identification and the second for the chosen
+      The first row is proved on the supplied fiber identification, for configurations in a fixed fiber or over a
+      trivialising domain, and its reading as electric charge is not derived; the second is proved for the chosen
       domain of the base, without a derived physical consequence; their extension
       to~$\mathcal{C}_{\mathrm{eff}}$ is open.
       The third row is established at the framework level as a structural mechanism.
