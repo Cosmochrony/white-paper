@@ -50,11 +50,17 @@
     Over a domain of the base on which the bundle is trivial, the fiber coordinate
     is global and its winding is invariant under deformations whose base image
     stays in that domain, which is then a choice.
+    For loops whose base image is contractible in the domain the integer does not
+    depend on the trivialisation; over a domain that is not simply connected, such
+    as the annulus of the canonical admissible model, trivialisations differ by maps
+    from the domain to $U(1)$, and the integer of a loop whose base image winds around
+    the domain depends on the one chosen.
 
     \begin{proposition}[Integer fiber winding]
       \label{prop:charge-quantisation}
       For configurations with values in a fixed fiber, or in the restriction of
-      the Hopf bundle over a trivialising domain of the base, the winding number
+      the Hopf bundle over a trivialising domain of the base in a fixed
+      trivialisation, the winding number
       $w \in \pi_1(S^1) \cong \mathbb{Z}$ is invariant under the allowed deformations.
       The admissibility constraint removes configurations exceeding the flux bound
       but does not introduce identifications that would contract the fiber.
@@ -116,7 +122,8 @@
     nonintegrable phase factor~\cite{WuYang1975}.
     It is this unit monopole class of the internal base that makes every fiber
     winding contractible in~$\Pi$: a fiber loop of winding~$w$ bounds in $S^3$ a
-    disc whose image covers the base $w$ times.
+    disc whose image covers the base with degree $\pm w$, the sign being fixed by the
+    orientation conventions for the base and the fiber.
     The monopole in question lives over the internal base~$S^2$, not over a sphere
     in the emergent space.
     Whether charge in the emergent description is quantised, and how that would
