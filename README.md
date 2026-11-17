@@ -131,12 +131,17 @@ scale $M_\chi$ that the paper does not supply.
 Admissible relational configurations are constrained by the spectrum of
 a relational operator $L_\chi$ acting on the configuration space of the
 substrate.
-Under bounded relaxation fluxes, each spectral mode admits a maximal
-effective amplitude
+Assume a single oscillatory mode with positive Laplacian eigenvalue, linearised dispersion
+$\omega_n^2\simeq\lambda_n$, and a rate bound in a specified evolution parameter.
+Its effective amplitude $A_n=|a_n|\|u_n\|_\infty$ then has the leading-order window
 
 $$A_n^{\max} = \frac{c_{\mathrm{BI}}}{\sqrt{\lambda_n}}$$
 
-which defines an **admissibility envelope** for the projected dynamics.
+This conditional **admissibility envelope** excludes the zero mode.
+It bounds effective amplitudes, not raw coefficients, and does not guarantee joint admissibility of
+superposed modes or select their occupation.
+For $2I$ with $S=10a\cup10b$, $|S|=24$, the contrast $\sqrt{14/9}$ compares the spin-½ and spin-5/2
+windows (eigenvalues 18 and 28), not abelian and non-abelian sectors.
 
 The geometry of admissible generator sets is further constrained by
 character relations and Gram identities, leading to a classification of
@@ -310,6 +315,12 @@ Please open an issue to discuss conceptual points, technical details,
 or potential extensions.
 
 ## Current version
+
+Version 3.23 states the oscillatory, dispersion and effective-amplitude hypotheses of the modal envelope.
+The rate bound selects neither occupations, neutral generators, a temporal successor, nor a Lorentzian signature;
+the latter requires the additional second-order finite-cone hypothesis [H-hyp].
+The 2I comparison uses specified spin sectors and a specified generating set; no LPS ratio or continuum limit is
+claimed. The nonlinear density correction is a proposed model with independent density normalisation and coupling.
 
 Version 3.22 types the fiber winding: it is invariant for configurations in a fixed fiber or over a trivialising
 domain of the base, not for configurations in the whole fiber $S^3$, where every loop is contractible. Its

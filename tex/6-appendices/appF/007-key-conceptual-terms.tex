@@ -2,13 +2,15 @@
   \label{subsec:key-conceptual-terms}
 
   \paragraph{Admissibility envelope.}
-    Under the bounded-flux constraint $|\partial_t \chi| \le c_{\mathrm{BI}}$, a Laplacian eigenmode
-    with eigenvalue $\lambda_n$ admits a maximal effective amplitude
+    For a single oscillatory mode with $\lambda_n>0$, effective amplitude
+    $A_n=|a_n|\|u_n\|_\infty$, and linearised dispersion $\omega_n^2\simeq\lambda_n$,
+    the node-rate bound in a specified effective evolution parameter gives the leading-order window
     \[
       A_n^{\max} = \frac{c_{\mathrm{BI}}}{\sqrt{\lambda_n}}.
     \]
     This relation defines the \emph{admissibility envelope} governing the maximal
-    projectable amplitude of each spectral sector.
+    effective amplitude in that regime (Section~\ref{subsec:admissibility-bounded-flux}).
+    It excludes the zero mode and is not a general bound for superposed modal amplitudes.
 
   \paragraph{Admissibility ratio.}
     The \emph{admissibility ratio} compares the maximal admissible amplitudes of two
@@ -17,11 +19,13 @@
       R_{p/q} = \frac{A_p^{\max}}{A_q^{\max}}
       = \sqrt{\frac{\lambda_q}{\lambda_p}} .
     \]
-    This ratio quantifies the relative dynamical preference between spectral sectors
-    under the bounded-flux constraint.
+    For two specified positive-eigenvalue sectors under the envelope hypotheses, this ratio compares
+    effective-amplitude windows; it implies no dynamical preference or occupation law.
     In quaternionic Cayley graphs such as that of $Q_8$, the ratio
     $\sqrt{4/3}$ between the non-abelian and abelian sectors provides the minimal
-    instance of this hierarchy.
+    instance of this window contrast.
+    The $2I$ contrast $\sqrt{14/9}$ instead compares spin~$1/2$ and spin~$5/2$ for
+    $S=10a\cup10b$, $|S|=24$; it has no non-trivial abelian denominator.
 
   \paragraph{Character-vanishing condition.}
     The condition
@@ -32,8 +36,10 @@
     It identifies generator sets whose associated $SU(2)$ representation consists entirely
     of traceless elements.
     This condition plays a central role in the classification of admissible spectral sectors,
-    since it ensures that the adjacency contribution $\mu_\rho$ vanishes and the Laplacian
-    eigenvalue satisfies $\lambda_\rho = |S|$.
+    as a separately imposed algebraic condition.
+    It sets the average Laplacian eigenvalue to $|S|$; for a symmetric neutral set in the defining
+    two-dimensional $SU(2)$ representation, inverse pairs cancel and the block equals $|S|I$.
+    No minimisation or selection by the rate bound follows (Appendix~\ref{subsec:bounded-flux-character-vanishing}).
 
   \paragraph{Cumulative projected capacity \texorpdfstring{$I(n)$}{I(n)}.}
     For a conjugate pair $(c,\,q-c)$ of Weil representations on
@@ -109,9 +115,8 @@
     \]
     Neutral generators correspond to traceless elements of $SU(2)$ and therefore to
     half-turn rotations in the associated $SO(3)$ representation.
-    Within the spectral admissibility programme, neutrality ensures that the corresponding
-    sector does not receive constructive alignment from the generating set and therefore
-    admits the maximal admissibility window compatible with bounded relational flux.
+    Neutrality defines the class of generators used in the algebraic classification.
+    It is not derived from bounded relational rates and does not establish a globally maximal amplitude window.
 
   \paragraph{One-way activation.}
     The property that a spectral mode, once stably projected at BFS depth~$n$,
@@ -212,8 +217,8 @@
     further structural reorganization.
     At the spectral level it is quantified by $\sigma_{\mathrm{pair}}(n)$
     and its integral $I(n)$ along the BFS cascade.
-    At the effective level it governs the coupling $g(x,t) = \gamma/\Sigma(x,t)$
-    in the nonlinear Schrödinger correction (§B.14) and the differential between
+    At the effective level its proposed relation to the nonlinear Schrödinger correction (§B.14)
+    requires a density normalisation not supplied by the modal envelope; it also motivates the differential between
     constrained and unconstrained vacuum configurations (Casimir effect).
     Projective capacity is contextual and non-extensive; it replaces the
     notion of ``relaxation capacity of $\chi$'' used in earlier formulations

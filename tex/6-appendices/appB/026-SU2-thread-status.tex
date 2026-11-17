@@ -1,43 +1,25 @@
-\subsection{Status of the SU(2) Thread as Structural Attractor}
+\subsection{Scope of the Finite-Group Window Comparisons}
   \label{subsec:SU2-thread-status}
 
-  The preceding subsections establish that $SU(2)$ emerges as the unique continuous
-  limit of the chain of admissible finite relational structures
-  $Q_8 \hookrightarrow 2I \hookrightarrow \mathrm{LPS}_p \hookrightarrow SU(2)$.
-  This subsection clarifies the precise sense in which $SU(2)$ is an attractor and not
-  merely a convenient limit.
+  The embeddings $Q_8\subset2I\subset SU(2)$ relate finite-group examples to a continuous group.
+  They do not supply a convergence theorem or a physical attractor selected by the rate bound.
 
-  \paragraph{Finite resolution versus continuum.}
-    At any fixed relational resolution, the admissible structure is a finite group.
-    The admissibility ratio
-    \begin{equation}
-      R_p \;=\; \frac{A_{\rho_2}^{\max}}{A_{\rho_1}^{\max}}
-      \;=\; \sqrt{\frac{\lambda_{\rho_1}}{\lambda_{\rho_2}}} \;>\; 1
-    \end{equation}
-    quantifies how much more amplitude the spinorial sector can sustain relative to the
-    abelian sectors.
-    For $Q_8$ on its 6-regular Cayley graph, $R_p = \sqrt{4/3}\approx 1.155$.
-    For $2I$, the hierarchy is more pronounced: $R_p = \sqrt{14/9}\approx 1.247$.
-    For the Lubotzky-Phillips-Sarnak family $\mathrm{LPS}_p$, the ratio grows with $p$
-    while the graph remains Ramanujan, so the spectral gap is maximally efficient.
+  Under the single-mode and linearised-dispersion hypotheses of
+  Section~\ref{subsec:admissibility-bounded-flux}, ratios of maximal effective amplitudes obey
+  \begin{equation}
+    \frac{A_\rho^{\max}}{A_\sigma^{\max}}
+    =\sqrt{\frac{\lambda_\sigma}{\lambda_\rho}},\qquad
+    \lambda_\rho,\lambda_\sigma>0.
+  \end{equation}
+  For $Q_8$ with $S=\{\pm i,\pm j,\pm k\}$, the two-dimensional sector relative to a non-trivial
+  one-dimensional sector gives $\sqrt{4/3}$.
+  For $2I$ with $S=10a\cup10b$, $|S|=24$, the spin-$1/2$ window relative to the spin-$5/2$ window
+  gives $\sqrt{14/9}$~\cite{Beau2026a1}.
+  These denominators are different objects; $2I$ has no non-trivial abelian sector.
+  Neither contrast selects the occupied sector or implies saturation.
 
-    As the resolution scale increases and the Cayley graph approximates the Haar measure
-    on $SU(2)\cong S^3$, the distinction between abelian and non-abelian sectors dissolves:
-    the continuous group has a single connected component, and the admissibility ratio
-    $R_p\to 1$.
-    The filter disappears not because it is switched off, but because $S^3$ already
-    saturates the bounded-flux condition uniformly across all modes.
-
-  \paragraph{Attractor in the space of finite relational structures.}
-    The penalized spectral capacity $C_\alpha(G,S)$, which discounts groups achieving
-    large amplitudes through constructive alignment of sectors, systematically favors
-    binary polyhedral groups over their $SO(3)$ quotients for all $\alpha>0$.
-    Binary covers dominate precisely because the central $\mathbb{Z}_2$ they retain
-    prevents constructive interference between spinorial and abelian sectors, realising a
-    more uniform distribution of admissible amplitude over the eigenspace decomposition.
-
-    $SU(2)$ is therefore an attractor in the following operational sense: among all finite
-    relational structures compatible with admissibility and bounded flux, those closest to
-    $SU(2)$ in spectral capacity achieve the highest $C_\alpha$ for $\alpha>0$, and the
-    sequence converges to $SU(2)$ as the resolution is refined.
-    This is a structural selection, not a symmetry postulate.
+  LPS graphs do not form an intermediate subgroup in these embeddings.
+  No corresponding sector ratio or convergence of it to unity is specified here for LPS or $SU(2)$.
+  Such a continuum statement requires a common comparison and a convergence construction.
+  The capacity criterion of Section~\ref{subsec:binary-polyhedral-maximality} is a separate proposal;
+  it does not follow from these ratios or establish an attractor from [A-cap].

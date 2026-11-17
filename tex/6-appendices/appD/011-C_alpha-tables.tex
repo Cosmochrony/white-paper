@@ -4,9 +4,12 @@
   The penalized spectral capacity is defined as
   \begin{equation}
     C_\alpha(G,S) \;=\;
-    \sum_\rho \frac{(A_\rho^{\max})^2}{1 + \alpha\,N_\rho^{\mathrm{align}}},
+    \sum_{\rho:\,\lambda_\rho>0} \frac{(A_\rho^{\max})^2}{1 + \alpha\,N_\rho^{\mathrm{align}}},
   \end{equation}
-  where $N_\rho^{\mathrm{align}}$ counts the number of sector pairs in constructive
+  where only positive-eigenvalue scalar sectors with the conditional effective-amplitude envelope of
+  Section~\ref{subsec:admissibility-bounded-flux} enter the definition.
+  The zero mode is excluded because the rate bound gives it no finite amplitude ceiling.
+  Here $N_\rho^{\mathrm{align}}$ counts the number of sector pairs in constructive
   alignment (i.e.\ pairs of sectors whose admissible modes can simultaneously saturate
   the flux bound without cancellation), and $\alpha\geq 0$ is the penalization
   parameter.

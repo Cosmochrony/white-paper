@@ -7,10 +7,10 @@
   This raises a structural question that must be addressed explicitly:
   if $\chi$ is timeless, in what sense does the universe ``evolve,'' and what
   determines the succession from one projected state to the next?
-  The present section provides a logically closed account of temporal emergence
-  within the framework and clarifies how the spatial and temporal sectors, despite
-  having distinct logical origins, remain coupled in the manner required by special
-  relativity.
+  The present section describes a proposed account of temporal emergence and distinguishes its
+  transition rule from a rate bound.
+  Coupling to a Lorentzian effective description requires the explicit second-order and finite-cone
+  hypotheses stated below.
 
   \paragraph{Two levels: structural rules and their execution.}
     The relational rules encoded by~$\chi$---the Laplacian weights~$w_{ij}$,
@@ -60,22 +60,13 @@
       \item These data define the admissibility constraints on the next projection:
       which configurations of~$\chi$ project injectively onto observable fields,
       and which local transitions remain within the bounded-flux regime.
-      \item Among these constraints, the bounded-flux condition~$c_{\mathrm{BI}}$ imposes that
-      the local relational flux must remain at saturation throughout an admissible
-      transition: any descent along~$E_\chi$ that is shallower than the steepest
-      admissible gradient would leave residual flux below the saturation bound,
-      meaning that the projection retains further resolvable structure and the
-      transition is not yet complete.
-      Only the steepest admissible descent exhausts the available flux budget and
-      closes the transition.
-      No external selection principle is involved; the saturation condition itself
-      determines the unique realised step.
+      \item The capacity bound restricts allowed rates; it neither requires saturation nor
+      selects the steepest admissible descent.
+      Zero rate and smaller nonzero rates can obey the same inequality.
+      A realised successor requires a specified evolution law or selection rule in addition to the bound.
     \end{itemize}
-    There is therefore no external cursor advancing the universe from~$U_n$
-    to~$U_{n+1}$.
-    The state~$U_n$ is the cursor.
-    It carries within itself the conditions that make the next step both determinate
-    and admissible.
+    In this interpretation the state~$U_n$ supplies the context for admissible transitions.
+    Calling it a cursor does not construct a unique successor; that construction remains open.
 
   \paragraph{The cursor acts on fibre classes, not on $\chi$ directly.}
     Because the projection~$\Pi : \Omega \to \mathcal{O}$ is non-injective, a single
@@ -129,9 +120,10 @@
     the region where the projection is becoming stable but where the cascade has not yet terminated.
     Because the non-injective fibre~$\Pi^{-1}(U_n)$ retains finite multiplicity at
     this frontier, the present is not an infinitesimal instant but a zone of finite
-    relational extent, consistent with the finite propagation speeds imposed by the bounded-flux constraint.
+    relational extent, to be compared with effective propagation speeds only after a continuum
+    propagation law and its relation to the capacity bound have been specified.
     This provides a structural account of the physical thickness of the present
-    without invoking additional postulates.
+    within this proposed interpretation.
 
   \paragraph{Co-emergence of space and time from a single operator.}
     The preceding paragraphs have described space and time as having logically distinct
@@ -141,33 +133,24 @@
     while temporal succession follows from the ordered execution of the cascade.
     One might therefore ask why space and time remain as tightly coupled as special relativity requires.
 
-    The answer lies in the structure of the effective operator~$\mathcal{L}$.
-    Following the conditional analysis of~\cite{Beau2026c}, given a second-order effective sector,
-    the bounded-flux condition~$c_{\mathrm{BI}}$ constrains the admissible forms of the
-    effective Laplacian~$\mathcal{L}$ simultaneously in its spatial and its cascade (temporal) sectors.
-    Specifically:
-    \begin{itemize}
-      \item A purely elliptic (spatial) operator is excluded because it would admit
-      instantaneous propagation, violating~$c_{\mathrm{BI}}$.
-      \item An ultra-hyperbolic operator (more than one time-like direction) is
-      excluded because it leads to an ill-posed Cauchy problem, destabilising the cascade.
-      \item The unique compatible class is a hyperbolic operator with exactly one
-      time-like direction and three space-like directions, whose principal symbol
-      defines the Minkowski metric~$\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$.
-    \end{itemize}
-    The Lorentz group therefore emerges not from a separate postulate but as the
-    symmetry group of the unique operator class that is simultaneously compatible with
-    three-dimensional spatial admissibility and with the irreversible, bounded-flux cascade.
-    Space and time are logically separable in their origins---admissibility selects the
-    former, cascade ordering generates the latter---but they are dynamically inseparable
-    in the effective description, because only one operator class satisfies both constraints at once.
-    This is why the universal ratio of spatial to temporal extents is fixed at~$c$,
-    and why no admissible state of the cascade can disentangle space from time at the macroscopic level.
+    The effective operator can couple the sectors under additional hypotheses.
+    BornInfeld~\cite{Beau2026c} assumes [H-hyp]: a second-order effective sector with a non-degenerate
+    quadratic principal symbol, a finite characteristic cone and a single ordering direction.
+    Together with the stated well-posedness requirement, this yields Lorentzian signature, up to overall sign.
+    An elliptic symbol has no such cone; the exclusion here follows from [H-hyp], not from [A-cap].
+    The capacity bound alone does not force hyperbolicity: finite-speed parabolic realisations exist.
+    The passage from first-order relaxation to the sector in [H-hyp] is an open bridge in that source.
+
+    In an effective continuum with three spatial dimensions supplied separately, the homogeneous
+    Lorentzian metric can be normalised to $\mathrm{diag}(-1,+1,+1,+1)$.
+    Neither that spatial dimension nor an identification of its propagation speed with the discrete
+    constant~$c_{\mathrm{BI}}$ is derived by the signature argument.
+    The Lorentzian symmetry is therefore conditional on the specified effective sector.
 
   \paragraph{Metric rigidity and the general-relativistic space--time budget.}
     The signature argument above operates at the level of special relativity:
-    it establishes the existence of a pseudo-Riemannian metric~$g_{\mu\nu}$ with
-    signature~$(-+++)$ and guarantees Lorentz invariance of the flat effective geometry.
+    under [H-hyp] and a supplied three-dimensional spatial continuum, it identifies Lorentzian signature
+    for the homogeneous effective geometry.
     It does not, however, explain why the space--time budget remains exact and
     self-consistent in the presence of matter and curvature, i.e.\ why dilating the
     temporal metric coefficient at one point is compensated by a corresponding
@@ -202,15 +185,14 @@
     and~\cite[Sec.~5.3, 6]{Beau2026h}).
 
     The logical chain is therefore the following.
-    Given a second-order effective sector, the bounded-flux condition~$c_{\mathrm{BI}}$ selects
-    the $(-+++)$ signature, guaranteeing the existence of a pseudo-Riemannian metric and the
-    universality of~$c$~(special relativity level).
+    Under [H-hyp], the continuum and well-posedness hypotheses, and a separately supplied spatial
+    dimension, the effective sector has Lorentzian signature (special relativity level).
     The spectral entropy functional~$S_\Pi[g]$, whose extremisation encodes the
     equilibrium of the cascade projection, then dynamically locks the metric coefficients
     through the Einstein equations, enforcing the exact compensation of the space--time
     budget under arbitrary matter distributions and curvature~(general relativity level).
-    The two levels are not independent: both follow from the same bounded-projection
-    structure of~$\chi$, operating at different orders in the effective gradient expansion.
+    The two levels have different additional inputs; neither their identification nor their coupling
+    is supplied by the discrete rate bound alone.
 
   \paragraph{Relation to the block-universe picture.}
     The present account differs from a block-universe interpretation.
@@ -224,8 +206,7 @@
     the program runs, step by step, driven by its own output.
 
   \paragraph{Summary.}
-    The five elements that together constitute a logically closed account of temporal
-    emergence and space--time coupling are:
+    The five elements of this proposed account of temporal emergence and space--time coupling are:
     \begin{enumerate}
       \item \emph{$\chi$ as static code.}
       The admissibility rules, the Laplacian structure, and the saturation
@@ -234,15 +215,13 @@
       The current universe state is self-referential: it determines, via its
       own spectral structure, which fibre classes are admissible successors.
       No external parameter advances the system.
-      \item \emph{The bounded-flux constraint as the unique selector.}
-      Among candidate transitions, only the steepest admissible descent along~$E_\chi$
-      satisfies~$c_{\mathrm{BI}}$; the constraint itself acts as the selection mechanism,
-      with no additional rule required.
+      \item \emph{A rate bound and an open transition rule.}
+      The inequality restricts admissible rates without selecting saturation, steepest descent or a successor.
+      An additional transition law is required.
       \item \emph{Co-emergence of space and time (special relativity level).}
-      The spatial and temporal sectors are logically distinct in origin but
-      dynamically inseparable: the bounded-flux operator uniquely selects the
-      $(-+++)$ signature, fixing the universal ratio~$c$ and coupling the two
-      sectors into Lorentz-invariant structure.
+      A Lorentzian effective description follows conditionally from [H-hyp] and the continuum
+      assumptions, with spatial dimension and propagation-speed normalisation supplied separately.
+      It is not a consequence of the capacity bound alone.
       \item \emph{Metric rigidity (general relativity level).}
       The spectral entropy functional~$S_\Pi[g]$, whose extremisation encodes the
       equilibrium of the cascade projection, generates the Einstein equations as its
@@ -253,14 +232,10 @@
       distributions and curvature.
     \end{enumerate}
     \noindent
-    Items 4 and~5 answer the question of space--time coupling at two distinct levels:
-    item~4 explains why there is a single universal speed~$c$ and Lorentz invariance;
-    item~5 explains why the metric compensation remains exact and position-dependent
-    in the presence of gravity.
-    Both levels follow from the same bounded-projection structure of~$\chi$, operating
-    at different orders in the effective gradient expansion.
-    Together, all five elements provide a logically closed account of temporal emergence
-    that is consistent with the spatial structure established in the spectral admissibility
-    programme~\cite{Beau2026a1}, with the Lorentz and Einstein structures
-    developed in~\cite{Beau2026c, Beau2026h}, and with the relational fluctuation structure
+    Item~4 concerns the signature of a hypothesised effective operator; item~5 concerns its gravitational
+    description and requires the corresponding gravitational inputs.
+    The window comparisons of~\cite{Beau2026a1} and the discrete rate bound do not close the transition
+    rule or derive [H-hyp].
+    Their incorporation into a full account of temporal emergence remains an open construction.
+    These distinctions are required when relating the proposal to the relational fluctuation structure
     that underlies quantum indeterminacy in the framework.

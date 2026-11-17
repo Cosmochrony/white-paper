@@ -1,40 +1,28 @@
-\subsection{Admissibility Ratio $R_p$ Along the Chain $Q_8\to 2I\to\mathrm{LPS}_p\to SU(2)$}
+\subsection{Effective-Amplitude Ratios for Specified Finite Graphs}
   \label{subsec:Rp-along-chain}
 
-  The admissibility ratio $R_p = A_{\rho_s}^{\max}/A_{\rho_1}^{\max}$ measures the
-  relative advantage of the spinorial sector over the lowest non-trivial abelian
-  sector.
-  Its evolution along the chain of increasingly refined finite relational structures is:
+  The conditional envelope compares two specified positive-eigenvalue sectors by
+  $A_\rho^{\max}/A_\sigma^{\max}=\sqrt{\lambda_\sigma/\lambda_\rho}$.
+  The oscillatory sector, effective-amplitude convention and linearised dispersion of
+  Section~\ref{subsec:admissibility-bounded-flux} are assumed throughout.
 
   \begin{center}
     \begin{tabular}{lcc}
       \hline
-      Structure & $R_p$ & Notes \\
+      Graph & Compared sectors & Window ratio \\
       \hline
-      $Q_8$ & $\sqrt{4/3}\approx 1.155$ & minimal non-abelian case \\
-      $2I$ & $\sqrt{14/9}\approx 1.247$ & binary icosahedral \\
-      $\mathrm{LPS}_5$ & $\approx 1.31$ & Ramanujan, $p=5$ \\
-      $\mathrm{LPS}_{13}$ & $\approx 1.36$ & Ramanujan, $p=13$ \\
-      $SU(2)$ (continuum) & $1$ & uniform spectrum, filter disappears \\
+      $Q_8$, $S=\{\pm i,\pm j,\pm k\}$ & dimension 2 / non-trivial dimension 1 & $\sqrt{4/3}$ \\
+      $2I$, $S=10a\cup10b$ & spin $1/2$ / spin $5/2$ & $\sqrt{14/9}$ \\
       \hline
     \end{tabular}
   \end{center}
 
-  Several features of this table merit comment.
+  The $2I$ generating set has size~24 and eigenvalues~18 and~28 for these two
+  sectors~\cite{Beau2026a1}.
+  It is not an abelian/non-abelian comparison; $2I$ has no non-trivial one-dimensional representation.
+  The table compares different sector pairs and defines no evolution of one common ratio.
+  A wider effective-amplitude window does not select a sector or its occupation.
 
-  First, $R_p$ is strictly greater than 1 for all finite structures in the chain.
-  The spinorial sector always admits strictly more amplitude than the abelian sectors
-  at finite resolution.
-
-  Second, $R_p$ is non-monotone along the chain: it increases from $Q_8$ to the
-  Lubotzky-Phillips-Sarnak family before converging to 1 in the continuum.
-  The LPS graphs are Ramanujan ($|\text{non-trivial eigenvalues}|\leq 2\sqrt{d-1}$
-  for $d$-regular graphs), meaning their spectral gap is maximal for their valency.
-  This maximality does not itself maximize $R_p$; rather, it ensures that the
-  admissibility filter is as selective as possible for a given graph degree, which
-  is the relevant constraint for the continuum limit.
-
-  Third, the convergence $R_p\to 1$ as the resolution increases reflects the fact
-  that in $SU(2)\cong S^3$, all representation sectors coexist without hierarchy.
-  The bounded-flux filter is non-trivial only at finite resolution; it disappears
-  when the continuous group is restored.
+  LPS graphs are not intermediate subgroups of $SU(2)$ in a chain of inclusions.
+  No sector pair defining the same ratio on LPS graphs or on $SU(2)$ is specified here.
+  No numerical LPS ratio, continuum limit equal to unity, or disappearance of the filter is asserted.

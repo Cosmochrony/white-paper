@@ -9,10 +9,8 @@
 
   Let $L$ denote the relational Laplacian associated with the Cayley graph of
   a generating set $S$.
-  If $\{\lambda_\rho\}$ denotes the set of Laplacian eigenvalues associated
-  with irreducible sectors $\rho$, the admissibility envelope introduced in
-  Section~\ref{subsec:gram-rigidity} implies that the maximal effective
-  amplitude in sector $\rho$ is bounded by
+  For a scalar Laplacian block with $\lambda_\rho>0$, the conditional single-mode envelope of
+  Section~\ref{subsec:admissibility-bounded-flux} gives, in the stated linearised regime,
   \[
     A_\rho^{\max} = \frac{c_{\mathrm{BI}}}{\sqrt{\lambda_\rho}} .
   \]
@@ -21,7 +19,7 @@
   A simple aggregate measure can be defined by summing the admissible
   amplitudes over all sectors,
   \begin{equation}
-    C = \sum_\rho A_\rho^{\max}.
+    C = \sum_{\rho:\,\lambda_\rho>0} A_\rho^{\max}.
   \end{equation}
 
   However, constructive alignment between sectors can artificially inflate
@@ -39,36 +37,13 @@
   as near-maximal configurations among finite groups with comparable
   valency.
 
-  A complementary diagnostic is provided by the admissibility ratio
-  \[
-    R_p ,
-  \]
-  which measures the relative concentration of admissible spectral weight
-  across the hierarchy of sectors.
-  Along sequences of increasingly refined relational graphs,
-  this ratio approaches a stable value characteristic of the underlying
-  spectral geometry.
+  A complementary diagnostic compares effective-amplitude windows of two specified positive-eigenvalue
+  sectors, as in Sections~\ref{subsec:q8-prototype} and~\ref{subsec:q8-to-2i}.
+  These are different comparisons: the $Q_8$ ratio uses non-trivial one-dimensional sectors,
+  whereas the $2I$ contrast compares spin~$1/2$ and spin~$5/2$ for a specified generating set.
+  They do not define a common ratio along a refinement sequence.
 
-  These considerations suggest that the structures identified in the
-  preceding sections should not be viewed as isolated algebraic cases.
-  Rather, they form part of a broader sequence of relational graphs whose
-  spectral properties progressively approximate those of the continuous
-  group $SU(2)$.
-
-  One may therefore consider chains of relational structures of the form
-  \[
-    Q_8 \rightarrow 2I \rightarrow \mathrm{LPS} \rightarrow SU(2),
-  \]
-  in which increasingly refined graphs approximate the spectral geometry of
-  the continuous spin group.
-
-  In this limit the discrete spectrum becomes dense and the admissibility
-  filter progressively weakens.
-  The bounded-flux constraint still imposes a local restriction on the
-  amplitude of modes, but the spectral hierarchy itself approaches a
-  continuous distribution.
-
-  The discrete structures analysed in this chapter can thus be interpreted as
-  finite approximations of a deeper spinorial framework.
-  Their role is to reveal the structural mechanisms through which admissible
-  spectral hierarchies emerge from bounded relational dynamics.
+  The embeddings $Q_8\subset2I\subset SU(2)$ provide finite-group settings for spectral comparisons.
+  LPS Cayley graphs are a different family; they are not intervening subgroups of $SU(2)$.
+  A continuum comparison would require specified graph operators, sector identifications and normalisations.
+  No limit of the above window ratios or uniform saturation of continuum modes is established here.
